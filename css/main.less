@@ -103,6 +103,22 @@ a {
     top: 2px;
   }
 }
+// standalone icon from psd
+.standalone_icon {
+  &:before {
+    content: url("../images/icons/standalone.png");
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+// close thin icon from psd
+.close_thin_icon {
+  &:before {
+    content: url("../images/icons/close_thin.png");
+    display: inline-block;
+    cursor: pointer;
+  }
+}
 // delete icon from psd
 .delete_icon {
   &:before {
@@ -142,6 +158,27 @@ a {
     bottom: 1px;
   }
 }
+// open side widget circle white icon
+.open_icon_1 {
+  &:before {
+    content: url("../images/icons/open_icon_1.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+  }
+}
+.open_icon_2 {
+  &:before {
+    content: url("../images/icons/private_icon_white.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+  }
+}
 // blue circle icon
 .blue_circle {
   &:before {
@@ -164,6 +201,21 @@ a {
     top: 3px;
   }
 }
+// reverse icon grey
+.reverse_icon_grey {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+
+  &:before {
+    content: url("../images/icons/reverse_icon.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: -2px;
+    top: 3px;
+  }
+}
 .fa-percent {
   padding: 3px 4px 2px 3px;
   background: gray;
@@ -175,6 +227,11 @@ a {
 .flex_container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flex_container_column {
+  display: flex;
+  flex-flow: column wrap;
   justify-content: space-between;
 }
 
@@ -984,6 +1041,7 @@ header {
 footer {
   background: #333333;
   padding: 20px 0;
+  margin-bottom: 133px;
 
   .title {
     color: white;
@@ -1088,7 +1146,411 @@ footer {
   }
 }
 
+// fixed bottom widget
+.fixed_footer {
+  background: #f8f8f8;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
 
+  .icon_img_block {
+    width: 40px;
+    height: 40px;
+    background: #ededed;
+    text-align: center;
+    padding: 10px 10px 3px;
+    border-radius: 10px;
+    box-shadow: 0 3px #d4d4d4;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  .currency_widget {
+    width: 70%;
+    margin: 25px auto;
+    position: relative;
+
+    
+    .exchanger_name {
+      position: relative;
+      top: 20px;
+      font-weight: bold;
+      color: @main_green;
+      font-size: 16px;
+    }
+
+    .fixed_footer_item {
+      width: 30%;
+
+      &:nth-child(2) {
+        text-align: center;
+        vertical-align: bottom;
+      }
+
+      &:nth-child(3){
+        .give, .get, .reserve {
+          text-align: center;
+        }
+        .get {
+          padding: 0 10px;
+        }
+        .amount {
+          font-size: 14px;
+          font-family: 'LatoBlack', sans-serif;
+        }
+      }
+
+      .icon_in {
+        vertical-align: top;
+      }
+
+      & > div {
+        display: inline-block;
+      }
+      .amount {
+        font-size: 22px;
+        font-weight: bold;
+        vertical-align: top;
+        position: relative;
+        top: 10px;
+      }
+    }
+    .amount_icon {
+      display: inline-block;
+
+      .currency_text {
+        display: block;
+        text-align: center;
+      }
+    }
+    .settings {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      color: @main_green;
+      cursor: pointer;
+
+      i {
+        position: relative;
+        top: 1px;
+        padding-left: 4px;
+        font-size: 15px;
+
+      }
+    }
+  }
+  .reverse_icon_grey {
+    vertical-align: bottom;
+    position: relative;
+    bottom: 26px;
+    margin: 0 15px;
+  }
+
+  .action_icons {
+    position: absolute;
+    top: 0;
+    right: -110px;
+
+    span {
+      padding-right: 15px;
+
+      &:nth-child(2){
+        position: relative;
+        bottom: 2px;
+        color: @main_green;
+      }
+    }
+
+  }
+}
+
+.slide_section {
+  position: relative;
+}
+// all currency's panel (side slide panel)
+.side_all_currency_widget {
+  position: absolute;
+  top: 35px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 360px;
+  left: -360px;
+  z-index: 10;
+
+  &.open {
+    left: 0;
+  }
+  // icon/block that opens side menu with all currencies
+  .open_icon_wrapper {
+    position: absolute;
+    top: -34px;
+    right: -71px;
+
+    .title {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      line-height: 13px;
+      font-size: 11px;
+      position: relative;
+      right: 8px;
+      padding: 4px 0;
+    }
+  }
+
+  .open_icon {
+    background: @main_green;
+    padding: 10px 10px 5px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      border-bottom: 1px solid white;
+      top: 61%;
+      width: 70%;
+      left: 12%;
+      transform: rotate(-45deg);
+    }
+
+    .open_icon_1 {
+      display: block;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .open_icon_2 {
+      text-align: right;
+      display: block;
+    }
+  }
+
+//  slide body styles
+  .all_currency_widget_body {
+    width: 100%;
+    max-width: 360px;
+    left: -360px;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+
+    .flex_container_wrap {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      width: 100%;
+
+      // all items style in widget block
+      .item {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 50%;
+        padding: 25px 5px 15px;
+        background: white;
+
+        &:nth-child(even){
+          background: #f2f1f1;
+        }
+        .currency_item {
+          padding: 5px 10px;
+          background: darken(@light_grey, 3%);
+          border-radius: 10px;
+          box-shadow: 0 3px 0 darken(@light_grey, 10%);
+          font-size: 9px;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+          margin-bottom: 10px;
+
+          &:hover {
+            background: darken(@light_grey, 6%);
+            box-shadow: 0 3px 0 darken(@light_grey, 20%);
+          }
+          &:active {
+            position: relative;
+            top: 3px;
+            box-shadow: none;
+          }
+          &.active {
+            background: @main_green;
+            box-shadow: 0 3px 0 darken(@main_green, 10%);
+
+            &:active {
+              position: relative;
+              top: 3px;
+              box-shadow: none;
+            }
+          }
+          span {
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+      // tabs title styles
+      .body_toggle {
+        cursor: pointer;
+        background: @main_green;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        transition: all 0.1s ease;
+
+        &.open {
+          i {
+            transform: rotate(180deg);
+          }
+        }
+
+        i {
+          position: absolute;
+          right: 10px;
+          top: 33%;
+          transition: all 0.1s ease;
+        }
+      }
+
+      .head {
+        background: #555555;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 8px;
+
+        div {
+          display: inline-block;
+          text-align: center;
+          width: 33.333%;
+          color: white;
+          position: relative;
+
+          span {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              width: 0;
+              height: 2px;
+              background: @main_green;
+              transition: all 0.1s ease;
+            }
+
+            &:hover {
+              &:after {
+                width: 100%;
+                left: 0;
+              }
+            }
+          }
+          &.active {
+            span {
+              &:after {
+                width: 100%;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    //  head end
+
+    //  find_block
+      .find_block {
+        
+        .item {
+          width: 50%;
+          padding: 10px 20px 20px;
+
+          .title {
+            text-align: center;
+            padding: 0 0 5px;
+            font-weight: bold;
+          }
+          .input_block {
+            position: relative;
+            text-align: center;
+
+            input {
+              width: 100%;
+              margin: auto;
+              display: inline-block;
+              padding: 3px;
+
+              &::-webkit-input-placeholder {
+                color: darkgray;
+                font-size: 11px;
+              }
+              &::-moz-placeholder          {
+                color: darkgray;
+                font-size: 11px;
+              }/* Firefox 19+ */
+              &:-moz-placeholder           {
+                color: darkgray;
+                font-size: 11px;
+              }/* Firefox 18- */
+              &:-ms-input-placeholder      {
+                color: darkgray;
+                font-size: 11px;
+              }
+            }
+
+            i {
+              position: absolute;
+              right: 5px;
+              top: 6px;
+              font-size: 19px;;
+            }
+          }
+        }
+      }
+    //  end of find block
+      
+    //  cryptocurrency block/tab
+      .ctyptocurrency_tab {
+
+        .title {
+          i {
+
+          }
+        }
+        .item {
+
+        }
+      }
+      // end cryptocurrency block/tab
+
+    //  pay system tab/block
+      .pay_systems {
+
+        .pay_system_title {
+          text-align: center;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 5px 0;
+          background: #fbfbfb;
+        }
+      }
+    }
+  }
+
+}
 
 
 
@@ -1097,13 +1559,18 @@ footer {
 
 
 
-@media only screen and (max-width : 1217px) {
+@media only screen and (max-width : 1218px) {
   .direction_widget .widget_main_block {
  
   }
   .direction_widget .widget_main_block .main_line .icons_each:last-child {
     display: none;
   }
+
+  .fixed_footer .currency_widget {
+    width: 80%;
+  }
+
 
 }
 

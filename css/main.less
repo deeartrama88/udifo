@@ -711,6 +711,7 @@ header {
   font-family: 'LatoBlack', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+  transition: all 0.1s ease;
 
   i {
     position: absolute;
@@ -718,11 +719,19 @@ header {
     top: 10px;
     font-size: 25px;
   }
+  &.side_menu_opened {
+    width: 62%;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 51px;
+  }
 }
 
 // table styles
 .table_wrap {
   padding-top: 10px;
+  transition: all 0.1s ease;
+
   table {
     width: 100%;
     border-collaple: collapse;
@@ -732,6 +741,7 @@ header {
 
       td {
         padding: 0 0 10px;
+        transition: all 0.1s ease;
       }
     }
     tbody {
@@ -859,7 +869,30 @@ header {
       }
     }
   }
+  // table styles when side menu(all currencies) is opened
+  &.side_menu_opened {
+    padding-left: 370px;
+
+    table {
+      thead {
+        tr {
+          .testimonials, .type, .actions {
+            display: none;
+          }
+          td {
+            padding: 5px 0 5px;
+          }
+        }
+      }
+      tbody {
+        .testimonials, .type, .actions {
+          display: none;
+        }
+      }
+    }
+  }
 }
+
 // table pagination block
 .pagination_block {
   text-align: center;
@@ -1280,9 +1313,10 @@ footer {
   left: -360px;
   z-index: 10;
 
-  &.open {
-    left: 0;
-  }
+  //&.open {
+  //  left: 20%;
+  //}
+
   // icon/block that opens side menu with all currencies
   .open_icon_wrapper {
     position: absolute;
@@ -1520,9 +1554,9 @@ footer {
           }
         }
       }
-    //  end of find block
+      //  end of find block
       
-    //  cryptocurrency block/tab
+      //  cryptocurrency block/tab
       .ctyptocurrency_tab {
 
         .title {
@@ -1536,8 +1570,19 @@ footer {
       }
       // end cryptocurrency block/tab
 
-    //  pay system tab/block
+      //  cash tab/наличные
+      .cash {
+        border-bottom: 2px solid @main_green;
+      }
+      //  cash tab/наличные
+
+      //  pay system tab/block
       .pay_systems {
+
+        // pay system is closed by default/вкладка "платежные системы - закрыта по умолчанию"
+        .wrap {
+          display: none;
+        }
 
         .pay_system_title {
           text-align: center;
@@ -1556,6 +1601,11 @@ footer {
 
 
 // MEDIA QUERIES
+//@media only screen and (max-width : 1600px) {
+//  .side_all_currency_widget.open {
+//    left: 14%;
+//  }
+//}
 
 
 

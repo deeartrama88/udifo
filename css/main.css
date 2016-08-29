@@ -551,6 +551,7 @@ header .main_block .second_menu .user_cabinet {
   font-family: 'LatoBlack', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+  transition: all 0.1s ease;
 }
 .often_questions i {
   position: absolute;
@@ -558,8 +559,15 @@ header .main_block .second_menu .user_cabinet {
   top: 10px;
   font-size: 25px;
 }
+.often_questions.side_menu_opened {
+  width: 62%;
+  float: right;
+  margin-bottom: 10px;
+  margin-top: 51px;
+}
 .table_wrap {
   padding-top: 10px;
+  transition: all 0.1s ease;
 }
 .table_wrap table {
   width: 100%;
@@ -570,6 +578,7 @@ header .main_block .second_menu .user_cabinet {
 }
 .table_wrap table thead td {
   padding: 0 0 10px;
+  transition: all 0.1s ease;
 }
 .table_wrap table tbody tr:nth-child(odd) {
   background: #f7f7f7;
@@ -678,6 +687,22 @@ header .main_block .second_menu .user_cabinet {
   display: inline-block;
   width: 30px;
   text-align: center;
+}
+.table_wrap.side_menu_opened {
+  padding-left: 370px;
+}
+.table_wrap.side_menu_opened table thead tr .testimonials,
+.table_wrap.side_menu_opened table thead tr .type,
+.table_wrap.side_menu_opened table thead tr .actions {
+  display: none;
+}
+.table_wrap.side_menu_opened table thead tr td {
+  padding: 5px 0 5px;
+}
+.table_wrap.side_menu_opened table tbody .testimonials,
+.table_wrap.side_menu_opened table tbody .type,
+.table_wrap.side_menu_opened table tbody .actions {
+  display: none;
 }
 .pagination_block {
   text-align: center;
@@ -1052,9 +1077,6 @@ footer .bottom_link a {
   left: -360px;
   z-index: 10;
 }
-.side_all_currency_widget.open {
-  left: 0;
-}
 .side_all_currency_widget .open_icon_wrapper {
   position: absolute;
   top: -34px;
@@ -1273,6 +1295,12 @@ footer .bottom_link a {
   right: 5px;
   top: 6px;
   font-size: 19px;
+}
+.side_all_currency_widget .all_currency_widget_body .flex_container_wrap .cash {
+  border-bottom: 2px solid #8caa0b;
+}
+.side_all_currency_widget .all_currency_widget_body .flex_container_wrap .pay_systems .wrap {
+  display: none;
 }
 .side_all_currency_widget .all_currency_widget_body .flex_container_wrap .pay_systems .pay_system_title {
   text-align: center;

@@ -871,23 +871,23 @@ header {
   }
   // table styles when side menu(all currencies) is opened
   &.side_menu_opened {
-    padding-left: 370px;
+    //padding-left: 370px;
 
     table {
       thead {
         tr {
-          .testimonials, .type, .actions {
-            display: none;
-          }
-          td {
-            padding: 5px 0 5px;
-          }
+          //.testimonials, .type, .actions {
+          //  display: none;
+          //}
+          //td {
+          //  padding: 5px 0 5px;
+          //}
         }
       }
       tbody {
-        .testimonials, .type, .actions {
-          display: none;
-        }
+        //.testimonials, .type, .actions {
+        //  display: none;
+        //}
       }
     }
   }
@@ -1313,9 +1313,9 @@ footer {
   left: -360px;
   z-index: 10;
 
-  //&.open {
-  //  left: 20%;
-  //}
+  &.open {
+    left: 0;
+  }
 
   // icon/block that opens side menu with all currencies
   .open_icon_wrapper {

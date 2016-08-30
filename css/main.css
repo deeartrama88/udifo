@@ -688,22 +688,6 @@ header .main_block .second_menu .user_cabinet {
   width: 30px;
   text-align: center;
 }
-.table_wrap.side_menu_opened {
-  padding-left: 370px;
-}
-.table_wrap.side_menu_opened table thead tr .testimonials,
-.table_wrap.side_menu_opened table thead tr .type,
-.table_wrap.side_menu_opened table thead tr .actions {
-  display: none;
-}
-.table_wrap.side_menu_opened table thead tr td {
-  padding: 5px 0 5px;
-}
-.table_wrap.side_menu_opened table tbody .testimonials,
-.table_wrap.side_menu_opened table tbody .type,
-.table_wrap.side_menu_opened table tbody .actions {
-  display: none;
-}
 .pagination_block {
   text-align: center;
   padding: 30px 0 20px;
@@ -1076,6 +1060,9 @@ footer .bottom_link a {
   width: 360px;
   left: -360px;
   z-index: 10;
+}
+.side_all_currency_widget.open {
+  left: 0;
 }
 .side_all_currency_widget .open_icon_wrapper {
   position: absolute;

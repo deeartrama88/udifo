@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/ion.checkRadio.css">
-    <link rel="stylesheet" href="css/ion.checkRadio.html5.css">
+    <link rel="stylesheet" href="css/ion.checkRadio.green.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -19,7 +19,7 @@
     <div class="header_top_line">
         <div class="courses">Курсов: <span class="courses_amount">5042</span></div>
         <div class="exchanges">Обменников: <span class="exchanges_amount">143</span></div>
-        <div class="refreshes">Обновление: <span class="refreshes_time">12:43</span><span class="refresh_icon"></span></div>
+        <div class="refreshes">Обновление: <span class="refreshes_time">12:43</span><span class="icon-reverse_2_icon"></span></div>
     </div>
 
     <div class="container">
@@ -102,8 +102,15 @@
                 </li>
             </ul>
             <div class="search_block">
-                <i class="news_icon"></i>
-                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="icon-news_icon"></i>
+                <i class="icon-search_icon"></i>
+            </div>
+        </div>
+        <!-- SEARCH ELEMENT -->
+        <div class="search_element_wrapper">
+            <input type="text" name="search_input" placeholder="Например: Яндекс деньги">
+            <div class="search_body">
+                <div class="example">here will be some results variants</div>
             </div>
         </div>
     </div>
@@ -697,6 +704,44 @@
             <i class="fa fa-cog" aria-hidden="true"></i>
         </div>
 
+        <!-- OFTEN OPERATIONS ACTIVE / ЧАСТЫ ОПЕРАЦИИ В АКТИВНОМ РЕЖИМЕ(КОГДА ВЫБРАНЫ ВАЛЮТЫ) -->
+        <div class="often_questions active">
+            <div class="flex_container">
+                <div class="title">вы меняете:</div>
+                <div class="currencies_block">
+                    <div class="currency_block">
+                        <div class="currency_icon_block"><i class="qiwi_icon"></i></div>
+                        <div class="text"><span class="name">QIWI</span><span class="currency">(руб.)</span></div>
+                    </div>
+                    <span class="reverse"><i class="icon-reverse_icon"></i></span>
+                    <div class="currency_block">
+                        <div class="currency_icon_block"><i class="private_icon"></i></div>
+                        <div class="text"><span class="name">ПРИВАТ</span><span class="currency">(руб.)</span></div>
+                    </div>
+                </div>
+                <div class="actions_block">
+                    <i class="icon-favorite_icon"></i>
+                    <i class="icon-download_icon"></i>
+                    <i class="icon-calculator_icon"></i>
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <i class="icon-delete_icon"></i>
+                </div>
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+            <!-- CALCULATOR -->
+            <div class="calculator_wrap">
+                <div class="flex_container">
+                    <input type="text" name="calc_1" placeholder="00.00">
+                    <input type="text" name="calc_2" placeholder="00.00">
+                    <input type="text" name="calc_result" placeholder="00.00">
+                    <div class="check_box">
+                        <input type="checkbox" id="calc_checkbox" name="calc_checkbox">
+                        <label for="calc_checkbox">С учетом комиссии платежных систем</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- table -->
         <div class="table_wrap">
             <table>
@@ -1203,15 +1248,39 @@
                 <div class="settings">Отслеживать 2 направления <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
             </div><!-- # flex_container -->
             <div class="action_icons">
-                <span class="standalone_icon"></span>
+                <span class="icon-standalone_icon"></span>
                 <span class="resize"><i class="fa fa-expand" aria-hidden="true"></i></span>
-                <span class="close_thin_icon"></span>
+                <span class="icon-close_icon"></span>
             </div>
         </div><!-- # currency_widget-->
     </div><!-- # container -->
 </div>
 
 
+<!-- HOW IT WORKS POP UP / ВСПЛЫВАЮЩЕЕ ОКНО "КАК ЭТО РАБОТАЕТ "-->
+<div class="how_it_works_pop_up_wrapper">
+    <div class="flex_container">
+        <div class="how_it_works_content">
+            <div class="title">как работает "умная" панель udifo</div>
+            <span class="icon-close_icon close__"></span>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur enim in laudantium repudiandae
+                    sequi. Accusamus autem blanditiis consequuntur, cumque illum inventore libero magni nihil nulla omnis
+                    optio quae quo velit!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi at atque eaque exercitationem
+                    facere non possimus, quae quaerat reprehenderit sed soluta tempore temporibus, vero voluptatum. Ea natus
+                    praesentium totam.</p>
+                <p>Commodi consequuntur culpa dolor, dolorem doloremque doloribus fugiat illum impedit, ipsum molestiae
+                    mollitia neque nostrum omnis qui repellat repellendus sapiente similique, sint totam voluptatem. Aliquam
+                    placeat porro tempora veritatis voluptas?</p>
+                <p>Adipisci amet dolore ducimus, eaque exercitationem iure quae vitae! Doloremque eaque eligendi error nihil
+                    quia sequi similique suscipit velit? Eius hic magni, odio pariatur quod voluptate! Doloremque expedita
+                    hic quia?</p>
+            </div>
+            <button class="main_btn close__">все понятно</button>
+        </div>
+    </div>
+</div>
 
 
 

@@ -70,8 +70,42 @@
         }
         // execute first time
 
+        // HOW IT WORKS POP UP
+        // close/open pop up
+        var how_it_works_pop_up = $('.how_it_works_pop_up_wrapper');
+        var how_it_works_pop_up_close = $('.how_it_works_pop_up_wrapper .close__');
+        var how_it_works_pop_up_open = $('.direction_widget .how_it_works');
+        $(how_it_works_pop_up_close).click(function () {
+            $(how_it_works_pop_up).fadeToggle(100);
+        })
+        $(how_it_works_pop_up_open).click(function () {
+            $(how_it_works_pop_up).fadeToggle(100);
+        })
 
+        // checkbox test
+        $('.calculator_wrap .check_box input').ionCheckRadio();
 
+        // CLOSE OPEN CALCULATOR
+        var calc_open_icon = $('.often_questions i.icon-calculator_icon');
+        var  calc_body = $('.calculator_wrap');
+        $(calc_open_icon ).click(function () {
+            $(calc_body).slideToggle(100);
+        })
+
+        // OPEN CLOSE SEARCH
+        var header_search_open_icon = $('.under_header_gray_line .search_block .icon-search_icon');
+        var header_search_element_body = $('.under_header_gray_line .search_element_wrapper');
+        $(header_search_open_icon).click(function () {
+            $(header_search_element_body).fadeToggle(100).find('input').focus();
+        })
+        // CLOSE SEARCH ELEMENT BY CLICKING OUTSIDE OF THIS SEARCH ELEMENT
+        $(document).click(function(event) {
+            if(!$(event.target).closest(header_search_element_body).length && !$(event.target).closest(header_search_open_icon).length) {
+                if($(header_search_element_body).is(":visible")) {
+                    $(header_search_element_body).fadeOut(100);
+                }
+            }
+        })
 
     });
 

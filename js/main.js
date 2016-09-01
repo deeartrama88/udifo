@@ -26,13 +26,8 @@
             var paddings = side_menu_set_left();
 
             $(all_currency_side_menu).toggleClass('open');
-            // fade toggle direction_widget, fade out when side widget open, and fade in when it closed
-            // $(direction_widget).slideToggle(100);
-            // toggle class side_menu_opened to resize block often operation/частые операции
-            // $(often_operation).toggleClass('side_menu_opened');
             // toggle class side_menu_opened to change table
             $(table_wrap).toggleClass('side_menu_opened');
-
             $(often_operation).css({marginLeft: paddings.table });
             $(table_wrap).css({paddingLeft: paddings.table});
             $(direction_widget).css({paddingLeft: paddings.table});
@@ -106,6 +101,34 @@
                 }
             }
         })
+
+        // FUNCTION TO ADD FAVORITE ICON TO CURRENCY ICONS
+        function add_favorite() {
+
+            // open adding state icon/иконка включающая режим добавления favorite
+            var open_state_icon_give = $('#give_favorite');
+            var open_state_icon_get = $('#get_favorite');
+            var favorite_block = $('.favorite_block');
+            var favorite_block_i = $('.favorite_block i');
+
+            $(open_state_icon_give).click(function () {
+                // fadeToggle favorite icons
+                $('#give_main_line').find('.favorite_block').fadeToggle(100);
+                // toggle text on open favorite state icon
+                $(this).toggleClass('favorite_active');
+            })
+            $(open_state_icon_get).click(function () {
+                // fadeToggle favorite icons
+                $('#get_main_line').find('.favorite_block').fadeToggle(100);
+                // toggle text on open favorite state icon
+                $(this).toggleClass('favorite_active');
+            })
+            $(favorite_block_i).click(function () {
+                $(this).toggleClass('active');
+                $(this).closest('.icon_img_block').toggleClass('favorite');
+            })
+        }
+        add_favorite();
 
     });
 

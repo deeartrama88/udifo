@@ -521,6 +521,16 @@ header .main_block .second_menu .user_cabinet {
   font-family: 'LatoBold', sans-serif;
   line-height: 30px;
 }
+.direction_widget .widget_main_block .top_line .add_favorite_text {
+  font-size: 11px;
+  line-height: 12px;
+  text-align: center;
+  position: relative;
+  top: 3px;
+  font-weight: bold;
+  font-family: "LatoRegular", sans-serif;
+  display: none;
+}
 .direction_widget .widget_main_block .top_line .icons i {
   padding: 7px;
   background: #ededed;

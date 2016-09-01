@@ -116,12 +116,14 @@
                 $('#give_main_line').find('.favorite_block').fadeToggle(100);
                 // toggle text on open favorite state icon
                 $(this).toggleClass('favorite_active');
+                $(this).parent().siblings('.add_favorite_text').fadeToggle(100);
             })
             $(open_state_icon_get).click(function () {
                 // fadeToggle favorite icons
                 $('#get_main_line').find('.favorite_block').fadeToggle(100);
                 // toggle text on open favorite state icon
                 $(this).toggleClass('favorite_active');
+                $(this).parent().siblings('.add_favorite_text').fadeToggle(100);
             })
             $(favorite_block_i).click(function () {
                 $(this).toggleClass('active');

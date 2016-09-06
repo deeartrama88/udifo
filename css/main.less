@@ -970,6 +970,7 @@ header {
       }
     }
   }
+
   // table styles when side menu(all currencies) is opened
   &.side_menu_opened {
     //padding-left: 370px;
@@ -1927,6 +1928,7 @@ footer {
   }
 }
 
+
 // SEARCH BLOCK
 .under_header_gray_line {
   .container {
@@ -1959,6 +1961,162 @@ footer {
 
 
 
+//<!-- DIRECTION WIDGET / ВКЛАДКА "НАПРАВЛЕНИЯ" -->
+.direction_tab_widget {
+  padding-top: 10px;
+  border-top: 1px solid @separate_gray;
+
+  & > .flex_container {
+    justify-content: flex-end;
+  }
+
+  .actions_line {
+    padding-bottom: 10px;
+  }
+
+  .main_line {
+
+    & > .flex_container {
+      justify-content: flex-start;
+    }
+  }
+
+  .add_icon {
+    width: 4%;
+    position: relative;
+    display: inline-block;
+
+    .text {
+      font-size: 9px;
+      line-height: 10px;
+      font-family: "LatoBold", sans-serif;
+      padding-top: 6px;
+      position: absolute;
+      text-align: center;
+      right: -9px;
+    }
+
+    i {
+      width: 40px;
+      height: 40px;
+      background: #8caa0b;
+      text-align: center;
+      padding: 10px 10px 3px;
+      border-radius: 10px;
+      box-shadow: 0 3px #657a08;
+      cursor: pointer;
+      position: relative;
+      color: white;
+      font-size: 18px;
+
+      &:before {
+        line-height: 1.3;
+      }
+    }
+  }
+
+  i {
+    padding: 7px;
+    background: #ededed;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    width: 29px;
+    height: 26px;
+    vertical-align: top;
+    box-shadow: 0 2px 0 #d4d4d4;
+    font-size: 15px;
+    font-weight: bold;
+    color: #289fce;
+    position: relative;
+  }
+
+  .currency_block {
+    width: 96%;
+    padding-left: 5px;
+
+    .item {
+      padding: 8px 8px 5px;
+      background: @light_grey;
+      border-radius: 10px;
+      box-shadow: 0 3px 0 darken(@light_grey, 10%);
+      margin-left: 10px;
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 10px;
+      
+      &:hover {
+        background: darken(@light_grey, 3%);
+      }
+
+      &:active {
+        top: 3px;
+        box-shadow: 0 0 0 transparent;
+
+        &:before{
+          display: none;
+        }
+      }
+
+      &.active {
+
+        &:active {
+          &:before {
+            height: 111%;
+          }
+        }
+
+        &:before {
+          display: block;
+        }
+      }
+
+      &:after {
+        content: '';
+        width: 38px;
+        height: 1px;
+        background: #d8d8d8;
+        position: absolute;
+        left: 33%;
+        transform: rotate(-45deg);
+        top: 22px;
+      }
+
+      &:before{
+        content: '';
+        width: 103.5%;
+        height: 118%;
+        position: absolute;
+        z-index: 0;
+        left: -2px;
+        top: -2px;
+        background: #8caa0b;
+        z-index: -1;
+        border-radius: 13px;
+        display: none;
+      }
+
+      .sub_item {
+        display: inline-block;
+        span {
+          font-size: 10px;
+          position: relative;
+          top: 7px;
+        }
+
+        &:first-child {
+          padding-right: 5px;
+          span {
+            top: -7px;
+          }
+        }
+        
+      }
+    }
+  }
+}
+//<!-- DIRECTION WIDGET / ВКЛАДКА "НАПРАВЛЕНИЯ" END-->
 
 
 

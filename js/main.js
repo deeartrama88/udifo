@@ -21,13 +21,21 @@
 
 
         // open / close side menu
-        $(all_currency_side_menu_open_btn).click(function () {
+        $(all_currency_side_menu_open_btn).on('click',function () {
             //find out how much should table shift, depending of screen width
             var paddings = side_menu_set_left();
 
-            $(all_currency_side_menu).toggleClass('open');
+            // $(all_currency_side_menu).toggleClass('open');
+            if($(all_currency_side_menu).hasClass('open'))
+                $(all_currency_side_menu).removeClass('open');
+            else
+                $(all_currency_side_menu).addClass('open');
             // toggle class side_menu_opened to change table
-            $(table_wrap).toggleClass('side_menu_opened');
+            // $(table_wrap).toggleClass('side_menu_opened');
+            if($(table_wrap).hasClass('side_menu_opened'))
+                $(table_wrap).removeClass('side_menu_opened');
+            else
+                $(table_wrap).addClass('side_menu_opened');
             $(often_operation).css({marginLeft: paddings.table });
             $(table_wrap).css({paddingLeft: paddings.table});
             $(direction_widget).css({paddingLeft: paddings.table});

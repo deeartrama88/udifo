@@ -1657,13 +1657,22 @@ footer .bottom_link a {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.direction_tab_widget .actions_line {
-  padding-bottom: 10px;
+.direction_tab_widget .actions_icons i:hover {
+  background: #e3e3e3;
 }
-.direction_tab_widget .main_line > .flex_container {
+.direction_tab_widget .actions_icons i:first-child {
+  margin-right: 10px;
+}
+.direction_tab_widget .actions_icons i:first-child:active:before {
+  content: '\f005';
+}
+.direction_tab_widget .main_line .flex_container {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .direction_tab_widget .add_icon {
   width: 4%;
@@ -1674,17 +1683,17 @@ footer .bottom_link a {
   font-size: 9px;
   line-height: 10px;
   font-family: "LatoBold", sans-serif;
-  padding-top: 6px;
+  padding-top: 11px;
   position: absolute;
   text-align: center;
-  right: -9px;
+  right: -1px;
 }
 .direction_tab_widget .add_icon i {
   width: 40px;
   height: 40px;
   background: #8caa0b;
   text-align: center;
-  padding: 10px 10px 3px;
+  padding: 10px 10px;
   border-radius: 10px;
   box-shadow: 0 3px #657a08;
   cursor: pointer;
@@ -1694,8 +1703,14 @@ footer .bottom_link a {
 }
 .direction_tab_widget .add_icon i:before {
   line-height: 1.3;
+  position: relative;
+  top: 5px;
 }
-.direction_tab_widget i {
+.direction_tab_widget .actions_line {
+  padding-bottom: 10px;
+  position: relative;
+}
+.direction_tab_widget .actions_line i {
   padding: 7px;
   background: #ededed;
   text-align: center;
@@ -1710,6 +1725,36 @@ footer .bottom_link a {
   color: #289fce;
   position: relative;
 }
+.direction_tab_widget .actions_line i.delete_icon:before {
+  position: relative;
+  bottom: 1px;
+}
+.direction_tab_widget .actions_line i.delete_icon.active {
+  background: white;
+  box-shadow: 0 0 5px black;
+}
+.direction_tab_widget .actions_line .text {
+  position: absolute;
+  left: 42%;
+  font-size: 11px;
+  line-height: 12px;
+  text-align: center;
+  top: 3px;
+  font-weight: bold;
+  font-family: "LatoRegular", sans-serif;
+  display: none;
+}
+.direction_tab_widget .actions_line.favorite_active .text {
+  display: block;
+}
+.direction_tab_widget .actions_line .actions_icons {
+  text-transform: uppercase;
+}
+.direction_tab_widget .actions_line .actions_icons.favorite_active i.fa:before {
+  content: 'ok';
+  position: relative;
+  right: 5px;
+}
 .direction_tab_widget .currency_block {
   width: 96%;
   padding-left: 5px;
@@ -1719,11 +1764,70 @@ footer .bottom_link a {
   background: #ededed;
   border-radius: 10px;
   box-shadow: 0 3px 0 #d4d4d4;
-  margin-left: 10px;
+  margin-left: 23px;
   position: relative;
   cursor: pointer;
   display: inline-block;
   margin-bottom: 10px;
+}
+.direction_tab_widget .currency_block .item:first-child {
+  margin-left: 5px;
+}
+.direction_tab_widget .currency_block .item i.favorite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #289fce;
+  display: none;
+  z-index: 1;
+}
+.direction_tab_widget .currency_block .item .delete_block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 106%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1;
+  display: none;
+}
+.direction_tab_widget .currency_block .item .delete_block i {
+  font-size: 30px;
+  color: white;
+  padding-top: 5px;
+}
+.direction_tab_widget .currency_block .item .delete_block.delete_active i {
+  color: red;
+  text-shadow: 0 0 5px white;
+}
+.direction_tab_widget .currency_block .item .delete_block.delete_active i:before {
+  content: '\f1f8';
+}
+.direction_tab_widget .currency_block .item .favorite_block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 106%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 1;
+  display: none;
+  text-align: center;
+}
+.direction_tab_widget .currency_block .item .favorite_block i {
+  color: white;
+  font-size: 28px;
+  position: relative;
+  top: 7px;
+}
+.direction_tab_widget .currency_block .item.favorite_active .favorite_block i.fa:before {
+  content: "\f005";
+}
+.direction_tab_widget .currency_block .item.favorite_active i.favorite {
+  display: block;
 }
 .direction_tab_widget .currency_block .item:hover {
   background: #e5e5e5;

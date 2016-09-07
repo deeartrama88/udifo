@@ -140,6 +140,35 @@
         }
         add_favorite();
 
+
+    //    DIRECTION WIDGET(LINE) / ВКЛАДКА "НАПРАВЛЕНИЯ"
+        $('.direction_tab_widget .actions_line i.fa.fa-star-o').on('click', function(){
+            // add favorite styles
+            $(this).parent().toggleClass('favorite_active');
+            $('.direction_tab_widget .actions_line').toggleClass('favorite_active');
+            $('.direction_tab_widget .favorite_block').fadeToggle(100);
+            // remove delete block styles
+            $('.direction_tab_widget .actions_line').removeClass('delete_active');
+            $('.direction_tab_widget .delete_block').fadeOut(100);
+            $('.direction_tab_widget .actions_line .delete_icon').removeClass('active');
+        });
+        $('.direction_tab_widget .currency_block .favorite_block').on('click', function () {
+            $(this).parent().toggleClass('favorite_active');
+        });
+        $('.direction_tab_widget .currency_block .delete_block').on('click', function () {
+            $(this).toggleClass('delete_active');
+        });
+        $('.direction_tab_widget .actions_line .delete_icon').on('click', function(){
+            // add delete styles
+            $(this).toggleClass('active');
+            $('.direction_tab_widget .actions_line').toggleClass('delete_active');
+            $('.direction_tab_widget .delete_block').fadeToggle(100);
+            // remove all concerning favorite
+            $('.direction_tab_widget .actions_line').removeClass('favorite_active');
+            $('.direction_tab_widget .favorite_block').fadeOut(100);
+            $('.direction_tab_widget .actions_icons').removeClass('favorite_active');
+        });
+
     });
 
 

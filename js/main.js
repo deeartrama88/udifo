@@ -169,6 +169,21 @@
             $('.direction_tab_widget .actions_icons').removeClass('favorite_active');
         });
 
+        $('.news_filter select').niceSelect();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     });
 
 

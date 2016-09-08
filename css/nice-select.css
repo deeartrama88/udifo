@@ -1,7 +1,7 @@
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 2px;
   border: solid 1px #e8e8e8;
   box-sizing: border-box;
   clear: both;
@@ -119,6 +119,7 @@
     outline: none;
     padding-left: 18px;
     padding-right: 29px;
+      display: block;
     text-align: left;
     -webkit-transition: all 0.2s;
     transition: all 0.2s; }

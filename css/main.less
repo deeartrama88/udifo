@@ -2231,7 +2231,6 @@ footer {
         width: 103.5%;
         height: 118%;
         position: absolute;
-        z-index: 0;
         left: -2px;
         top: -2px;
         background: #8caa0b;
@@ -2263,13 +2262,230 @@ footer {
 
 
 
+// ---------------------------------------------------------------------------//
+// ---------------------------------------------------------------------------//
+// ---------------------------------------------------------------------------//
+                            // ALL NEWS PAGE
+
+// <!-- NEWS FILTER ON TOP/ФИЛЬТР НОВОСТЕЙ -->
+
+.side_all_currency_widget.news_page {
+  margin-top: 180px;
+}
+
+.news_filter {
+  font-size: 14px;
+  font-family:'LatoBlack', sans-serif;
+  padding: 25px 0;
+
+  .flex_container {
+    align-items: center;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        padding-right: 15px;
+        transition: all 0.1s ease;
+
+        &.active {
+          color: @main_green;
+          text-decoration: underline;
+        }
+
+        &:hover {
+          color: @main_green;
+          text-decoration: underline;
+        }
+
+        &:after {
+          content: '';
+          width: 15px;
+          height: 2px;
+          background: @dark_grey;
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 9px;
+          transform: rotate(90deg);
+        }
+      }
+      &:last-child {
+        a {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  select {
+
+  }
+
+}
+//<!-- NEWS FILTER ON TOP END / ФИЛЬТР НОВОСТЕЙ КОНЕЦ -->
+
+//<!-- BIG NEWS / БОЛЬШИЕ НОВОСТИ -->
+.big_news, .small_news {
+  margin-bottom: 40px;
+
+  .pagination_block {
+    padding: 0;
+
+    .pagination_setting {
+      top: 0;
+    }
+  }
+
+  .news {
+    max-width: 500px;
+    margin-bottom: 10px;
+
+    &.has_video {
+      .youtube {
+        display: block;
+      }
+    }
+
+    .youtube {
+      display: none;
+      position: absolute;
+      top: 50%;
+      width: 50px;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+    }
+
+    .flex_container {
+      align-items: flex-end;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .title {
+      font-size: 17px;
+      color: @main_green;
+      font-family: 'LatoBold', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 15px 0 5px;
+    }
+    .category {
+      color: @main_green;
+      font-family: 'LatoBold', sans-serif;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    .desc {
+      font-family: 'LatoRegular', sans-serif;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+    .more {
+      font-size: 13px;
+      text-transform: uppercase;
+      color: @main_green;
+      font-weight: bold;
+      font-family: 'LatoBold', sans-serif;
+      transition: all 0.1s ease;
+
+      i {
+        transition: all 0.2s ease;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        i {
+          padding-left: 10px;
+        }
+      }
+    }
+    .social {
+      .tweeter {
+        background: #0c7daa;
+        color: white;
+        padding: 5px 3px 5px;
+        border-radius: 4px;
+        font-size: 12px;
+        margin-right: 4px;
+        position: relative;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 10px;
+          height: 2px;
+          position: absolute;
+          left: 19px;
+          top: 10px;
+          background: #0c688e;
+          transform: rotate(90deg);
+          border-top: 1px solid #4da6ca;
+        }
+      }
+      i {
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 4px;
+        display: inline-block;
+        background: cornflowerblue;
+        color: white;
+        cursor: hand;
+
+        &.fa-vk { background: #4f7196; }
+        &.fa-facebook { background: #3f5a96; }
+        &.fa-twitter { background: #0c7daa; }
+        &.fa-google-plus { background: #4f4848; }
+      }
+    }
+  }
+
+  .img_block {
+    position: relative;
+
+    .views {
+      position: absolute;
+      color: white;
+      bottom: 10px;
+      left: 10px;
+
+      span {
+        padding-right: 20px;
+      }
+      i {
+        padding-right: 5px;
+      }
+    }
+  }
+}
+//<!-- BIG NEWS END / БОЛЬШИЕ НОВОСТИ КОНЕЦ -->
+.small_news {
+  .news {
+    max-width: 31%;
+    margin-bottom: 55px;
+  }
+}
+//<!-- SMALL NEWS / МАЛЕНТКИЕ НОВОСТИ -->
+
+//<!-- SMALL NEWS END / МАЛЕНЬКИЕ НОВОСТИ КОНЕЦ -->
 
 
-
-
-
-
-
+                              // ALL NEWS PAGE END
+// ---------------------------------------------------------------------------//
+// ---------------------------------------------------------------------------//
+// ---------------------------------------------------------------------------//
 
 
 

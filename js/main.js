@@ -14,13 +14,17 @@
         var often_operation = $('.often_questions');
         // table wrap
         var table_wrap = $('.table_wrap');
+        // TAB НАПРАВЛЕНИЯ
+        var direction_tab = $('.direction_tab_widget');
         // all currencies side menu selector when its open
         var all_currency_side_menu_open = $('.side_all_currency_widget');
+        // BIG NEWS BLOCK ( AT NEWS PAGE, 2 BIG NEWS)
+        var big_news = $('.big_news');
 
         var side_menu_width = 360;
 
 
-        // open / close side menu
+        // open / close side menu and set left padding to all elements
         $(all_currency_side_menu_open_btn).on('click',function () {
             //find out how much should table shift, depending of screen width
             var paddings = side_menu_set_left();
@@ -36,9 +40,22 @@
                 $(table_wrap).removeClass('side_menu_opened');
             else
                 $(table_wrap).addClass('side_menu_opened');
-            $(often_operation).css({marginLeft: paddings.table });
-            $(table_wrap).css({paddingLeft: paddings.table});
-            $(direction_widget).css({paddingLeft: paddings.table});
+
+            // set left padding to  ЧАСТЫЕ ВОПРОСЫ
+            if($(often_operation))
+                $(often_operation).css({marginLeft: paddings.table });
+            // set left padding to TABLE
+            if($(table_wrap))
+                $(table_wrap).css({paddingLeft: paddings.table});
+            // set left padding to DIRECTION WIDGET
+            if($(direction_widget))
+                $(direction_widget).css({paddingLeft: paddings.table});
+            // set left padding to НАПРАВЛЕНИЯ
+            if($(direction_tab))
+                $(direction_tab).css({paddingLeft: paddings.table});
+            // set left padding to BIG NEWS at news page
+            if($(big_news))
+                $(big_news).css({paddingLeft: paddings.table});
 
         });
 
@@ -56,7 +73,7 @@
             if(!side_menu_set_left_check_){
                 var window_width = window.outerWidth;
                 // hole window minus container width and divide it on 2 - to find out padding left
-                // then set side menu left property to this value, fo appropriate left padding...
+                // then set side menu left property to this value, for appropriate left padding...
                 result.table = (window_width - 1170)/2-370;
                 result.often = (window_width - 1170)/2-442;
                 result.table = Math.abs(result.table);
@@ -169,7 +186,10 @@
             $('.direction_tab_widget .actions_icons').removeClass('favorite_active');
         });
 
+        // nice select init on news page, to filter news select
         $('.news_filter select').niceSelect();
+
+        //
 
 
 

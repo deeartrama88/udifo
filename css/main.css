@@ -1675,7 +1675,7 @@ footer .bottom_link a {
           align-items: baseline;
 }
 .direction_tab_widget .add_icon {
-  width: 4%;
+  width: 5%;
   position: relative;
   display: inline-block;
 }
@@ -1756,7 +1756,7 @@ footer .bottom_link a {
   right: 5px;
 }
 .direction_tab_widget .currency_block {
-  width: 96%;
+  width: 95%;
   padding-left: 5px;
 }
 .direction_tab_widget .currency_block .item {
@@ -1764,7 +1764,7 @@ footer .bottom_link a {
   background: #ededed;
   border-radius: 10px;
   box-shadow: 0 3px 0 #d4d4d4;
-  margin-left: 23px;
+  margin-left: 21.5px;
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -1951,6 +1951,7 @@ footer .bottom_link a {
 .small_news .news {
   max-width: 500px;
   margin-bottom: 10px;
+  width: 49%;
 }
 .big_news .news.has_video .youtube,
 .small_news .news.has_video .youtube {

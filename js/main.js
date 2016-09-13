@@ -192,6 +192,29 @@
         //
 
 
+        //  ADD CURRENCIES WIDGET ( VIA GREEN PLUS ICON )
+        var first_padding = $('#pop_up_currecy .tab.pay_systems .icons_each.open .sub_body').height();
+        $('#pop_up_currecy .tab.pay_systems').css({'paddingBottom': first_padding+5});
+        function add_currency_widget() {
+            $('#pop_up_currecy .tab.pay_systems .icons_each').hover(function () {
+                var padding = $(this).find('.sub_body').height()+5;
+                $(this).parent().find('.icons_each').removeClass('open').parent().parent().parent().css({'paddingBottom': padding});
+                $(this).addClass('open');
+            });
+            $('#pop_up_currecy .tab .title').on('click', function(){
+                $(this).parent().find('.tab_body').toggle(0);
+                $(this).toggleClass('open');
+            });
+            $('#pop_up_currecy .tab.pay_systems .title').on('click', function () {
+                if(!$(this).parent().find('.tab_body').is(':visible')){
+                    $('#pop_up_currecy .tab.pay_systems').attr('style', 'paddingBottom: 0px');
+                }
+            })
+        }
+        add_currency_widget();
+        $('.icons_each.add_icon .icon_img_block').on('click', function () {
+            $(this).parent().find('.add_currency_pop_up_block').fadeToggle(100);
+        })
 
 
 

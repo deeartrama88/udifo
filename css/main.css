@@ -2093,6 +2093,146 @@ footer .bottom_link a {
   max-width: 31%;
   margin-bottom: 55px;
 }
+.add_currency_pop_up_block#pop_up_currecy {
+  width: 365px;
+  background: #f6f6f6;
+  padding: 20px 0 0;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  border-bottom: 2px solid #8caa0b;
+  box-shadow: 0 0 15px #a5a5a5;
+}
+.add_currency_pop_up_block#pop_up_currecy .flex_container {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.add_currency_pop_up_block#pop_up_currecy .title {
+  padding: 10px 0;
+}
+.add_currency_pop_up_block#pop_up_currecy .title.open i {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.add_currency_pop_up_block#pop_up_currecy .search_block {
+  width: 195px;
+  text-align: left;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.add_currency_pop_up_block#pop_up_currecy .search_block .search_currency_in_pop_up {
+  width: 195px;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  padding: 10px 13px;
+  border: 1px solid #ededed;
+  font-size: 11px;
+  color: #d8d8d8;
+}
+.add_currency_pop_up_block#pop_up_currecy .search_block i {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  font-size: 17px;
+}
+.add_currency_pop_up_block#pop_up_currecy .icon_img_block {
+  background: white;
+  box-shadow: 0 3px 0 #d4d4d4;
+  margin: 0 10px;
+}
+.add_currency_pop_up_block#pop_up_currecy .icon_img_block span {
+  padding-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline;
+}
+.add_currency_pop_up_block#pop_up_currecy .last_currencies {
+  padding: 0 0 25px;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab {
+  position: relative;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab.pay_systems .icons_each .sub_body {
+  display: none;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab.pay_systems .icons_each.open .icon_img_block:before {
+  opacity: 1;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab.pay_systems .icons_each.open .sub_body {
+  display: block;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab.pay_systems .icons_each.open .sub_body .icon_img_block:before {
+  opacity: 0;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab.pay_systems .icons_each.open .sub_body .icon_img_block:hover:before {
+  opacity: 1;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab.pay_systems .icons_each.open:after {
+  display: block;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .title {
+  background: #8caa0b;
+  color: white;
+  font-weight: bold;
+  font-family: "LatoBold", sans-serif;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .title:hover {
+  background: #789209;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .title i {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body {
+  padding: 15px 0 25px;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body .icons_each {
+  margin-bottom: 10px;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body .sub_body {
+  position: absolute;
+  width: 100%;
+  background: #eaeaea;
+  padding-bottom: 10px;
+  bottom: 0;
+  left: 0;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body .sub_body .currencies_text .icon_img_block {
+  font-size: 10px;
+  text-transform: uppercase;
+  height: 30px;
+  width: 47px;
+  margin-bottom: 10px;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body .sub_body .currencies_text .icon_img_block.active {
+  background: #8caa0b;
+  box-shadow: 0 3px #657a08;
+  color: white;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body .sub_body .currencies_text .icon_img_block:hover:before {
+  width: 109%;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body .sub_body .title {
+  background: #eaeaea;
+  color: #555555;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body .sub_body .systems {
+  margin-top: 15px;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body .sub_body .systems .icon_img_block {
+  display: inline-block;
+}
+.add_currency_pop_up_block#pop_up_currecy .tab .tab_body .sub_body .icon_img_block {
+  display: inline-block;
+}
 @media only screen and (max-width: 1218px) {
   .direction_widget .widget_main_block .main_line .icons_each:last-child {
     display: none;

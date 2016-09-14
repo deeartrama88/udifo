@@ -189,7 +189,8 @@
         // nice select init on news page, to filter news select
         $('.news_filter select').niceSelect();
 
-        //
+        // comments select init
+        $('.comments select').niceSelect();
 
 
         //  ADD CURRENCIES WIDGET ( VIA GREEN PLUS ICON )

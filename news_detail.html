@@ -1009,11 +1009,11 @@
                 <i class="fa fa-angle-left"></i> <a href="#">Назад к списку статей</a>
             </div>
             <div class="big_image_block">
-                <img src="images/news/news3.jpg" alt="news3">
+                <img src="images/news/news4.jpg" alt="news3">
                 <div class="title_to_image">АВТОРИЗАЦИЯ В СИСТЕМЕ <br> ЯНДЕКС ДЕНЬГИ</div>
             </div>
             <div class="views_line">
-                Опубликовано: <span class="date">21 Июня, 2015</span>
+                Опубликовано: <span class="date">21 Июня 2015 |</span>
                 <span class="views">
                     <i class="fa fa-eye" aria-hidden="true"></i>1023
                     <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>123
@@ -1033,26 +1033,28 @@
                 tincidunt nisl, eget placerat erat. Morbi ornare mollis quam,
                 sit amet vestibulum erat pharetra vitae:
             </p>
-            <ol>
+            <ul type="square">
                 <li>Consectetur adipiscing elit vtae elit libero</li>
                 <li>Nullam id dolor id eget lacinia odio posuere erat a ante</li>
                 <li>Integer posuere erat dapibus posuere velit</li>
-            </ol>
+            </ul>
             <p>
                 Nulla sed mi leo, sit amet molestie nulla. Phasellus lobortis blandit ipsum, at adipiscing eros
                 porta quis. Phasellus in nisi ipsum, quis dapibus magna. @Phasellus odio dolor, pretium sit amet
                 aliquam a, gravida eget dui. Pellentesque eu ipsum et quam faucibus scelerisque vitae ut ligula.
                 Ut luctus fermentum commodo. Mauris eget justo turpis, eget
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ccytPBSRx7w" frameborder="0" allowfullscreen></iframe>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ccytPBSRx7w" frameborder="0" allowfullscreen></iframe>
+            </div>
             <div class="citation_block">
                 <div class="flex_container">
-                    <div class="right_part">
+                    <div class="left_part">
                         Proin rhoncus semper sem nec aliquet. Aenean lacinia bibendum 
                         nulla sed consectetur mattis consectetur purus sit amet.
-                        <span class="quote">"</span>
+                        <span class="quote"><i class="fa fa-quote-right" aria-hidden="true"></i></span>
                     </div>
-                    <div class="left_part">
+                    <div class="right_part">
                         <p>
                             Morbi viverra tincidunt nisl, eget placerat erat.
                             Morbi ornare mollis quam, sit amet vestibulum
@@ -1062,6 +1064,7 @@
                 </div>
             </div>
             <div class="social">
+                <span class="title">ПОДЕЛИТСЯ: </span>
                 <i class="fa fa-vk" aria-hidden="true"></i>
                 <i class="fa fa-facebook" aria-hidden="true"></i>
                 <span class="tweeter">
@@ -1160,11 +1163,13 @@
                 </div>
                 <div class="log_in">
                     <div class="amount">1</div>
-                    <select name="comments_log_in" id="comments_log_in" class="enter">
-                        <option value="">Войти</option>
-                        <option value="">Зарегестрироваться</option>
-                        <option value="">Залогинится</option>
-                    </select>
+                    <div class="select_wrap">
+                        <select name="comments_log_in" id="comments_log_in" class="enter">
+                            <option value="">Войти</option>
+                            <option value="">Зарегестрироваться</option>
+                            <option value="">Залогинится</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1181,6 +1186,146 @@
                 </select>
             </div>
         </div>
+        
+        <div class="comment_input_block">
+            <i class="fa fa-user placeholder" aria-hidden="true"></i>
+            <input type="text" name="comment_input">
+        </div>
+        
+        <div class="comments_list">
+            <ul>
+                <li>
+                    <div class="comments_each">
+                        <div class="flex_container">
+                            <i class="fa fa-user placeholder" aria-hidden="true"></i>
+                            <div class="content">
+                                <div class="name_date">
+                                    <span class="name"><a href="#">aka_maestro</a></span>
+                                    <span class="date">2 года назад</span>
+                                </div>
+                                <div class="comment_text">
+                                    Отличная работа. Спасибо!
+                                </div>
+                                <div class="like_block">
+                                    <span class="amount">1</span>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <span class="answer">Ответить</span>
+                                    <span class="answer">Поделится</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="comments_each">
+                        <div class="flex_container">
+                            <i class="fa fa-user placeholder" aria-hidden="true"></i>
+                            <div class="content">
+                                <div class="name_date">
+                                    <span class="name">aka_maestro</span>
+                                    <span class="date">2 года назад</span>
+                                </div>
+                                <div class="comment_text">
+                                    Отличная работа. Спасибо!
+                                </div>
+                                <div class="like_block">
+                                    <span class="amount">1</span>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <span class="answer">Ответить</span>
+                                    <span class="answer">Поделится</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="comments_each">
+                        <div class="flex_container">
+                            <div class="avatar">
+                                <i class="fa fa-user placeholder" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <div class="name_date">
+                                    <span class="name">aka_maestro</span>
+                                    <span class="date">2 года назад</span>
+                                </div>
+                                <div class="comment_text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis
+                                    excepturi inventore iusto maxime ratione rem repellendus sed, tempore voluptatibus?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis
+                                    excepturi inventore iusto maxime ratione rem repellendus sed, tempore voluptatibus?
+                                </div>
+                                <div class="like_block">
+                                    <span class="amount">1</span>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <span class="answer">Ответить</span>
+                                    <span class="answer">Поделится</span>
+                                </div>
+
+                                <div class="sub_comment">
+                                    <div class="flex_container">
+                                        <div class="avatar">
+                                            <i class="fa fa-user placeholder" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="content">
+                                            <div class="name_date">
+                                                <span class="name">aka_maestro</span>
+                                                <span class="date">2 года назад</span>
+                                            </div>
+                                            <div class="comment_text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis
+                                                excepturi inventore iusto maxime ratione rem repellendus sed, tempore voluptatibus?
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis
+                                                excepturi inventore iusto maxime ratione rem repellendus sed, tempore voluptatibus?
+                                            </div>
+                                            <div class="like_block">
+                                                <span class="amount">1</span>
+                                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                <span class="answer">Ответить</span>
+                                                <span class="answer">Поделится</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sub_comment">
+                                    <div class="flex_container">
+                                        <div class="avatar">
+                                            <i class="fa fa-user placeholder" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="content">
+                                            <div class="name_date">
+                                                <span class="name">aka_maestro</span>
+                                                <span class="moderator">Модератор</span>
+                                                <i class="fa fa-share" aria-hidden="true"></i>
+                                                <span class="date">2 года назад</span>
+                                            </div>
+                                            <div class="comment_text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis
+                                                excepturi inventore iusto maxime ratione rem repellendus sed, tempore voluptatibus?
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corporis
+                                                excepturi inventore iusto maxime ratione rem repellendus sed, tempore voluptatibus?
+                                            </div>
+                                            <div class="like_block">
+                                                <span class="amount">1</span>
+                                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                <span class="answer">Ответить</span>
+                                                <span class="answer">Поделится</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 </section>
 <!-- COMMENTS BLOCK END -->

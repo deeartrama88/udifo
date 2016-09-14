@@ -16,6 +16,8 @@
         var table_wrap = $('.table_wrap');
         // TAB НАПРАВЛЕНИЯ
         var direction_tab = $('.direction_tab_widget');
+        // FAQ wraper
+        var faq_wrapper = $('.faq_wrapper');
         // all currencies side menu selector when its open
         var all_currency_side_menu_open = $('.side_all_currency_widget');
         // BIG NEWS BLOCK ( AT NEWS PAGE, 2 BIG NEWS)
@@ -56,6 +58,9 @@
             // set left padding to BIG NEWS at news page
             if($(big_news))
                 $(big_news).css({paddingLeft: paddings.table});
+            // set left padding to BIG NEWS at news page
+            if($(faq_wrapper))
+                $(faq_wrapper).css({paddingLeft: paddings.table});
 
         });
 
@@ -218,6 +223,14 @@
         })
 
 
+        // FAQ PAGE TABS
+        $('.faq_tab .tab_title').on('click', function () {
+            $(this).parent().toggleClass('active');
+        })
+        $('.faq_tab .question_title').on('click', function () {
+            $(this).toggleClass('active').siblings('.question_body').slideToggle(200);
+        })
+        $('.faq_tab:first-child .tab_title').trigger('click');
 
 
 

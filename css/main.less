@@ -54,21 +54,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
-.icon-calculator_icon:before{content:'\0041';}
-.icon-close_icon:before{content:'\0042';}
-.icon-delete_icon:before{content:'\0043';}
-.icon-download_icon:before{content:'\0044';}
-.icon-exchange_icon:before{content:'\0045';}
-.icon-face_icon:before{content:'\0046';}
-.icon-favorite_icon:before{content:'\0047';}
-.icon-gear_icon:before{content:'\0048';}
-.icon-message_icon:before{content:'\0049';}
-.icon-news_icon:before{content:'\004a';}
-.icon-plus_icon:before{content:'\004b';}
-.icon-reverse_icon:before{content:'\004c';}
-.icon-search_icon:before{content:'\004d';}
-.icon-standalone_icon:before{content:'\004e';}
-.icon-reverse_2_icon:before{content:'\004f';}
+.icon-news_icon:before{content:'\0041';}
+.icon-plus_icon:before{content:'\0042';}
+.icon-message_icon:before{content:'\0043';}
+.icon-reverse_2_icon:before{content:'\0044';}
+.icon-reverse_icon:before{content:'\0045';}
+.icon-search_icon:before{content:'\0046';}
+.icon-standalone_icon:before{content:'\0047';}
+.icon-calculator_icon:before{content:'\0048';}
+.icon-close_icon:before{content:'\0049';}
+.icon-delete_icon:before{content:'\004a';}
+.icon-download_icon:before{content:'\004b';}
+.icon-exchange_icon:before{content:'\004c';}
+.icon-face_icon:before{content:'\004d';}
+.icon-faq_open:before{content:'\004e';}
+.icon-favorite_icon:before{content:'\004f';}
+.icon-gear_icon:before{content:'\0050';}
 
 @main_green: #8caa0b;
 @light_grey: #ededed;
@@ -1942,6 +1943,7 @@ footer {
   padding-right: 30px;
   z-index:2;
   top: 38px;
+  display: none;
 
   input {
     width: 100%;
@@ -2502,6 +2504,7 @@ iframe[id='^twitter']{}
   z-index: 1;
   border-bottom: 2px solid @main_green;
   box-shadow: 0 0 15px #a5a5a5;
+  display: none;
 
   .flex_container {
     justify-content: flex-start;
@@ -2767,7 +2770,7 @@ iframe[id='^twitter']{}
     padding-bottom: 20px;
     border-bottom: 1px solid @light_grey;
 
-    .left_part {
+    .left_part, blockquote {
       font-size: 18px;
       border-left: 6px solid @main_green;
       background: @light_grey;
@@ -3062,6 +3065,178 @@ iframe[id='^twitter']{}
 // ---------------------------------------------------------------------------//
 // ---------------------------// DETAILS NEWS    -----------------------------//
 // ---------------------------------------------------------------------------//
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------//
+// ---------------------------// DETAILS NEWS    -----------------------------//
+// ---------------------------------------------------------------------------//
+.faq_wrapper {
+  padding: 30px 0;
+  font-size: 15px;
+  color: lightslategrey;
+
+  .main_title {
+    font-size: 30px;
+    font-family:'LatoBold', sans-serif;
+    color: @dark_grey;
+    text-align: center;
+  }
+
+  .search {
+
+    .input {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+      input {
+        font-size: 12px;
+        padding: 15px;
+        border: 1px solid lightgrey;
+        width: 300px;
+        display: inline-block;
+      }
+      i {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+  .ask_question {
+    span {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    button {
+      border-radius: 5px;
+      border:none;
+      display: inline-block;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 5px 8px 1px;
+      font-family: 'LatoBold', sans-serif;
+      background: @main_green;
+      box-shadow: 0 3px 0 darken(@main_green, 10%);
+      outline: none;
+
+      &:hover {
+        background: darken(@main_green, 5%);
+      }
+      &:active {
+        box-shadow: none;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+
+  .faq_tab {
+    margin-top: 20px;
+
+    &.active {
+      .tab_title {
+        background: none;
+        border: 2px solid @main_green;
+        border-radius: 5px;
+        box-shadow: none;
+      }
+      .tab_body {
+        display: block;
+      }
+    }
+
+    .tab_title {
+      padding: 15px 20px 10px;
+      //border: 2px solid @main_green;
+      border-radius: 5px;
+      width: 100%;
+      display: block;
+      position: relative;
+      background: @light_grey;
+      box-shadow: 0 3px 0 darken(@light_grey, 10%);
+      cursor: pointer;
+      
+      &:hover {
+        background: darken(@light_grey, 5%);
+      }
+
+      .title {
+        display: inline-block;
+        color: @dark_grey;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-family: 'LatoBold', sans-serif;
+      }
+      i {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      .num {
+        position: absolute;
+        right: 15px;
+        top: 16px;
+        font-weight: bold;
+      }
+    }
+
+    .tab_body {
+      display: none;
+
+      .questions_block{
+        &.active {
+          .question_body {
+            display: block;
+          }
+        }
+      }
+      .question_title {
+        color: @main_green;
+        font-family: 'LatoBold', sans-serif;
+        margin: 20px 0;
+        font-size: 15px;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+        &.active {
+          text-decoration: underline;
+        }
+      }
+      .question_body {
+        display: none;
+        &:after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+        .video {
+          float: left;
+          margin-right: 20px;
+        }
+        .text {
+
+        }
+      }
+    }
+  }
+}
+
+.ai_baseline {
+  align-items: baseline;
+}
+
+// ---------------------------------------------------------------------------//
+// ---------------------------// DETAILS NEWS    -----------------------------//
+// ---------------------------------------------------------------------------//
+
+
 
 
 

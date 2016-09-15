@@ -3239,7 +3239,109 @@ iframe[id='^twitter']{}
 
 
 
+// ---------------------------------------------------------------------------//
+// ---------------------------// CONTACTS        -----------------------------//
+// ---------------------------------------------------------------------------//
+.contacts_wrapper {
 
+  .call_block {
+    padding: 40px 0 20px;
+    font-size: 13px;
+
+    i {
+      font-size: 60px;
+      padding: 20px 0 30px;
+    }
+
+    .title {
+      font-size: 16px;
+      color: @dark_grey;
+      font-family: 'LatoBold', sans-serif;
+    }
+
+    .phone_text {
+      padding: 6px 0 5px;
+    }
+
+    a {
+      color: @main_green;
+      display: block;
+    }
+
+    .phone {
+      width: 50%;
+      text-align: center;
+
+      a {
+        display: inline-block;
+      }
+
+      border-right: 1px solid @separate_gray;
+    }
+    .mail {
+      width: 50%;
+      text-align: center;
+      a {
+        padding: 3px;
+      }
+    }
+  }
+
+  .form_title {
+    font-size: 18px;
+    color: @dark_grey;
+    font-weight: bold;
+    font-family: 'LatoBold', sans-serif;
+    text-align: center;
+    padding: 60px 0 40px;
+  }
+
+  .form_wrapper {
+    padding-bottom: 150px;
+
+    label {
+      margin: 0;
+    }
+    input, select, textarea {
+      padding: 15px;
+      border: 1px solid @separate_gray;
+      display: block;
+      width: 100%;
+    }
+    .form_group {
+      width: 100%;
+      max-width: 360px;
+      margin: auto;
+      padding-bottom: 20px;
+    }
+    button {
+      margin: auto;
+      display: block;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      font-family: 'Lato Black', sans-serif;
+      background: @main_green;
+      padding: 10px 25px 5px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 darken(@main_green, 10%);
+      outline: none;
+      &:hover {
+        background: darken(@main_green, 2%);
+      }
+      &:active {
+        box-shadow: none;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+}
+// ---------------------------------------------------------------------------//
+// ---------------------------// CONTACTS        -----------------------------//
+// ---------------------------------------------------------------------------//
 
 
 

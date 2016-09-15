@@ -2692,6 +2692,92 @@ footer .bottom_link a {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+.contacts_wrapper .call_block {
+  padding: 40px 0 20px;
+  font-size: 13px;
+}
+.contacts_wrapper .call_block i {
+  font-size: 60px;
+  padding: 20px 0 30px;
+}
+.contacts_wrapper .call_block .title {
+  font-size: 16px;
+  color: #333333;
+  font-family: 'LatoBold', sans-serif;
+}
+.contacts_wrapper .call_block .phone_text {
+  padding: 6px 0 5px;
+}
+.contacts_wrapper .call_block a {
+  color: #8caa0b;
+  display: block;
+}
+.contacts_wrapper .call_block .phone {
+  width: 50%;
+  text-align: center;
+  border-right: 1px solid #d8d8d8;
+}
+.contacts_wrapper .call_block .phone a {
+  display: inline-block;
+}
+.contacts_wrapper .call_block .mail {
+  width: 50%;
+  text-align: center;
+}
+.contacts_wrapper .call_block .mail a {
+  padding: 3px;
+}
+.contacts_wrapper .form_title {
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold;
+  font-family: 'LatoBold', sans-serif;
+  text-align: center;
+  padding: 60px 0 40px;
+}
+.contacts_wrapper .form_wrapper {
+  padding-bottom: 150px;
+}
+.contacts_wrapper .form_wrapper label {
+  margin: 0;
+}
+.contacts_wrapper .form_wrapper input,
+.contacts_wrapper .form_wrapper select,
+.contacts_wrapper .form_wrapper textarea {
+  padding: 15px;
+  border: 1px solid #d8d8d8;
+  display: block;
+  width: 100%;
+}
+.contacts_wrapper .form_wrapper .form_group {
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.contacts_wrapper .form_wrapper button {
+  margin: auto;
+  display: block;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-family: 'Lato Black', sans-serif;
+  background: #8caa0b;
+  padding: 10px 25px 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 #657a08;
+  outline: none;
+}
+.contacts_wrapper .form_wrapper button:hover {
+  background: #84a00a;
+}
+.contacts_wrapper .form_wrapper button:active {
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+}
 @media only screen and (max-width: 1218px) {
   .direction_widget .widget_main_block .main_line .icons_each:last-child {
     display: none;

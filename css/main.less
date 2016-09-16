@@ -363,7 +363,7 @@ header {
       font-weight: bold;
 
       .header_second_menu {
-        width: 88%;
+        width: 80%;
         
           li{
             width: 20%;
@@ -405,10 +405,24 @@ header {
 
       // header cabinet link
       .user_cabinet {
-        color: @main_green;
+        position: relative;
         font-size: 12px;
         font-family: 'LatoBold', sans-serif;
         padding-top: 3px;
+        .user-name{
+          position: relative;
+          color: @main_green;
+          cursor: pointer;
+          margin-right: 25px;
+          overflow: hidden;
+        }
+        .go_away{
+          position: absolute;
+          right: 0;
+          top: 0;
+          font-size: 16px;
+          color: @main_green;
+        }
       }
     }
   }

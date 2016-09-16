@@ -317,7 +317,7 @@ header .main_block .second_menu {
   font-weight: bold;
 }
 header .main_block .second_menu .header_second_menu {
-  width: 88%;
+  width: 80%;
 }
 header .main_block .second_menu .header_second_menu li {
   width: 20%;
@@ -346,10 +346,24 @@ header .main_block .second_menu .header_second_menu li:hover a:after {
   left: 0;
 }
 header .main_block .second_menu .user_cabinet {
-  color: #8caa0b;
+  position: relative;
   font-size: 12px;
   font-family: 'LatoBold', sans-serif;
   padding-top: 3px;
+}
+header .main_block .second_menu .user_cabinet .user-name {
+  position: relative;
+  color: #8caa0b;
+  cursor: pointer;
+  margin-right: 25px;
+  overflow: hidden;
+}
+header .main_block .second_menu .user_cabinet .go_away {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  color: #8caa0b;
 }
 .under_header_gray_line {
   background: #ededed;

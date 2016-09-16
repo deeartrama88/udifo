@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitoring Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/ion.checkRadio.css">
+    <link rel="stylesheet" href="css/ion.checkRadio.green.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!--  HEADER -->
+<header>
+
+    <div class="header_top_line">
+        <div class="courses">Курсов: <span class="courses_amount">5042</span></div>
+        <div class="exchanges">Обменников: <span class="exchanges_amount">143</span></div>
+        <div class="refreshes">Обновление: <span class="refreshes_time">12:43</span><span class="icon-reverse_2_icon"></span></div>
+    </div>
+
+    <div class="container">
+
+        <div class="header_main">
+            <div class="flex_container">
+
+                <div class="logo_block">
+                    <img src="images/icons/logo.png" alt="Udifo">
+                    <span>мониторинг обменных пунктов</span>
+                </div>
+
+                <div class="main_block">
+                    <div class="first_menu flex_container">
+                        <ul class="header_first_menu">
+                            <li class="active"><a href="#">Новости</a></li>
+                            <li><a href=#>Статьи</a></li>
+                            <li><a href="#">Wiki</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <ul class="header_soc_icons">
+                            <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="second_menu flex_container">
+                        <ul class="header_second_menu">
+                            <li class="active"><a href="#">О НАС</a></li>
+                            <li><a href="#">ОБМЕННИКИ</a></li>
+                            <li><a href="#">КЛИЕНТАМ</a></li>
+                            <li><a href="#">ПАРТНЕРАМ</a></li>
+                        </ul>
+                        <!-- header cabinet link -->
+                        <div class="user_cabinet">
+                            <a href="#">Кабинет</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- # FLEX CONTAINER -->
+        </div><!-- # MAIN HEADER -->
+
+    </div><!-- # CONTAINER -->
+
+</header>
+<!-- END HEADER -->
+
+<div class="under_header_gray_line">
+    <div class="container">
+        <div class="flex_container">
+            <ul>
+                <li>
+                    <span class="exchanger_name">Perfect Money</span> -
+                    <span class="currency">Bitcoin</span>
+                    <span class="value minus">- 0,5%</span>
+                </li>
+                <li>
+                    <span class="exchanger_name">Qiwi</span> -
+                    <span class="currency">Bitcoin</span>
+                    <span class="value plus">+ 0,5%</span>
+                </li>
+                <li>
+                    <span class="exchanger_name">Perfect Money</span> -
+                    <span class="currency">Bitcoin</span>
+                    <span class="value minus">- 0.5%</span>
+                </li>
+                <li>
+                    <span class="exchanger_name">Qiwi</span> -
+                    <span class="currency">Bitcoin</span>
+                    <span class="value plus">+ 0,5%</span>
+                </li>
+                <li>
+                    <span class="exchanger_name">Perfect Money</span> -
+                    <span class="currency">Bitcoin</span>
+                    <span class="value minus">- 0.5%</span>
+                </li>
+            </ul>
+            <div class="search_block">
+                <i class="icon-news_icon"></i>
+                <i class="icon-search_icon"></i>
+            </div>
+        </div>
+        <!-- SEARCH ELEMENT -->
+        <div class="search_element_wrapper">
+            <input type="text" name="search_input" placeholder="Например: Яндекс деньги">
+            <div class="search_body">
+                <div class="example">here will be some results variants</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NEWS FILTER ON TOP/ФИЛЬТР НОВОСТЕЙ -->
+<div class="news_filter">
+    <div class="container">
+        <div class="flex_container">
+            <div class="filter_block">
+                <ul>
+                    <li><a href="#">Все</a></li>
+                    <li><a href="#" class="active">Наиболее поппулянрные</a></li>
+                    <li><a href="#">Криптовалюты</a></li>
+                    <li><a href="#">Платежные системы</a></li>
+                </ul>
+            </div>
+            <div class="selector">
+                <select name="news_filter" id="news_filter">
+                    <option value="new_at_the_begin">Новые статьи сначала</option>
+                    <option value="new_at_the_begin">Новые статьи сначала</option>
+                    <option value="new_at_the_begin">Новые статьи сначала</option>
+                    <option value="new_at_the_begin">Новые статьи сначала</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- NEWS FILTER ON TOP END / ФИЛЬТР НОВОСТЕЙ КОНЕЦ -->
+
+
+<!-- SIDE MENU (SLIDE LEFT MENU )-->
+<!--<div class="side_all_currency_widget news_page">-->
+
+    <!--&lt;!&ndash; open icon/иконка открытия - закрытия меню всех валют &ndash;&gt;-->
+    <!--<div class="open_icon_wrapper">-->
+        <!--<div class="title">Все <br /> валюты</div>-->
+        <!--<div class="open_icon">-->
+            <!--<span class="open_icon_1"></span>-->
+            <!--<span class="open_icon_2"></span>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; widget body &ndash;&gt;-->
+    <!--<div class="all_currency_widget_body">-->
+        <!--<div class="flex_container_wrap">-->
+            <!--&lt;!&ndash; head &ndash;&gt;-->
+            <!--<div class="head">-->
+                <!--<div class="all active"><span>ВСЕ</span></div>-->
+                <!--<div class="chosen"><span>ИЗБРАННОЕ</span></div>-->
+                <!--<div class="popular"><span>ПОПУЛЯНЫЕ</span></div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; find block/поиск &ndash;&gt;-->
+            <!--<div class="find_block flex_container">-->
+                <!--<div class="item">-->
+                    <!--<div class="title">Отдаете</div>-->
+                    <!--<div class="input_block">-->
+                        <!--<input type="text" name="give_input" placeholder="Например: Яндекс...">-->
+                        <!--<i class="fa fa-search" aria-hidden="true"></i>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="item">-->
+                    <!--<div class="title">Получаете</div>-->
+                    <!--<div class="input_block">-->
+                        <!--<input type="text" name="get_input" placeholder="Например: Яндекс...">-->
+                        <!--<i class="fa fa-search" aria-hidden="true"></i>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end find block/поиск&ndash;&gt;-->
+
+            <!--&lt;!&ndash; cryptocurrency tab/block/криптовалюты &ndash;&gt;-->
+            <!--<div class="ctyptocurrency_tab">-->
+                <!--<div class="title body_toggle">криптовалюты <i class="fa fa-caret-up" aria-hidden="true"></i></div>-->
+                <!--<div class="wrap">-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item active">-->
+                                    <!--<img src="images/icons/bitcoin.png" alt="bitcoin">-->
+                                    <!--<span class="text">BITCOIN</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/litecoin.png" alt="litecoin">-->
+                                    <!--<span class="text">LITECOIN</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/bitcoin.png" alt="bitcoin">-->
+                                    <!--<span class="text">BITCOIN</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/litecoin.png" alt="litecoin">-->
+                                    <!--<span class="text">LITECOIN</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end of cryptocurrency tab/block/криптовалюты &ndash;&gt;-->
+
+            <!--&lt;!&ndash; pay systems tab/block/платежные системы &ndash;&gt;-->
+            <!--<div class="pay_systems">-->
+                <!--&lt;!&ndash; tab content row&ndash;&gt;-->
+                <!--<div class="title body_toggle open">Платежные системы <i class="fa fa-caret-up" aria-hidden="true"></i></div>-->
+                <!--<div class="wrap">-->
+                    <!--<div class="pay_system_title">-->
+                        <!--<img src="images/currency_icons/blue_circle.png" alt="webmoney">-->
+                        <!--<span class="text">webmoney</span>-->
+                    <!--</div>-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmz</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item active">-->
+                                    <!--<span class="text">wme</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmz</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wme</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                                 <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmz</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wme</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmz</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wme</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; tab content row&ndash;&gt;-->
+                    <!--<div class="pay_system_title">-->
+                        <!--<img src="images/currency_icons/qiwi.png" alt="qiwi">-->
+                        <!--<span class="text">qiwi</span>-->
+                    <!--</div>-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmz</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wme</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                                 <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmz</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wme</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item  active">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">wmu</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; tab content row&ndash;&gt;-->
+                    <!--<div class="pay_system_title">-->
+                        <!--<img src="images/currency_icons/wallet.png" alt="yandex money">-->
+                        <!--<span class="text">Яндекс</span>-->
+                    <!--</div>-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item">-->
+                                    <!--<span class="text">яндекс - деньги</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                                 <!--<span class="currency_item">-->
+                                    <!--<span class="text">яндекс - деньги</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; tab content row&ndash;&gt;-->
+                    <!--<div class="pay_system_title">-->
+                        <!--<img src="images/icons/perfect_money.png" alt="Perfect Money">-->
+                        <!--<span class="text">perfect money</span>-->
+                    <!--</div>-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item">-->
+                                    <!--<span class="text">usd</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">eur</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">руб</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                                 <!--<span class="currency_item">-->
+                                    <!--<span class="text">usd</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">eur</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">руб</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; tab content row&ndash;&gt;-->
+                    <!--<div class="pay_system_title">-->
+                        <!--<img src="images/icons/payeer.png" alt="Payeer">-->
+                        <!--<span class="text">payeer</span>-->
+                    <!--</div>-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item">-->
+                                    <!--<span class="text">usd</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">eur</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">руб</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                                 <!--<span class="currency_item">-->
+                                    <!--<span class="text">usd</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">eur</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<span class="text">руб</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+
+                    <!--&lt;!&ndash; tab content row&ndash;&gt;-->
+                    <!--<div class="pay_system_title">-->
+                        <!--<img src="images/icons/okpay.png" alt="Okpay">-->
+                        <!--<span class="text">okpay</span>-->
+                    <!--</div>-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                            <!--<span class="currency_item">-->
+                                <!--<span class="text">usd</span>-->
+                            <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                <!--<span class="text">eur</span>-->
+                            <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                <!--<span class="text">руб</span>-->
+                            <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                             <!--<span class="currency_item">-->
+                                <!--<span class="text">usd</span>-->
+                            <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                <!--<span class="text">eur</span>-->
+                            <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                <!--<span class="text">руб</span>-->
+                            <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; pay systems tab/block/платежные системы &ndash;&gt;-->
+
+            <!--&lt;!&ndash; internet bunking/интернет банкинг &ndash;&gt;-->
+            <!--<div class="internet_bunking">-->
+                <!--<div class="title body_toggle">Интернет - банкинг <i class="fa fa-caret-up" aria-hidden="true"></i></div>-->
+                <!--<div class="wrap">-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item active">-->
+                                    <!--<img src="images/icons/bitcoin.png" alt="bitcoin">-->
+                                    <!--<span class="text">BITCOIN</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/litecoin.png" alt="litecoin">-->
+                                    <!--<span class="text">LITECOIN</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/bitcoin.png" alt="bitcoin">-->
+                                    <!--<span class="text">BITCOIN</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/litecoin.png" alt="litecoin">-->
+                                    <!--<span class="text">LITECOIN</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end of internet bunking/интеренет банкинг &ndash;&gt;-->
+
+            <!--&lt;!&ndash; translating systems/системы переводов &ndash;&gt;-->
+            <!--<div class="translate_systems">-->
+                <!--<div class="title body_toggle">Системы переводов <i class="fa fa-caret-up" aria-hidden="true"></i></div>-->
+                <!--<div class="wrap">-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item active">-->
+                                    <!--<img src="images/icons/bitcoin.png" alt="bitcoin">-->
+                                    <!--<span class="text">BITCOIN</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/litecoin.png" alt="litecoin">-->
+                                    <!--<span class="text">LITECOIN</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/bitcoin.png" alt="bitcoin">-->
+                                    <!--<span class="text">BITCOIN</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/litecoin.png" alt="litecoin">-->
+                                    <!--<span class="text">LITECOIN</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; end of translating systems/системы переводов &ndash;&gt;-->
+
+            <!--&lt;!&ndash; cash/наличные &ndash;&gt;-->
+            <!--<div class="cash">-->
+                <!--<div class="title body_toggle">наличные <i class="fa fa-caret-up" aria-hidden="true"></i></div>-->
+                <!--<div class="wrap">-->
+                    <!--<div class="flex_container">-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item active">-->
+                                    <!--<img src="images/icons/bitcoin.png" alt="bitcoin">-->
+                                    <!--<span class="text">BITCOIN</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/litecoin.png" alt="litecoin">-->
+                                    <!--<span class="text">LITECOIN</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                                <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/bitcoin.png" alt="bitcoin">-->
+                                    <!--<span class="text">BITCOIN</span>-->
+                                <!--</span>-->
+                            <!--<span class="currency_item">-->
+                                    <!--<img src="images/icons/litecoin.png" alt="litecoin">-->
+                                    <!--<span class="text">LITECOIN</span>-->
+                                <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; # flex container &ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; cash/наличные &ndash;&gt;-->
+
+
+        <!--</div>&lt;!&ndash; # flex_container_wrap &ndash;&gt;-->
+    <!--</div>-->
+<!--</div>-->
+<!-- SIDE MENU (SLIDE LEFT MENU ) END -->
+
+
+<div class="slide_section">
+
+    <div class="side_all_currency_widget">
+
+        <!-- open icon/иконка открытия - закрытия меню всех валют -->
+        <div class="open_icon_wrapper">
+            <div class="title">Все <br /> валюты</div>
+            <div class="open_icon">
+                <span class="open_icon_1"></span>
+                <span class="open_icon_2"></span>
+            </div>
+        </div>
+
+        <!-- widget body -->
+        <div class="all_currency_widget_body">
+            <div class="flex_container_wrap">
+                <!-- head -->
+                <div class="head">
+                    <div class="all active"><span>ВСЕ</span></div>
+                    <div class="chosen"><span>ИЗБРАННОЕ</span></div>
+                    <div class="popular"><span>ПОПУЛЯНЫЕ</span></div>
+                </div>
+                <!-- find block/поиск -->
+                <div class="find_block flex_container">
+                    <div class="item">
+                        <div class="title">Отдаете</div>
+                        <div class="input_block">
+                            <input type="text" name="give_input" placeholder="Например: Яндекс...">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">Получаете</div>
+                        <div class="input_block">
+                            <input type="text" name="get_input" placeholder="Например: Яндекс...">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- end find block/поиск-->
+
+                <!-- cryptocurrency tab/block/криптовалюты -->
+                <div class="ctyptocurrency_tab">
+                    <div class="title body_toggle">криптовалюты <i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                    <div class="wrap">
+                        <div class="flex_container">
+                            <div class="item">
+                                <span class="currency_item active">
+                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
+                                    <span class="text">BITCOIN</span>
+                                </span>
+                                <span class="currency_item">
+                                    <img src="images/icons/litecoin.png" alt="litecoin">
+                                    <span class="text">LITECOIN</span>
+                                </span>
+                            </div>
+                            <div class="item">
+                                <span class="currency_item">
+                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
+                                    <span class="text">BITCOIN</span>
+                                </span>
+                                <span class="currency_item">
+                                    <img src="images/icons/litecoin.png" alt="litecoin">
+                                    <span class="text">LITECOIN</span>
+                                </span>
+                            </div>
+                        </div><!-- # flex container -->
+                    </div>
+                </div>
+                <!-- end of cryptocurrency tab/block/криптовалюты -->
+
+                <!-- pay systems tab/block/платежные системы -->
+                <div class="pay_systems">
+                    <!-- tab content row-->
+                    <div class="title body_toggle open">Платежные системы <i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                    <div class="wrap">
+                        <div class="pay_system_title">
+                            <img src="images/currency_icons/blue_circle.png" alt="webmoney">
+                            <span class="text">webmoney</span>
+                        </div>
+                        <div class="flex_container">
+                            <div class="item">
+                                <span class="currency_item">
+                                    <span class="text">wmz</span>
+                                </span>
+                                <span class="currency_item active">
+                                    <span class="text">wme</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmu</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmu</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmz</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wme</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmu</span>
+                                </span>
+                            </div>
+                            <div class="item">
+                                 <span class="currency_item">
+                                    <span class="text">wmz</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wme</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmu</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmu</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmz</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wme</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmu</span>
+                                </span>
+                            </div>
+                        </div><!-- # flex container -->
+
+                        <!-- tab content row-->
+                        <div class="pay_system_title">
+                            <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                            <span class="text">qiwi</span>
+                        </div>
+                        <div class="flex_container">
+                            <div class="item">
+                                <span class="currency_item">
+                                    <span class="text">wmz</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wme</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmu</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmu</span>
+                                </span>
+                            </div>
+                            <div class="item">
+                                 <span class="currency_item">
+                                    <span class="text">wmz</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wme</span>
+                                </span>
+                                <span class="currency_item  active">
+                                    <span class="text">wmu</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">wmu</span>
+                                </span>
+                            </div>
+                        </div><!-- # flex container -->
+
+                        <!-- tab content row-->
+                        <div class="pay_system_title">
+                            <img src="images/currency_icons/wallet.png" alt="yandex money">
+                            <span class="text">Яндекс</span>
+                        </div>
+                        <div class="flex_container">
+                            <div class="item">
+                                <span class="currency_item">
+                                    <span class="text">яндекс - деньги</span>
+                                </span>
+                            </div>
+                            <div class="item">
+                                 <span class="currency_item">
+                                    <span class="text">яндекс - деньги</span>
+                                </span>
+                            </div>
+                        </div><!-- # flex container -->
+
+                        <!-- tab content row-->
+                        <div class="pay_system_title">
+                            <img src="images/icons/perfect_money.png" alt="Perfect Money">
+                            <span class="text">perfect money</span>
+                        </div>
+                        <div class="flex_container">
+                            <div class="item">
+                                <span class="currency_item">
+                                    <span class="text">usd</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">eur</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">руб</span>
+                                </span>
+                            </div>
+                            <div class="item">
+                                 <span class="currency_item">
+                                    <span class="text">usd</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">eur</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">руб</span>
+                                </span>
+                            </div>
+                        </div><!-- # flex container -->
+
+                        <!-- tab content row-->
+                        <div class="pay_system_title">
+                            <img src="images/icons/payeer.png" alt="Payeer">
+                            <span class="text">payeer</span>
+                        </div>
+                        <div class="flex_container">
+                            <div class="item">
+                                <span class="currency_item">
+                                    <span class="text">usd</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">eur</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">руб</span>
+                                </span>
+                            </div>
+                            <div class="item">
+                                 <span class="currency_item">
+                                    <span class="text">usd</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">eur</span>
+                                </span>
+                                <span class="currency_item">
+                                    <span class="text">руб</span>
+                                </span>
+                            </div>
+                        </div><!-- # flex container -->
+
+                        <!-- tab content row-->
+                        <div class="pay_system_title">
+                            <img src="images/icons/okpay.png" alt="Okpay">
+                            <span class="text">okpay</span>
+                        </div>
+                        <div class="flex_container">
+                            <div class="item">
+                            <span class="currency_item">
+                                <span class="text">usd</span>
+                            </span>
+                                <span class="currency_item">
+                                <span class="text">eur</span>
+                            </span>
+                                <span class="currency_item">
+                                <span class="text">руб</span>
+                            </span>
+                            </div>
+                            <div class="item">
+                             <span class="currency_item">
+                                <span class="text">usd</span>
+                            </span>
+                                <span class="currency_item">
+                                <span class="text">eur</span>
+                            </span>
+                                <span class="currency_item">
+                                <span class="text">руб</span>
+                            </span>
+                            </div>
+                        </div><!-- # flex container -->
+                    </div>
+                </div>
+                <!-- pay systems tab/block/платежные системы -->
+
+                <!-- internet bunking/интернет банкинг -->
+                <div class="internet_bunking">
+                    <div class="title body_toggle">Интернет - банкинг <i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                    <div class="wrap">
+                        <div class="flex_container">
+                            <div class="item">
+                                <span class="currency_item active">
+                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
+                                    <span class="text">BITCOIN</span>
+                                </span>
+                                <span class="currency_item">
+                                    <img src="images/icons/litecoin.png" alt="litecoin">
+                                    <span class="text">LITECOIN</span>
+                                </span>
+                            </div>
+                            <div class="item">
+                                <span class="currency_item">
+                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
+                                    <span class="text">BITCOIN</span>
+                                </span>
+                                <span class="currency_item">
+                                    <img src="images/icons/litecoin.png" alt="litecoin">
+                                    <span class="text">LITECOIN</span>
+                                </span>
+                            </div>
+                        </div><!-- # flex container -->
+                    </div>
+                </div>
+                <!-- end of internet bunking/интеренет банкинг -->
+
+                <!-- translating systems/системы переводов -->
+                <div class="translate_systems">
+                    <div class="title body_toggle">Системы переводов <i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                    <div class="wrap">
+                        <div class="flex_container">
+                            <div class="item">
+                                <span class="currency_item active">
+                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
+                                    <span class="text">BITCOIN</span>
+                                </span>
+                                <span class="currency_item">
+                                    <img src="images/icons/litecoin.png" alt="litecoin">
+                                    <span class="text">LITECOIN</span>
+                                </span>
+                            </div>
+                            <div class="item">
+                                <span class="currency_item">
+                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
+                                    <span class="text">BITCOIN</span>
+                                </span>
+                                <span class="currency_item">
+                                    <img src="images/icons/litecoin.png" alt="litecoin">
+                                    <span class="text">LITECOIN</span>
+                                </span>
+                            </div>
+                        </div><!-- # flex container -->
+                    </div>
+                </div>
+                <!-- end of translating systems/системы переводов -->
+
+                <!-- cash/наличные -->
+                <div class="cash">
+                    <div class="title body_toggle">наличные <i class="fa fa-caret-up" aria-hidden="true"></i></div>
+                    <div class="wrap">
+                        <div class="flex_container">
+                            <div class="item">
+                                <span class="currency_item active">
+                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
+                                    <span class="text">BITCOIN</span>
+                                </span>
+                                <span class="currency_item">
+                                    <img src="images/icons/litecoin.png" alt="litecoin">
+                                    <span class="text">LITECOIN</span>
+                                </span>
+                            </div>
+                            <div class="item">
+                                <span class="currency_item">
+                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
+                                    <span class="text">BITCOIN</span>
+                                </span>
+                                <span class="currency_item">
+                                    <img src="images/icons/litecoin.png" alt="litecoin">
+                                    <span class="text">LITECOIN</span>
+                                </span>
+                            </div>
+                        </div><!-- # flex container -->
+                    </div>
+                </div>
+                <!-- cash/наличные -->
+
+
+            </div><!-- # flex_container_wrap -->
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="direction_widget">
+            <!-- tab buttons 'ПОПУЛЯРНЫЕ ИЗБРАННОЕ' -->
+            <div class="direction_switch_buttons_1">
+                <div class="main_buttons">
+                    <span class="famous active">ПОПУЛЯРНЫЕ</span>
+                    <span class="chosen">ИЗБРАННОЕ</span>
+                </div>
+                <!-- how it work link -->
+                <div class="how_it_works"><a href="#">Как это работает? </a><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+            </div>
+            <!-- tab links 'Валюты Направения' -->
+            <div class="direction_switch_buttons_2">
+                <span class="currencies active"><a href="#">Валюты</a></span>
+                <span class="directions"><a href="#">Направления</a></span>
+            </div>
+            <!-- main widget block, with icons -->
+            <div class="widget_main_block flex_container">
+                <div class="give_block">
+                    <div class="top_line flex_container">
+                        <span>ОТДАЕТЕ</span>
+                        <div class="add_favorite_text">
+                            нажмите на изоброжение звездочки <br /> поверх валюты
+                        </div>
+                        <div class="icons">
+                            <!-- favorite icon (star) -->
+                            <i class="fa fa-star-o" aria-hidden="true" id="give_favorite"></i>
+                            <!-- delete icon -->
+                            <i class="delete_icon"></i>
+                        </div>
+                    </div>
+                    <div class="main_line" id="give_main_line">
+
+                        <!-- each icon -->
+                        <div class="icons_each add_icon">
+                            <div class="icon_img_block">
+                                <i class="plus_icon"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">добавить валюту</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="qiwi_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">руб</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each active">
+                            <div class="icon_img_block">
+                                <i class="blue_circle"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">wmz</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block favorite">
+                                <i class="usa_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o active"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">usa</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="blue_circle"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">wmz</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="private_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">грн</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="private_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">грн</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="private_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">грн</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="wu_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">грн</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="get_block">
+                    <div class="top_line flex_container">
+                        <span>ПОЛУЧАЕТЕ</span>
+                        <div class="add_favorite_text">
+                            нажмите на изоброжение звездочки <br /> поверх валюты
+                        </div>
+                        <div class="icons">
+                            <!-- favorite icon (star) -->
+                            <i class="fa fa-star-o get_favorite" aria-hidden="true" id="get_favorite"></i>
+                            <!-- delete icon -->
+                            <i class="delete_icon"></i>
+                        </div>
+                    </div>
+                    <div class="main_line" id="get_main_line">
+                        <!-- each icon -->
+                        <div class="icons_each add_icon">
+                            <div class="icon_img_block">
+                                <i class="plus_icon"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">добавить валюту</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="qiwi_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">руб</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="qiwi_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">руб</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="blue_circle"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">wmz</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="usa_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">usa</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block favorite">
+                                <i class="blue_circle"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o active"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">wmz</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="private_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">грн</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="private_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">грн</span>
+                        </div>
+
+                        <!-- each icon -->
+                        <div class="icons_each">
+                            <div class="icon_img_block">
+                                <i class="wu_icon"></i>
+                                <!-- favorite block-->
+                                <span class="favorite_block">
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+                                <!-- blur star (favorite active)-->
+                                <i class="favorite fa fa-star"></i>
+                            </div>
+                            <!-- text under icon -->
+                            <span class="icon_text">грн</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- direction widget (hides when side menu opened) -->
+
+        <!-- DIRECTION WIDGET / ВКЛАДКА "НАПРАВЛЕНИЯ" -->
+        <div class="direction_tab_widget">
+            <div class="actions_line flex_container">
+                <div class="text">нажмите на изоброжение звездочки <br> поверх валюты</div>
+                <div class="actions_icons">
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="delete_icon"></i>
+                </div>
+            </div>
+
+            <div class="main_line">
+                <div class="flex_container">
+                    <div class="add_icon">
+                        <i class="icon-plus_icon"></i>
+                        <div class="text">добавить направление</div>
+                    </div>
+                    <div class="currency_block flex_container">
+
+                        <div class="item">
+                            <div class="sub_item">
+                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                                <span>РУБ</span>
+                            </div>
+                            <div class="sub_item">
+                                <span>ГРН</span>
+                                <img src="images/currency_icons/privat.png" alt="private">
+                            </div>
+                            <!-- favorite block-->
+                            <span class="favorite_block">
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <!-- blur star (favorite active)-->
+                            <i class="favorite fa fa-star"></i>
+                            <!-- delete block -->
+                            <span class="delete_block">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <div class="sub_item">
+                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                                <span>РУБ</span>
+                            </div>
+                            <div class="sub_item">
+                                <span>ГРН</span>
+                                <img src="images/currency_icons/privat.png" alt="private">
+                            </div>
+                            <!-- favorite block-->
+                            <span class="favorite_block">
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <!-- blur star (favorite active)-->
+                            <i class="favorite fa fa-star"></i>
+                            <!-- delete block -->
+                            <span class="delete_block">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="item active">
+                            <div class="sub_item">
+                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                                <span>РУБ</span>
+                            </div>
+                            <div class="sub_item">
+                                <span>ГРН</span>
+                                <img src="images/currency_icons/privat.png" alt="private">
+                            </div>
+                            <!-- favorite block-->
+                            <span class="favorite_block">
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <!-- blur star (favorite active)-->
+                            <i class="favorite fa fa-star"></i>
+                            <!-- delete block -->
+                            <span class="delete_block">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <div class="sub_item">
+                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                                <span>РУБ</span>
+                            </div>
+                            <div class="sub_item">
+                                <span>ГРН</span>
+                                <img src="images/currency_icons/privat.png" alt="private">
+                            </div>
+                            <!-- favorite block-->
+                            <span class="favorite_block">
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <!-- blur star (favorite active)-->
+                            <i class="favorite fa fa-star"></i>
+                            <!-- delete block -->
+                            <span class="delete_block">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <div class="sub_item">
+                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                                <span>РУБ</span>
+                            </div>
+                            <div class="sub_item">
+                                <span>ГРН</span>
+                                <img src="images/currency_icons/privat.png" alt="private">
+                            </div>
+                            <!-- favorite block-->
+                            <span class="favorite_block">
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <!-- blur star (favorite active)-->
+                            <i class="favorite fa fa-star"></i>
+                            <!-- delete block -->
+                            <span class="delete_block">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <div class="sub_item">
+                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                                <span>РУБ</span>
+                            </div>
+                            <div class="sub_item">
+                                <span>ГРН</span>
+                                <img src="images/currency_icons/privat.png" alt="private">
+                            </div>
+                            <!-- favorite block-->
+                            <span class="favorite_block">
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <!-- blur star (favorite active)-->
+                            <i class="favorite fa fa-star"></i>
+                            <!-- delete block -->
+                            <span class="delete_block">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <div class="sub_item">
+                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                                <span>РУБ</span>
+                            </div>
+                            <div class="sub_item">
+                                <span>ГРН</span>
+                                <img src="images/currency_icons/privat.png" alt="private">
+                            </div>
+                            <!-- favorite block-->
+                            <span class="favorite_block">
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <!-- blur star (favorite active)-->
+                            <i class="favorite fa fa-star"></i>
+                            <!-- delete block -->
+                            <span class="delete_block">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <div class="sub_item">
+                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                                <span>РУБ</span>
+                            </div>
+                            <div class="sub_item">
+                                <span>ГРН</span>
+                                <img src="images/currency_icons/privat.png" alt="private">
+                            </div>
+                            <!-- favorite block-->
+                            <span class="favorite_block">
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <!-- blur star (favorite active)-->
+                            <i class="favorite fa fa-star"></i>
+                            <!-- delete block -->
+                            <span class="delete_block">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- DIRECTION WIDGET END / ВКЛАДКА "НАПРАВЛЕНИЯ" КОНЕЦ -->
+
+        <div class="often_questions">
+            <div class="title">частые операции</div>
+            <i class="fa fa-cog" aria-hidden="true"></i>
+        </div>
+
+        <!-- BIG NEWS / БОЛЬШИЕ НОВОСТИ -->
+        <section class="big_news">
+            <div class="flex_container">
+                <!-- big news each -->
+                <div class="news">
+                    <div class="img_block">
+                        <a href="#"><img src="images/news/news3.jpg" alt="news3"></a>
+                        <div class="views">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span class="views_amount">1023</span>
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <span class="liks_amount">123</span>
+                        </div>
+                        <img src="images/icons/youtube.png" alt="youtube" class="youtube">
+                    </div>
+                    <div class="title"><a href="#">БАНКОВСКИЕ КРЕДИТЫ ДЛЯ ЯНДЕКС-ДЕНЕГ</a></div>
+                    <div class="category"><a href="#">Платежные системы</a></div>
+                    <div class="desc">
+                        <a href="#">Praesent eu massa vel diam laoreet elementum acuti  sed felis. Donec suscipit
+                            ultricies risus...</a>
+                    </div>
+                    <div class="flex_container">
+                        <a href="#" class="more">ПОДРОБНЕЕ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <div class="social">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="tweeter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span class="views">103</span>
+                    </span>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- big news each end -->
+                <!-- big news each -->
+                <div class="news">
+                    <div class="img_block">
+                        <a href="#"><img src="images/news/news1.jpg" alt="news3"></a>
+                        <div class="views">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span class="views_amount">1023</span>
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <span class="liks_amount">123</span>
+                        </div>
+                        <img src="images/icons/youtube.png" alt="youtube" class="youtube">
+                    </div>
+                    <div class="title"><a href="#">БАНКОВСКИЕ КРЕДИТЫ ДЛЯ ЯНДЕКС-ДЕНЕГ</a></div>
+                    <div class="category"><a href="#">Платежные системы</a></div>
+                    <div class="desc">
+                        <a href="#">Praesent eu massa vel diam laoreet elementum acuti  sed felis. Donec suscipit
+                            ultricies risus...</a>
+                    </div>
+                    <div class="flex_container">
+                        <a href="#" class="more">ПОДРОБНЕЕ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <div class="social">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="tweeter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span class="views">103</span>
+                    </span>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- big news each end -->
+            </div>
+        </section>
+        <!-- BIG NEWS END / БОЛЬШИЕ НОВОСТИ КОНЕЦ -->
+
+    </div><!-- # container -->
+</div>
+
+
+
+<!-- SMALL NEWS / МАЛЕНТКИЕ НОВОСТИ КОНЕЦ -->
+<section class="small_news">
+    <div class="container">
+        <div class="flex_container">
+
+            <!-- each news-->
+            <div class="news has_video">
+                <div class="img_block">
+                    <a href="#"><img src="images/news/news2.jpg" alt="news3"></a>
+                    <div class="views">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span class="views_amount">1023</span>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        <span class="liks_amount">123</span>
+                    </div>
+                    <img src="images/icons/youtube.png" alt="youtube" class="youtube">
+                </div>
+                <div class="title"><a href="#">АВТОРИЗАЦИЯ ЯНДЕКС-ДЕНЕГ</a></div>
+                <div class="category"><a href="#">Платежные системы</a>, <a href="#">Видеоинструкция</a></div>
+                <div class="desc">
+                    <a href="#">Praesent eu massa vel diam laoreet elementum acuti  sed felis. Donec suscipit
+                        ultricies risus...</a>
+                </div>
+                <div class="flex_container">
+                    <a href="#" class="more">ПОДРОБНЕЕ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="social">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="tweeter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="views">103</span>
+                        </span>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- each news end -->
+
+            <!-- each news-->
+            <div class="news has_video">
+                <div class="img_block">
+                    <a href="#"><img src="images/news/news2.jpg" alt="news3"></a>
+                    <div class="views">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span class="views_amount">1023</span>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        <span class="liks_amount">123</span>
+                    </div>
+                    <img src="images/icons/youtube.png" alt="youtube" class="youtube">
+                </div>
+                <div class="title"><a href="#">АВТОРИЗАЦИЯ ЯНДЕКС-ДЕНЕГ</a></div>
+                <div class="category"><a href="#">Платежные системы</a>, <a href="#">Видеоинструкция</a></div>
+                <div class="desc">
+                    <a href="#">Praesent eu massa vel diam laoreet elementum acuti  sed felis. Donec suscipit
+                        ultricies risus...</a>
+                </div>
+                <div class="flex_container">
+                    <a href="#" class="more">ПОДРОБНЕЕ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="social">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="tweeter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="views">103</span>
+                        </span>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- each news end -->
+
+            <!-- each news-->
+            <div class="news">
+                <div class="img_block">
+                    <a href="#"><img src="images/news/news2.jpg" alt="news3"></a>
+                    <div class="views">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span class="views_amount">1023</span>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        <span class="liks_amount">123</span>
+                    </div>
+                    <img src="images/icons/youtube.png" alt="youtube" class="youtube">
+                </div>
+                <div class="title"><a href="#">АВТОРИЗАЦИЯ ЯНДЕКС-ДЕНЕГ</a></div>
+                <div class="category"><a href="#">Платежные системы</a>, <a href="#">Видеоинструкция</a></div>
+                <div class="desc">
+                    <a href="#">Praesent eu massa vel diam laoreet elementum acuti  sed felis. Donec suscipit
+                        ultricies risus...</a>
+                </div>
+                <div class="flex_container">
+                    <a href="#" class="more">ПОДРОБНЕЕ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="social">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="tweeter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="views">103</span>
+                        </span>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- each news end -->
+
+            <!-- each news-->
+            <div class="news has_video">
+                <div class="img_block">
+                    <a href="#"><img src="images/news/news2.jpg" alt="news3"></a>
+                    <div class="views">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span class="views_amount">1023</span>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        <span class="liks_amount">123</span>
+                    </div>
+                    <img src="images/icons/youtube.png" alt="youtube" class="youtube">
+                </div>
+                <div class="title"><a href="#">АВТОРИЗАЦИЯ ЯНДЕКС-ДЕНЕГ</a></div>
+                <div class="category"><a href="#">Платежные системы</a>, <a href="#">Видеоинструкция</a></div>
+                <div class="desc">
+                    <a href="#">Praesent eu massa vel diam laoreet elementum acuti  sed felis. Donec suscipit
+                        ultricies risus...</a>
+                </div>
+                <div class="flex_container">
+                    <a href="#" class="more">ПОДРОБНЕЕ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="social">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="tweeter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="views">103</span>
+                        </span>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- each news end -->
+
+            <!-- each news-->
+            <div class="news has_video">
+                <div class="img_block">
+                    <a href="#"><img src="images/news/news2.jpg" alt="news3"></a>
+                    <div class="views">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span class="views_amount">1023</span>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        <span class="liks_amount">123</span>
+                    </div>
+                    <img src="images/icons/youtube.png" alt="youtube" class="youtube">
+                </div>
+                <div class="title"><a href="#">АВТОРИЗАЦИЯ ЯНДЕКС-ДЕНЕГ</a></div>
+                <div class="category"><a href="#">Платежные системы</a>, <a href="#">Видеоинструкция</a></div>
+                <div class="desc">
+                    <a href="#">Praesent eu massa vel diam laoreet elementum acuti  sed felis. Donec suscipit
+                        ultricies risus...</a>
+                </div>
+                <div class="flex_container">
+                    <a href="#" class="more">ПОДРОБНЕЕ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="social">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="tweeter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="views">103</span>
+                        </span>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- each news end -->
+
+            <!-- each news-->
+            <div class="news">
+                <div class="img_block">
+                    <a href="#"><img src="images/news/news2.jpg" alt="news3"></a>
+                    <div class="views">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <span class="views_amount">1023</span>
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        <span class="liks_amount">123</span>
+                    </div>
+                    <img src="images/icons/youtube.png" alt="youtube" class="youtube">
+                </div>
+                <div class="title"><a href="#">АВТОРИЗАЦИЯ ЯНДЕКС-ДЕНЕГ</a></div>
+                <div class="category"><a href="#">Платежные системы</a>, <a href="#">Видеоинструкция</a></div>
+                <div class="desc">
+                    <a href="#">Praesent eu massa vel diam laoreet elementum acuti  sed felis. Donec suscipit
+                        ultricies risus...</a>
+                </div>
+                <div class="flex_container">
+                    <a href="#" class="more">ПОДРОБНЕЕ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <div class="social">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="tweeter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="views">103</span>
+                        </span>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- each news end -->
+
+        </div><!-- flex_container end -->
+
+        <!-- pagination black -->
+        <div class="pagination_block">
+            <div class="pages_list">
+                <ul>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>...</li>
+                    <li>4</li>
+                    <li class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+            <div class="pagination_setting">
+                <div class="number_choose">
+                    <span>5</span>
+                    <div class="arrows">
+                        <div class="arrow_up"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+                        <div class="arrow_down"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pagination black end-->
+
+    </div>
+</section>
+<!-- SMALL NEWS END / МАЛЕНЬКИЕ НОВОСТИ КОНЕЦ -->
+
+<!-- FOOTER AND FIXED BOTTOM -->
+<footer>
+    <div class="container">
+        <div class="flex_container">
+            <div class="about_and_soc">
+                <div class="title">О сервисе</div>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper blandit mi. Proin volutpat urna vitae purus volutpat bibendum. Proin fringilla neque hendrerit lacus congue sollicitudin.
+                    <br />
+                    Mauris aliquam molestie libero, non venenatis lectus euismod eu. Mauris malesuada, quam non varius faucibus, magna diam dictum elit, et semper ex dui accumsan turpis.
+                </div>
+                <div class="soc">
+                    <a href="#"><i class="fa fa-git-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="footer_menu">
+                <div class="first_menu">
+                    <div class="title">Клиентам</div>
+                    <ul>
+                        <li><a href="#">О севисе</a></li>
+                        <li><a href="#">Избранные валюты</a></li>
+                        <li><a href="#">Настройки виджета</a></li>
+                        <li><a href="#">Поиск по скайпу</a></li>
+                    </ul>
+                </div>
+                <div class="second_menu">
+                    <div class="title">Партнерам</div>
+                    <ul>
+                        <li><a href="#">Как стать партнером</a></li>
+                        <li><a href="#">Рейтинги обменного пункта</a></li>
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="vk_widget">
+                <img src="images/vk_widget.jpg" alt="vk">
+            </div>
+        </div>
+        <div class="bottom_link">2015 c <a href="/">Udifo.com</a></div>
+    </div>
+</footer>
+
+<div class="fixed_footer">
+    <div class="container">
+        <div class="currency_widget">
+            <div class="flex_container">
+                <div class="fixed_footer_item">
+                    <div class="icon_in">
+                        <span class="amount">1,0</span>
+                        <div class="amount_icon">
+                            <span class="icon_img_block">
+                                <i class="qiwi_icon"></i>
+                            </span>
+                            <span class="currency_text">грн</span>
+                        </div>
+                    </div>
+                    <i class="reverse_icon_grey"></i>
+                    <div class="icon_in">
+                        <span class="amount">1,4</span>
+                        <div class="amount_icon">
+                            <span class="icon_img_block">
+                                <i class="private_icon"></i>
+                            </span>
+                            <span class="currency_text">грн</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixed_footer_item">
+                    <span class="exchanger_name">Обменка.ua</span>
+                </div>
+                <div class="fixed_footer_item">
+                    <div class="give">
+                        <div class="title">Отдаете</div>
+                        <div class="amount">1,0</div>
+                    </div>
+                    <div class="get">
+                        <div class="title">Получаете</div>
+                        <div class="amount">1,4</div>
+                    </div>
+                    <div class="reserve">
+                        <div class="title">Резерв</div>
+                        <div class="amount">12 000 <span class="currency_sign_text">грн</span></div>
+                    </div>
+                </div>
+                <div class="settings">Отслеживать 2 направления <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+            </div><!-- # flex_container -->
+            <div class="action_icons">
+                <span class="icon-standalone_icon"></span>
+                <span class="resize"><i class="fa fa-expand" aria-hidden="true"></i></span>
+                <span class="icon-close_icon"></span>
+            </div>
+        </div><!-- # currency_widget-->
+    </div><!-- # container -->
+</div>
+<!-- FOOTER AND FIXED BOTTOM END -->
+
+<script src="js/jquery.js"></script>
+<script src="js/ion.checkRadio.js"></script>
+<script src="js/jquery.nice-select.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+</body>
+</html>

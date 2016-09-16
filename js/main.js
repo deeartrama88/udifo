@@ -22,6 +22,8 @@
         var all_currency_side_menu_open = $('.side_all_currency_widget');
         // BIG NEWS BLOCK ( AT NEWS PAGE, 2 BIG NEWS)
         var big_news = $('.big_news');
+        // contacts block
+        var contacts_ = $('.contacts_wrapper');
 
         var side_menu_width = 360;
 
@@ -59,6 +61,9 @@
             if($(big_news))
                 $(big_news).css({paddingLeft: paddings.table});
             // set left padding to BIG NEWS at news page
+            if($(faq_wrapper))
+                $(faq_wrapper).css({paddingLeft: paddings.table});
+            // set lefc
             if($(faq_wrapper))
                 $(faq_wrapper).css({paddingLeft: paddings.table});
 
@@ -195,7 +200,13 @@
         $('.news_filter select').niceSelect();
 
         // comments select init
-        $('.comments select').niceSelect();
+        $('.comments').niceSelect();
+
+        // comments select init
+        $('.obmenka_wrap .form_1 select').niceSelect();
+
+        // comments select init
+        $('.obmenka_wrap .form_2 select').msDropDown();
 
 
         //  ADD CURRENCIES WIDGET ( VIA GREEN PLUS ICON )

@@ -1002,34 +1002,38 @@ header {
   text-align: center;
   padding: 30px 0 20px;
   position: relative;
-  ul {
+  .pages_list {
+    ul {
+      padding-left: 0;
+      li {
+        padding: 12px 17px;
+        cursor: pointer;
+        transition: all 0.1s ease;
+        list-style: none;
+        display: inline-block;
 
-    li {
-      padding: 12px 17px;
-      cursor: pointer;
-      transition: all 0.1s ease;
-
-      &.next {
-        padding: 9px 17px;
-        vertical-align: top;
-        border: 1px solid @separate_gray;
-        &:hover {
-          background: darken(@separate_gray, 5%);
+        &.next {
+          padding: 9px 17px;
+          vertical-align: top;
+          border: 1px solid @separate_gray;
+          &:hover {
+            background: darken(@separate_gray, 5%);
+          }
         }
-      }
 
-      i {
-        font-size: 23px;
-        vertical-align: top;
-      }
+        i {
+          font-size: 23px;
+          vertical-align: top;
+        }
 
-      &:hover {
-        background: lighten(@main_green, 10%);
-        color: white;
-      }
-      &.active {
-        background: @main_green;
-        color: white;
+        &:hover {
+          background: lighten(@main_green, 10%);
+          color: white;
+        }
+        &.active {
+          background: @main_green;
+          color: white;
+        }
       }
     }
   }
@@ -3343,6 +3347,436 @@ iframe[id='^twitter']{}
 // ---------------------------// CONTACTS        -----------------------------//
 // ---------------------------------------------------------------------------//
 
+
+
+
+// ---------------------------------------------------------------------------//
+// ---------------------------// OBMENKA         -----------------------------//
+// ---------------------------------------------------------------------------//
+.obmenka_wrap {
+  padding-top: 40px;
+  .nice-select {
+    float: none;
+    margin-bottom: 37px;
+  }
+
+  .back_link {
+    color: @main_green;
+    padding-bottom: 25px;
+    i{
+      font-size: 15px;
+      padding-right: 15px;
+    }
+  }
+  ul {
+    li {
+      display: block;
+      padding: 3px 0;
+    }
+  }
+
+  .image {
+    width: 33%;
+  }
+  .desc_midle {
+    width: 33%;
+    .name {
+      font-size: 36px;
+      font-family: 'LatoBold', sans-serif;
+      padding: 0 0 5px;
+    }
+    img {
+      margin:0 5px 5px;
+    }
+  }
+  .desc_right {
+    width: 33%;
+    padding-top: 58px;
+  }
+
+  .leave_testimonial {
+    padding-bottom: 30px;
+    border-bottom: 1px solid @separate_gray;
+    margin-bottom: 20px;
+  }
+
+  .testimonial_form {
+    text-align: right;
+    .flex_container {
+      text-align: left;
+    }
+    .form_1 {
+      width: 25%;
+    }
+    .form_2 {
+      width: 25%;
+
+      .currencies {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+      }
+      select {
+        width: 40%;
+      }
+      .nice-select {
+        width: 40%;
+      }
+    }
+    .form_3 {
+      width: 25%;
+    }
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid @separate_gray;
+      display: block;
+      width: 100%;
+      margin-bottom: 29px;
+    }
+    label {
+      color: lightslategrey;
+      margin: 0;
+    }
+
+    button {
+      margin: auto;
+      display: inline-block;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      font-family: 'Lato Black', sans-serif;
+      background: @main_green;
+      padding: 6px 25px 5px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 darken(@main_green, 10%);
+      outline: none;
+      &:hover {
+        background: darken(@main_green, 2%);
+      }
+      &:active {
+        box-shadow: none;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+  
+  .title_line {
+    padding: 15px 0 10px;
+    margin: 30px 0;
+    border: solid @separate_gray;
+    border-width: 1px 0 1px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    span {
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .title {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: @main_grey;
+      font-weight: bold;
+    }
+  }
+
+  .title_all_testimonials {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Lato Black', sans-serif;
+    margin-bottom: 20px;
+    color: @dark_grey;
+    font-weight: bold;
+  }
+
+  .all_testimonials_block {
+
+    .testi_nav {
+      margin: 40px 0 30px;
+      ul {
+        li {
+          display: inline-block;
+          position: relative;
+          border: 0 solid @main_grey;
+          margin-right: 15px;
+          line-height: 10px;
+          font-weight: bold;
+          font-family: 'Lato Black',sans-serif;
+          cursor: pointer;
+
+          &:after {
+            content: '';
+            width: 13px;
+            height: 1px;
+            background: @main_grey;
+            position: absolute;
+            right: -15px;
+            bottom: 8px;
+            transform: rotate(-60deg);
+          }
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+          &.active {
+            border-width: 0 0 1px 0;
+          }
+          &.positive {
+            color: @main_green;
+            border: 0 solid @main_green;
+          }
+          &.negative {
+            color: red;
+            border: 0 solid red;
+          }
+        }
+      }
+    }
+
+    .testimonial_block_each {
+      padding-bottom: 10px;
+      border-bottom: 1px solid @separate_gray;
+      margin-bottom: 30px;
+      &.positive {
+        .testi_wrapper {
+          &:before {
+            background: @main_green;
+          }
+        }
+      }
+      &.negative {
+        .testi_wrapper {
+          &:before {
+            background: red;
+          }
+        }
+      }
+      .title_line_testi {
+        margin-bottom: 15px;
+        span {
+          display: inline-block;
+        }
+        .name {
+          font-family: 'Lato Black', sans-serif;
+          color: @dark_grey;
+          padding-right: 10px;
+        }
+        .flag {
+          width: 22px;
+          height: 15px;
+          margin-right: 10px;
+        }
+        .date, .ip {
+          color: lightslategrey;
+          position: relative;
+          font-family: 'LatoRegular', sans-serif;
+          &:before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: @main_grey;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 1px;
+          }
+        }
+        .ip {
+          margin: 0 10px;
+          font-weight: bold;
+          color: @main_grey;
+        }
+        .your_testi {
+          padding: 5px 15px 3px;
+          background: #000;
+          color: white;
+        }
+      }
+      .buttons {
+        text-align: right;
+        margin: 30px 20px 20px 20px;
+        button {
+          outline:none;
+          border: none;
+          border-radius: 3px;
+          text-transform: uppercase;
+          color: white;
+          font-family:'Lato Black', sans-serif;
+          background: @main_green;
+          padding: 5px 15px 3px;
+          font-weight: bold;
+          box-shadow: 0 3px 0 darken(@main_green, 10%);
+          display: inline-block;
+
+          &:active {
+            position: relative;
+            top: 3px;
+            box-shadow: none;
+          }
+
+          &:hover {
+            background: darken(@main_green, 2%);
+          }
+        }
+        .delete {
+          background: #5b6779;
+          box-shadow: 0 3px 0 darken(#5b6779, 10%);
+          &:hover {
+            background: darken(#5b6779, 2%);
+          }
+        }
+      }
+      .testi_wrapper {
+        padding-left: 20px;
+        position: relative;
+        &:before {
+          content: '';
+          width: 6px;
+          height: 91%;
+          background: @main_grey;
+          position: absolute;
+          left: 0;
+          top: 6%;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+}
+// ---------------------------------------------------------------------------//
+// ---------------------------// OBMENKA         -----------------------------//
+// ---------------------------------------------------------------------------//
+
+
+// ---------------------------------------------------------------------------//
+// ---------------------------// OBMENKA_LIST       --------------------------//
+// ---------------------------------------------------------------------------//
+.obmenka_list_wrap {
+
+  .title {
+    font-size: 30px;
+    color: @dark_grey;
+    font-family: 'LatoBold', sans-serif;
+    margin: 30px 0;
+  }
+  p {
+    margin: 20px 0;
+    font-size: 15px;
+  }
+  ul {
+    list-style-type: circle;
+    padding-left: 15px;
+    li {
+      display: list-item;
+      font-size: 15px;
+      list-style-type: circle;
+
+    }
+  }
+  a {
+    color: @main_green;
+  }
+  .table_title {
+    padding: 15px 15px 13px;
+    position: relative;
+    border: solid @light_grey;
+    border-width: 1px 0 1px 0;
+    font-size: 20px;
+    color: @dark_grey;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+
+    .chosen {
+      position: absolute;
+      right: 10px;
+      top: 34%;
+      font-size: 14px;
+      text-transform: none;
+      color: @main_grey;
+      .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: @main_green;
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+  #table_obmenka_list {
+    color: @dark_grey;
+    font-weight: bold;
+    font-family: 'LatoBold', sans-serif;
+
+    tr.active {
+      background: #f3f6e6;
+      .number {
+        span {
+          padding: 8px 10px;
+          background: @main_green;
+          color: white;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    thead {
+      td {
+        padding: 20px 0;
+      }
+    }
+    .name {
+      text-align: left;
+      padding-left: 10px;
+    }
+    .type {
+      i {
+        font-size: 30px;
+        vertical-align: bottom;
+      }
+    }
+    .actions {
+      i {
+        font-size: 18px;
+        background: white;
+        padding: 10px 10px 7px;
+        display: inline-block;
+        border-radius: 3px;
+        box-shadow: 0 3px @separate_gray;
+        margin: 0 5px;
+        &:hover {
+          background: @light_grey;
+        }
+        &:active {
+          position: relative;
+          top: 3px;
+          box-shadow: none;
+          background: darken(@light_grey, 5%);
+        }
+      }
+    }
+    img {
+      width: 22px;
+      vertical-align: initial;
+    }
+    a {
+      padding: 0 10px;
+    }
+  }
+}
+// ---------------------------------------------------------------------------//
+// ---------------------------// OBMENKA_LIST       --------------------------//
+// ---------------------------------------------------------------------------//
 
 
 // MEDIA QUERIES

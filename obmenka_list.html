@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/ion.checkRadio.css">
     <link rel="stylesheet" href="css/ion.checkRadio.green.css">
     <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/msdropdown.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="../../AppData/Local/Temp/Rar$DRa0.872/css/Glyphter.css">
 </head>
 <body>
 
@@ -488,60 +488,166 @@
     </div>
 
     <div class="container">
+        <!-- /////////   OBMENKA_LIST   \\\\\\\\\ -->
+        <div class="obmenka_list_wrap">
+            <div class="title">Список надежных обменных пунктов</div>
 
-        <!-- /////////   CONTACTS   \\\\\\\\\ -->
-        <div class="contacts_wrapper">
+            <p>Для каждого обменного пункта представлена следующая информация:</p>
 
-            <div class="call_block">
-                <div class="flex_container">
-                    <div class="phone">
-                        <i class="fa fa-mobile" aria-hidden="true"></i>
-                        <div class="title">НАМ МОЖНО ПОЗВОНИТЬ</div>
-                        <div class="phone_text">Телефон: +38 (063) 123 45 67</div>
-                        <div class="skype">Skype: <a href="#">udifo_support</a></div>
+            <ul>
+                <li>сумарном резерве валют;</li>
+                <li>количество обменных курсов (направлений обмена);</li>
+                <li>количество положительных и негативных отзывов.</li>
+                <li>сслыка на официальный сайт обменника</li>
+            </ul>
+
+            <p>
+                Кликнув на любом из обменных пунктов вы сможете просмотреть более детально информацию о нем,
+                а также ознакомится с отзывами пользователей.
+            </p>
+
+            <p>
+                Хотите, чтобы ваш обменный пункт стал участником нашего рейтига? <a href="#">Ознакомьтесь с инструкцией.</a>
+            </p>
+
+            <div class="table_title">
+                РЕЙТИНГ ОБМЕННЫХ ПУНКТОВ
+                <span class="chosen">
+                    <i class="circle"></i>
+                    ваш обменный пункт
+                </span></div>
+
+            <!-- table -->
+            <div class="table_wrap">
+                <table  id="table_obmenka_list">
+                    <thead>
+                    <tr>
+                        <td>Рейтинг</td>
+                        <td>Название</td>
+                        <td>Отзывы</td>
+                        <td>Статус</td>
+                        <td>Резерв</td>
+                        <td>Курсов</td>
+                        <td>Тип обмена</td>
+                        <td>BL/TS</td>
+                        <td>Действия</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td class="number"><span>1</span></td>
+                            <td class="name">
+                                <img src="images/logos/obmenka.png" alt="obmenka">
+                                <a href="#">Obmenka.ua</a>
+                                <i class="fa fa-percent" aria-hidden="true"></i>
+                            </td>
+                            <td class="testi">
+                                <span class="green">(12)</span> / <span class="red">(2)</span>
+                            </td>
+                            <td class="status">
+                                <span class="red">неактивен</span>
+                            </td>
+                            <td class="reserve">10000,45 $</td>
+                            <td class="courses">100</td>
+                            <td class="type"><i class="icon-face_icon"></i></td>
+                            <td class="bl">100/345</td>
+                            <td class="actions">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number"><span>1</span></td>
+                            <td class="name">
+                                <img src="images/logos/obmenka.png" alt="obmenka">
+                                <a href="#">Obmenka.ua</a>
+                                <i class="fa fa-percent" aria-hidden="true"></i>
+                            </td>
+                            <td class="testi">
+                                <span class="green">(12)</span> / <span class="red">(2)</span>
+                            </td>
+                            <td class="status">
+                                <span class="green">активен</span>
+                            </td>
+                            <td class="reserve">10000,45 $</td>
+                            <td class="courses">100</td>
+                            <td class="type"><i class="icon-gear_icon"></i></td>
+                            <td class="bl">100/345</td>
+                            <td class="actions">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number"><span>1</span></td>
+                            <td class="name">
+                                <img src="images/logos/obmenka.png" alt="obmenka">
+                                <a href="#">Obmenka.ua</a>
+                                <i class="fa fa-percent" aria-hidden="true"></i>
+                            </td>
+                            <td class="testi">
+                                <span class="green">(12)</span> / <span class="red">(2)</span>
+                            </td>
+                            <td class="status">
+                                <span class="red">неактивен</span>
+                            </td>
+                            <td class="reserve">10000,45 $</td>
+                            <td class="courses">100</td>
+                            <td class="type"><i class="icon-face_icon"></i></td>
+                            <td class="bl">100/345</td>
+                            <td class="actions">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="number"><span>1</span></td>
+                            <td class="name">
+                                <img src="images/logos/obmenka.png" alt="obmenka">
+                                <a href="#">Obmenka.ua</a>
+                                <i class="fa fa-percent" aria-hidden="true"></i>
+                            </td>
+                            <td class="testi">
+                                <span class="green">(12)</span> / <span class="red">(2)</span>
+                            </td>
+                            <td class="status">
+                                <span class="green">активен</span>
+                            </td>
+                            <td class="reserve">10000,45 $</td>
+                            <td class="courses">100</td>
+                            <td class="type"><i class="icon-gear_icon"></i></td>
+                            <td class="bl">100/345</td>
+                            <td class="actions">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pagination_block">
+                    <div class="pages_list">
+                        <ul>
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>...</li>
+                            <li>4</li>
+                            <li class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                        </ul>
                     </div>
-                    <div class="mail">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <div class="title">И НАПИСАТЬ</div>
-                        <a href="#">support@udifo.com</a>
-                        <a href="#">partnership@udifo.com</a>
+                    <div class="pagination_setting">
+                        <div class="number_choose">
+                            <span>5</span>
+                            <div class="arrows">
+                                <div class="arrow_up"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+                                <div class="arrow_down"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="form_title">
-                ВЫ ТАКЖЕ МОЖЕТЕ ОБРАТИТЬСЯ В НАШУ СЛУЖБУ ПОДДЕРЖКИ <br /> С ЛЮБЫМ ВОПРОСОМ ПО РАБОТЕ СЕРВИСА
-            </div>
-
-            <div class="form_wrapper">
-                <div class="form">
-                    <form>
-                        <div class="form_group">
-                            <label for="theme">В чем вопрос</label>
-                            <select name="question" id="theme">
-                                <option value="1">Проблемы с работой сервиса</option>
-                                <option value="2">Проблемы с работой сервиса</option>
-                                <option value="3">Проблемы с работой сервиса</option>
-                            </select>
-                        </div>
-                        <div class="form_group">
-                            <label for="name">Ваше имя</label>
-                            <input name="name" id="name"></input>
-                        </div>
-                        <div class="form_group">
-                            <label for="email">Email</label>
-                            <input name="email" id="email"></input>
-                        </div>
-                        <div class="form_group">
-                            <label for="message">Текст вопроса</label>
-                            <textarea rows="10" name="message" id="message"></textarea>
-                        </div>
-                        <button>ЗАДАТЬ ВОПРОС</button>
-                    </form>
                 </div>
             </div>
         </div>
-        <!-- \\\\\\\\   CONTACTS END  /////// -->
+        <!-- \\\\\\\\   OBMENKA_LIST END  /////// -->
 
 
     </div><!-- # container -->
@@ -659,6 +765,8 @@
 <script src="js/jquery.js"></script>
 <script src="js/ion.checkRadio.js"></script>
 <script src="js/jquery.nice-select.js"></script>
+<script src="js/msDropDown.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

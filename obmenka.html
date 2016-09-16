@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/ion.checkRadio.css">
     <link rel="stylesheet" href="css/ion.checkRadio.green.css">
     <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/msdropdown.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="../../AppData/Local/Temp/Rar$DRa0.872/css/Glyphter.css">
 </head>
 <body>
 
@@ -489,59 +489,185 @@
 
     <div class="container">
 
-        <!-- /////////   CONTACTS   \\\\\\\\\ -->
-        <div class="contacts_wrapper">
+        <!-- /////////   OBMENKA   \\\\\\\\\ -->
+        <div class="obmenka_wrap">
+            <div class="back_link">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i><a href="#">Назад к списку обменных пунктов</a>
+            </div>
 
-            <div class="call_block">
+            <div class="obmenka_detail">
                 <div class="flex_container">
-                    <div class="phone">
-                        <i class="fa fa-mobile" aria-hidden="true"></i>
-                        <div class="title">НАМ МОЖНО ПОЗВОНИТЬ</div>
-                        <div class="phone_text">Телефон: +38 (063) 123 45 67</div>
-                        <div class="skype">Skype: <a href="#">udifo_support</a></div>
+
+                    <div class="image">
+                        <div class="logo">
+                            <img src="images/logos/obmenka_ua.png" alt="obmenka">
+                        </div>
+                        <div class="screen">
+                            <img src="images/logos/obmenka_screen.png" alt="obmenka">
+                        </div>
                     </div>
-                    <div class="mail">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <div class="title">И НАПИСАТЬ</div>
-                        <a href="#">support@udifo.com</a>
-                        <a href="#">partnership@udifo.com</a>
+                    
+                    <div class="desc_midle">
+                        <div class="name">Obmenka.ua</div>
+                        <ul>
+                            <li>Год основания: 2009</li>
+                            <li>Страна: <b>Украина</b></li>
+                            <li>Статус: <span class="green">активен</span></li>
+                            <li>Резерв: <b>1000 USD</b></li>
+                            <li>Сайт: <a href="#">www.obmenka.ua</a></li>
+                            <li>
+                                Валюты:
+                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
+                                <img src="images/currency_icons/privat.png" alt="privat">
+                                <img src="images/currency_icons/blue_circle.png" alt="webmoney">
+                                <img src="images/currency_icons/blue_circle.png" alt="webmoney">
+                            </li>
+                        </ul>
                     </div>
+
+                    <div class="desc_right">
+                        <ul>
+                            <li>Последнее обновление рейтинга: <b>10.06.2016</b></li>
+                            <li>WMID: <b>123</b></li>
+                            <li>Webmoney BL: <b>378</b></li>
+                            <li>Perfect Money TS: <b>150</b></li>
+                            <li>
+                                Отзывы:
+                                <span class="green">28</span> /
+                                <span class="red">4</span> /
+                                <span class="black">2</span>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="form_title">
-                ВЫ ТАКЖЕ МОЖЕТЕ ОБРАТИТЬСЯ В НАШУ СЛУЖБУ ПОДДЕРЖКИ <br /> С ЛЮБЫМ ВОПРОСОМ ПО РАБОТЕ СЕРВИСА
-            </div>
+            <div class="leave_testimonial">
 
-            <div class="form_wrapper">
-                <div class="form">
+                <div class="title_line">
+                    <div class="title">ОСТАВИТЬ ОТЗЫВ*</div>
+                    <span>*только для зарегистрированных пользователей</span>
+                </div>
+
+                <div class="testimonial_form">
                     <form>
-                        <div class="form_group">
-                            <label for="theme">В чем вопрос</label>
-                            <select name="question" id="theme">
-                                <option value="1">Проблемы с работой сервиса</option>
-                                <option value="2">Проблемы с работой сервиса</option>
-                                <option value="3">Проблемы с работой сервиса</option>
-                            </select>
+                        <div class="flex_container">
+
+                            <div class="form_1">
+                                <label>Тип отзыва</label>
+                                <select name="testimonials" id="testi">
+                                    <option value="1">Положительный</option>
+                                    <option value="1">Положительный</option>
+                                    <option value="1">Положительный</option>
+                                </select>
+
+                                <label>Ваше имя</label>
+                                <input type="text" name="first_name_testi">
+                            </div>
+
+                            <div class="form_2">
+                                <label>Обмен</label>
+                                <div class="currencies">
+                                    <select name="cur1" id="cur1">
+                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                    </select>
+                                    <select name="cur2" id="cur2">
+                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                    </select>
+                                </div>
+                                <label>Email (не виден другим пользователям)</label>
+                                <input type="text" name="email">
+                            </div>
+                            
+                            <div class="form_3">
+                                <label>Текст отзыва</label>
+                                <textarea name="text" id="text" rows="6"></textarea>
+                            </div>
                         </div>
-                        <div class="form_group">
-                            <label for="name">Ваше имя</label>
-                            <input name="name" id="name"></input>
-                        </div>
-                        <div class="form_group">
-                            <label for="email">Email</label>
-                            <input name="email" id="email"></input>
-                        </div>
-                        <div class="form_group">
-                            <label for="message">Текст вопроса</label>
-                            <textarea rows="10" name="message" id="message"></textarea>
-                        </div>
-                        <button>ЗАДАТЬ ВОПРОС</button>
+                        <button>оставить отзыв</button>
                     </form>
                 </div>
+
+            </div>
+
+            <div class="title_all_testimonials">
+                ВСЕ ОТЗЫВЫ
+            </div>
+
+            <div class="all_testimonials_block">
+                <div class="testi_nav">
+                    <ul>
+                        <li class="active">Все отзывы</li>
+                        <li class="positive">Положительные отзывы: 28</li>
+                        <li class="negative">Отрицательные отзывы: 4</li>
+                        <li>Нейтральные отзывы: 2</li>
+                    </ul>
+                </div>
+                
+                <div class="testimonial_block_each positive">
+                    <div class="testi_wrapper">
+                        <div class="title_line_testi">
+                            <span class="name">Maria </span>
+                            <img src="images/flags/ua.jpg" alt="Ukraine" class="flag">
+                            <span class="date">сегоня, 13:30</span>
+                            <span class="ip">IP:255.***.***.123</span>
+                            <span class="your_testi">ВАШ ОТЗЫВ</span>
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dicta ducimus eum illo
+                            minus quaerat saepe sit totam vero voluptas voluptatem voluptatibus? A aliquid blanditiis,
+                            dolores eum excepturi incidunt laborum. Atque cum eos incidunt nemo. Ab consequuntur magnam
+                            modi nostrum, quos soluta tempore temporibus! Aut omnis perferendis sint ullam voluptate?
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="comment">КОММЕНТИРОВАТЬ</button>
+                        <button class="delete">УДАЛИТЬ</button>
+                    </div>
+                </div>
+
+                <div class="testimonial_block_each negative">
+                    <div class="testi_wrapper">
+                        <div class="title_line_testi">
+                            <span class="name">Maria </span>
+                            <img src="images/flags/ua.jpg" alt="Ukraine" class="flag">
+                            <span class="date">сегоня, 13:30</span>
+                            <span class="ip">IP:255.***.***.123</span>
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dicta ducimus eum illo
+                            minus quaerat saepe sit totam vero voluptas voluptatem voluptatibus? A aliquid blanditiis,
+                            dolores eum excepturi incidunt laborum. Atque cum eos incidunt nemo. Ab consequuntur magnam
+                            modi nostrum, quos soluta tempore temporibus! Aut omnis perferendis sint ullam voluptate?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial_block_each">
+                    <div class="testi_wrapper">
+                        <div class="title_line_testi">
+                            <span class="name">Maria </span>
+                            <img src="images/flags/ua.jpg" alt="Ukraine" class="flag">
+                            <span class="date">сегоня, 13:30</span>
+                            <span class="ip">IP:255.***.***.123</span>
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dicta ducimus eum illo
+                            minus quaerat saepe sit totam vero voluptas voluptatem voluptatibus? A aliquid blanditiis,
+                            dolores eum excepturi incidunt laborum. Atque cum eos incidunt nemo. Ab consequuntur magnam
+                            modi nostrum, quos soluta tempore temporibus! Aut omnis perferendis sint ullam voluptate?
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <!-- \\\\\\\\   CONTACTS END  /////// -->
+        <!-- \\\\\\\\   OBMENKA END  /////// -->
 
 
     </div><!-- # container -->
@@ -659,6 +785,8 @@
 <script src="js/jquery.js"></script>
 <script src="js/ion.checkRadio.js"></script>
 <script src="js/jquery.nice-select.js"></script>
+<script src="js/msDropDown.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

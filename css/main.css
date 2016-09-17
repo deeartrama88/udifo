@@ -2196,6 +2196,9 @@ footer .bottom_link a {
   box-shadow: 0 3px 0 #d4d4d4;
   margin: 0 10px;
 }
+.add_currency_pop_up_block#pop_up_currecy .icon_img_block:hover {
+  box-shadow: 0 3px 0 #ededed;
+}
 .add_currency_pop_up_block#pop_up_currecy .icon_img_block span {
   padding-top: 0;
   text-transform: uppercase;

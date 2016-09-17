@@ -212,6 +212,7 @@
         //  ADD CURRENCIES WIDGET ( VIA GREEN PLUS ICON )
         var first_padding = $('#pop_up_currecy .tab.pay_systems .icons_each.open .sub_body').height();
         $('#pop_up_currecy .tab.pay_systems').css({'paddingBottom': first_padding+5});
+
         function add_currency_widget() {
             $('#pop_up_currecy .tab.pay_systems .icons_each').hover(function () {
                 var padding = $(this).find('.sub_body').height()+5;

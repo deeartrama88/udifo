@@ -741,11 +741,12 @@ header {
           }
           
           &:hover {
+            box-shadow: 0 3px 0 @light_grey;
+          }
+          &:active {
             &:before {
               opacity: 1;
             }
-          }
-          &:active {
             &:before {
               border: 2px solid #95ab38;
             }
@@ -794,7 +795,7 @@ header {
             box-shadow: 0 3px darken(@main_green, 10%);
             
             &:hover {
-              background: darken(@main_green, 5%);
+              box-shadow: 0 3px @main_green;
             }
           }
         }
@@ -938,7 +939,17 @@ header {
             cursor: pointer;
 
             &:hover {
-              background: darken(@light_grey, 5%);
+              box-shadow: 0 3px 0 @light_grey;
+            }
+            &:active {
+              i.fa.fa-star-o {
+                &:before {
+                  content: '\f005';
+                }
+              }
+              i {
+                color: @favorite_blue;
+              }
             }
 
             img {
@@ -949,6 +960,9 @@ header {
             i {
               position: relative;
               top: 2px;
+              &.icon-message_icon {
+                top: 3px;
+              }
             }
           }
         }
@@ -1306,6 +1320,26 @@ footer {
     cursor: pointer;
     position: relative;
     display: inline-block;
+    &:hover {
+      box-shadow: 0 3px 0 #ededed;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 110%;
+      height: 117%;
+      border: 2px solid #a7c138;
+      top: -2px;
+      left: -2px;
+      border-radius: 13px;
+      transition: all 0.1s ease;
+      opacity: 0;
+    }
+    &:active {
+      //&:before {
+      //  opacity: 1;
+      //}
+    }
   }
   .currency_widget {
     width: 70%;
@@ -1731,7 +1765,24 @@ footer {
   font-family: 'LatoRegular', sans-serif;
 
   &:hover {
-    background: darken(@light_grey, 5%);
+    box-shadow: 0 3px 0 #ededed;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 117%;
+    border: 2px solid #a7c138;
+    top: -2px;
+    left: -2px;
+    border-radius: 13px;
+    transition: all 0.1s ease;
+    opacity: 0;
+  }
+  &:active {
+    &:before {
+      opacity: 1;
+    }
   }
   i {
     right: 6px;

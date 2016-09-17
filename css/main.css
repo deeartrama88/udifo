@@ -624,7 +624,10 @@ header .main_block .second_menu .user_cabinet {
   transition: all 0.1s ease;
   opacity: 0;
 }
-.direction_widget .widget_main_block .main_line .icons_each .icon_img_block:hover:before {
+.direction_widget .widget_main_block .main_line .icons_each .icon_img_block:hover {
+  box-shadow: 0 3px 0 #ededed;
+}
+.direction_widget .widget_main_block .main_line .icons_each .icon_img_block:active:before {
   opacity: 1;
 }
 .direction_widget .widget_main_block .main_line .icons_each .icon_img_block:active:before {
@@ -666,7 +669,7 @@ header .main_block .second_menu .user_cabinet {
   box-shadow: 0 3px #657a08;
 }
 .direction_widget .widget_main_block .main_line .icons_each.add_icon .icon_img_block:hover {
-  background: #789209;
+  box-shadow: 0 3px #8caa0b;
 }
 .often_questions {
   text-align: center;
@@ -791,7 +794,13 @@ header .main_block .second_menu .user_cabinet {
   cursor: pointer;
 }
 .table_wrap table tbody td.actions .action_:hover {
-  background: #e0e0e0;
+  box-shadow: 0 3px 0 #ededed;
+}
+.table_wrap table tbody td.actions .action_:active i.fa.fa-star-o:before {
+  content: '\f005';
+}
+.table_wrap table tbody td.actions .action_:active i {
+  color: #289fce;
 }
 .table_wrap table tbody td.actions .action_ img {
   position: relative;
@@ -800,6 +809,9 @@ header .main_block .second_menu .user_cabinet {
 .table_wrap table tbody td.actions .action_ i {
   position: relative;
   top: 2px;
+}
+.table_wrap table tbody td.actions .action_ i.icon-message_icon {
+  top: 3px;
 }
 .table_wrap table tbody td .amount {
   font-size: 18px;
@@ -1099,6 +1111,21 @@ footer .bottom_link a {
   cursor: pointer;
   position: relative;
   display: inline-block;
+}
+.fixed_footer .icon_img_block:hover {
+  box-shadow: 0 3px 0 #ededed;
+}
+.fixed_footer .icon_img_block:before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 117%;
+  border: 2px solid #a7c138;
+  top: -2px;
+  left: -2px;
+  border-radius: 13px;
+  transition: all 0.1s ease;
+  opacity: 0;
 }
 .fixed_footer .currency_widget {
   width: 70%;
@@ -1454,7 +1481,22 @@ footer .bottom_link a {
   font-family: 'LatoRegular', sans-serif;
 }
 .currency_icon_block:hover {
-  background: #e0e0e0;
+  box-shadow: 0 3px 0 #ededed;
+}
+.currency_icon_block:before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 117%;
+  border: 2px solid #a7c138;
+  top: -2px;
+  left: -2px;
+  border-radius: 13px;
+  transition: all 0.1s ease;
+  opacity: 0;
+}
+.currency_icon_block:active:before {
+  opacity: 1;
 }
 .currency_icon_block i {
   right: 6px;

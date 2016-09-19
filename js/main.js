@@ -114,6 +114,8 @@
 
         // checkbox test
         $('.calculator_wrap .check_box input').ionCheckRadio();
+        // log in pop up
+        $('.user_logged_in_pop_up input').ionCheckRadio();
 
         // CLOSE OPEN CALCULATOR
         var calc_open_icon = $('.often_questions i.icon-calculator_icon');
@@ -133,6 +135,20 @@
             if(!$(event.target).closest(header_search_element_body).length && !$(event.target).closest(header_search_open_icon).length) {
                 if($(header_search_element_body).is(":visible")) {
                     $(header_search_element_body).fadeOut(100);
+                }
+            }
+            if($('.user_pop_up_menu')){
+                if(!$(event.target).closest($('.user_pop_up_menu')).length && !$(event.target).closest($('.user_cabinet .logged .name')).length) {
+                    if($('.user_pop_up_menu').is(":visible")) {
+                        $('.user_pop_up_menu').fadeOut(100);
+                    }
+                }
+            }
+            if($('.user_logged_in_pop_up')){
+                if(!$(event.target).closest($('.user_logged_in_pop_up')).length && !$(event.target).closest($('.user_cabinet .logged .fa-sign-out')).length) {
+                    if($('.user_logged_in_pop_up').is(":visible")) {
+                        $('.user_logged_in_pop_up').fadeOut(100);
+                    }
                 }
             }
         })
@@ -205,6 +221,9 @@
         // comments select init
         $('.obmenka_wrap .form_1 select').niceSelect();
 
+        // cabinet select init
+        $('.cabinet_wrapper select').niceSelect();
+
         // comments select init
         $('.obmenka_wrap .form_2 select').msDropDown();
 
@@ -244,6 +263,32 @@
         })
         $('.faq_tab:first-child .tab_title').trigger('click');
 
+
+        // USER CABINET - CABINET PAGE FUNCTIONS
+        if($('.user_cabinet .logged .name')){
+            if($('.user_pop_up_menu')){
+                $('.user_cabinet .logged .name').on('click', function(){
+                    $('.user_pop_up_menu').fadeToggle(100);
+                })
+            }
+        }
+        if($('.user_cabinet .logged .fa-sign-out')){
+            if($('.user_logged_in_pop_up')){
+                $('.user_cabinet .logged .fa-sign-out').on('click', function(){
+                    $('.user_logged_in_pop_up').fadeToggle(100);
+                })
+            }
+        }
+        if($('.cabinet_inside_wrap')){
+            $('.cabinet_inside_wrap .side_menu li a').on('click', function (e) {
+                e.preventDefault();
+                var this_data_attr = $(this).data().sideconteiner;
+                $('.side_menu_content__wrap').fadeOut(0);
+                $('.side_menu_content').find('.side_menu_content__wrap.' + this_data_attr).fadeIn(0);
+                $('.cabinet_inside_wrap .side_menu li').removeClass('active');
+                $(this).parent().addClass('active');
+            })
+        }
 
 
 

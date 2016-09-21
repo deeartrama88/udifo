@@ -661,7 +661,7 @@
                     </div>
 
                     <div class="side_menu_content">
-                        <div class="side_menu_content__wrap personal_info active">
+                        <div class="side_menu_content__wrap personal_info">
                             <form class="change_user_info">
                                 <div class="form_group">
                                     <div class="input_wrap">
@@ -697,23 +697,500 @@
                             </form>
                         </div>
                         <div class="side_menu_content__wrap notifications">
-                           <h1>notifications</h1>
+                            <div class="table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>Дата <i class="fa fa-caret-down"></i></td>
+                                            <td>Сообщение</td>
+                                            <td>Автор</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span>12.10.16</span><span class="time">13.10</span></td>
+                                            <td>
+                                                <span>Вам доступна скидка в размере 3%</span>
+                                                <span class="link"><a href="#">читать полностью</a></span>
+                                            </td>
+                                            <td>Администрация Udifo</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="side_menu_content__wrap your_testimonials">
-                            <h1>Ваши отзывы</h1>
+                            <div class="table">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <td>Дата <i class="fa fa-caret-down"></i></td>
+                                        <td>Текст отзыва</td>
+                                        <td>Направление обмена</td>
+                                        <td>Обменник</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="date"><span>12.10.16</span><span class="time">13.10</span></td>
+                                        <td class="desc">
+                                            <span class="text red">
+                                                <span class="desc">
+                                                    <span class="desc_text">
+                                                        Отвратительный сервис <br />
+                                                        До сих пор не вернули деньги
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                WMZ > Яндекс Деньги
+                                            </span>
+                                        </td>
+                                        <td class="exchanger">
+                                            <a href="#" class="link">Bestchange</a>
+                                            <span class="comment">
+                                                <span class="icon">
+                                                    <i class="fa fa-comment" aria-hidden="true"></i>
+                                                    <span class="amount">3</span>
+                                                </span>
+                                                <span class="icon">
+                                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                                </span>
+                                            </span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="date"><span>12.10.16</span><span class="time">13.10</span></td>
+                                        <td class="desc">
+                                            <span class="text green">
+                                                <span class="desc">
+                                                    <span class="desc_text">
+                                                        Все отлично
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                WMZ > Яндекс Деньги
+                                            </span>
+                                        </td>
+                                        <td class="exchanger">
+                                            <a href="#" class="link">Bestchange</a>
+                                            <span class="comment">
+                                                <span class="icon">
+                                                    <i class="fa fa-comment" aria-hidden="true"></i>
+                                                    <span class="amount">3</span>
+                                                </span>
+                                                <span class="icon">
+                                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                                </span>
+                                            </span>
+                                        </td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="side_menu_content__wrap favorite">
-                            <h1>Избранное</h1>
+                            <div class="flex_container top_line">
+                                <span data-bodies="currencies" class="currencies active">Валюты</span>
+                                <span data-bodies="directions" class="directions">Направления</span>
+                                <span data-bodies="exchangers" class="exchanger">Обменники</span>
+                            </div>
+                            <div class="bodies currencies">
+                                <div class="body_">
+                                    <div class="flex_container">
+                                        <div class="list_">
+                                            <div class="title">Отдаете</div>
+                                            <button class="add_cur main_green_btn">ДОБАВИТЬ ВАЛЮТУ</button>
+                                            <ul>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="list_">
+                                            <div class="title">Получаете</div>
+                                            <button class="add_cur main_green_btn">ДОБАВИТЬ ВАЛЮТУ</button>
+                                            <ul>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bodies directions">
+                                <div class="body_ currencies">
+                                    <div class="flex_container">
+                                        <div class="list_">
+                                            <div class="title">Отдаете</div>
+                                            <button class="add_cur main_green_btn">ДОБАВИТЬ ВАЛЮТУ</button>
+                                            <ul>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="list_">
+                                            <div class="title">Получаете</div>
+                                            <button class="add_cur main_green_btn">ДОБАВИТЬ ВАЛЮТУ</button>
+                                            <ul>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bodies exchangers">
+                                <div class="body_ currencies">
+                                    <div class="flex_container">
+                                        <div class="list_">
+                                            <div class="title">Отдаете</div>
+                                            <button class="add_cur main_green_btn">ДОБАВИТЬ ВАЛЮТУ</button>
+                                            <ul>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="list_">
+                                            <div class="title">Получаете</div>
+                                            <button class="add_cur main_green_btn">ДОБАВИТЬ ВАЛЮТУ</button>
+                                            <ul>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/blue_circle.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon_img_block">
+                                                        <img src="images/currency_icons/qiwi.png" alt="logo">
+                                                    </span>
+                                                    <span class="text">Qiwi руб.</span>
+                                                    <span class="del_icon">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="side_menu_content__wrap options">
-                            <h1>Настройки</h1>
+                            <div class="flex_container">
+                                <div class="form1">
+                                    <form>
+                                        <div class="form_group">
+                                            <label>Текущий пароль</label>
+                                            <input type="text" name="current_password">
+                                        </div>
+                                        <div class="form_group">
+                                            <label>Новый пароль</label>
+                                            <input type="text" name="old_password">
+                                        </div>
+                                        <div class="form_group">
+                                            <label>Подтвердите новый пароль</label>
+                                            <input type="text" name="confirm_password">
+                                        </div>
+                                        <button class="main_green_btn">СОХРАНИТЬ ПАРОЛЬ</button>
+                                    </form>
+                                </div>
+                                <div class="form2">
+                                    <div class="title">Получать уведомления</div>
+                                    <div class="form_group">
+                                        <label>
+                                            <input type="checkbox" name="onEmail" checked>
+                                            На email
+                                        </label>
+                                    </div>
+                                    <div class="form_group">
+                                        <label>
+                                            <input type="checkbox" name="onSMS" checked>
+                                            По SMS
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="side_menu_content__wrap overview">
-                            <h1>Обзор</h1>
+                            <div class="title">Отчет по прибыли</div>
+                            <ul class="overview">
+                                <li>
+                                    <span class="date">За день</span>
+                                    <span class="amount">0.00 USD</span>
+                                </li>
+                                <li>
+                                    <span class="date">За неделю</span>
+                                    <span class="amount">0.00 USD</span>
+                                </li>
+                                <li>
+                                    <span class="date">За месяц</span>
+                                    <span class="amount">0.00 USD</span>
+                                </li>
+                                <li>
+                                    <span class="date">Общая прибыль</span>
+                                    <span class="amount">0.00 USD</span>
+                                </li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias debitis laudantium quod
+                                repellendus voluptatem? Alias corporis cum dolore enim excepturi facere harum, ipsa,
+                                nulla, provident reiciendis saepe veritatis voluptatem voluptates? Ad aliquam commodi
+                                consequuntur cupiditate eos expedita facere inventore itaque maiores mollitia nihil odit
+                                perspiciatis, provident quibusdam quo sint veritatis!
+                            </p>
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda dolore molestiae
+                                repellat saepe voluptatibus. Consequatur eaque suscipit voluptatibus. Debitis dolorem
+                                est itaque, minima quas quia sequi tempore voluptatem. Quis.
+                            </p>
+                            <ul class="info">
+                                <li>
+                                    <span class="title">ID клиента</span>
+                                    <span class="data">8219</span>
+                                </li>
+                                <li>
+                                    <span class="title">Дата регистрации</span>
+                                    <span class="data">12.06.15</span>
+                                </li>
+                                <li>
+                                    <span class="title">Электронный адрес</span>
+                                    <span class="data link"><a href="#">www.obmenka.com</a></span>
+                                </li>
+                                <li>
+                                    <span class="title">Реферальная ссылка</span>
+                                </li>
+                            </ul>
+                            <div class="ref_link_input">
+                                <input type="text" placeholder="www.udifo.com/a8219">
+                                <i class="fa fa-clone" aria-hidden="true"></i>
+                            </div>
                         </div>
-                        <div class="side_menu_content__wrap statistic_1">
-                            <h1>Статистика</h1>
+                        <div class="side_menu_content__wrap statistic_1 active">
+                            <div class="title">Отчет по трафику</div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consectetur
+                                cupiditate, deserunt ex expedita, id impedit mollitia optio pariatur porro possimus
+                                quam recusandae ut veritatis? Assumenda, atque consequuntur culpa, cumque debitis
+                                deleniti ea excepturi fuga fugit harum hic iure minima nisi obcaecati perferendis quasi
+                                repellendus sed sunt veritatis voluptatum!
+                            </p>
                         </div>
                         <div class="side_menu_content__wrap materials">
                             <h1>Материалы</h1>

@@ -113,9 +113,7 @@
         })
 
         // checkbox test
-        $('.calculator_wrap .check_box input').ionCheckRadio();
-        // log in pop up
-        $('.user_logged_in_pop_up input').ionCheckRadio();
+        $('input[type="checkbox"]').ionCheckRadio();
 
         // CLOSE OPEN CALCULATOR
         var calc_open_icon = $('.often_questions i.icon-calculator_icon');
@@ -228,6 +226,8 @@
         $('.obmenka_wrap .form_2 select').msDropDown();
 
 
+
+
         //  ADD CURRENCIES WIDGET ( VIA GREEN PLUS ICON )
         var first_padding = $('#pop_up_currecy .tab.pay_systems .icons_each.open .sub_body').height();
         $('#pop_up_currecy .tab.pay_systems').css({'paddingBottom': first_padding+5});
@@ -287,6 +287,16 @@
                 $('.side_menu_content').find('.side_menu_content__wrap.' + this_data_attr).fadeIn(0);
                 $('.cabinet_inside_wrap .side_menu li').removeClass('active');
                 $(this).parent().addClass('active');
+            })
+        }
+        if($('.cabinet_inside_wrap')){
+            $('.side_menu_content__wrap.favorite .top_line span').on('click', function (e) {
+                e.preventDefault();
+                var this_data_attr = $(this).data().bodies;
+                $('.side_menu_content__wrap.favorite .bodies').fadeOut(0);
+                $('.side_menu_content__wrap.favorite').find('.bodies.' + this_data_attr).fadeIn(0);
+                $('.side_menu_content__wrap.favorite .top_line span').removeClass('active');
+                $(this).addClass('active');
             })
         }
 

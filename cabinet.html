@@ -661,6 +661,7 @@
                     </div>
 
                     <div class="side_menu_content">
+                        <!-- ВАШ ПРОФИЛЬ -->
                         <div class="side_menu_content__wrap personal_info">
                             <form class="change_user_info">
                                 <div class="form_group">
@@ -1128,6 +1129,7 @@
                             </div>
                         </div>
 
+                        <!-- ПАРТНЕРСКАЯ ПРОГРАММА -->
                         <div class="side_menu_content__wrap overview">
                             <div class="title">Отчет по прибыли</div>
                             <ul class="overview">
@@ -1182,7 +1184,7 @@
                                 <i class="fa fa-clone" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <div class="side_menu_content__wrap statistic_1 active">
+                        <div class="side_menu_content__wrap statistic_1">
                             <div class="title">Отчет по трафику</div>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae consectetur
@@ -1191,16 +1193,151 @@
                                 deleniti ea excepturi fuga fugit harum hic iure minima nisi obcaecati perferendis quasi
                                 repellendus sed sunt veritatis voluptatum!
                             </p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Дата</td>
+                                        <td>Источник трафика</td>
+                                        <td>Хиты</td>
+                                        <td>Выплачено</td>
+                                        <td>Не засчитано</td>
+                                        <td>Конверсия</td>
+                                        <td>Зароботок</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>12.06.16</td>
+                                        <td class="green"><a href="#">www.obmenka.com</a></td>
+                                        <td>126</td>
+                                        <td>1.50 USD</td>
+                                        <td>15</td>
+                                        <td>70</td>
+                                        <td>70.00 USD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.06.16</td>
+                                        <td class="green"><a href="#">www.obmenka.com</a></td>
+                                        <td>126</td>
+                                        <td>1.50 USD</td>
+                                        <td>15</td>
+                                        <td>70</td>
+                                        <td>70.00 USD</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div class="side_menu_content__wrap materials">
-                            <h1>Материалы</h1>
+                            <div class="title">Рекламные материалы</div>
+                            <p>
+                                В этом разделе представлены материалы, которые вы сможете использовать на ваших сайтах,
+                                блогах, соц. сетях для эффективного участия в партнерской программе.
+                            </p>
+                            <div class="img_block big">
+                                <div class="title">728 x 90</div>
+                                <div class="block"></div>
+                                <div class="input_block">
+                                    <input type="text" class="img_input" placeholder="www.udifo.com/=a91837472819666/123banner.gif">
+                                    <i class="fa fa-clone" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="img_block middle">
+                                <div class="title">468 x 60</div>
+                                <div class="block"></div>
+                                <div class="input_block">
+                                    <input type="text" class="img_input" placeholder="www.udifo.com/=a91837472819666/123banner.gif">
+                                    <i class="fa fa-clone" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="img_block small">
+                                <div class="title">320 x 50</div>
+                                <div class="block"></div>
+                                <div class="input_block">
+                                    <input type="text" class="img_input" placeholder="www.udifo.com/=a91837472819666/123banner.gif">
+                                    <i class="fa fa-clone" aria-hidden="true"></i>
+                                </div>
+                            </div>
                         </div>
                         <div class="side_menu_content__wrap withdraw">
-                            <h1>Вывод средств</h1>
+                            <div class="title">Запрос на вывод средств</div>
+                            <p>
+                                Используйте форму ниже, что бы запросить вывод заработанных средств. Минимально допустимая
+                                сумма для вывода: 5.00 у.е. (1 у.е. = 1 USD). Время обработки запроса составляет до 5 рабочих дней.
+                            </p>
+                            <div class="form">
+                                <div class="balance">Всего доступно: <span>250 у.е.</span></div>
+                                <form>
+                                    <div class="form_group">
+                                        <label>Вывести сумму</label>
+                                        <input type="text" name="output">
+                                        <span class="cur">y.e. (USD)</span>
+                                    </div>
+                                    <div class="form_group">
+                                        <label>Платежная система</label>
+                                        <select name="pay_system" id="pay_system">
+                                            <option value="1">OK Pay</option>
+                                            <option value="1">OK Pay</option>
+                                            <option value="1">OK Pay</option>
+                                        </select>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form_group">
+                                        <label>ID Получателя</label>
+                                        <input type="text" name="output">
+                                    </div>
+                                    <button class="main_green_btn">ЗАПРОСИТЬ ВЫВОД СРЕДСТВ</button>
+                                </form>
+                            </div>
+                            <div class="table">
+                                <div class="title">История выплат</div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>Дата</td>
+                                            <td>Платежная система</td>
+                                            <td>ID получателя</td>
+                                            <td>Нетто</td>
+                                            <td>Комиссия</td>
+                                            <td>Брутто</td>
+                                            <td>Статус</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr></tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
-                        <div class="side_menu_content__wrap managing">
-                            <h1>Управление</h1>
+                        <!-- ВАШ ОБМЕННЫЙ ПУНКТ -->
+                        <div class="side_menu_content__wrap managing active">
+                            <div class="title">Добавление и редактирование обменных пунктов</div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Дата добавления</td>
+                                        <td>Название</td>
+                                        <td>Сайт</td>
+                                        <td>Статус</td>
+                                        <td>Рейтинги</td>
+                                        <td>Действия</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>12.06.16</td>
+                                        <td>Obmenka.ua</td>
+                                        <td><a href="#">www.obmenka.com</a></td>
+                                        <td class="green">активен</td>
+                                        <td><i class="fa fa-bar-chart"></i></td>
+                                        <td class="actions">
+                                            <span><i class="fa fa-pencil"></i></span>
+                                            <span><i class="fa fa-trash"></i></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="main_green_btn">ДОБАВИТЬ ОБМЕННЫЙ ПУНКТ</button>
                         </div>
                         <div class="side_menu_content__wrap statistic_2">
                             <h1>Статистика</h1>

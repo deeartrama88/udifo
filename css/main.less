@@ -125,7 +125,14 @@ button.main_green_btn {
     background: darken(@main_green, 2%);
   }
 }
-
+.ui-datepicker-trigger {
+  position: absolute;
+  width: 18px;
+  bottom: 13px;
+  right: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
 span.red {
   color: red;
 }
@@ -1379,6 +1386,7 @@ footer {
   bottom: 0;
   margin: 0 auto;
   width: 100%;
+  z-index: 2;
 
   .icon_img_block {
     width: 40px;
@@ -4116,7 +4124,7 @@ iframe[id='^twitter']{}
   background: white;
   top: 30px;
   box-shadow: 0 0 23px #cccccc;
-  z-index: 1;
+  z-index: 2;
   color: @main_grey;
   font-size: 14px;
 
@@ -4191,7 +4199,7 @@ iframe[id='^twitter']{}
   padding: 15px;
   background: white;
   box-shadow: 0 0 10px lightslategrey;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 30px;
   width: 230px;
@@ -4563,6 +4571,28 @@ iframe[id='^twitter']{}
     margin-bottom: 15px;
     text-align: center;
   }
+  input, select {
+    padding: 10px;
+    border: 1px solid @light_grey;
+    width: 100%;
+  }
+  .nice-select {
+    width: 100%;
+    .list {
+      width: 100%;
+    }
+  }
+  .form_group {
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+  }
+  label {
+    margin: 0;
+    color: @gray_darkblue;
+    font-size: 14px;
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -4657,10 +4687,8 @@ iframe[id='^twitter']{}
     }
   }
   input {
-    width: 100%;
     max-width: 60%;
     padding: 10px 20px;
-    border: 1px solid #ededed;
   }
   i {
     display: inline-block;
@@ -4743,12 +4771,10 @@ iframe[id='^twitter']{}
     }
   }
   input {
-    width: 100%;
     max-width: 60%;
     margin: auto;
     display: inline-block;
     padding: 10px;
-    border: 1px solid @light_grey;
   }
 }
 
@@ -4760,11 +4786,6 @@ iframe[id='^twitter']{}
     display: block;
     text-align: center;
     text-align: left;
-    input {
-      padding: 10px;
-      border: 1px solid @light_grey;
-      width: 100%;
-    }
     .nice-select {
       width: 100%;
       .list {
@@ -4780,16 +4801,9 @@ iframe[id='^twitter']{}
     }
 
     label {
-      display: block;
-      text-align: left;
-      font-size: 13px;
-      color: @gray_darkblue;
-      margin-bottom: 0;
     }
     .form_group {
-      position: relative;
-      display: block;
-      margin-bottom: 20px;
+
       .cur {
         position: absolute;
         right: -80px;
@@ -4852,6 +4866,62 @@ iframe[id='^twitter']{}
           color: red;
         }
       }
+    }
+  }
+}
+
+.side_menu_content__wrap.add_new_exchanger {
+  .fields_group {
+    width: 45%;
+  }
+  .datapicker1 {
+    position: absolute;
+    right: 10px;
+    top: 34px;
+  }
+  .nice-select {
+    margin-bottom: 20px;
+    float: none;
+  }
+  .buttons {
+    text-align: center;
+  }
+  button {
+    display: inline-block;
+    font-weight: bold;
+    &.save {
+      margin-right: 15px;
+    }
+    &.edit {
+      background: @favorite_blue;
+      box-shadow: 0 3px 0 darken(@favorite_blue, 10%);
+      &:active {
+        box-shadow: none;
+      }
+    }
+  }
+  input {
+  }
+  .dots {
+    position: absolute;
+    right: -60px;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0px 9px 23px;
+    border-radius: 5px;
+    background: @main_green;
+    box-shadow: 0 3px 0 darken(@main_green, 10%);
+    line-height: 10px;
+    color: white;
+    top: 24px;
+    cursor: pointer;
+    &:hover {
+      background: darken(@main_green, 3%);
+    }
+    &:active {
+      top: 27px;
+      box-shadow: none;
     }
   }
 }

@@ -280,7 +280,7 @@
             }
         }
         if($('.cabinet_inside_wrap')){
-            $('.cabinet_inside_wrap .side_menu li a').on('click', function (e) {
+            $('.cabinet_inside_wrap .side_menu li a, .add_new_exchanger_cabinet').on('click', function (e) {
                 e.preventDefault();
                 var this_data_attr = $(this).data().sideconteiner;
                 $('.side_menu_content__wrap').fadeOut(0);
@@ -300,6 +300,15 @@
             })
         }
 
+        // ВКЛЮЧЕНИЕ ВКЛАДКИ
+
+        $( "#datapic1" ).datepicker({
+            showOn: "button",
+            buttonImage: "../images/icons/calendar_fa.png",
+            buttonImageOnly: true,
+            dateFormat: 'dd.mm.yy',
+            buttonText: "Select date"
+        });
 
 
 

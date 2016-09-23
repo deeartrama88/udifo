@@ -127,6 +127,14 @@ button.main_green_btn:active {
 button.main_green_btn:hover {
   background: #84a00a;
 }
+.ui-datepicker-trigger {
+  position: absolute;
+  width: 18px;
+  bottom: 13px;
+  right: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
 span.red {
   color: red;
 }
@@ -1158,6 +1166,7 @@ footer .bottom_link a {
   bottom: 0;
   margin: 0 auto;
   width: 100%;
+  z-index: 2;
 }
 .fixed_footer .icon_img_block {
   width: 40px;
@@ -3474,7 +3483,7 @@ footer .bottom_link a {
   background: white;
   top: 30px;
   box-shadow: 0 0 23px #cccccc;
-  z-index: 1;
+  z-index: 2;
   color: #555555;
   font-size: 14px;
 }
@@ -3543,7 +3552,7 @@ footer .bottom_link a {
   padding: 15px;
   background: white;
   box-shadow: 0 0 10px lightslategrey;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 30px;
   width: 230px;
@@ -3897,6 +3906,28 @@ footer .bottom_link a {
   margin-bottom: 15px;
   text-align: center;
 }
+.side_menu_content__wrap input,
+.side_menu_content__wrap select {
+  padding: 10px;
+  border: 1px solid #ededed;
+  width: 100%;
+}
+.side_menu_content__wrap .nice-select {
+  width: 100%;
+}
+.side_menu_content__wrap .nice-select .list {
+  width: 100%;
+}
+.side_menu_content__wrap .form_group {
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+}
+.side_menu_content__wrap label {
+  margin: 0;
+  color: #5b6779;
+  font-size: 14px;
+}
 .side_menu_content__wrap table {
   width: 100%;
   border-collapse: collapse;
@@ -3991,10 +4022,8 @@ footer .bottom_link a {
   color: #8caa0b;
 }
 .side_menu_content__wrap.overview input {
-  width: 100%;
   max-width: 60%;
   padding: 10px 20px;
-  border: 1px solid #ededed;
 }
 .side_menu_content__wrap.overview i {
   display: inline-block;
@@ -4068,12 +4097,10 @@ footer .bottom_link a {
   box-shadow: none;
 }
 .side_menu_content__wrap.materials input {
-  width: 100%;
   max-width: 60%;
   margin: auto;
   display: inline-block;
   padding: 10px;
-  border: 1px solid #ededed;
 }
 .side_menu_content__wrap.withdraw form {
   width: 100%;
@@ -4082,11 +4109,6 @@ footer .bottom_link a {
   display: block;
   text-align: center;
   text-align: left;
-}
-.side_menu_content__wrap.withdraw form input {
-  padding: 10px;
-  border: 1px solid #ededed;
-  width: 100%;
 }
 .side_menu_content__wrap.withdraw form .nice-select {
   width: 100%;
@@ -4100,18 +4122,6 @@ footer .bottom_link a {
   padding: 10px 0;
   font-family: 'Lato Black', sans-serif;
   font-weight: bold;
-}
-.side_menu_content__wrap.withdraw form label {
-  display: block;
-  text-align: left;
-  font-size: 13px;
-  color: #5b6779;
-  margin-bottom: 0;
-}
-.side_menu_content__wrap.withdraw form .form_group {
-  position: relative;
-  display: block;
-  margin-bottom: 20px;
 }
 .side_menu_content__wrap.withdraw form .form_group .cur {
   position: absolute;
@@ -4162,6 +4172,57 @@ footer .bottom_link a {
 }
 .side_menu_content__wrap.managing .actions span i.fa-trash {
   color: red;
+}
+.side_menu_content__wrap.add_new_exchanger .fields_group {
+  width: 45%;
+}
+.side_menu_content__wrap.add_new_exchanger .datapicker1 {
+  position: absolute;
+  right: 10px;
+  top: 34px;
+}
+.side_menu_content__wrap.add_new_exchanger .nice-select {
+  margin-bottom: 20px;
+  float: none;
+}
+.side_menu_content__wrap.add_new_exchanger .buttons {
+  text-align: center;
+}
+.side_menu_content__wrap.add_new_exchanger button {
+  display: inline-block;
+  font-weight: bold;
+}
+.side_menu_content__wrap.add_new_exchanger button.save {
+  margin-right: 15px;
+}
+.side_menu_content__wrap.add_new_exchanger button.edit {
+  background: #289fce;
+  box-shadow: 0 3px 0 #207ea3;
+}
+.side_menu_content__wrap.add_new_exchanger button.edit:active {
+  box-shadow: none;
+}
+.side_menu_content__wrap.add_new_exchanger .dots {
+  position: absolute;
+  right: -60px;
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0px 9px 23px;
+  border-radius: 5px;
+  background: #8caa0b;
+  box-shadow: 0 3px 0 #657a08;
+  line-height: 10px;
+  color: white;
+  top: 24px;
+  cursor: pointer;
+}
+.side_menu_content__wrap.add_new_exchanger .dots:hover {
+  background: #809c0a;
+}
+.side_menu_content__wrap.add_new_exchanger .dots:active {
+  top: 27px;
+  box-shadow: none;
 }
 @media only screen and (max-width: 1218px) {
   .direction_widget .widget_main_block .main_line .icons_each:last-child {

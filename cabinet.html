@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="css/ion.checkRadio.css">
     <link rel="stylesheet" href="css/ion.checkRadio.green.css">
     <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/msdropdown.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="../../AppData/Local/Temp/Rar$DRa0.872/css/Glyphter.css">
-    <link rel="stylesheet" href="../../AppData/Local/Temp/Rar$DRa0.108/css/Glyphter.css">
-    <link rel="stylesheet" href="../../AppData/Local/Temp/Rar$DRa0.077/css/Glyphter.css">
 </head>
 <body>
 
@@ -1337,7 +1335,75 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <button class="main_green_btn">ДОБАВИТЬ ОБМЕННЫЙ ПУНКТ</button>
+                            <button class="main_green_btn add_new_exchanger_cabinet" data-sideconteiner="add_new_exchanger">ДОБАВИТЬ ОБМЕННЫЙ ПУНКТ</button>
+                        </div>
+                        <div class="side_menu_content__wrap add_new_exchanger">
+                            <div class="title">Добавление нового обменного пункта</div>
+                                <form>
+                                    <div class="flex_container">
+                                        <div class="fields_group">
+                                            <div class="form_group">
+                                                <label>Название</label>
+                                                <input type="text" name="name">
+                                            </div>
+                                            <div class="form_group">
+                                                <label>Логотип (max. 400 kb)</label>
+                                                <input type="text" name="logotype">
+                                                <span class="dots">...</span>
+                                            </div>
+                                            <div class="form_group">
+                                                <label>URL сайта</label>
+                                                <input type="text" name="site_url">
+                                            </div>
+                                            <div class="form_group">
+                                                <label>URL экспорта курсов</label>
+                                                <input type="text" name="export_url">
+                                            </div>
+                                            <div class="form_group">
+                                                <label>Альтернативный URL сайта</label>
+                                                <input type="text" name="alt_url">
+                                            </div>
+                                            <div class="form_group">
+                                                <label>Альтернативный URL экспорта курсов</label>
+                                                <input type="text" name="alt_exp_url">
+                                            </div>
+                                        </div>
+                                        <div class="fields_group">
+                                        <div class="form_group">
+                                            <label>Дата создания обменного пункта</label>
+                                            <input type="text" name="date" id="datapic1">
+                                        </div>
+                                        <div class="form_group">
+                                            <label>Страна</label>
+                                            <select name="country">
+                                                <option value="ukraine">Ukraine</option>
+                                                <option value="ukraine">Ukraine</option>
+                                                <option value="ukraine">Ukraine</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_group">
+                                            <label>WMID</label>
+                                            <input type="text" name="wmid">
+                                        </div>
+                                        <div class="form_group">
+                                            <label>PM Account</label>
+                                            <input type="text" name="pm_account">
+                                        </div>
+                                        <div class="form_group">
+                                            <label>Тип работы обменника</label>
+                                            <select name="type">
+                                                <option value="hand">Ручной</option>
+                                                <option value="hand">Ручной</option>
+                                                <option value="hand">Ручной</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="main_green_btn save">СОХРАНИТЬ ОБМЕННЫЙ ПУНКТ</button>
+                                        <button class="main_green_btn edit">РЕДАКТИРОВАТЬ КУРСЫ ВАЛЮТ</button>
+                                    </div>
+                                </form>
                         </div>
                         <div class="side_menu_content__wrap statistic_2">
                             <h1>Статистика</h1>
@@ -1467,6 +1533,7 @@
 
 
 <script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/ion.checkRadio.js"></script>
 <script src="js/jquery.nice-select.js"></script>
 <script src="js/msDropDown.js"></script>

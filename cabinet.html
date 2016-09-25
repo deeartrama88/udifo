@@ -1308,7 +1308,7 @@
                         </div>
 
                         <!-- ВАШ ОБМЕННЫЙ ПУНКТ -->
-                        <div class="side_menu_content__wrap managing active">
+                        <div class="side_menu_content__wrap managing">
                             <div class="title">Добавление и редактирование обменных пунктов</div>
                             <table>
                                 <thead>
@@ -1329,7 +1329,9 @@
                                         <td class="green">активен</td>
                                         <td><i class="fa fa-bar-chart"></i></td>
                                         <td class="actions">
-                                            <span><i class="fa fa-pencil"></i></span>
+                                            <span data-sideconteiner="edit_cabinet_exchanger" class="open_cabinet_edit_icon">
+                                                <i class="fa fa-pencil edit_cabinet_icon"></i>
+                                            </span>
                                             <span><i class="fa fa-trash"></i></span>
                                         </td>
                                     </tr>
@@ -1405,11 +1407,211 @@
                                     </div>
                                 </form>
                         </div>
-                        <div class="side_menu_content__wrap statistic_2">
-                            <h1>Статистика</h1>
+                        <div class="side_menu_content__wrap edit_cabinet_exchanger">
+                            <div class="title">Редактирование курсов</div>
+                                <form>
+                                    <div class="form_group">
+                                        <label>Название обменного пункта</label>
+                                        <select name="point_name">
+                                            <option value="name">Obmenka.ua</option>
+                                            <option value="name">Obmenka.ua</option>
+                                            <option value="name">Obmenka.ua</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_group">
+                                        <label>Обмен</label>
+                                        <div class="exchange_block__">
+                                            <div class="currencies">
+                                                <div class="select_">
+                                                    <select name="currency1">
+                                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                                    </select>
+                                                </div>
+                                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                <div class="select_">
+                                                    <select name="currency2">
+                                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                                        <option value="calendar" data-image="images/currency_icons/blue_circle.png">WMZ</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="actions">
+                                                <span class="pen">
+                                                    <i class="fa fa-pencil"></i>
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-trash"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form_group">
+                                        <label>Минимальная комиссия</label>
+                                        <input type="text" name="min-comission">
+                                        <span class="currency_in">y.e.</span>
+                                    </div>
+                                    <div class="form_group">
+                                        <label>Дополнительная комиссия (не входящая в курс обмена)</label>
+                                        <input type="text" name="extra_comission">
+                                        <span class="currency_in">y.e.</span>
+                                    </div>
+                                    <div class="form_group">
+                                        <label>Минимальная сумма обмена</label>
+                                        <input type="text" name="min_summary">
+                                    </div>
+                                    <div class="form_group">
+                                        <label>Тип обмена</label>
+                                        <select name="type">
+                                            <option value="hand">Ручной</option>
+                                            <option value="hand">Ручной</option>
+                                            <option value="hand">Ручной</option>
+                                        </select>
+                                    </div>
+                                    <button class="main_green_btn">СОХРАНИТЬ</button>
+                                </form>
                         </div>
-                        <div class="side_menu_content__wrap testimonials">
-                            <h1>Отзывы</h1>
+                        <div class="side_menu_content__wrap statistic_2">
+                            <div class="title">Статистика переходов по направлениям обменов</div>
+                            <div class="filter_block">
+                                <div class="flex_container">
+                                    <div class="period_block">
+                                        <div class="form_group date_pic_">
+                                            <label>За период</label>
+                                            <input type="text" name="date1" id="datapic2">
+                                        </div>
+                                        <div class="form_group">
+                                            <input type="text" name="date2" id="datapic3">
+                                        </div>
+                                    </div>
+                                    <div class="form_group">
+                                        <select name="ex_name">
+                                            <option value="1">Obmenka.ua</option>
+                                            <option value="1">Obmenka.ua</option>
+                                            <option value="1">Obmenka.ua</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Дата</td>
+                                        <td>Обменный пункт</td>
+                                        <td>Направление обмена</td>
+                                        <td>Переходов</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>12.06.16</td>
+                                        <td>Obmenka.ua</td>
+                                        <td>WMZ-AdvCash USD</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="main_green_btn">НА НЕДЕЛЮ РАНЕЕ</button>
+                        </div>
+                        <div class="side_menu_content__wrap testimonials active">
+                            <div class="title">Отзывы о ваших обменных пунктах</div>
+                            <div class="filter_top_line">
+                                <span class="text">Показывать:</span>
+                                <ul>
+                                    <li><a class="active" href="#">Все</a></li>
+                                    <li class="green"><a href="#">Положительные</a></li>
+                                    <li class="red"><a href="#">Отрицательные</a></li>
+                                    <li><a href="#">Нейтральные</a></li>
+                                </ul>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td class="date_thead">Дата <i class="fa fa-caret-down"></i></td>
+                                        <td class="text_desc">Текст отзыва</td>
+                                        <td>Направление обмена</td>
+                                        <td>Обменник</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <table class="each_">
+                                        <tbody>
+                                        <tr class="first_line">
+                                            <td rowspan="2" class="date">
+                                                12.03.16 <br>
+                                                <span class="time">13:10</span>
+                                                <span class="status green">положительный</span>
+                                            </td>
+                                            <td class="name__">
+                                                <span class="name">Мария</span>
+                                                <img src="images/flags/ua.jpg" alt="flag" class="flag">
+                                                <span class="gray">IP:255.***.***.123</span>
+                                            </td>
+                                            <td class="money">
+                                                WMZ > Яндекс деньги
+                                            </td>
+                                            <td class="link">
+                                                <a href="#">Bestchange</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet animi
+                                                at distinctio dolorem doloremque eligendi, ex expedita fugit hic id incidunt
+                                                itaque minima molestiae molestias mollitia nemo, optio possimus qui quidem
+                                                reiciendis sequi sunt voluptas? Ducimus itaque quia tempora? A atque commodi
+                                                et eum magni nam nesciunt nostrum numquam.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="buttons__">
+                                                <button class="main_green_btn">ответить</button>
+                                                <button class="main_green_btn gray">удалить</button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="each_">
+                                        <tbody>
+                                        <tr class="first_line">
+                                            <td rowspan="2" class="date">
+                                                12.03.16 <br>
+                                                <span class="time">13:10</span>
+                                                <span class="status red">отрицательный</span>
+                                            </td>
+                                            <td class="name__">
+                                                <span class="name">Мария</span>
+                                                <img src="images/flags/ua.jpg" alt="flag" class="flag">
+                                                <span class="gray">IP:255.***.***.123</span>
+                                            </td>
+                                            <td class="money">
+                                                WMZ > Яндекс деньги
+                                            </td>
+                                            <td class="link">
+                                                <a href="#">Bestchange</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet animi
+                                                at distinctio dolorem doloremque eligendi, ex expedita fugit hic id incidunt
+                                                itaque minima molestiae molestias mollitia nemo, optio possimus qui quidem
+                                                reiciendis sequi sunt voluptas? Ducimus itaque quia tempora? A atque commodi
+                                                et eum magni nam nesciunt nostrum numquam.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="buttons__">
+                                                <button class="main_green_btn">ответить</button>
+                                                <button class="main_green_btn gray">удалить</button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 

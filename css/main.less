@@ -4127,6 +4127,7 @@ iframe[id='^twitter']{}
   z-index: 2;
   color: @main_grey;
   font-size: 14px;
+  display: none;
 
   .exit {
     padding-top: 20px;
@@ -4203,6 +4204,7 @@ iframe[id='^twitter']{}
   position: absolute;
   top: 30px;
   width: 230px;
+  display: none;
 
   .title {
     text-align: center;
@@ -4571,6 +4573,36 @@ iframe[id='^twitter']{}
     margin-bottom: 15px;
     text-align: center;
   }
+  .actions {
+    span {
+      text-align: center;
+      width: 35px;
+      display: inline-block;
+      height: 35px;
+      line-height: 38px;
+      background: @light_grey;
+      box-shadow: 0 3px 0 darken(@light_grey, 10%);
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      &:first-child {
+        margin-right: 15px;
+      }
+      &:hover {
+        background: darken(@light_grey, 3%);
+      }
+      &:active {
+        position: relative;
+        top: 3px;
+        box-shadow: none;
+      }
+      i {
+        &.fa-trash {
+          color: red;
+        }
+      }
+    }
+  }
   input, select {
     padding: 10px;
     border: 1px solid @light_grey;
@@ -4578,6 +4610,7 @@ iframe[id='^twitter']{}
   }
   .nice-select {
     width: 100%;
+    float: none;
     .list {
       width: 100%;
     }
@@ -4838,36 +4871,6 @@ iframe[id='^twitter']{}
       background: none;
     }
   }
-  .actions {
-    span {
-      text-align: center;
-      width: 35px;
-      display: inline-block;
-      height: 35px;
-      line-height: 38px;
-      background: @light_grey;
-      box-shadow: 0 3px 0 darken(@light_grey, 10%);
-      border-radius: 5px;
-      font-size: 18px;
-      cursor: pointer;
-      &:first-child {
-        margin-right: 15px;
-      }
-      &:hover {
-        background: darken(@light_grey, 3%);
-      }
-      &:active {
-        position: relative;
-        top: 3px;
-        box-shadow: none;
-      }
-      i {
-        &.fa-trash {
-          color: red;
-        }
-      }
-    }
-  }
 }
 
 .side_menu_content__wrap.add_new_exchanger {
@@ -4922,6 +4925,196 @@ iframe[id='^twitter']{}
     &:active {
       top: 27px;
       box-shadow: none;
+    }
+  }
+}
+
+.side_menu_content__wrap.edit_cabinet_exchanger {
+  .exchange_block__ {
+    margin-bottom: 20px;
+    .select_ {
+      display: inline-block;
+      width: 110px;
+    }
+  }
+  .exchange_block__ {
+    i {
+      margin: 0 15px;
+    }
+  }
+  .actions {
+    margin-left: 15px;
+    i {
+      margin: 0;
+    }
+    span {
+      &:first-child {
+        color: white;
+        background: #888888;
+        box-shadow: 0 3px 0 darken(#888888, 10%)
+      }
+      &:active {
+        box-shadow: none;
+      }
+    }
+  }
+  form {
+    width: 385px;
+    margin: 0 auto;
+  }
+  .currencies {
+    display: inline-block;
+  }
+  .enabled._msddli_ {
+    width: 100%;
+  }
+  .ddChild.ddchild_ {
+    width: calc(100% + 2px);
+  }
+  .actions {
+    display: inline-block;
+  }
+  .currency_in {
+    position: absolute;
+    right: -30px;
+    top: 30px;
+  }
+}
+.side_menu_content__wrap.statistic_2 {
+  label {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .flex_container {
+    align-items: baseline;
+  }
+  .form_group {
+    display: inline-block;
+    &:nth-of-type(1){
+      margin-right: 15px;
+    }
+    input {
+      width: 150px;
+    }
+    &.date_pic_ {
+      width:auto;
+    }
+  }
+  button {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+.side_menu_content__wrap.testimonials {
+  .filter_top_line {
+    font-size: 13px;
+    margin-bottom: 15px;
+    li {
+      position: relative;
+      border-right: 1px solid @main_grey;
+      padding: 0 10px;
+      line-height: 13px;
+      a:hover {
+        text-decoration: underline;
+      }
+      a.active {
+        text-decoration: underline;
+      }
+      &:last-child {
+        border-right: none;
+      }
+      &.red {
+        color: red;
+      }
+      &.green {
+        color: @main_green;
+      }
+    }
+  }
+  table {
+    .gray {
+      font-weight: bold;
+      color: darken(@light_grey, 20%);
+    }
+    .date_thead {
+      min-width: 60px;
+    }
+    .date {
+    }
+    .desc, .name__ {
+      padding: 0 20px;
+      text-align: left;
+    }
+    .name__ {
+      width: 337px;
+    }
+    .flag {
+      margin: 0 10px;
+    }
+    .buttons__ {
+      text-align: right;
+      border-top: 1px solid transparent;
+      padding: 0 20px 20px;
+      font-weight: bold;
+      button {
+        display: inline-block;
+        margin-left: 15px;
+        &.gray {
+          background: #5b6779;
+          box-shadow: 0 3px 0 darken(#5b6779, 10%);
+          &:hover {
+            background: darken(#5b6779, 3%);
+          }
+          &:active {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .money {
+      text-align: center;
+      width: 302px;
+    }
+    .link {
+      text-align: center;
+      padding-right: 10px;
+      width: 117px;
+    }
+    .text_desc {
+      padding-right: 10%;
+    }
+    .green, .red {
+      display: block;
+      position: relative;
+      top: 30px;
+    }
+    .red {
+      color: red;
+    }
+    tr{
+      background: transparent;
+    }
+    tr:hover {
+      background: transparent;
+    }
+    .first_line {
+      td {
+        border-bottom: 1px solid transparent;
+      }
+      .date {
+        padding: 0 10px;
+      }
+    }
+    .time {
+      color: darken(@light_grey, 20%);
+    }
+    &.each_ {
+      &:hover {
+        background: @light_grey;
+      }
+      .first_line {
+        border-top: none;
+      }
     }
   }
 }

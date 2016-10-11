@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/msdropdown.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -1424,7 +1425,8 @@
         <!-- OFTEN OPERATIONS ACTIVE / ЧАСТЫ ОПЕРАЦИИ В АКТИВНОМ РЕЖИМЕ(КОГДА ВЫБРАНЫ ВАЛЮТЫ) -->
         <div class="often_questions active">
             <div class="flex_container">
-                <div class="title">вы меняете:</div>
+                <div class="title desctop">вы меняете:</div>
+                <div class="title_mobile mobile"><span class="dot_toggle active"></span><span class="dot_toggle"></span></div>
                 <div class="currencies_block">
                     <div class="currency_block">
                         <div class="currency_icon_block"><i class="qiwi_icon"></i></div>
@@ -1441,9 +1443,11 @@
                     <i class="icon-download_icon"></i>
                     <i class="icon-calculator_icon"></i>
                     <i class="fa fa-bell-o" aria-hidden="true"></i>
-                    <i class="icon-delete_icon"></i>
+                    <i class="icon-delete_icon desctop"></i>
+                    <i class="fa fa-cog mobile" aria-hidden="true"></i>
                 </div>
-                <i class="fa fa-cog" aria-hidden="true"></i>
+                <i class="fa fa-cog desctop" aria-hidden="true"></i>
+                <i class="fa fa-angle-right mobile" aria-hidden="true"></i>
             </div>
             <!-- CALCULATOR -->
             <div class="calculator_wrap">
@@ -1461,6 +1465,7 @@
 
         <!-- table -->
         <div class="table_wrap">
+            <div class="table_wrap_mobile mobile">
             <table>
                 <thead>
                 <tr>
@@ -1738,7 +1743,7 @@
 
                 </tbody>
             </table>
-
+            </div>
             <div class="pagination_block">
                 <div class="pages_list">
                     <ul>
@@ -1773,13 +1778,18 @@
 
     <!-- video block-->
     <div class="about_video_block flex_container">
+
+        <!-- mobile titles-->
+        <div class="title mobile">UDIFO.COM</div>
+        <div class="sub_title mobile">Лучший мониторинг online - обменников</div>
+
         <!-- video -->
         <iframe src="https://www.youtube.com/embed/Gi3kUvv5cuE" frameborder="0" allowfullscreen></iframe>
 
         <!-- about text block-->
         <div class="video_about_text">
-            <div class="title">UDIFO.COM</div>
-            <div class="sub_title">Лучший мониторинг online - обменников</div>
+            <div class="title desctop">UDIFO.COM</div>
+            <div class="sub_title desctop">Лучший мониторинг online - обменников</div>
             <div class="desc">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper blandit mi. Proin volutpat
@@ -1892,7 +1902,7 @@
                 </div>
             </div>
 
-            <div class="footer_menu">
+            <div class="footer_menu desctop">
                 <div class="first_menu">
                     <div class="title">Клиентам</div>
                     <ul>
@@ -1912,9 +1922,28 @@
                     </ul>
                 </div>
             </div>
+            <div class="first_menu mobile">
+                <div class="title">Клиентам</div>
+                <ul>
+                    <li><a href="#">О севисе</a></li>
+                    <li><a href="#">Избранные валюты</a></li>
+                    <li><a href="#">Настройки виджета</a></li>
+                    <li><a href="#">Поиск по скайпу</a></li>
+                </ul>
+            </div>
+            <div class="second_menu mobile">
+                <div class="title">Партнерам</div>
+                <ul>
+                    <li><a href="#">Как стать партнером</a></li>
+                    <li><a href="#">Рейтинги обменного пункта</a></li>
+                    <li><a href="#">Тарифы</a></li>
+                    <li><a href="#">Помощь</a></li>
+                </ul>
+            </div>
             <div class="vk_widget">
                 <img src="images/vk_widget.jpg" alt="vk">
             </div>
+
         </div>
         <div class="bottom_link">2015 c <a href="/">Udifo.com</a></div>
     </div>
@@ -2003,8 +2032,10 @@
 
 
 <script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/ion.checkRadio.js"></script>
 <script src="js/jquery.nice-select.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/msDropDown.js"></script>
 <script src="js/main.js"></script>
 </body>

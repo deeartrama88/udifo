@@ -327,9 +327,22 @@
             buttonText: "Select date"
         });
 
+        // TOGGLE GREEN DOTS ON MOBILE STYLES IN often_questions active BLOCK
+        if('.dot_toggle'){
+            var dot_toggle = $('.dot_toggle');
+            $(dot_toggle).on('click', function () {
+                $(dot_toggle).removeClass('active');
+                $(this).addClass('active');
+            })
+        }
 
-
-
+        if($('.table_wrap_mobile')){
+            $(".table_wrap_mobile").niceScroll({
+                cursorcolor:"#555555",
+                cursoropacitymin: 0.5,
+                cursorwidth: "10px"
+            });
+        }
 
 
 

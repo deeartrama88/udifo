@@ -1,0 +1,123 @@
+.dot_toggle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #ededed;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.dot_toggle.active {
+    background: #8caa0b;
+}
+.table_wrap_mobile {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.table_wrap_mobile table {
+    width: 928px;
+}
+.about_video_block .sub_title.mobile {
+    display: block;
+}
+
+
+@media only screen and (max-width : 1218px) {
+    .direction_widget .widget_main_block {
+
+    }
+    .direction_widget .widget_main_block .main_line .icons_each:last-child {
+        display: none;
+    }
+
+    .fixed_footer .currency_widget {
+        width: 80%;
+    }
+
+
+}
+
+@media only screen and (max-width : 1200px) {
+    .under_header_gray_line ul li:last-child {
+        display: none;
+    }
+    .comments .comment_input_block input {
+        max-width: 90%;
+    }
+    .cabinet_wrapper .cabinet_inside_wrap .side_menu_content {
+        width: 76%;
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+
+}
+
+
+@media only screen and (max-width : 991px) {
+    .direction_widget .widget_main_block .main_line .icons_each { margin: 0 5px; }
+    .direction_tab_widget .currency_block { width: 94%; }
+    .direction_tab_widget .add_icon { width: 6%; }
+    .often_questions.active .title { display: none; }
+    .often_questions.active i.fa.fa-angle-right {
+        font-size: 30px;
+        top: 5px;
+    }
+    .desctop { display: none; }
+    .mobile { display: inline-block; }
+    .often_questions.active .fa-cog.mobile { top: 0; }
+    .title_mobile.mobile {
+        position: relative;
+        top: 10px;
+    }
+    .about_video_block.flex_container { display: block; }
+    .about_video_block iframe {
+        float: left;
+        width: 65%;
+        padding-right: 10px;
+        height: 300px;
+    }
+    .about_video_block .video_about_text { width: 100%; }
+    .start_page .news_each { width: 48%; }
+    .start_page .news_each:last-child { display: none; }
+    footer .footer_menu.desctop { display: none; }
+    footer .about_and_soc {
+        width: 50%;
+        margin-bottom: 40px;
+        padding-right: 50px;
+        border-right: 1px solid grey;
+    }
+    footer .first_menu,
+    footer .second_menu { padding-left: 50px; }
+    footer .second_menu {
+        padding-left: 0;
+        border-right: 1px solid grey;
+    }
+    .fixed_footer { display: none; }
+    footer { margin-bottom: 0; }
+    footer .bottom_link {
+        bottom: 0;
+        margin-top: 30px;
+    }
+    footer .vk_widget {
+        width: 50%;
+        padding-left: 50px;
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+
+}
+
+
+@media only screen and (max-width : 480px) {
+
+}
+
+
+@media only screen and (max-width : 320px) {
+
+}

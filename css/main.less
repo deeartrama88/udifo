@@ -1193,23 +1193,22 @@ header {
     width: 48%;
     //height: 300px;
   }
+  .title {
+    font-size: 36px;
+    color: @main_green;
+    padding-bottom: 16px;
+    line-height: 31px;
+    font-weight: bold;
+  }
+  .sub_title {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    font-weight: bold;
+  }
   .video_about_text {
+
     width: 49%;
-
-    .title {
-      font-size: 36px;
-      color: @main_green;
-      padding-bottom: 16px;
-      line-height: 31px;
-      font-weight: bold;
-    }
-
-    .sub_title {
-      font-size: 16px;
-      text-transform: uppercase;
-      padding-bottom: 16px;
-      font-weight: bold;
-    }
 
     .desc {
 
@@ -1308,6 +1307,20 @@ footer {
       justify-content: space-between;
     }
   }
+  .first_menu,
+  .second_menu{
+    width: 50%;
+    a {
+      color: @main_green;
+      font-size: 13px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    li {
+      width: 100%;
+    }
+  }
   .footer_menu {
     width: 40%;
     display: flex;
@@ -1338,24 +1351,6 @@ footer {
       height: 1px;
       border-bottom: 1px solid #555555;
       transform: rotate(90deg);
-    }
-
-    a {
-      color: @main_green;
-      font-size: 13px;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    li {
-      width: 100%;
-    }
-    .first_menu {
-      width: 50%;
-
-    }
-    .second_menu {
-      width: 50%;
     }
   }
   .vk_widget {
@@ -5131,51 +5126,6 @@ iframe[id='^twitter']{}
 //  }
 //}
 
-
-
-@media only screen and (max-width : 1218px) {
-  .direction_widget .widget_main_block {
- 
-  }
-  .direction_widget .widget_main_block .main_line .icons_each:last-child {
-    display: none;
-  }
-
-  .fixed_footer .currency_widget {
-    width: 80%;
-  }
-
-
-}
-
-@media only screen and (max-width : 1200px) {
-  .under_header_gray_line ul li:last-child {
-    display: none;
-  }
-  .comments .comment_input_block input {
-    max-width: 90%;
-  }
-  .cabinet_wrapper .cabinet_inside_wrap .side_menu_content {
-    width: 76%;
-  }
-}
-
-
-@media only screen and (max-width : 992px) {
-
-}
-
-
-@media only screen and (max-width : 768px) {
-
-}
-
-
-@media only screen and (max-width : 480px) {
-
-}
-
-
-@media only screen and (max-width : 320px) {
-
+.mobile {
+  display: none;
 }

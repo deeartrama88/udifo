@@ -984,21 +984,21 @@ header .main_block .second_menu .user_cabinet .logged span i.fa-sign-out {
 .about_video_block iframe {
   width: 48%;
 }
-.about_video_block .video_about_text {
-  width: 49%;
-}
-.about_video_block .video_about_text .title {
+.about_video_block .title {
   font-size: 36px;
   color: #8caa0b;
   padding-bottom: 16px;
   line-height: 31px;
   font-weight: bold;
 }
-.about_video_block .video_about_text .sub_title {
+.about_video_block .sub_title {
   font-size: 16px;
   text-transform: uppercase;
   padding-bottom: 16px;
   font-weight: bold;
+}
+.about_video_block .video_about_text {
+  width: 49%;
 }
 .about_video_block .video_about_text .desc p {
   padding-bottom: 5px;
@@ -1086,6 +1086,23 @@ footer .about_and_soc .soc {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+footer .first_menu,
+footer .second_menu {
+  width: 50%;
+}
+footer .first_menu a,
+footer .second_menu a {
+  color: #8caa0b;
+  font-size: 13px;
+}
+footer .first_menu a:hover,
+footer .second_menu a:hover {
+  text-decoration: underline;
+}
+footer .first_menu li,
+footer .second_menu li {
+  width: 100%;
+}
 footer .footer_menu {
   width: 40%;
   display: -webkit-flex;
@@ -1126,22 +1143,6 @@ footer .footer_menu:before {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-}
-footer .footer_menu a {
-  color: #8caa0b;
-  font-size: 13px;
-}
-footer .footer_menu a:hover {
-  text-decoration: underline;
-}
-footer .footer_menu li {
-  width: 100%;
-}
-footer .footer_menu .first_menu {
-  width: 50%;
-}
-footer .footer_menu .second_menu {
-  width: 50%;
 }
 footer .vk_widget {
   text-align: right;
@@ -4402,22 +4403,6 @@ footer .bottom_link a {
 .side_menu_content__wrap.testimonials table.each_ .first_line {
   border-top: none;
 }
-@media only screen and (max-width: 1218px) {
-  .direction_widget .widget_main_block .main_line .icons_each:last-child {
-    display: none;
-  }
-  .fixed_footer .currency_widget {
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .under_header_gray_line ul li:last-child {
-    display: none;
-  }
-  .comments .comment_input_block input {
-    max-width: 90%;
-  }
-  .cabinet_wrapper .cabinet_inside_wrap .side_menu_content {
-    width: 76%;
-  }
+.mobile {
+  display: none;
 }

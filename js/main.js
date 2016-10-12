@@ -29,45 +29,56 @@
 
 
         // open / close side menu and set left padding to all elements
-        $(all_currency_side_menu_open_btn).on('click',function () {
-            //find out how much should table shift, depending of screen width
-            var paddings = side_menu_set_left();
+        if($(window).width() > 991) {
+            $(all_currency_side_menu_open_btn).on('click',function () {
+                //find out how much should table shift, depending of screen width
+                var paddings = side_menu_set_left();
 
-            // $(all_currency_side_menu).toggleClass('open');
-            if($(all_currency_side_menu).hasClass('open'))
-                $(all_currency_side_menu).removeClass('open');
-            else
-                $(all_currency_side_menu).addClass('open');
-            // toggle class side_menu_opened to change table
-            // $(table_wrap).toggleClass('side_menu_opened');
-            if($(table_wrap).hasClass('side_menu_opened'))
-                $(table_wrap).removeClass('side_menu_opened');
-            else
-                $(table_wrap).addClass('side_menu_opened');
+                // $(all_currency_side_menu).toggleClass('open');
+                if($(all_currency_side_menu).hasClass('open'))
+                    $(all_currency_side_menu).removeClass('open');
+                else
+                    $(all_currency_side_menu).addClass('open');
+                // toggle class side_menu_opened to change table
+                // $(table_wrap).toggleClass('side_menu_opened');
+                if($(table_wrap).hasClass('side_menu_opened'))
+                    $(table_wrap).removeClass('side_menu_opened');
+                else
+                    $(table_wrap).addClass('side_menu_opened');
 
-            // set left padding to  ЧАСТЫЕ ВОПРОСЫ
-            if($(often_operation))
-                $(often_operation).css({marginLeft: paddings.table });
-            // set left padding to TABLE
-            if($(table_wrap))
-                $(table_wrap).css({paddingLeft: paddings.table});
-            // set left padding to DIRECTION WIDGET
-            if($(direction_widget))
-                $(direction_widget).css({paddingLeft: paddings.table});
-            // set left padding to НАПРАВЛЕНИЯ
-            if($(direction_tab))
-                $(direction_tab).css({paddingLeft: paddings.table});
-            // set left padding to BIG NEWS at news page
-            if($(big_news))
-                $(big_news).css({paddingLeft: paddings.table});
-            // set left padding to BIG NEWS at news page
-            if($(faq_wrapper))
-                $(faq_wrapper).css({paddingLeft: paddings.table});
-            // set lefc
-            if($(faq_wrapper))
-                $(faq_wrapper).css({paddingLeft: paddings.table});
+                // set left padding to  ЧАСТЫЕ ВОПРОСЫ
+                if($(often_operation))
+                    $(often_operation).css({marginLeft: paddings.table });
+                // set left padding to TABLE
+                if($(table_wrap))
+                    $(table_wrap).css({paddingLeft: paddings.table});
+                // set left padding to DIRECTION WIDGET
+                if($(direction_widget))
+                    $(direction_widget).css({paddingLeft: paddings.table});
+                // set left padding to НАПРАВЛЕНИЯ
+                if($(direction_tab))
+                    $(direction_tab).css({paddingLeft: paddings.table});
+                // set left padding to BIG NEWS at news page
+                if($(big_news))
+                    $(big_news).css({paddingLeft: paddings.table});
+                // set left padding to BIG NEWS at news page
+                if($(faq_wrapper))
+                    $(faq_wrapper).css({paddingLeft: paddings.table});
+                // set lefc
+                if($(faq_wrapper))
+                    $(faq_wrapper).css({paddingLeft: paddings.table});
 
-        });
+            });
+        }else{
+            $(all_currency_side_menu_open_btn).on('click',function () {
+                // $(all_currency_side_menu).toggleClass('open');
+                if($(all_currency_side_menu).hasClass('open'))
+                    $(all_currency_side_menu).removeClass('open');
+                else
+                    $(all_currency_side_menu).addClass('open');
+            });
+        }
+
 
         // open / close side menu tabs
         $(all_currency_side_menu_tabs).click(function () {
@@ -135,17 +146,27 @@
                     $(header_search_element_body).fadeOut(100);
                 }
             }
-            if($('.user_pop_up_menu')){
+            var user_pop_up_menu = $('.user_pop_up_menu');
+            if($(user_pop_up_menu)){
                 if(!$(event.target).closest($('.user_pop_up_menu')).length && !$(event.target).closest($('.user_cabinet .logged .name')).length) {
-                    if($('.user_pop_up_menu').is(":visible")) {
-                        $('.user_pop_up_menu').fadeOut(100);
+                    if($(user_pop_up_menu).is(":visible")) {
+                        $(user_pop_up_menu).fadeOut(100);
                     }
                 }
             }
-            if($('.user_logged_in_pop_up')){
-                if(!$(event.target).closest($('.user_logged_in_pop_up')).length && !$(event.target).closest($('.user_cabinet .logged .fa-sign-out')).length) {
-                    if($('.user_logged_in_pop_up').is(":visible")) {
-                        $('.user_logged_in_pop_up').fadeOut(100);
+            var user_logged_in_pop_up = $('.user_logged_in_pop_up');
+            if($(user_logged_in_pop_up)){
+                if(!$(event.target).closest($(user_logged_in_pop_up)).length && !$(event.target).closest($('.user_cabinet .logged .fa-sign-out')).length) {
+                    if($(user_logged_in_pop_up).is(":visible")) {
+                        $(user_logged_in_pop_up).fadeOut(100);
+                    }
+                }
+            }
+            var popup_mobile_menu = $('.popup_mobile_menu');
+            if($(popup_mobile_menu)){
+                if(!$(event.target).closest($(popup_mobile_menu)).length && !$(event.target).closest($('.mobile_menu_block i.fa-bars')).length) {
+                    if($(popup_mobile_menu).is(":visible")) {
+                        $(popup_mobile_menu).fadeOut(100);
                     }
                 }
             }
@@ -336,12 +357,29 @@
             })
         }
 
-        if($('.table_wrap_mobile')){
-            $(".table_wrap_mobile").niceScroll({
-                cursorcolor:"#555555",
-                cursoropacitymin: 0.5,
-                cursorwidth: "10px"
-            });
+        // mobile nice scroll on table
+        function mobile_table_nice_scroll(){
+            var table_wrap_mobile = $('.table_wrap_mobile');
+            if($(window).width() < 992){
+                if($(table_wrap_mobile)){
+                    $(table_wrap_mobile).niceScroll({
+                        cursorcolor:"#555555",
+                        cursoropacitymin: 0.5,
+                        cursorwidth: "10px"
+                    });
+                }
+            }
+        }
+        mobile_table_nice_scroll();
+
+
+        // mobile menu open
+        var mobile_open_icon = $('.mobile_menu_block i.fa-bars');
+        var pop_up_mobile_menu = $('.popup_mobile_menu');
+        if($(mobile_open_icon)){
+            $(mobile_open_icon).on('click', function () {
+                $(pop_up_mobile_menu).fadeToggle(200);
+            })
         }
 
 

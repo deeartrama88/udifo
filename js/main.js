@@ -29,7 +29,7 @@
 
 
         // open / close side menu and set left padding to all elements
-        if($(window).width() > 991) {
+        if($(window).width() > 1024) {
             $(all_currency_side_menu_open_btn).on('click',function () {
                 //find out how much should table shift, depending of screen width
                 var paddings = side_menu_set_left();

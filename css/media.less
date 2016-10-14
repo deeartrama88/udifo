@@ -100,6 +100,22 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 1024px) {
+  footer { margin-bottom: 0; }
+  .fixed_footer { display: none; }
+  .big_news {
+    .social {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  footer .footer_menu { padding: 0 20px; }
+  .small_news {
+    .social {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  .small_news .news { width: 31%; }
   .faq_wrapper {
     .main_title {
       margin: 10px 0 20px;
@@ -127,6 +143,11 @@ ul.mobile_menu_block {
       }
     }
   }
+  .side_all_currency_widget { box-shadow: 0 0 20px}
+  .side_all_currency_widget .open_icon_wrapper .title {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
 }
 
 
@@ -140,7 +161,7 @@ ul.mobile_menu_block {
         font-size: 30px;
         top: 5px;
     }
-    .side_all_currency_widget { box-shadow: 0 0 20px}
+
     .table_wrap_mobile { overflow-x: scroll; }
     .desctop { display: none; }
     .mobile { display: inline-block; }
@@ -149,10 +170,10 @@ ul.mobile_menu_block {
         position: relative;
         top: 10px;
     }
-    .side_all_currency_widget .open_icon_wrapper .title {
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 10px;
-    }
+
+
+
+
     .about_video_block.flex_container { display: block; }
     .about_video_block iframe {
         float: left;
@@ -213,6 +234,9 @@ ul.mobile_menu_block {
 
 
 @media only screen and (max-width : 768px) {
+    .direction_tab_widget .currency_block .item { margin-left: 18px; }
+    .news_filter { font-size: 13px; }
+    .big_news .news .title, .small_news .news .title { font-size: 15px; }
     .direction_tab_widget .add_icon { width: 7%; }
     .direction_tab_widget .currency_block { width: 93%; }
     .direction_tab_widget .currency_block .item { margin-left: 20.5px; }
@@ -270,6 +294,11 @@ ul.mobile_menu_block {
     .direction_widget .widget_main_block .top_line .add_favorite_text { font-size: 10px; }
     .direction_widget .widget_main_block .get_block .top_line .add_favorite_text { top: 0; }
     .direction_widget .direction_switch_buttons_1 .how_it_works i { top: -3px; }
+    .news_filter {
+        .nice-select { font-size: 10px; }
+        .filter_block { font-size: 10px; }
+    }
+    .news_filter ul li a:after { top: 5px; }
 }
 
 

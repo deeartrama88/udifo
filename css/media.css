@@ -98,6 +98,26 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 1024px) {
+  footer {
+    margin-bottom: 0;
+  }
+  .fixed_footer {
+    display: none;
+  }
+  .big_news .social {
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer .footer_menu {
+    padding: 0 20px;
+  }
+  .small_news .social {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .small_news .news {
+    width: 31%;
+  }
   .faq_wrapper .main_title {
     margin: 10px 0 20px;
   }
@@ -124,6 +144,13 @@ ul.mobile_menu_block {
     padding: 10px 20px 6px;
     margin-left: 20px;
   }
+  .side_all_currency_widget {
+    box-shadow: 0 0 20px;
+  }
+  .side_all_currency_widget .open_icon_wrapper .title {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .table_wrap_mobile table {
@@ -145,9 +172,6 @@ ul.mobile_menu_block {
     font-size: 30px;
     top: 5px;
   }
-  .side_all_currency_widget {
-    box-shadow: 0 0 20px;
-  }
   .table_wrap_mobile {
     overflow-x: scroll;
   }
@@ -163,10 +187,6 @@ ul.mobile_menu_block {
   .title_mobile.mobile {
     position: relative;
     top: 10px;
-  }
-  .side_all_currency_widget .open_icon_wrapper .title {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
   }
   .about_video_block.flex_container {
     display: block;
@@ -260,6 +280,16 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 768px) {
+  .direction_tab_widget .currency_block .item {
+    margin-left: 18px;
+  }
+  .news_filter {
+    font-size: 13px;
+  }
+  .big_news .news .title,
+  .small_news .news .title {
+    font-size: 15px;
+  }
   .direction_tab_widget .add_icon {
     width: 7%;
   }
@@ -367,5 +397,14 @@ ul.mobile_menu_block {
   }
   .direction_widget .direction_switch_buttons_1 .how_it_works i {
     top: -3px;
+  }
+  .news_filter .nice-select {
+    font-size: 10px;
+  }
+  .news_filter .filter_block {
+    font-size: 10px;
+  }
+  .news_filter ul li a:after {
+    top: 5px;
   }
 }

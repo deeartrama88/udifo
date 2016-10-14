@@ -365,6 +365,7 @@
                     $(table_wrap_mobile).niceScroll({
                         cursorcolor:"#555555",
                         cursoropacitymin: 0.5,
+                        touchbehavior: true,
                         cursorwidth: "10px"
                     });
                 }

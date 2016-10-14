@@ -64,7 +64,7 @@
                             <div class="logged">
                                 Здравствуйте,
                                 <span class="name green">Мария <i class="fa fa-caret-down" aria-hidden="true"></i></span>
-                                <span class="green"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                                <span class="green"><i id="cabinet_open_log_icon" class="fa fa-sign-out" aria-hidden="true"></i></span>
 
                                 <!-- user pop up menu -->
                                 <div class="user_pop_up_menu">
@@ -661,7 +661,7 @@
 
                     <div class="side_menu_content">
                         <!-- ВАШ ПРОФИЛЬ -->
-                        <div class="side_menu_content__wrap personal_info">
+                        <div class="side_menu_content__wrap personal_info active">
                             <form class="change_user_info">
                                 <div class="form_group">
                                     <div class="input_wrap">
@@ -1516,7 +1516,7 @@
                             </table>
                             <button class="main_green_btn">НА НЕДЕЛЮ РАНЕЕ</button>
                         </div>
-                        <div class="side_menu_content__wrap testimonials active">
+                        <div class="side_menu_content__wrap testimonials">
                             <div class="title">Отзывы о ваших обменных пунктах</div>
                             <div class="filter_top_line">
                                 <span class="text">Показывать:</span>
@@ -1617,6 +1617,35 @@
                     </div>
 
                 </div>
+            </div>
+
+            <div class="cabinet_log_in">
+                <div class="title">Вход на сайт</div>
+                <form>
+                    <div class="form_group">
+                        <label>Логин</label>
+                        <input type="text" name="login">
+                    </div>
+                    <div class="form_group">
+                        <label>Пароль</label>
+                        <input type="text" name="password">
+                    </div>
+                    <div class="form_group">
+                        <label>
+                            <span>Запомнить меня</span>
+                            <input type="checkbox" checked name="login">
+                        </label>
+                    </div>
+                    <button class="main_green_btn">Вход</button>
+                </form>
+                <div class="soc_log">
+                    <span>Или войти через</span>
+                    <div class="icons">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
             </div>
 
         </div>

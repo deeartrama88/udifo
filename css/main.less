@@ -3911,6 +3911,62 @@ iframe[id='^twitter']{}
 // /////////////////////////////               \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//
 // ||||||||||||||||||||||||||||      CABINET    ||||||||||||||||||||||||||||||||\//
 // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\               ////////////////////////////////////
+.cabinet_log_in {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+  padding: 100px 0 200px;
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: @main_green;
+    font-family: "LatoRegular", sans-serif;
+    margin-bottom: 20px;
+  }
+  input {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    border: 1px solid @separate_gray;
+  }
+  label {
+    display: block;
+    text-align: left;
+  }
+  button {
+    width: 70%;
+    font-weight: bold;
+    font-family: "Lato Black", sans-serif;
+    margin: 20px auto;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  .soc_log {
+      span {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "LatoRegular", sans-serif;
+      }
+      .icons i {
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        background: darkred;
+        margin: 0 5px;
+        color: white;
+        border-radius: 5px;
+        line-height: 50px;
+
+        &:nth-child(1) { background: #4f7196; }
+        &:nth-child(2) { background: #3f5a96; }
+        &:nth-child(3) { background: #1283b2; }
+        &:nth-child(4) { background: #4f4848; }
+      }
+  }
+}
 .cabinet_wrapper {
   font-size: 15px;
   font-family: 'LatoRegular', sans-serif;

@@ -3280,6 +3280,67 @@ footer .bottom_link a {
 .obmenka_list_wrap #table_obmenka_list a {
   padding: 0 10px;
 }
+.cabinet_log_in {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+  padding: 100px 0 200px;
+}
+.cabinet_log_in .title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #8caa0b;
+  font-family: "LatoRegular", sans-serif;
+  margin-bottom: 20px;
+}
+.cabinet_log_in input {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  border: 1px solid #d8d8d8;
+}
+.cabinet_log_in label {
+  display: block;
+  text-align: left;
+}
+.cabinet_log_in button {
+  width: 70%;
+  font-weight: bold;
+  font-family: "Lato Black", sans-serif;
+  margin: 20px auto;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.cabinet_log_in .soc_log span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "LatoRegular", sans-serif;
+}
+.cabinet_log_in .soc_log .icons i {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  background: darkred;
+  margin: 0 5px;
+  color: white;
+  border-radius: 5px;
+  line-height: 50px;
+}
+.cabinet_log_in .soc_log .icons i:nth-child(1) {
+  background: #4f7196;
+}
+.cabinet_log_in .soc_log .icons i:nth-child(2) {
+  background: #3f5a96;
+}
+.cabinet_log_in .soc_log .icons i:nth-child(3) {
+  background: #1283b2;
+}
+.cabinet_log_in .soc_log .icons i:nth-child(4) {
+  background: #4f4848;
+}
 .cabinet_wrapper {
   font-size: 15px;
   font-family: 'LatoRegular', sans-serif;

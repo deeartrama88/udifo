@@ -7,6 +7,19 @@
   cursor: pointer;
   margin-right: 5px;
 }
+.mobile_obmenka_about {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.mobile_obmenka_about .img_block {
+  width: 50%;
+}
+.mobile_obmenka_about .name {
+  width: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Lato Black", sans-serif;
+}
 .dot_toggle.active {
   background: #8caa0b;
 }
@@ -98,6 +111,12 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 1024px) {
+  .obmenka_wrap .back_link {
+    padding: 0 0 60px 65px;
+  }
+  .nice-select .list {
+    width: 100%;
+  }
   .news_detail .return_to_list_link {
     padding-left: 50px;
   }
@@ -194,6 +213,31 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 991px) {
+  .obmenka_wrap .testimonial_form .form_2 .currencies {
+    margin-bottom: 41px;
+  }
+  .obmenka_wrap .testimonial_form .form_2 select {
+    width: 100px;
+  }
+  .obmenka_wrap .testimonial_form .form_1,
+  .obmenka_wrap .testimonial_form .form_2 {
+    width: 45%;
+  }
+  .obmenka_wrap .testimonial_form .form_3 {
+    width: 100%;
+  }
+  .obmenka_wrap .desc_right,
+  .desc_midle {
+    width: 50%;
+    padding-top: 0;
+  }
+  .obmenka_wrap .image {
+    width: 100%;
+    text-align: center;
+  }
+  .obmenka_wrap .image .logo {
+    margin-bottom: 20px;
+  }
   .news_detail .big_image_block .title_to_image {
     font-size: 31px;
   }
@@ -224,6 +268,11 @@ ul.mobile_menu_block {
   }
   .mobile {
     display: inline-block;
+  }
+  .mobile_obmenka_about.mobile {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   .often_questions.active .fa-cog.mobile {
     top: 0;
@@ -343,6 +392,9 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 768px) {
+  .obmenka_wrap .back_link {
+    padding: 0 0 20px 65px;
+  }
   .news_detail .big_image_block .title_to_image {
     font-size: 32px;
   }
@@ -442,6 +494,10 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 600px) {
+  .mobile_obmenka_about.mobile .img_block img {
+    width: 100%;
+    padding-right: 10px;
+  }
   .news_detail .return_to_list_link {
     padding-left: 65px;
   }

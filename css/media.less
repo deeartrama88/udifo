@@ -7,7 +7,17 @@
     cursor: pointer;
     margin-right: 5px;
 }
-
+.mobile_obmenka_about {
+  width: 100%;
+  margin-bottom: 20px;
+  .img_block { width: 50%; }
+  .name {
+    width: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:"Lato Black",sans-serif;
+  }
+}
 .dot_toggle.active {
     background: #8caa0b;
 }
@@ -100,6 +110,10 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 1024px) {
+  .obmenka_wrap .back_link {
+    padding: 0 0 60px 65px;
+  }
+  .nice-select .list { width: 100%; }
   .news_detail .return_to_list_link { padding-left: 50px; }
   .news_filter {
     font-size: 13px;
@@ -183,6 +197,21 @@ ul.mobile_menu_block {
 
 
 @media only screen and (max-width : 991px) {
+  .obmenka_wrap .testimonial_form .form_2 .currencies { margin-bottom: 41px; }
+  .obmenka_wrap .testimonial_form .form_2 select { width: 100px; }
+  .obmenka_wrap .testimonial_form .form_1,
+  .obmenka_wrap .testimonial_form .form_2 { width: 45%; }
+  .obmenka_wrap .testimonial_form .form_3 { width: 100%; }
+  .obmenka_wrap .desc_right,
+  .desc_midle {
+    width: 50%;
+    padding-top: 0;
+  }
+  .obmenka_wrap .image {
+    width: 100%;
+    text-align: center;
+    .logo { margin-bottom: 20px; }
+  }
     .news_detail .big_image_block .title_to_image { font-size: 31px; }
     .table_wrap_mobile table { width: 928px; }
     .direction_widget .widget_main_block .main_line .icons_each { margin: 0 5px; }
@@ -196,6 +225,7 @@ ul.mobile_menu_block {
     .table_wrap_mobile { overflow-x: scroll; }
     .desctop { display: none; }
     .mobile { display: inline-block; }
+    .mobile_obmenka_about.mobile { display: flex; }
     .often_questions.active .fa-cog.mobile { top: 0; }
     .title_mobile.mobile {
         position: relative;
@@ -270,6 +300,7 @@ ul.mobile_menu_block {
 
 
 @media only screen and (max-width : 768px) {
+  .obmenka_wrap .back_link { padding: 0 0 20px 65px; }
     .news_detail .big_image_block .title_to_image { font-size: 32px; }
     .direction_tab_widget .currency_block .item { margin-left: 18px; }
     .big_news .news .title, .small_news .news .title { font-size: 15px; }
@@ -321,6 +352,10 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 600px) {
+  .mobile_obmenka_about.mobile .img_block img {
+    width: 100%;
+    padding-right: 10px;
+  }
     .news_detail .return_to_list_link { padding-left: 65px; }
     .direction_tab_widget .currency_block .item { margin-left: 12px; }
     .direction_widget .direction_switch_buttons_1 .how_it_works {

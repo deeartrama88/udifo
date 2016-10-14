@@ -318,7 +318,7 @@ header .header_top_line .refreshes .icon-reverse_2_icon:hover {
 header .header_main .logo_block {
   display: inline-block;
   width: 100%;
-  max-width: 22%;
+  max-width: 21%;
   padding: 23px 0 14px;
   text-align: left;
 }
@@ -332,6 +332,7 @@ header .main_block {
   max-width: 78%;
   padding: 13px 0 5px 40px;
   background: linear-gradient(to right, #ededed 0%, #ededed 0%, rgba(231, 56, 39, 0) 1%);
+  background: -webkit-linear-gradient(to right, #ededed 0%, #ededed 0%, rgba(231, 56, 39, 0) 1%);
 }
 header .main_block .first_menu {
   padding-bottom: 10px;

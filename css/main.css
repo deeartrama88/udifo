@@ -317,7 +317,7 @@ header .header_top_line .refreshes .icon-reverse_2_icon:hover {
 }
 header .header_main .logo_block {
   display: inline-block;
-  max-width: 22%;
+  width: 22%;
   padding: 23px 0 14px;
   text-align: left;
 }

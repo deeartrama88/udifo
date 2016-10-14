@@ -2209,7 +2209,7 @@ footer .bottom_link a {
   padding-right: 5px;
 }
 .small_news .news {
-  max-width: 31%;
+  width: 31%;
   margin-bottom: 55px;
 }
 .add_currency_pop_up_block#pop_up_currecy {

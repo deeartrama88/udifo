@@ -238,7 +238,7 @@
         $('.news_filter select').niceSelect();
 
         // comments select init
-        $('.comments').niceSelect();
+        $('.comments select').niceSelect();
 
         // comments select init
         $('.obmenka_wrap .form_1 select').niceSelect();

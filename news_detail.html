@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/ion.checkRadio.css">
     <link rel="stylesheet" href="css/ion.checkRadio.green.css">
     <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/msdropdown.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -34,7 +35,7 @@
                 </div>
 
                 <div class="main_block">
-                    <div class="first_menu flex_container">
+                    <div class="first_menu flex_container desctop">
                         <ul class="header_first_menu">
                             <li class="active"><a href="#">Новости</a></li>
                             <li><a href=#>Статьи</a></li>
@@ -50,7 +51,7 @@
                         </ul>
                     </div>
 
-                    <div class="second_menu flex_container">
+                    <div class="second_menu flex_container desctop">
                         <ul class="header_second_menu">
                             <li class="active"><a href="#">О НАС</a></li>
                             <li><a href="#">ОБМЕННИКИ</a></li>
@@ -60,6 +61,36 @@
                         <!-- header cabinet link -->
                         <div class="user_cabinet">
                             <a href="#">Кабинет</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile_header_menu mobile">
+                        <div class="flex_container">
+                            <ul class="header_soc_icons">
+                                <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <ul class="mobile_menu_block flex_container">
+                                <li><i class="fa fa-user" aria-hidden="true"></i>Кабинет</li>
+                                <li><i class="icon-search_icon"></i></li>
+                                <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                        <!-- popup mobile menu -->
+                        <div class="popup_mobile_menu">
+                            <ul>
+                                <li class="active"><a href="#">О НАС</a></li>
+                                <li><a href="#">ОБМЕННИКИ</a></li>
+                                <li><a href="#">КЛИЕНТАМ</a></li>
+                                <li><a href="#">ПАРТНЕРАМ</a></li>
+                                <li><a href="#">НОВОСТИ</a></li>
+                                <li><a href="#">СТАТЬИ</a></li>
+                                <li><a href="#">WIKI</a></li>
+                                <li><a href="#">КОНТАКТЫ</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -102,7 +133,10 @@
                     <span class="value minus">- 0.5%</span>
                 </li>
             </ul>
-            <div class="search_block">
+            <div class="news_grey_line_link_mobile mobile">
+                <i class="icon-news_icon"></i>
+            </div>
+            <div class="search_block desctop">
                 <i class="icon-news_icon"></i>
                 <i class="icon-search_icon"></i>
             </div>
@@ -494,515 +528,515 @@
 
     <div class="container">
 
-        <div class="direction_widget">
-            <!-- tab buttons 'ПОПУЛЯРНЫЕ ИЗБРАННОЕ' -->
-            <div class="direction_switch_buttons_1">
-                <div class="main_buttons">
-                    <span class="famous active">ПОПУЛЯРНЫЕ</span>
-                    <span class="chosen">ИЗБРАННОЕ</span>
-                </div>
-                <!-- how it work link -->
-                <div class="how_it_works"><a href="#">Как это работает? </a><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-            </div>
-            <!-- tab links 'Валюты Направения' -->
-            <div class="direction_switch_buttons_2">
-                <span class="currencies active"><a href="#">Валюты</a></span>
-                <span class="directions"><a href="#">Направления</a></span>
-            </div>
-            <!-- main widget block, with icons -->
-            <div class="widget_main_block flex_container">
-                <div class="give_block">
-                    <div class="top_line flex_container">
-                        <span>ОТДАЕТЕ</span>
-                        <div class="add_favorite_text">
-                            нажмите на изоброжение звездочки <br /> поверх валюты
-                        </div>
-                        <div class="icons">
-                            <!-- favorite icon (star) -->
-                            <i class="fa fa-star-o" aria-hidden="true" id="give_favorite"></i>
-                            <!-- delete icon -->
-                            <i class="delete_icon"></i>
-                        </div>
-                    </div>
-                    <div class="main_line" id="give_main_line">
+        <!--<div class="direction_widget">-->
+            <!--&lt;!&ndash; tab buttons 'ПОПУЛЯРНЫЕ ИЗБРАННОЕ' &ndash;&gt;-->
+            <!--<div class="direction_switch_buttons_1">-->
+                <!--<div class="main_buttons">-->
+                    <!--<span class="famous active">ПОПУЛЯРНЫЕ</span>-->
+                    <!--<span class="chosen">ИЗБРАННОЕ</span>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; how it work link &ndash;&gt;-->
+                <!--<div class="how_it_works"><a href="#">Как это работает? </a><i class="fa fa-question-circle" aria-hidden="true"></i></div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; tab links 'Валюты Направения' &ndash;&gt;-->
+            <!--<div class="direction_switch_buttons_2">-->
+                <!--<span class="currencies active"><a href="#">Валюты</a></span>-->
+                <!--<span class="directions"><a href="#">Направления</a></span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; main widget block, with icons &ndash;&gt;-->
+            <!--<div class="widget_main_block flex_container">-->
+                <!--<div class="give_block">-->
+                    <!--<div class="top_line flex_container">-->
+                        <!--<span>ОТДАЕТЕ</span>-->
+                        <!--<div class="add_favorite_text">-->
+                            <!--нажмите на изоброжение звездочки <br /> поверх валюты-->
+                        <!--</div>-->
+                        <!--<div class="icons">-->
+                            <!--&lt;!&ndash; favorite icon (star) &ndash;&gt;-->
+                            <!--<i class="fa fa-star-o" aria-hidden="true" id="give_favorite"></i>-->
+                            <!--&lt;!&ndash; delete icon &ndash;&gt;-->
+                            <!--<i class="delete_icon"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="main_line" id="give_main_line">-->
 
-                        <!-- each icon -->
-                        <div class="icons_each add_icon">
-                            <div class="icon_img_block">
-                                <i class="plus_icon"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">добавить валюту</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each add_icon">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="plus_icon"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">добавить валюту</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="qiwi_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">руб</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="qiwi_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">руб</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each active">
-                            <div class="icon_img_block">
-                                <i class="blue_circle"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">wmz</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each active">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="blue_circle"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">wmz</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block favorite">
-                                <i class="usa_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o active"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">usa</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block favorite">-->
+                                <!--<i class="usa_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o active"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">usa</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="blue_circle"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">wmz</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="blue_circle"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">wmz</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="private_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">грн</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="private_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">грн</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="private_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">грн</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="wu_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="wu_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">грн</span>-->
+                        <!--</div>-->
 
-                    </div>
-                </div>
-                <div class="get_block">
-                    <div class="top_line flex_container">
-                        <span>ПОЛУЧАЕТЕ</span>
-                        <div class="add_favorite_text">
-                            нажмите на изоброжение звездочки <br /> поверх валюты
-                        </div>
-                        <div class="icons">
-                            <!-- favorite icon (star) -->
-                            <i class="fa fa-star-o get_favorite" aria-hidden="true" id="get_favorite"></i>
-                            <!-- delete icon -->
-                            <i class="delete_icon"></i>
-                        </div>
-                    </div>
-                    <div class="main_line" id="get_main_line">
-                        <!-- each icon -->
-                        <div class="icons_each add_icon">
-                            <div class="icon_img_block">
-                                <i class="plus_icon"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">добавить валюту</span>
-                        </div>
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="get_block">-->
+                    <!--<div class="top_line flex_container">-->
+                        <!--<span>ПОЛУЧАЕТЕ</span>-->
+                        <!--<div class="add_favorite_text">-->
+                            <!--нажмите на изоброжение звездочки <br /> поверх валюты-->
+                        <!--</div>-->
+                        <!--<div class="icons">-->
+                            <!--&lt;!&ndash; favorite icon (star) &ndash;&gt;-->
+                            <!--<i class="fa fa-star-o get_favorite" aria-hidden="true" id="get_favorite"></i>-->
+                            <!--&lt;!&ndash; delete icon &ndash;&gt;-->
+                            <!--<i class="delete_icon"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="main_line" id="get_main_line">-->
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each add_icon">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="plus_icon"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">добавить валюту</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="qiwi_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">руб</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="qiwi_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">руб</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="qiwi_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">руб</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="qiwi_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">руб</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="blue_circle"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">wmz</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="blue_circle"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">wmz</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="usa_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">usa</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="usa_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">usa</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block favorite">
-                                <i class="blue_circle"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o active"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">wmz</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block favorite">-->
+                                <!--<i class="blue_circle"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o active"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">wmz</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="private_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">грн</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="private_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">грн</span>-->
+                        <!--</div>-->
 
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="wu_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
+                        <!--&lt;!&ndash; each icon &ndash;&gt;-->
+                        <!--<div class="icons_each">-->
+                            <!--<div class="icon_img_block">-->
+                                <!--<i class="wu_icon"></i>-->
+                                <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                                <!--<span class="favorite_block">-->
+                                    <!--<i class="fa fa-star-o"></i>-->
+                                <!--</span>-->
+                                <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                                <!--<i class="favorite fa fa-star"></i>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; text under icon &ndash;&gt;-->
+                            <!--<span class="icon_text">грн</span>-->
+                        <!--</div>-->
 
-                    </div>
-                </div>
-            </div>
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
-        </div><!-- direction widget (hides when side menu opened) -->
+        <!--</div>&lt;!&ndash; direction widget (hides when side menu opened) &ndash;&gt;-->
 
         <!-- DIRECTION WIDGET / ВКЛАДКА "НАПРАВЛЕНИЯ" -->
-        <div class="direction_tab_widget">
-            <div class="actions_line flex_container">
-                <div class="text">нажмите на изоброжение звездочки <br> поверх валюты</div>
-                <div class="actions_icons">
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="delete_icon"></i>
-                </div>
-            </div>
+        <!--<div class="direction_tab_widget">-->
+            <!--<div class="actions_line flex_container">-->
+                <!--<div class="text">нажмите на изоброжение звездочки <br> поверх валюты</div>-->
+                <!--<div class="actions_icons">-->
+                    <!--<i class="fa fa-star-o" aria-hidden="true"></i>-->
+                    <!--<i class="delete_icon"></i>-->
+                <!--</div>-->
+            <!--</div>-->
 
-            <div class="main_line">
-                <div class="flex_container">
-                    <div class="add_icon">
-                        <i class="icon-plus_icon"></i>
-                        <div class="text">добавить направление</div>
-                    </div>
-                    <div class="currency_block flex_container">
+            <!--<div class="main_line">-->
+                <!--<div class="flex_container">-->
+                    <!--<div class="add_icon">-->
+                        <!--<i class="icon-plus_icon"></i>-->
+                        <!--<div class="text">добавить направление</div>-->
+                    <!--</div>-->
+                    <!--<div class="currency_block flex_container">-->
 
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                        <!--<div class="item">-->
+                            <!--<div class="sub_item">-->
+                                <!--<img src="images/currency_icons/qiwi.png" alt="qiwi">-->
+                                <!--<span>РУБ</span>-->
+                            <!--</div>-->
+                            <!--<div class="sub_item">-->
+                                <!--<span>ГРН</span>-->
+                                <!--<img src="images/currency_icons/privat.png" alt="private">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                            <!--<span class="favorite_block">-->
+                                <!--<i class="fa fa-star-o"></i>-->
+                            <!--</span>-->
+                            <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                            <!--<i class="favorite fa fa-star"></i>-->
+                            <!--&lt;!&ndash; delete block &ndash;&gt;-->
+                            <!--<span class="delete_block">-->
+                                <!--<i class="fa fa-trash-o" aria-hidden="true"></i>-->
+                            <!--</span>-->
+                        <!--</div>-->
 
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                        <!--<div class="item">-->
+                            <!--<div class="sub_item">-->
+                                <!--<img src="images/currency_icons/qiwi.png" alt="qiwi">-->
+                                <!--<span>РУБ</span>-->
+                            <!--</div>-->
+                            <!--<div class="sub_item">-->
+                                <!--<span>ГРН</span>-->
+                                <!--<img src="images/currency_icons/privat.png" alt="private">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                            <!--<span class="favorite_block">-->
+                                <!--<i class="fa fa-star-o"></i>-->
+                            <!--</span>-->
+                            <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                            <!--<i class="favorite fa fa-star"></i>-->
+                            <!--&lt;!&ndash; delete block &ndash;&gt;-->
+                            <!--<span class="delete_block">-->
+                                <!--<i class="fa fa-trash-o" aria-hidden="true"></i>-->
+                            <!--</span>-->
+                        <!--</div>-->
 
-                        <div class="item active">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                        <!--<div class="item active">-->
+                            <!--<div class="sub_item">-->
+                                <!--<img src="images/currency_icons/qiwi.png" alt="qiwi">-->
+                                <!--<span>РУБ</span>-->
+                            <!--</div>-->
+                            <!--<div class="sub_item">-->
+                                <!--<span>ГРН</span>-->
+                                <!--<img src="images/currency_icons/privat.png" alt="private">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                            <!--<span class="favorite_block">-->
+                                <!--<i class="fa fa-star-o"></i>-->
+                            <!--</span>-->
+                            <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                            <!--<i class="favorite fa fa-star"></i>-->
+                            <!--&lt;!&ndash; delete block &ndash;&gt;-->
+                            <!--<span class="delete_block">-->
+                                <!--<i class="fa fa-trash-o" aria-hidden="true"></i>-->
+                            <!--</span>-->
+                        <!--</div>-->
 
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                        <!--<div class="item">-->
+                            <!--<div class="sub_item">-->
+                                <!--<img src="images/currency_icons/qiwi.png" alt="qiwi">-->
+                                <!--<span>РУБ</span>-->
+                            <!--</div>-->
+                            <!--<div class="sub_item">-->
+                                <!--<span>ГРН</span>-->
+                                <!--<img src="images/currency_icons/privat.png" alt="private">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                            <!--<span class="favorite_block">-->
+                                <!--<i class="fa fa-star-o"></i>-->
+                            <!--</span>-->
+                            <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                            <!--<i class="favorite fa fa-star"></i>-->
+                            <!--&lt;!&ndash; delete block &ndash;&gt;-->
+                            <!--<span class="delete_block">-->
+                                <!--<i class="fa fa-trash-o" aria-hidden="true"></i>-->
+                            <!--</span>-->
+                        <!--</div>-->
 
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                        <!--<div class="item">-->
+                            <!--<div class="sub_item">-->
+                                <!--<img src="images/currency_icons/qiwi.png" alt="qiwi">-->
+                                <!--<span>РУБ</span>-->
+                            <!--</div>-->
+                            <!--<div class="sub_item">-->
+                                <!--<span>ГРН</span>-->
+                                <!--<img src="images/currency_icons/privat.png" alt="private">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                            <!--<span class="favorite_block">-->
+                                <!--<i class="fa fa-star-o"></i>-->
+                            <!--</span>-->
+                            <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                            <!--<i class="favorite fa fa-star"></i>-->
+                            <!--&lt;!&ndash; delete block &ndash;&gt;-->
+                            <!--<span class="delete_block">-->
+                                <!--<i class="fa fa-trash-o" aria-hidden="true"></i>-->
+                            <!--</span>-->
+                        <!--</div>-->
 
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                        <!--<div class="item">-->
+                            <!--<div class="sub_item">-->
+                                <!--<img src="images/currency_icons/qiwi.png" alt="qiwi">-->
+                                <!--<span>РУБ</span>-->
+                            <!--</div>-->
+                            <!--<div class="sub_item">-->
+                                <!--<span>ГРН</span>-->
+                                <!--<img src="images/currency_icons/privat.png" alt="private">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                            <!--<span class="favorite_block">-->
+                                <!--<i class="fa fa-star-o"></i>-->
+                            <!--</span>-->
+                            <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                            <!--<i class="favorite fa fa-star"></i>-->
+                            <!--&lt;!&ndash; delete block &ndash;&gt;-->
+                            <!--<span class="delete_block">-->
+                                <!--<i class="fa fa-trash-o" aria-hidden="true"></i>-->
+                            <!--</span>-->
+                        <!--</div>-->
 
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                        <!--<div class="item">-->
+                            <!--<div class="sub_item">-->
+                                <!--<img src="images/currency_icons/qiwi.png" alt="qiwi">-->
+                                <!--<span>РУБ</span>-->
+                            <!--</div>-->
+                            <!--<div class="sub_item">-->
+                                <!--<span>ГРН</span>-->
+                                <!--<img src="images/currency_icons/privat.png" alt="private">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                            <!--<span class="favorite_block">-->
+                                <!--<i class="fa fa-star-o"></i>-->
+                            <!--</span>-->
+                            <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                            <!--<i class="favorite fa fa-star"></i>-->
+                            <!--&lt;!&ndash; delete block &ndash;&gt;-->
+                            <!--<span class="delete_block">-->
+                                <!--<i class="fa fa-trash-o" aria-hidden="true"></i>-->
+                            <!--</span>-->
+                        <!--</div>-->
 
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
+                        <!--<div class="item">-->
+                            <!--<div class="sub_item">-->
+                                <!--<img src="images/currency_icons/qiwi.png" alt="qiwi">-->
+                                <!--<span>РУБ</span>-->
+                            <!--</div>-->
+                            <!--<div class="sub_item">-->
+                                <!--<span>ГРН</span>-->
+                                <!--<img src="images/currency_icons/privat.png" alt="private">-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; favorite block&ndash;&gt;-->
+                            <!--<span class="favorite_block">-->
+                                <!--<i class="fa fa-star-o"></i>-->
+                            <!--</span>-->
+                            <!--&lt;!&ndash; blur star (favorite active)&ndash;&gt;-->
+                            <!--<i class="favorite fa fa-star"></i>-->
+                            <!--&lt;!&ndash; delete block &ndash;&gt;-->
+                            <!--<span class="delete_block">-->
+                                <!--<i class="fa fa-trash-o" aria-hidden="true"></i>-->
+                            <!--</span>-->
+                        <!--</div>-->
 
 
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
         <!-- DIRECTION WIDGET END / ВКЛАДКА "НАПРАВЛЕНИЯ" КОНЕЦ -->
 
-        <div class="often_questions">
-            <div class="title">частые операции</div>
-            <i class="fa fa-cog" aria-hidden="true"></i>
-        </div>
+        <!--<div class="often_questions">-->
+            <!--<div class="title">частые операции</div>-->
+            <!--<i class="fa fa-cog" aria-hidden="true"></i>-->
+        <!--</div>-->
 
         <!-- NEWS DETAIL / НОВОСТЬ В ОТКРЫТОМ СОСТОЯНИИ НОВОСТИ -->
         <div class="news_detail">
@@ -1198,7 +1232,7 @@
                 <li>
                     <div class="comments_each">
                         <div class="flex_container">
-                            <i class="fa fa-user placeholder" aria-hidden="true"></i>
+                            <div class="avatar"><i class="fa fa-user placeholder" aria-hidden="true"></i></div>
                             <div class="content">
                                 <div class="name_date">
                                     <span class="name"><a href="#">aka_maestro</a></span>
@@ -1221,7 +1255,9 @@
                 <li>
                     <div class="comments_each">
                         <div class="flex_container">
-                            <i class="fa fa-user placeholder" aria-hidden="true"></i>
+                            <div class="avatar">
+                                <i class="fa fa-user placeholder" aria-hidden="true"></i>
+                            </div>
                             <div class="content">
                                 <div class="name_date">
                                     <span class="name">aka_maestro</span>
@@ -1354,7 +1390,7 @@
                 </div>
             </div>
 
-            <div class="footer_menu">
+            <div class="footer_menu desctop">
                 <div class="first_menu">
                     <div class="title">Клиентам</div>
                     <ul>
@@ -1374,9 +1410,28 @@
                     </ul>
                 </div>
             </div>
+            <div class="first_menu mobile">
+                <div class="title">Клиентам</div>
+                <ul>
+                    <li><a href="#">О севисе</a></li>
+                    <li><a href="#">Избранные валюты</a></li>
+                    <li><a href="#">Настройки виджета</a></li>
+                    <li><a href="#">Поиск по скайпу</a></li>
+                </ul>
+            </div>
+            <div class="second_menu mobile">
+                <div class="title">Партнерам</div>
+                <ul>
+                    <li><a href="#">Как стать партнером</a></li>
+                    <li><a href="#">Рейтинги обменного пункта</a></li>
+                    <li><a href="#">Тарифы</a></li>
+                    <li><a href="#">Помощь</a></li>
+                </ul>
+            </div>
             <div class="vk_widget">
                 <img src="images/vk_widget.jpg" alt="vk">
             </div>
+
         </div>
         <div class="bottom_link">2015 c <a href="/">Udifo.com</a></div>
     </div>
@@ -1437,9 +1492,11 @@
 <!-- FOOTER AND FIXED BOTTOM END -->
 
 <script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/ion.checkRadio.js"></script>
 <script src="js/jquery.nice-select.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/msDropDown.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

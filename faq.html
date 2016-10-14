@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/ion.checkRadio.css">
     <link rel="stylesheet" href="css/ion.checkRadio.green.css">
     <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/msdropdown.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="../../AppData/Local/Temp/Rar$DRa0.872/css/Glyphter.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="main_block">
-                    <div class="first_menu flex_container">
+                    <div class="first_menu flex_container desctop">
                         <ul class="header_first_menu">
                             <li class="active"><a href="#">Новости</a></li>
                             <li><a href=#>Статьи</a></li>
@@ -51,7 +51,7 @@
                         </ul>
                     </div>
 
-                    <div class="second_menu flex_container">
+                    <div class="second_menu flex_container desctop">
                         <ul class="header_second_menu">
                             <li class="active"><a href="#">О НАС</a></li>
                             <li><a href="#">ОБМЕННИКИ</a></li>
@@ -61,6 +61,36 @@
                         <!-- header cabinet link -->
                         <div class="user_cabinet">
                             <a href="#">Кабинет</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile_header_menu mobile">
+                        <div class="flex_container">
+                            <ul class="header_soc_icons">
+                                <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <ul class="mobile_menu_block flex_container">
+                                <li><i class="fa fa-user" aria-hidden="true"></i>Кабинет</li>
+                                <li><i class="icon-search_icon"></i></li>
+                                <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                        <!-- popup mobile menu -->
+                        <div class="popup_mobile_menu">
+                            <ul>
+                                <li class="active"><a href="#">О НАС</a></li>
+                                <li><a href="#">ОБМЕННИКИ</a></li>
+                                <li><a href="#">КЛИЕНТАМ</a></li>
+                                <li><a href="#">ПАРТНЕРАМ</a></li>
+                                <li><a href="#">НОВОСТИ</a></li>
+                                <li><a href="#">СТАТЬИ</a></li>
+                                <li><a href="#">WIKI</a></li>
+                                <li><a href="#">КОНТАКТЫ</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -103,7 +133,10 @@
                     <span class="value minus">- 0.5%</span>
                 </li>
             </ul>
-            <div class="search_block">
+            <div class="news_grey_line_link_mobile mobile">
+                <i class="icon-news_icon"></i>
+            </div>
+            <div class="search_block desctop">
                 <i class="icon-news_icon"></i>
                 <i class="icon-search_icon"></i>
             </div>
@@ -1466,7 +1499,7 @@
                 </div>
             </div>
 
-            <div class="footer_menu">
+            <div class="footer_menu desctop">
                 <div class="first_menu">
                     <div class="title">Клиентам</div>
                     <ul>
@@ -1486,9 +1519,28 @@
                     </ul>
                 </div>
             </div>
+            <div class="first_menu mobile">
+                <div class="title">Клиентам</div>
+                <ul>
+                    <li><a href="#">О севисе</a></li>
+                    <li><a href="#">Избранные валюты</a></li>
+                    <li><a href="#">Настройки виджета</a></li>
+                    <li><a href="#">Поиск по скайпу</a></li>
+                </ul>
+            </div>
+            <div class="second_menu mobile">
+                <div class="title">Партнерам</div>
+                <ul>
+                    <li><a href="#">Как стать партнером</a></li>
+                    <li><a href="#">Рейтинги обменного пункта</a></li>
+                    <li><a href="#">Тарифы</a></li>
+                    <li><a href="#">Помощь</a></li>
+                </ul>
+            </div>
             <div class="vk_widget">
                 <img src="images/vk_widget.jpg" alt="vk">
             </div>
+
         </div>
         <div class="bottom_link">2015 c <a href="/">Udifo.com</a></div>
     </div>
@@ -1553,9 +1605,11 @@
 
 
 <script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/ion.checkRadio.js"></script>
 <script src="js/jquery.nice-select.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/msDropDown.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

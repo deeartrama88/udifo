@@ -97,6 +97,34 @@ ul.mobile_menu_block {
     width: 76%;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .faq_wrapper .main_title {
+    margin: 10px 0 20px;
+  }
+  .faq_wrapper .search {
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .faq_wrapper .search .input {
+    width: 60%;
+  }
+  .faq_wrapper .search .input input {
+    width: 100%;
+    font-size: 16px;
+  }
+  .faq_wrapper .ask_question {
+    margin: 20px 0;
+  }
+  .faq_wrapper .ask_question span {
+    font-size: 20px;
+  }
+  .faq_wrapper .ask_question button {
+    font-size: 20px;
+    padding: 10px 20px 6px;
+    margin-left: 20px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .table_wrap_mobile table {
     width: 928px;

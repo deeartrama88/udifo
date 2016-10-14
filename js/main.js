@@ -143,7 +143,7 @@
             $(header_search_element_body).fadeToggle(100).find('input').focus();
         });
         // CLOSE SEARCH ELEMENT BY CLICKING OUTSIDE OF THIS SEARCH ELEMENT
-        $('html').click(function(event) {
+        $(document).on('click touchstart',function(event) {
             if (!$(event.target).closest(header_search_element_body).length && !$(event.target).closest(header_search_open_icon).length) {
                 if ($(header_search_element_body).is(":visible")) {
                     $(header_search_element_body).fadeOut(100);

@@ -118,10 +118,10 @@
         var how_it_works_pop_up_open = $('.direction_widget .how_it_works');
         $(how_it_works_pop_up_close).click(function () {
             $(how_it_works_pop_up).fadeToggle(100);
-        })
+        });
         $(how_it_works_pop_up_open).click(function () {
             $(how_it_works_pop_up).fadeToggle(100);
-        })
+        });
 
         // checkbox test
         $('input[type="checkbox"]').ionCheckRadio();
@@ -131,46 +131,49 @@
         var  calc_body = $('.calculator_wrap');
         $(calc_open_icon ).click(function () {
             $(calc_body).slideToggle(100);
-        })
+        });
 
         // OPEN CLOSE SEARCH
         var header_search_open_icon = $('.under_header_gray_line .search_block .icon-search_icon');
         var header_search_element_body = $('.under_header_gray_line .search_element_wrapper');
+        var user_pop_up_menu = $('.user_pop_up_menu');
+        var user_logged_in_pop_up = $('.user_logged_in_pop_up');
+        var popup_mobile_menu = $('.popup_mobile_menu');
         $(header_search_open_icon).click(function () {
             $(header_search_element_body).fadeToggle(100).find('input').focus();
-        })
+        });
         // CLOSE SEARCH ELEMENT BY CLICKING OUTSIDE OF THIS SEARCH ELEMENT
-        $(document).click(function(event) {
-            if(!$(event.target).closest(header_search_element_body).length && !$(event.target).closest(header_search_open_icon).length) {
-                if($(header_search_element_body).is(":visible")) {
+        $('html').click(function(event) {
+            if (!$(event.target).closest(header_search_element_body).length && !$(event.target).closest(header_search_open_icon).length) {
+                if ($(header_search_element_body).is(":visible")) {
                     $(header_search_element_body).fadeOut(100);
                 }
             }
-            var user_pop_up_menu = $('.user_pop_up_menu');
-            if($(user_pop_up_menu)){
-                if(!$(event.target).closest($('.user_pop_up_menu')).length && !$(event.target).closest($('.user_cabinet .logged .name')).length) {
-                    if($(user_pop_up_menu).is(":visible")) {
+
+            if ($(user_pop_up_menu)) {
+                if (!$(event.target).closest($(user_pop_up_menu)).length && !$(event.target).closest($('.user_cabinet .logged .name')).length) {
+                    if ($(user_pop_up_menu).is(":visible")) {
                         $(user_pop_up_menu).fadeOut(100);
                     }
                 }
             }
-            var user_logged_in_pop_up = $('.user_logged_in_pop_up');
-            if($(user_logged_in_pop_up)){
-                if(!$(event.target).closest($(user_logged_in_pop_up)).length && !$(event.target).closest($('.user_cabinet .logged .fa-sign-out')).length) {
-                    if($(user_logged_in_pop_up).is(":visible")) {
+
+            if ($(user_logged_in_pop_up)) {
+                if (!$(event.target).closest($(user_logged_in_pop_up)).length && !$(event.target).closest($('.user_cabinet .logged .fa-sign-out')).length) {
+                    if ($(user_logged_in_pop_up).is(":visible")) {
                         $(user_logged_in_pop_up).fadeOut(100);
                     }
                 }
             }
-            var popup_mobile_menu = $('.popup_mobile_menu');
-            if($(popup_mobile_menu)){
-                if(!$(event.target).closest($(popup_mobile_menu)).length && !$(event.target).closest($('.mobile_menu_block i.fa-bars')).length) {
-                    if($(popup_mobile_menu).is(":visible")) {
+
+            if ($(popup_mobile_menu)) {
+                if (!$(event.target).closest($(popup_mobile_menu)).length && !$(event.target).closest($('.mobile_menu_block i.fa-bars')).length) {
+                    if ($(popup_mobile_menu).is(":visible")) {
                         $(popup_mobile_menu).fadeOut(100);
                     }
                 }
             }
-        })
+        });
 
         // FUNCTION TO ADD FAVORITE ICON TO CURRENCY ICONS
         function add_favorite() {
@@ -187,18 +190,18 @@
                 // toggle text on open favorite state icon
                 $(this).toggleClass('favorite_active');
                 $(this).parent().siblings('.add_favorite_text').fadeToggle(100);
-            })
+            });
             $(open_state_icon_get).click(function () {
                 // fadeToggle favorite icons
                 $('#get_main_line').find('.favorite_block').fadeToggle(100);
                 // toggle text on open favorite state icon
                 $(this).toggleClass('favorite_active');
                 $(this).parent().siblings('.add_favorite_text').fadeToggle(100);
-            })
+            });
             $(favorite_block_i).click(function () {
                 $(this).toggleClass('active');
                 $(this).closest('.icon_img_block').toggleClass('favorite');
-            })
+            });
         }
         add_favorite();
 
@@ -270,21 +273,21 @@
                 if(!$(this).parent().find('.tab_body').is(':visible')){
                     $('#pop_up_currecy .tab.pay_systems').attr('style', 'paddingBottom: 0px');
                 }
-            })
+            });
         }
         add_currency_widget();
         $('.icons_each.add_icon .icon_img_block').on('click', function () {
             $(this).parent().find('.add_currency_pop_up_block').fadeToggle(100);
-        })
+        });
 
 
         // FAQ PAGE TABS
         $('.faq_tab .tab_title').on('click', function () {
             $(this).parent().toggleClass('active');
-        })
+        });
         $('.faq_tab .question_title').on('click', function () {
             $(this).toggleClass('active').siblings('.question_body').slideToggle(200);
-        })
+        });
         $('.faq_tab:first-child .tab_title').trigger('click');
 
 
@@ -311,7 +314,7 @@
                 $('.side_menu_content').find('.side_menu_content__wrap.' + this_data_attr).fadeIn(0);
                 $('.cabinet_inside_wrap .side_menu li').removeClass('active');
                 $(this).parent().addClass('active');
-            })
+            });
         }
         if($('.cabinet_inside_wrap')){
             $('.side_menu_content__wrap.favorite .top_line span').on('click', function (e) {
@@ -321,7 +324,7 @@
                 $('.side_menu_content__wrap.favorite').find('.bodies.' + this_data_attr).fadeIn(0);
                 $('.side_menu_content__wrap.favorite .top_line span').removeClass('active');
                 $(this).addClass('active');
-            })
+            });
         }
 
         // ВКЛЮЧЕНИЕ ВКЛАДКИ
@@ -354,7 +357,7 @@
             $(dot_toggle).on('click', function () {
                 $(dot_toggle).removeClass('active');
                 $(this).addClass('active');
-            })
+            });
         }
 
         // mobile nice scroll on table
@@ -365,13 +368,17 @@
                     $(table_wrap_mobile).niceScroll({
                         cursorcolor:"#555555",
                         cursoropacitymin: 0.5,
-                        touchbehavior: true,
+                        touchbehavior: false,
                         cursorwidth: "10px"
                     });
                 }
             }
+
+            // $(table_wrap_mobile).scroll(function(){
+            //     $(table_wrap_mobile).getNiceScroll().resize();
+            // });
         }
-        mobile_table_nice_scroll();
+        // mobile_table_nice_scroll();
 
 
         // mobile menu open
@@ -380,17 +387,17 @@
         if($(mobile_open_icon)){
             $(mobile_open_icon).on('click', function () {
                 $(pop_up_mobile_menu).fadeToggle(200);
-            })
+            });
         }
 
         // cabinet logged in section open/close
         var cabinet_log_in_page = $('.cabinet_log_in');
         var cabinet_log_in_open_btn = $('#cabinet_open_log_icon');
         if($(cabinet_log_in_page)){
-            $(cabinet_log_in_open_btn).on('click', function(e){
+            $(cabinet_log_in_open_btn).on('click', function(){
                 $('.cabinet_wrapper > div').fadeOut(100);
                 $(cabinet_log_in_page).fadeIn(100);
-            })
+            });
         }
 
 

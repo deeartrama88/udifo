@@ -12,8 +12,10 @@
 }
 .table_wrap_mobile {
   overflow: hidden;
+  overflow-y: hidden;
   width: 100%;
   padding-bottom: 15px;
+  -webkit-overflow-scrolling: touch;
 }
 .mobile_header_menu > .flex_container {
   -webkit-flex-flow: column wrap;
@@ -219,6 +221,8 @@ ul.mobile_menu_block {
   .news_grey_line_link_mobile {
     position: absolute;
     font-size: 20px;
+    left: 20px;
+    top: -4px;
   }
   header .main_block .header_soc_icons li i {
     font-size: 18px;
@@ -236,6 +240,9 @@ ul.mobile_menu_block {
   }
   .direction_tab_widget .currency_block .item {
     margin-left: 20.5px;
+  }
+  .table_wrap_mobile table {
+    width: 917px;
   }
   header .header_main .logo_block span {
     text-align: center;
@@ -322,7 +329,7 @@ ul.mobile_menu_block {
     font-size: 11px;
   }
   .table_wrap_mobile table {
-    width: 1016px;
+    width: 1038px;
   }
   .direction_widget .widget_main_block .top_line .add_favorite_text {
     font-size: 10px;

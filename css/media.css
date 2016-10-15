@@ -392,6 +392,21 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 768px) {
+  .obmenka_list_wrap p:first-of-type {
+    text-align: center;
+  }
+  .obmenka_list_wrap .title {
+    text-align: center;
+  }
+  .obmenka_list_wrap .table_title .chosen {
+    top: 29%;
+  }
+  .obmenka_list_wrap .table_title {
+    font-size: 16px;
+  }
+  .table_wrap_mobile.obmenka_list_table_mobile table {
+    width: 930px;
+  }
   .obmenka_wrap .back_link {
     padding: 0 0 20px 65px;
   }
@@ -494,6 +509,22 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 600px) {
+  .table_wrap_mobile.obmenka_list_table_mobile table {
+    width: 955px;
+  }
+  .obmenka_list_wrap .table_title .chosen {
+    font-size: 12px;
+  }
+  .obmenka_list_wrap .table_title {
+    font-size: 13px;
+  }
+  .obmenka_list_wrap ul li,
+  .obmenka_list_wrap p {
+    font-size: 13px;
+  }
+  .obmenka_list_wrap .title {
+    font-size: 24px;
+  }
   .mobile_obmenka_about.mobile .img_block img {
     width: 100%;
     padding-right: 10px;

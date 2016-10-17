@@ -7,6 +7,32 @@
   cursor: pointer;
   margin-right: 5px;
 }
+.cabinet_side_menu_mobile {
+  width: 80%;
+  margin: 0 auto 20px;
+  font-weight: bold;
+}
+.cabinet_side_menu_mobile select {
+  width: 100%;
+}
+.cabinet_side_menu_mobile .ddcommon .ddArrow {
+  top: 45%;
+}
+.cabinet_side_menu_mobile .borderRadius {
+  border-radius: 3px;
+}
+.cabinet_side_menu_mobile .dd .ddChild li {
+  width: 100%;
+}
+.cabinet_side_menu_mobile .dd {
+  border: 1px solid #ededed;
+}
+.cabinet_side_menu_mobile .dd .ddTitle {
+  color: #5b6779;
+}
+.cabinet_side_menu_mobile .dd .ddChild li .ddlabel {
+  color: #5b6779;
+}
 .mobile_obmenka_about {
   width: 100%;
   margin-bottom: 20px;
@@ -111,6 +137,57 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 1024px) {
+  .side_menu_content__wrap.overview .ref_link_input {
+    text-align: center;
+  }
+  .side_menu_content__wrap.options .form1 {
+    padding-right: 3%;
+    padding-left: 10%;
+  }
+  .side_menu_content__wrap table {
+    font-size: 13px;
+  }
+  .side_menu_content__wrap {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+  .side_menu_content__wrap.your_testimonials td.desc {
+    padding-left: 0;
+  }
+  .desctop {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+  .cabinet_wrapper .cabinet_inside_wrap .side_menu_content .change_user_info .form_group {
+    width: 55%;
+  }
+  .cabinet_wrapper .cabinet_inside_wrap .side_menu_content .change_user_info {
+    margin-bottom: 30px;
+  }
+  .cabinet_wrapper .cabinet_inside_wrap .side_menu.desctop {
+    display: none;
+  }
+  .cabinet_wrapper .user_top_line .user_info .name {
+    padding-right: 40px;
+  }
+  .cabinet_wrapper .user_top_line {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+  .cabinet_wrapper .user_top_line .user_info .mail i.icon-testimonials_like_icon {
+    margin: 0 0 0 40px;
+  }
+  .cabinet_wrapper .user_top_line .user_info .mail i {
+    margin: 0;
+  }
+  .cabinet_wrapper .user_top_line .user_info .mail {
+    padding: 0;
+  }
+  .cabinet_wrapper .user_top_line .user_info i.icon-message_icon {
+    display: none;
+  }
   .obmenka_wrap .back_link {
     padding: 0 0 60px 65px;
   }
@@ -263,12 +340,6 @@ ul.mobile_menu_block {
   .table_wrap_mobile {
     overflow-x: scroll;
   }
-  .desctop {
-    display: none;
-  }
-  .mobile {
-    display: inline-block;
-  }
   .mobile_obmenka_about.mobile {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -392,6 +463,9 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 768px) {
+  .side_all_currency_widget {
+    display: none;
+  }
   .obmenka_list_wrap p:first-of-type {
     text-align: center;
   }
@@ -569,5 +643,54 @@ ul.mobile_menu_block {
     font-size: 23px;
     padding: 10px 10px 5px;
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .side_all_currency_widget {
+    display: none;
+  }
+  ul.header_soc_icons {
+    display: none;
+  }
+  header .header_top_line {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  ul.mobile_menu_block {
+    margin-top: 0;
+    padding: 0;
+    border: none;
+  }
+  header .header_main .logo_block img {
+    padding-right: 5px;
+  }
+  header .header_main .logo_block span {
+    padding: 0;
+    font-size: 6px;
+  }
+  header .header_main .logo_block {
+    padding: 10px 0 0 0;
+  }
+  .under_header_gray_line {
+    padding: 5px 0;
+  }
+  .under_header_gray_line ul {
+    padding: 0 0 0 10px;
+    font-size: 9px;
+  }
+  .news_grey_line_link_mobile {
+    font-size: 18px;
+  }
+  .direction_widget .direction_switch_buttons_1 {
+    padding: 22px 0 0;
+  }
+  .direction_widget .direction_switch_buttons_1 .main_buttons {
+    font-size: 10px;
+  }
+  .direction_widget .direction_switch_buttons_1 .how_it_works i {
+    top: -5px;
+  }
+  .direction_widget .direction_switch_buttons_2 {
+    font-size: 12px;
   }
 }

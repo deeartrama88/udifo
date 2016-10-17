@@ -660,7 +660,7 @@ header .main_block .second_menu .user_cabinet .logged span i.fa-sign-out {
   height: 40px;
   background: #ededed;
   text-align: center;
-  padding: 10px 10px 3px;
+  padding: 8px 8px 3px;
   border-radius: 10px;
   box-shadow: 0 3px #d4d4d4;
   cursor: pointer;
@@ -3283,7 +3283,7 @@ footer .bottom_link a {
   width: 300px;
   margin: 0 auto;
   text-align: center;
-  display: none;
+  display: block;
   padding: 100px 0 200px;
 }
 .cabinet_log_in .title {

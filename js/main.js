@@ -252,6 +252,8 @@
         // cabinet select init
         $('.edit_cabinet_exchanger .exchange_block__ select').niceSelect('destroy');
         $('.edit_cabinet_exchanger .exchange_block__ select').msDropDown();
+        $('.cabinet_side_menu_mobile select').niceSelect('destroy');
+        $('.cabinet_side_menu_mobile select').msDropDown();
 
 
 
@@ -306,7 +308,8 @@
                 })
             }
         }
-        if($('.cabinet_inside_wrap')){
+        var cabinet_inside_wrap = $('.cabinet_inside_wrap');
+        if($(cabinet_inside_wrap)){
             $('.cabinet_inside_wrap .side_menu li a, .add_new_exchanger_cabinet, .open_cabinet_edit_icon').on('click', function (e) {
                 e.preventDefault();
                 var this_data_attr = $(this).data().sideconteiner;
@@ -316,7 +319,7 @@
                 $(this).parent().addClass('active');
             });
         }
-        if($('.cabinet_inside_wrap')){
+        if($(cabinet_inside_wrap)){
             $('.side_menu_content__wrap.favorite .top_line span').on('click', function (e) {
                 e.preventDefault();
                 var this_data_attr = $(this).data().bodies;
@@ -324,6 +327,19 @@
                 $('.side_menu_content__wrap.favorite').find('.bodies.' + this_data_attr).fadeIn(0);
                 $('.side_menu_content__wrap.favorite .top_line span').removeClass('active');
                 $(this).addClass('active');
+            });
+        }
+
+        // CABINET MOBILE SELECT MENU
+        if($(cabinet_inside_wrap)){
+            var mobile_cabinet_menu_select = $('.cabinet_side_menu_mobile select')[0];
+            var selected_option_att = $(mobile_cabinet_menu_select).find('option:selected').data().sideconteiner;
+            $('.side_menu_content__wrap').fadeOut(0);
+            $('.side_menu_content').find('.side_menu_content__wrap.' + selected_option_att).fadeIn(0);
+            $(mobile_cabinet_menu_select).on('change', function () {
+                selected_option_att = $(mobile_cabinet_menu_select).find('option:selected').data().sideconteiner;
+                $('.side_menu_content__wrap').fadeOut(0);
+                $('.side_menu_content').find('.side_menu_content__wrap.' + selected_option_att).fadeIn(0);
             });
         }
 

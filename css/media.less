@@ -1,3 +1,12 @@
+@main_green: #8caa0b;
+@light_grey: #ededed;
+@main_grey: #555555;
+@dark_grey: #333333;
+@separate_gray: #d8d8d8;
+@favorite_blue: #289fce;
+@gray_darkblue: #5b6779;
+
+.align_items_center { align-items: center;}
 .dot_toggle {
     display: inline-block;
     width: 15px;
@@ -15,6 +24,82 @@
     width: 100%;
   }
 }
+.widget_main_block_mobile_phones {
+  display: none;
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Lato Black", sans-serif;
+    margin-bottom: 5px;
+  }
+  .give_block,
+  .get_block {
+    width: 50%;
+    padding: 10px 20px;
+  }
+  .currency_block {
+    text-align: center;
+  }
+  .actions_block {
+    i {
+      display: flex;
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      background: @light_grey;
+      text-align: center;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 darken(@light_grey, 10%);
+      &:before { margin: auto; }
+      &.fa-star-o { color: @favorite_blue; }
+      &.fa-trash { color: red; }
+      &:hover { background: darken(@light_grey, 3%); }
+      &:active {
+        position: relative;
+        top: 3px;
+        box-shadow: none;
+      }
+    }
+  }
+  .currency_img_block {
+    display: flex;
+    margin-bottom: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: @light_grey;
+    box-shadow: 0 3px 0 darken(@light_grey, 10%);
+    cursor: pointer;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 1px solid @main_green;
+      width: 105%;
+      height: 110%;
+      border-radius: 7px;
+      left: -1px;
+    }
+    
+    &:hover {
+      background: darken(@light_grey, 3%);
+    }
+    &:active {
+      box-shadow: none;
+      top: 3px;
+      &:after {
+        height:100%;
+      }
+    }
+  }
+    img {
+      margin: auto;
+      padding-top: 3px;
+    }
+  }
+
 .cabinet_side_menu_mobile .ddcommon .ddArrow { top: 45%; }
 .cabinet_side_menu_mobile .borderRadius { border-radius: 3px; }
 .cabinet_side_menu_mobile .dd .ddChild li { width: 100%; }
@@ -431,6 +516,8 @@ ul.mobile_menu_block {
 
 
 @media only screen and (max-width : 480px) {
+  .widget_main_block_mobile_phones { display: flex; }
+  .widget_main_block { display: none; }
   .side_all_currency_widget { display: none; }
   ul.header_soc_icons { display: none; }
   header .header_top_line {

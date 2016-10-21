@@ -303,7 +303,7 @@
         }
         if($('.user_cabinet .logged .fa-sign-out')){
             if($('.user_logged_in_pop_up')){
-                $('.user_cabinet .logged .fa-sign-out').not($('#cabinet_open_log_icon')).on('click', function(){
+                $('#cabinet_open_log_icon').on('click', function(){
                     $('.user_logged_in_pop_up').fadeToggle(100);
                 })
             }
@@ -319,7 +319,7 @@
                 $(this).parent().addClass('active');
             });
         }
-        if($(cabinet_inside_wrap)){
+        if($(cabinet_inside_wrap).length > 0){
             $('.side_menu_content__wrap.favorite .top_line span').on('click', function (e) {
                 e.preventDefault();
                 var this_data_attr = $(this).data().bodies;
@@ -331,7 +331,7 @@
         }
 
         // CABINET MOBILE SELECT MENU
-        if($(cabinet_inside_wrap)){
+        if($(cabinet_inside_wrap).length > 0){
             var mobile_cabinet_menu_select = $('.cabinet_side_menu_mobile select')[0];
             var selected_option_att = $(mobile_cabinet_menu_select).find('option:selected').data().sideconteiner;
             $('.side_menu_content__wrap').fadeOut(0);
@@ -406,15 +406,15 @@
             });
         }
 
-        // cabinet logged in section open/close
-        var cabinet_log_in_page = $('.cabinet_log_in');
-        var cabinet_log_in_open_btn = $('#cabinet_open_log_icon');
-        if($(cabinet_log_in_page)){
-            $(cabinet_log_in_open_btn).on('click', function(){
-                $('.cabinet_wrapper > div').fadeOut(100);
-                $(cabinet_log_in_page).fadeIn(100);
-            });
-        }
+        //cabinet logged in section open/close
+        // var cabinet_log_in_page = $('.user_logged_in_pop_up');
+        // var cabinet_log_in_open_btn = $('#cabinet_open_log_icon');
+        // if($(cabinet_log_in_page)){
+        //     $(cabinet_log_in_open_btn).on('click', function(){
+        //         // $('.cabinet_wrapper > div').fadeOut(100);
+        //         $(cabinet_log_in_page).fadeIn(100);
+        //     });
+        // }
 
 
 

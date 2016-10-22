@@ -370,9 +370,14 @@
         // TOGGLE GREEN DOTS ON MOBILE STYLES IN often_questions active BLOCK
         if('.dot_toggle'){
             var dot_toggle = $('.dot_toggle');
+            var actions_icons_often_questions = $('.often_questions.active .actions_block i');
             $(dot_toggle).on('click', function () {
                 $(dot_toggle).removeClass('active');
                 $(this).addClass('active');
+                for(var i = 0; i < 4; i++){
+                    var icon = $(actions_icons_often_questions[i]);
+                    $(icon).toggleClass('active');
+                }
             });
         }
 

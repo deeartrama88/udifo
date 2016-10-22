@@ -24,6 +24,7 @@
     width: 100%;
   }
 }
+.widget_main_block_mobile_phones_add_,
 .widget_main_block_mobile_phones {
   display: none;
   .title {
@@ -99,6 +100,33 @@
       padding-top: 3px;
     }
   }
+.widget_main_block_mobile_phones_add_ {
+  .currency_block {
+    margin: auto;
+    .currency_img_block {
+      margin: auto;
+      background: @main_green;
+      box-shadow: 0 3px 0 darken(@main_green, 10%);
+      &:hover { background: darken(@main_green, 3%); }
+      &:active { box-shadow: none; }
+      &:after { display: none; }
+      i {
+        margin: auto;
+        font-size: 18px;
+        padding-top: 9px;
+        color: white;
+      }
+    }
+    .currency_text {
+      margin-top: 8px;
+      display: block;
+      font-size: 13px;
+      line-height: 13px;
+    }
+  }
+}
+
+
 
 .cabinet_side_menu_mobile .ddcommon .ddArrow { top: 45%; }
 .cabinet_side_menu_mobile .borderRadius { border-radius: 3px; }
@@ -209,6 +237,19 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 1024px) {
+  header .main_block .popup_mobile_menu .header_soc_icons {
+    display: flex;
+    border-top: 1px solid @light_grey;
+    padding-top: 20px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    li {
+      display: inline-block;
+      padding-left: 0;
+      margin: 0;
+    }
+  }
+  .popup_mobile_menu li:last-child { margin-bottom: 0; }
   .side_menu_content__wrap.overview .ref_link_input { text-align: center; }
   .side_menu_content__wrap.options .form1 {
     padding-right: 3%;
@@ -431,7 +472,10 @@ ul.mobile_menu_block {
     .news_detail .big_image_block .title_to_image { font-size: 32px; }
     .direction_tab_widget .currency_block .item { margin-left: 18px; }
     .big_news .news .title, .small_news .news .title { font-size: 15px; }
-    .direction_tab_widget .add_icon { width: 7%; }
+    .direction_tab_widget .add_icon {
+      width: 7%;
+      text-align: center;
+    }
     .direction_tab_widget .currency_block { width: 93%; }
     .direction_tab_widget .currency_block .item { margin-left: 20.5px; }
     .table_wrap_mobile table { width: 917px; }
@@ -470,8 +514,8 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 642px) {
-    .direction_tab_widget .add_icon { width: 8%; }
-    .direction_tab_widget .currency_block { width: 92%; }
+    .direction_tab_widget .add_icon { width: 10%; }
+    .direction_tab_widget .currency_block { width: 90%; }
     .table_wrap_mobile table { width: 866px; }
     .direction_widget .widget_main_block .top_line .icons i:first-child { margin-right: 0; }
     .direction_widget .widget_main_block .top_line .add_favorite_text { font-size: 11px; }
@@ -516,6 +560,103 @@ ul.mobile_menu_block {
 
 
 @media only screen and (max-width : 480px) {
+  header .header_top_line .courses, header .header_top_line .exchanges, header .header_top_line .refreshes { padding: 0; }
+  header .header_top_line {
+    display: flex;
+    justify-content: space-between;
+  }
+  .table_wrap table tbody td { position: relative; }
+  header .header_main .logo_block img { padding: 7px 5px 0 0; }
+  header .header_main .logo_block span { display: none; }
+  .about_video_block {
+    .title{
+      width: 100%;
+      text-align: center;
+    }
+   .sub_title {
+     width: 100%;
+     text-align: center;
+   }
+    iframe {
+      width: 100%;
+      float: none;
+    }
+    .video_about_text {
+      float: none;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  .start_page .news_each {
+    width: 100%;
+    margin-bottom: 20px;
+    .title {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  footer {
+    padding: 30px;
+    .about_and_soc,
+    .first_menu,
+    .second_menu,
+    .vk_widget {
+      width: 100%;
+    }
+    .first_menu {
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    .second_menu {
+      border:none;
+      margin-bottom: 30px;
+    }
+    .vk_widget {
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+    .about_and_soc {
+      padding: 60px 0 0 0;
+      border: none;
+      position: relative;
+      .soc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+  .often_questions.active .calculator_wrap input {
+    margin-right: 10px;
+  }
+  .start_page_about_text .title { font-weight: bold; }
+  .table_wrap_mobile table { width: 840px; }
+  .table_wrap table tbody td .amount { font-size: 12px; }
+  .pagination_block .pagination_setting .number_choose .arrows {
+    .arrow_up,
+    .arrow_down { text-align: center; }
+  }
+  .pagination_block { text-align: left; }
+  .often_questions.active {
+    .currencies_block { display: none; }
+    .actions_block {
+      i { display: none; }
+      i.active { display: inline-block; }
+    }
+    i.phone { display: block; }
+    i.fa-angle-right { display: none; }
+  }
+  .direction_tab_widget .actions_line .text { left: 0; }
+  .direction_tab_widget .currency_block { width: 87%; }
+  .direction_tab_widget .currency_block .item:first-child { margin-left: 12px; }
+  .direction_tab_widget .add_icon { width: 12%; }
+  .widget_main_block_mobile_phones_add_,
   .widget_main_block_mobile_phones { display: flex; }
   .widget_main_block { display: none; }
   .side_all_currency_widget { display: none; }
@@ -548,6 +689,26 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 414px) {
+  .popup_mobile_menu { padding: 20px 15px; }
+  .start_page_about_text .title { font-size: 15px; }
+  .about_video_block .sub_title { font-size: 14px; }
+  .table_wrap table tbody td.exchanger { position: relative; }
+  .direction_tab_widget .currency_block { width: 84%; }
+  .direction_tab_widget .add_icon { width: 15%; }
+  .table_wrap_mobile table { width: 720px; }
+  .table_wrap table tbody td img.bitcoin { top: 0; }
+  .table_wrap table tbody td.exchanger span:first-child { width: 100%; }
+  .table_wrap table tbody td.exchanger span:nth-child(2) {
+    width: 100%;
+    text-align: center;
+  }
+  .table_wrap table tbody td.exchanger span:last-child {
+    text-align: center;
+    padding-right: 0px;
+    position: absolute;
+    top: 4%;
+    right: 0;
+  }
 
 }
 
@@ -556,9 +717,47 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 375px) {
-
+  .often_questions.active .calculator_wrap input {
+    width: 90px;
+    &:nth-child(3) { margin-right: 0; }
+  }
+  .table_wrap_mobile table { width: 652px; }
 }
 
 @media only screen and (max-width : 320px) {
+  .direction_tab_widget .currency_block .item {
+    padding: 8px 5px 5px;
+    margin: 0 0 10px 0;
+    &:nth-child(odd) { margin: 0 5px 10px 0; }
+    &:first-child { margin: 0 5px 10px 0; }
+  }
+  .often_questions.active .calculator_wrap input { width: 78px; }
+  .direction_tab_widget .add_icon { width: 17%; }
+  .direction_tab_widget .currency_block .item .sub_item:first-child { padding-right: 0; }
+  .direction_tab_widget .currency_block { width: 83%; }
+  .often_questions.active .calculator_wrap .check_box label { font-size: 12px; }
+  .pagination_block .pages_list ul li { padding: 6px 11px; }
+  .pagination_block .pages_list ul li.next { padding: 5px 11px; }
+  .pagination_block .pages_list ul li i { font-size: 19px; }
+  .pagination_block .pagination_setting span { padding: 6px 35px 4px 22px; }
+  .pagination_block .pagination_setting .number_choose .arrows i { vertical-align: top; }
+  .pagination_block .pagination_setting .number_choose .arrows  {
+    i {
+      position: relative;
+      top: 2px;
+    }
+    .arrow_down {
+      height: 15px;
+      border-bottom: 0;
+    }
+    .arrow_up {
+      height: 16px;
+      border-bottom: 1px solid @separate_gray;
+    }
+  }
+  .table_wrap_mobile table { width: 796px; }
+  .direction_widget .direction_switch_buttons_1 .main_buttons span:first-child { padding: 4px 10px 5px 20px; }
+  .direction_widget .direction_switch_buttons_1 .main_buttons span:last-child { padding: 4px 20px 5px 10px; }
+  .direction_widget .direction_switch_buttons_1 .main_buttons { letter-spacing: 1px; }
 
 }

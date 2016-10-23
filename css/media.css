@@ -1,3 +1,56 @@
+.side_menu_content__wrap.favorite .list_.phone {
+  display: none;
+  width: 100%;
+}
+.side_menu_content__wrap.favorite .list_.phone .title_phone_in_wrap {
+  width: 240px;
+  margin: 0 auto 20px;
+}
+.side_menu_content__wrap.favorite .list_.phone .title_phone_in_wrap:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.side_menu_content__wrap.favorite .list_.phone .get,
+.side_menu_content__wrap.favorite .list_.phone .give {
+  color: #555555;
+  letter-spacing: 1px;
+  font-family: "Lato Black", sans-serif;
+  border-radius: 10px 0 0 10px;
+  float: left;
+  width: 120px;
+  text-align: right;
+  padding: 0 15px 2px 0;
+  font-weight: bold;
+  background: #d8d8d8;
+  cursor: pointer;
+}
+.side_menu_content__wrap.favorite .list_.phone .get:hover,
+.side_menu_content__wrap.favorite .list_.phone .give:hover {
+  background: #a0c20d;
+  color: white;
+}
+.side_menu_content__wrap.favorite .list_.phone .get.active,
+.side_menu_content__wrap.favorite .list_.phone .give.active {
+  background: #8caa0b;
+  color: white;
+}
+.side_menu_content__wrap.favorite .list_.phone .get.active:hover,
+.side_menu_content__wrap.favorite .list_.phone .give.active:hover {
+  background: #a0c20d;
+}
+.side_menu_content__wrap.favorite .list_.phone .get {
+  border-radius: 0 10px 10px 0;
+  text-align: left;
+  padding: 0 0 2px 15px;
+}
+.cabinet_wrapper .user_top_line .user_info .mail i.icon-coin_out.phone {
+  display: none;
+}
+.user_balance .withdraw i {
+  display: none;
+  font-size: 24px;
+}
 .align_items_center {
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -31,6 +84,18 @@
   font-family: "Lato Black", sans-serif;
   margin-bottom: 5px;
 }
+.widget_main_block_mobile_phones_add_ .favorite,
+.widget_main_block_mobile_phones .favorite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #289fce;
+  display: none;
+}
+.widget_main_block_mobile_phones_add_ .favorite.active,
+.widget_main_block_mobile_phones .favorite.active {
+  display: block;
+}
 .widget_main_block_mobile_phones_add_ .give_block,
 .widget_main_block_mobile_phones .give_block,
 .widget_main_block_mobile_phones_add_ .get_block,
@@ -41,6 +106,7 @@
 .widget_main_block_mobile_phones_add_ .currency_block,
 .widget_main_block_mobile_phones .currency_block {
   text-align: center;
+  position: relative;
 }
 .widget_main_block_mobile_phones_add_ .actions_block i,
 .widget_main_block_mobile_phones .actions_block i {
@@ -740,6 +806,9 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 600px) {
+  .cabinet_wrapper .user_top_line .user_info .name {
+    padding-right: 30px;
+  }
   .table_wrap_mobile.obmenka_list_table_mobile table {
     width: 955px;
   }
@@ -803,6 +872,147 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 480px) {
+  .side_menu_content__wrap.testimonials table .first_line .date {
+    padding: 0;
+  }
+  .side_menu_content__wrap.testimonials table {
+    width: 375px;
+  }
+  .side_menu_content__wrap.testimonials .filter_top_line {
+    font-size: 11px;
+  }
+  .side_menu_content__wrap.statistic_2 table {
+    width: 375px;
+  }
+  .side_menu_content__wrap.statistic_2 .form_group.date_pic_ {
+    width: 80%;
+    margin-right: 0;
+  }
+  .period_block {
+    width: 100%;
+  }
+  .ui-datepicker-trigger {
+    right: 10px;
+  }
+  .side_menu_content__wrap.statistic_2 .form_group {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  .filter_block .form_group.date_pic_ input {
+    width: 100%;
+  }
+  .side_menu_content__wrap.statistic_2 .form_group input {
+    width: 100%;
+  }
+  .filter_block .form_group.date_pic_ label {
+    display: block;
+  }
+  .side_menu_content__wrap.add_new_exchanger .buttons button {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .side_menu_content__wrap.add_new_exchanger .dots {
+    font-size: 32px;
+    right: -45px;
+    top: 22px;
+    padding: 6px 9px 21px;
+  }
+  .side_menu_content__wrap.add_new_exchanger .fields_group {
+    width: 70%;
+    margin: auto;
+  }
+  .cabinet_wrapper .cabinet_inside_wrap .side_menu_content .side_menu_content__wrap {
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+  .side_menu_content__wrap table {
+    width: 700px;
+  }
+  .side_menu_content__wrap.overview input {
+    max-width: 75%;
+  }
+  .side_menu_content__wrap.overview .overview {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .side_menu_content__wrap.overview .overview li {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+  .side_menu_content__wrap.options form {
+    position: relative;
+  }
+  .side_menu_content__wrap.options .form1 {
+    width: 80%;
+    padding: 0;
+    margin: auto;
+  }
+  .side_menu_content__wrap.options .form2 {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .side_menu_content__wrap.options button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .side_menu_content__wrap.options .form_group {
+    margin: 0 auto 10px;
+  }
+  .side_menu_content__wrap.favorite ul {
+    width: 75%;
+  }
+  .side_menu_content__wrap.favorite .list_ {
+    display: none;
+  }
+  .side_menu_content__wrap.favorite .list_.phone {
+    display: block;
+    width: 100%;
+  }
+  .side_menu_content__wrap.favorite .list_.phone .title {
+    display: none;
+  }
+  .side_menu_content__wrap.favorite .flex_container.top_line {
+    padding: 0;
+  }
+  .side_menu_content__wrap.your_testimonials td.desc {
+    width: 200px;
+  }
+  .side_menu_content__wrap.your_testimonials td.desc .desc {
+    padding-left: 10px;
+  }
+  .side_menu_content__wrap.your_testimonials td.date {
+    width: 70px;
+  }
+  .side_menu_content__wrap table {
+    font-size: 11px;
+  }
+  .cabinet_wrapper .user_top_line .user_info {
+    width: 100%;
+    text-align: center;
+  }
+  .cabinet_wrapper .user_top_line .user_info .icon-coin_out.phone {
+    margin: 0 0 0 40px;
+    display: inline-block;
+  }
+  .cabinet_wrapper .user_top_line .user_info .mail i.icon-coin_out.phone {
+    display: inline-block;
+  }
+  .cabinet_wrapper .user_top_line .user_balance {
+    display: none;
+  }
+  .balance.mobile {
+    display: none;
+  }
+  .cabinet_wrapper .user_top_line .user_balance .withdraw {
+    display: none;
+  }
   header .header_top_line .courses,
   header .header_top_line .exchanges,
   header .header_top_line .refreshes {
@@ -812,9 +1022,9 @@ ul.mobile_menu_block {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
   .table_wrap table tbody td {
     position: relative;
@@ -1030,6 +1240,14 @@ ul.mobile_menu_block {
     right: 0;
   }
 }
+@media only screen and (max-width: 411px) {
+  .cabinet_wrapper .user_top_line .user_info .mail i.icon-testimonials_like_icon {
+    margin: 0 0 0 15px;
+  }
+  .cabinet_wrapper .user_top_line .user_info .icon-coin_out.phone {
+    margin: 0 0 0 15px;
+  }
+}
 @media only screen and (max-width: 375px) {
   .often_questions.active .calculator_wrap input {
     width: 90px;
@@ -1040,8 +1258,20 @@ ul.mobile_menu_block {
   .table_wrap_mobile table {
     width: 652px;
   }
+  .cabinet_wrapper .user_top_line .user_info .name {
+    padding-right: 20px;
+  }
 }
 @media only screen and (max-width: 320px) {
+  .cabinet_side_menu_mobile {
+    font-size: 13px;
+  }
+  .cabinet_wrapper .cabinet_inside_wrap .side_menu_content .change_user_info .form_group {
+    width: 80%;
+  }
+  .cabinet_wrapper .user_top_line .user_info .name {
+    padding-right: 10px;
+  }
   .direction_tab_widget .currency_block .item {
     padding: 8px 5px 5px;
     margin: 0 0 10px 0;

@@ -372,14 +372,25 @@
             var dot_toggle = $('.dot_toggle');
             var actions_icons_often_questions = $('.often_questions.active .actions_block i');
             $(dot_toggle).on('click', function () {
-                $(dot_toggle).removeClass('active');
-                $(this).addClass('active');
-                for(var i = 0; i < 4; i++){
-                    var icon = $(actions_icons_often_questions[i]);
-                    $(icon).toggleClass('active');
+                if(!$(this).hasClass('active')){
+                    $(dot_toggle).removeClass('active');
+                    $(this).addClass('active');
+                    for(var i = 0; i < 4; i++){
+                        var icon = $(actions_icons_often_questions[i]);
+                        $(icon).toggleClass('active');
+                    }
                 }
             });
         }
+
+        // ADD FAVORITE CLASS ON PHONE WIDGET
+        var phone_widget_favorite_btn = $('.widget_main_block_mobile_phones .fa-star-o');
+        if($(phone_widget_favorite_btn).length > 0) {
+            $(phone_widget_favorite_btn).on('click', function () {
+                $(this).parent().parent().find('.favorite').toggleClass('active');
+            })
+        }
+
 
         // mobile nice scroll on table
         function mobile_table_nice_scroll(){

@@ -121,9 +121,11 @@ button.main_green_btn {
     top: 3px;
     box-shadow: none;
   }
-  &:hover {
-    background: darken(@main_green, 2%);
-  }
+  &:hover { background: darken(@main_green, 2%); }
+}
+.contacts_wrapper .nice-select {
+  width: 100%;
+  margin-bottom: 15px;
 }
 .ui-datepicker-trigger {
   position: absolute;
@@ -133,12 +135,8 @@ button.main_green_btn {
   z-index: 1;
   cursor: pointer;
 }
-span.red {
-  color: red;
-}
-span.green {
-  color: @main_green;
-}
+span.red { color: red; }
+span.green { color: @main_green; }
 
 ul {
   list-style: none;
@@ -146,14 +144,10 @@ ul {
   padding: 0;
   margin: 0;
 
-  li {
-    display: inline-block;
-  }
+  li { display: inline-block; }
 }
 
-i {
-  cursor: pointer;
-}
+i { cursor: pointer; }
 
 a {
   color: inherit;
@@ -505,12 +499,8 @@ header {
       padding-right: 27px;
     }
     
-    .minus {
-      color: red;
-    }
-    .plus {
-      color: @main_green;
-    }
+    .minus { color: red; }
+    .plus { color: @main_green; }
   }
 
   .search_block {
@@ -677,12 +667,8 @@ header {
 
       #give_favorite, #get_favorite {
         &.favorite_active {
-          &:after {
-            display: block;
-          }
-          &:before {
-            display: none;
-          }
+          &:after { display: block; }
+          &:before { display: none; }
         }
         &:after {
           content: 'OK';
@@ -1015,18 +1001,12 @@ header {
             box-shadow: 0 2px darken(@light_grey, 10%);
             cursor: pointer;
 
-            &:hover {
-              box-shadow: 0 3px 0 @light_grey;
-            }
+            &:hover { box-shadow: 0 3px 0 @light_grey; }
             &:active {
               i.fa.fa-star-o {
-                &:before {
-                  content: '\f005';
-                }
+                &:before { content: '\f005'; }
               }
-              i {
-                color: @favorite_blue;
-              }
+              i { color: @favorite_blue; }
             }
 
             img {
@@ -1037,9 +1017,7 @@ header {
             i {
               position: relative;
               top: 2px;
-              &.icon-message_icon {
-                top: 3px;
-              }
+              &.icon-message_icon { top: 3px; }
             }
           }
         }
@@ -1051,9 +1029,7 @@ header {
           display: inline-block;
           padding: 11px 5px 0;
 
-          &.red {
-            color: red;
-          }
+          &.red { color: red; }
         }
         .icon {
           display: inline-block;
@@ -1107,9 +1083,7 @@ header {
           padding: 9px 17px;
           vertical-align: top;
           border: 1px solid @separate_gray;
-          &:hover {
-            background: darken(@separate_gray, 5%);
-          }
+          &:hover { background: darken(@separate_gray, 5%); }
         }
 
         i {
@@ -1181,9 +1155,7 @@ header {
 }
 
 .separate_line {
-  img {
-    width: 100%;
-  }
+  img { width: 100%; }
 }
 
 .about_video_block {
@@ -1206,14 +1178,10 @@ header {
     font-weight: bold;
   }
   .video_about_text {
-
     width: 49%;
-
     .desc {
-
       p {
         padding-bottom: 5px;
-
         &:last-child {
           padding: 0;
           margin: 0;
@@ -1222,21 +1190,13 @@ header {
     }
   }
 }
-.first_separate {
-  margin: 12px 0 25px;
-}
-.second_separate {
-  margin: 30px 0 45px;
-}
-.third_separate {
-  margin: 40px 0 45px;
-}
+.first_separate { margin: 12px 0 25px; }
+.second_separate { margin: 30px 0 45px; }
+.third_separate { margin: 40px 0 45px; }
 .news_each {
   width: 28%;
 
-  img {
-    width: 100%;
-  }
+  img { width: 100%; }
 
   .title{
 
@@ -1264,9 +1224,7 @@ header {
     margin-bottom: 15px;
     text-transform: uppercase;
   }
-  .desc {
-    font-size: 14px;
-  }
+  .desc { font-size: 14px; }
 }
 
 footer {
@@ -1312,13 +1270,9 @@ footer {
     a {
       color: @main_green;
       font-size: 13px;
-      &:hover {
-        text-decoration: underline;
-      }
+      &:hover { text-decoration: underline; }
     }
-    li {
-      width: 100%;
-    }
+    li { width: 100%; }
   }
   .footer_menu {
     width: 40%;
@@ -1356,9 +1310,7 @@ footer {
     text-align: right;
     width: 25%;
 
-    img {
-      width: 100%;
-    }
+    img { width: 100%; }
   }
   .bottom_link {
     text-align: center;
@@ -1367,9 +1319,7 @@ footer {
     position: relative;
     bottom: 16px;
 
-    a {
-      color: @main_green;
-    }
+    a { color: @main_green; }
   }
 }
 
@@ -1437,25 +1387,15 @@ footer {
       }
 
       &:nth-child(3){
-        .give, .get, .reserve {
-          text-align: center;
-        }
-        .get {
-          padding: 0 10px;
-        }
+        .give, .get, .reserve { text-align: center; }
+        .get { padding: 0 10px; }
         .amount {
           font-size: 14px;
           font-family: 'LatoBlack', sans-serif;
         }
       }
-
-      .icon_in {
-        vertical-align: top;
-      }
-
-      & > div {
-        display: inline-block;
-      }
+      .icon_in { vertical-align: top; }
+      & > div { display: inline-block; }
       .amount {
         font-size: 22px;
         font-weight: bold;
@@ -1505,27 +1445,18 @@ footer {
       cursor: pointer;
       font-size: 20px;
       transition: all 0.1s ease;
-      &:hover {
-        color: @main_green;
-      }
-
+      &:hover { color: @main_green; }
       &:nth-child(2){
         position: relative;
         font-size: 17px;
         bottom: 2px;
       }
-
-      &:nth-child(3) {
-        font-size: 16px;
-      }
+      &:nth-child(3) { font-size: 16px; }
     }
-
   }
 }
 
-.slide_section {
-  position: relative;
-}
+.slide_section { position: relative; }
 // all currency's panel (side slide panel)
 .side_all_currency_widget {
   position: absolute;
@@ -1537,10 +1468,7 @@ footer {
   width: 360px;
   left: -360px;
   z-index: 10;
-
-  &.open {
-    left: 0;
-  }
+  &.open { left: 0; }
 
   // icon/block that opens side menu with all currencies
   .open_icon_wrapper {
@@ -1618,9 +1546,7 @@ footer {
         padding: 25px 5px 15px;
         background: white;
 
-        &:nth-child(even){
-          background: #f2f1f1;
-        }
+        &:nth-child(even){ background: #f2f1f1; }
         .currency_item {
           padding: 5px 10px;
           background: darken(@light_grey, 3%);
@@ -1670,9 +1596,7 @@ footer {
         transition: all 0.1s ease;
 
         &.open {
-          i {
-            transform: rotate(180deg);
-          }
+          i { transform: rotate(180deg); }
         }
 
         i {
@@ -1781,35 +1705,15 @@ footer {
         }
       }
       //  end of find block
-      
-      //  cryptocurrency block/tab
-      .ctyptocurrency_tab {
-
-        .title {
-          i {
-
-          }
-        }
-        .item {
-
-        }
-      }
-      // end cryptocurrency block/tab
 
       //  cash tab/наличные
-      .cash {
-        border-bottom: 2px solid @main_green;
-      }
+      .cash { border-bottom: 2px solid @main_green; }
       //  cash tab/наличные
 
       //  pay system tab/block
       .pay_systems {
-
         // pay system is closed by default/вкладка "платежные системы - закрыта по умолчанию"
-        .wrap {
-          display: none;
-        }
-
+        .wrap { display: none; }
         .pay_system_title {
           text-align: center;
           font-weight: bold;
@@ -1837,9 +1741,7 @@ footer {
   font-size: 14px;
   font-family: 'LatoRegular', sans-serif;
 
-  &:hover {
-    box-shadow: 0 3px 0 #ededed;
-  }
+  &:hover { box-shadow: 0 3px 0 #ededed; }
   &:before {
     content: '';
     position: absolute;
@@ -1853,13 +1755,9 @@ footer {
     opacity: 0;
   }
   &:active {
-    &:before {
-      opacity: 1;
-    }
+    &:before { opacity: 1; }
   }
-  i {
-    right: 6px;
-  }
+  i { right: 6px; }
 }
 
 
@@ -1911,9 +1809,7 @@ footer {
       color: @dark_grey;
       margin-bottom: 45px;
 
-      p {
-        margin-bottom: 20px;
-      }
+      p { margin-bottom: 20px; }
     }
 
     button.main_btn {
@@ -1932,9 +1828,7 @@ footer {
       display: block;
       outline: none;
       
-      &:hover {
-        background: darken(@main_green, 5%);
-      }
+      &:hover { background: darken(@main_green, 5%); }
       &:active {
         background: darken(@main_green, 5%);
         position: relative;
@@ -1974,9 +1868,7 @@ footer {
     display: inline-block;
     vertical-align: top;
 
-    .currency_icon_block {
-      display: inline-block;
-    }
+    .currency_icon_block { display: inline-block; }
 
     .text {
       display: inline-block;
@@ -1985,12 +1877,8 @@ footer {
       padding-left: 10px;
       position: relative;
       top: 10px;
-      .name {
-        font-size: 14px;
-      }
-      .currency {
-        font-size: 10px;
-      }
+      .name { font-size: 14px; }
+      .currency { font-size: 10px; }
     }
   }
 
@@ -2001,9 +1889,7 @@ footer {
       padding: 0 12px;
       vertical-align: text-top;
       transition: all 0.1s ease;
-      &:hover {
-        color: @main_green;
-      }
+      &:hover { color: @main_green; }
     }
   }
 
@@ -2030,9 +1916,7 @@ footer {
     margin-top: 5px;
     font-family: 'LatoRegular', sans-serif;
 
-    .flex_container {
-      justify-content: center;
-    }
+    .flex_container { justify-content: center; }
     input {
       background: white;
       padding: 5px 10px 3px;
@@ -2061,9 +1945,7 @@ footer {
 
 // SEARCH BLOCK
 .under_header_gray_line {
-  .container {
-    position: relative;
-  }
+  .container { position: relative; }
 }
 .search_element_wrapper {
   position: absolute;
@@ -2096,33 +1978,19 @@ footer {
 .direction_tab_widget {
   padding-top: 10px;
   border-top: 1px solid @separate_gray;
-
-  & > .flex_container {
-    justify-content: flex-end;
-  }
-  
+  & > .flex_container { justify-content: flex-end; }
   .actions_icons {
-
     i{
-      &:hover {
-        background: darken(@light_grey, 4%);
-      }
+      &:hover { background: darken(@light_grey, 4%); }
       &:first-child {
         margin-right: 10px;
-
         &:active {
-          &:before {
-            content: '\f005';
-          }
+          &:before { content: '\f005'; }
         }
       }
     }
-    
-
   }
-
   .main_line {
-
     .flex_container {
       justify-content: flex-start;
       align-items: baseline;
@@ -2207,9 +2075,7 @@ footer {
     }
 
     &.favorite_active {
-      .text {
-        display: block;
-      }
+      .text { display: block; }
     }
 
     .actions_icons {
@@ -2243,9 +2109,7 @@ footer {
       display: inline-block;
       margin-bottom: 10px;
 
-      &:first-child {
-        margin-left: 5px;
-      }
+      &:first-child { margin-left: 5px; }
 
       i.favorite {
         position: absolute;
@@ -2278,9 +2142,7 @@ footer {
           i {
             color: red;
             text-shadow: 0 0 5px white;
-            &:before {
-              content: '\f1f8';
-            }
+            &:before { content: '\f1f8'; }
           }
         }
       }
@@ -2309,40 +2171,28 @@ footer {
 
         .favorite_block {
           i.fa {
-            &:before {
-              content: "\f005";
-            }
+            &:before { content: "\f005"; }
           }
         }
-        i.favorite {
-          display: block;
-        }
+        i.favorite { display: block; }
       }
 
-      &:hover {
-        background: darken(@light_grey, 3%);
-      }
+      &:hover { background: darken(@light_grey, 3%); }
 
       &:active {
         top: 3px;
         box-shadow: 0 0 0 transparent;
 
-        &:before{
-          display: none;
-        }
+        &:before { display: none; }
       }
 
       &.active {
 
         &:active {
-          &:before {
-            height: 111%;
-          }
+          &:before { height: 111%; }
         }
 
-        &:before {
-          display: block;
-        }
+        &:before { display: block; }
       }
 
       &:after {
@@ -2379,9 +2229,7 @@ footer {
 
         &:first-child {
           padding-right: 5px;
-          span {
-            top: -7px;
-          }
+          span { top: -7px; }
         }
         
       }
@@ -2399,18 +2247,14 @@ footer {
 
 // <!-- NEWS FILTER ON TOP/ФИЛЬТР НОВОСТЕЙ -->
 
-.side_all_currency_widget.news_page {
-  margin-top: 180px;
-}
+.side_all_currency_widget.news_page { margin-top: 180px; }
 
 .news_filter {
   font-size: 14px;
   font-family:'LatoBlack', sans-serif;
   padding: 25px 0;
 
-  .flex_container {
-    align-items: center;
-  }
+  .flex_container { align-items: center; }
   ul {
     margin: 0;
     padding: 0;
@@ -2450,9 +2294,7 @@ footer {
       }
       &:last-child {
         a {
-          &:after {
-            display: none;
-          }
+          &:after { display: none; }
         }
       }
     }
@@ -2472,9 +2314,7 @@ footer {
   .pagination_block {
     padding: 0;
 
-    .pagination_setting {
-      top: 0;
-    }
+    .pagination_setting { top: 0; }
   }
 iframe[id='^twitter']{}
   .news {
@@ -2483,9 +2323,7 @@ iframe[id='^twitter']{}
     width: 49%;
 
     &.has_video {
-      .youtube {
-        display: block;
-      }
+      .youtube { display: block; }
     }
 
     .youtube {
@@ -2497,13 +2335,9 @@ iframe[id='^twitter']{}
       -webkit-transform: translate(-50%, -50%);
     }
 
-    .flex_container {
-      align-items: flex-end;
-    }
+    .flex_container { align-items: flex-end; }
 
-    img {
-      width: 100%;
-    }
+    img { width: 100%; }
 
     .title {
       font-size: 17px;
@@ -2532,15 +2366,11 @@ iframe[id='^twitter']{}
       font-family: 'LatoBold', sans-serif;
       transition: all 0.1s ease;
 
-      i {
-        transition: all 0.2s ease;
-      }
+      i { transition: all 0.2s ease; }
 
       &:hover {
         text-decoration: underline;
-        i {
-          padding-left: 10px;
-        }
+        i { padding-left: 10px; }
       }
     }
     .social {
@@ -2592,12 +2422,8 @@ iframe[id='^twitter']{}
       bottom: 10px;
       left: 10px;
 
-      span {
-        padding-right: 20px;
-      }
-      i {
-        padding-right: 5px;
-      }
+      span { padding-right: 20px; }
+      i { padding-right: 5px; }
     }
   }
 }
@@ -2634,17 +2460,13 @@ iframe[id='^twitter']{}
   box-shadow: 0 0 15px #a5a5a5;
   display: none;
 
-  .flex_container {
-    justify-content: flex-start;
-  }
+  .flex_container { justify-content: flex-start; }
 
   .title {
     padding: 10px 0;
 
     &.open {
-      i {
-        transform: rotate(180deg);
-      }
+      i { transform: rotate(180deg); }
     }
   }
 
@@ -2677,9 +2499,7 @@ iframe[id='^twitter']{}
     background: white;
     box-shadow: 0 3px 0 darken(@light_grey, 10%);
     margin: 0 10px;
-    &:hover {
-      box-shadow: 0 3px 0 @light_grey;
-    }
+    &:hover { box-shadow: 0 3px 0 @light_grey; }
 
     span {
       padding-top: 0;
@@ -2699,32 +2519,22 @@ iframe[id='^twitter']{}
       //padding-bottom: 185px;
       //transition: all 0.6s ease;
       .icons_each {
-        .sub_body {
-          display: none;
-        }
+        .sub_body { display: none; }
 
         &.open {
 
-          .icon_img_block:before {
-            opacity: 1;
-          }
+          .icon_img_block:before { opacity: 1; }
           .sub_body {
             display: block;
 
             .icon_img_block {
-              &:before {
-                opacity: 0;
-              }
+              &:before { opacity: 0; }
               &:hover {
-                &:before{
-                  opacity: 1;
-                }
+                &:before { opacity: 1; }
               }
             }
           }
-          &:after {
-            display: block;
-          }
+          &:after { display: block; }
         }
         &:after {
           //content: '';
@@ -2748,9 +2558,7 @@ iframe[id='^twitter']{}
       cursor: pointer;
       transition: all 0.1s ease;
 
-      &:hover {
-        background: darken(@main_green, 5%);
-      }
+      &:hover { background: darken(@main_green, 5%); }
 
       i {
         position: absolute;
@@ -2762,9 +2570,7 @@ iframe[id='^twitter']{}
     .tab_body {
       padding: 15px 0 25px;
 
-      .icons_each {
-        margin-bottom: 10px;
-      }
+      .icons_each { margin-bottom: 10px; }
 
       .sub_body {
         position: absolute;
@@ -2789,9 +2595,7 @@ iframe[id='^twitter']{}
               color: white;
             }
             &:hover {
-              &:before{
-                width: 109%;
-              }
+              &:before { width: 109%; }
             }
           }
         }
@@ -2802,9 +2606,7 @@ iframe[id='^twitter']{}
         }
 
         .systems {
-          .icon_img_block {
-            display: inline-block;
-          }
+          .icon_img_block { display: inline-block; }
           margin-top: 15px;
         }
         .icon_img_block {
@@ -2837,9 +2639,7 @@ iframe[id='^twitter']{}
   .big_image_block {
     position: relative;
     text-align: center;
-    img {
-      width: 100%;
-    }
+    img { width: 100%; }
     .title_to_image{
       font-size: 48px;
       color: white;
@@ -2855,15 +2655,9 @@ iframe[id='^twitter']{}
     color: @main_grey;
     margin: 15px 0 5px;
     font-family: 'LatoBold', sans-serif;
-    .date {
-
-    }
     .views {
-
       padding-right: 15px;
-      i{
-        margin: 0 10px;
-      }
+      i { margin: 0 10px; }
     }
   }
 
@@ -2879,9 +2673,7 @@ iframe[id='^twitter']{}
     font-weight: bold;
     font-family: 'LatoRegular', sans-serif;
   }
-  p {
-    font-size: 15px;
-  }
+  p { font-size: 15px; }
   ul {
     padding: 20px 0 30px 30px;
     font-size: 15px;
@@ -3001,15 +2793,11 @@ iframe[id='^twitter']{}
         }
         &.active {
           color: @main_grey;
-          &:after {
-            display: block;
-          }
+          &:after { display: block; }
         }
         &:hover {
           color: @main_grey;
-          &:after {
-            display: block;
-          }
+          &:after { display: block; }
         }
       }
     }
@@ -3035,10 +2823,6 @@ iframe[id='^twitter']{}
         color: lightslategrey;
         font-weight: bold;
       }
-
-      select {
-
-      }
     }
   }
 
@@ -3047,12 +2831,8 @@ iframe[id='^twitter']{}
     font-weight: bold;
     color: lightslategrey;
     padding: 10px 0;
-    i {
-      margin-right: 10px;
-    }
-    a {
-      margin-right: 15px;
-    }
+    i { margin-right: 10px; }
+    a { margin-right: 15px; }
 
     .nice-select {
       border: none;
@@ -3091,9 +2871,7 @@ iframe[id='^twitter']{}
     }
     .comments_each {
 
-      .fa-share {
-        color: lightslategrey;
-      }
+      .fa-share { color: lightslategrey; }
       .moderator {
         padding: 3px 5px 2px;
         background: lightslategrey;
@@ -3115,7 +2893,6 @@ iframe[id='^twitter']{}
       }
 
       .name_date {
-
         .name {
           color: royalblue;
           font-weight: bold;
@@ -3170,16 +2947,9 @@ iframe[id='^twitter']{}
         }
       }
 
-      .flex_container {
-        justify-content: flex-start;
-      }
-
-      .avatar {
-        width: 8%;
-      }
-      .content {
-        width: 92%;
-      }
+      .flex_container { justify-content: flex-start; }
+      .avatar { width: 8%; }
+      .content { width: 92%; }
       i.placeholder {
         font-size: 50px;
         padding: 10px 15px 5px;
@@ -3257,9 +3027,7 @@ iframe[id='^twitter']{}
       box-shadow: 0 3px 0 darken(@main_green, 10%);
       outline: none;
 
-      &:hover {
-        background: darken(@main_green, 5%);
-      }
+      &:hover { background: darken(@main_green, 5%); }
       &:active {
         box-shadow: none;
         position: relative;
@@ -3278,9 +3046,7 @@ iframe[id='^twitter']{}
         border-radius: 5px;
         box-shadow: none;
       }
-      .tab_body {
-        display: block;
-      }
+      .tab_body { display: block; }
     }
 
     .tab_title {
@@ -3294,9 +3060,7 @@ iframe[id='^twitter']{}
       box-shadow: 0 3px 0 darken(@light_grey, 10%);
       cursor: pointer;
       
-      &:hover {
-        background: darken(@light_grey, 5%);
-      }
+      &:hover { background: darken(@light_grey, 5%); }
 
       .title {
         display: inline-block;
@@ -3322,9 +3086,7 @@ iframe[id='^twitter']{}
 
       .questions_block{
         &.active {
-          .question_body {
-            display: block;
-          }
+          .question_body { display: block; }
         }
       }
       .question_title {
@@ -3333,12 +3095,8 @@ iframe[id='^twitter']{}
         margin: 20px 0;
         font-size: 15px;
         cursor: pointer;
-        &:hover {
-          text-decoration: underline;
-        }
-        &.active {
-          text-decoration: underline;
-        }
+        &:hover { text-decoration: underline; }
+        &.active { text-decoration: underline; }
       }
       .question_body {
         display: none;
@@ -3351,17 +3109,12 @@ iframe[id='^twitter']{}
           float: left;
           margin-right: 20px;
         }
-        .text {
-
-        }
       }
     }
   }
 }
 
-.ai_baseline {
-  align-items: baseline;
-}
+.ai_baseline { align-items: baseline; }
 
 // ---------------------------------------------------------------------------//
 // ---------------------------// DETAILS NEWS    -----------------------------//
@@ -3390,9 +3143,7 @@ iframe[id='^twitter']{}
       font-family: 'LatoBold', sans-serif;
     }
 
-    .phone_text {
-      padding: 6px 0 5px;
-    }
+    .phone_text { padding: 6px 0 5px; }
 
     a {
       color: @main_green;
@@ -3402,19 +3153,13 @@ iframe[id='^twitter']{}
     .phone {
       width: 50%;
       text-align: center;
-
-      a {
-        display: inline-block;
-      }
-
       border-right: 1px solid @separate_gray;
+      a { display: inline-block; }
     }
     .mail {
       width: 50%;
       text-align: center;
-      a {
-        padding: 3px;
-      }
+      a { padding: 3px; }
     }
   }
 
@@ -3430,9 +3175,7 @@ iframe[id='^twitter']{}
   .form_wrapper {
     padding-bottom: 150px;
 
-    label {
-      margin: 0;
-    }
+    label { margin: 0; }
     input, select, textarea {
       padding: 15px;
       border: 1px solid @separate_gray;
@@ -3459,9 +3202,7 @@ iframe[id='^twitter']{}
       border-radius: 5px;
       box-shadow: 0 3px 0 darken(@main_green, 10%);
       outline: none;
-      &:hover {
-        background: darken(@main_green, 2%);
-      }
+      &:hover { background: darken(@main_green, 2%); }
       &:active {
         box-shadow: none;
         position: relative;
@@ -3502,9 +3243,7 @@ iframe[id='^twitter']{}
     }
   }
 
-  .image {
-    width: 33%;
-  }
+  .image { width: 33%; }
   .desc_midle {
     width: 33%;
     .name {
@@ -3512,9 +3251,7 @@ iframe[id='^twitter']{}
       font-family: 'LatoBold', sans-serif;
       padding: 0 0 5px;
     }
-    img {
-      margin:0 5px 5px;
-    }
+    img { margin:0 5px 5px; }
   }
   .desc_right {
     width: 33%;
@@ -3529,12 +3266,8 @@ iframe[id='^twitter']{}
 
   .testimonial_form {
     text-align: right;
-    .flex_container {
-      text-align: left;
-    }
-    .form_1 {
-      width: 25%;
-    }
+    .flex_container { text-align: left; }
+    .form_1 { width: 25%; }
     .form_2 {
       width: 25%;
 
@@ -3543,16 +3276,10 @@ iframe[id='^twitter']{}
         justify-content: space-between;
         margin-bottom: 40px;
       }
-      select {
-        width: 40%;
-      }
-      .nice-select {
-        width: 40%;
-      }
+      select { width: 40%; }
+      .nice-select { width: 40%; }
     }
-    .form_3 {
-      width: 25%;
-    }
+    .form_3 { width: 25%; }
     input, select, textarea {
       padding: 10px;
       border: 1px solid @separate_gray;
@@ -3579,9 +3306,7 @@ iframe[id='^twitter']{}
       border-radius: 5px;
       box-shadow: 0 3px 0 darken(@main_green, 10%);
       outline: none;
-      &:hover {
-        background: darken(@main_green, 2%);
-      }
+      &:hover { background: darken(@main_green, 2%); }
       &:active {
         box-shadow: none;
         position: relative;
@@ -3647,13 +3372,9 @@ iframe[id='^twitter']{}
             transform: rotate(-60deg);
           }
           &:last-child {
-            &:after {
-              display: none;
-            }
+            &:after { display: none; }
           }
-          &.active {
-            border-width: 0 0 1px 0;
-          }
+          &.active { border-width: 0 0 1px 0; }
           &.positive {
             color: @main_green;
             border: 0 solid @main_green;
@@ -3672,23 +3393,17 @@ iframe[id='^twitter']{}
       margin-bottom: 30px;
       &.positive {
         .testi_wrapper {
-          &:before {
-            background: @main_green;
-          }
+          &:before { background: @main_green; }
         }
       }
       &.negative {
         .testi_wrapper {
-          &:before {
-            background: red;
-          }
+          &:before { background: red; }
         }
       }
       .title_line_testi {
         margin-bottom: 15px;
-        span {
-          display: inline-block;
-        }
+        span { display: inline-block; }
         .name {
           font-family: 'Lato Black', sans-serif;
           color: @dark_grey;
@@ -3747,16 +3462,12 @@ iframe[id='^twitter']{}
             box-shadow: none;
           }
 
-          &:hover {
-            background: darken(@main_green, 2%);
-          }
+          &:hover { background: darken(@main_green, 2%); }
         }
         .delete {
           background: #5b6779;
           box-shadow: 0 3px 0 darken(#5b6779, 10%);
-          &:hover {
-            background: darken(#5b6779, 2%);
-          }
+          &:hover { background: darken(#5b6779, 2%); }
         }
       }
       .testi_wrapper {
@@ -3804,12 +3515,9 @@ iframe[id='^twitter']{}
       display: list-item;
       font-size: 15px;
       list-style-type: circle;
-
     }
   }
-  a {
-    color: @main_green;
-  }
+  a { color: @main_green; }
   .table_title {
     padding: 15px 15px 13px;
     position: relative;
@@ -3858,9 +3566,7 @@ iframe[id='^twitter']{}
     }
 
     thead {
-      td {
-        padding: 20px 0;
-      }
+      td { padding: 20px 0; }
     }
     .name {
       text-align: left;
@@ -3881,9 +3587,7 @@ iframe[id='^twitter']{}
         border-radius: 3px;
         box-shadow: 0 3px @separate_gray;
         margin: 0 5px;
-        &:hover {
-          background: @light_grey;
-        }
+        &:hover { background: @light_grey; }
         &:active {
           position: relative;
           top: 3px;
@@ -3896,9 +3600,7 @@ iframe[id='^twitter']{}
       width: 22px;
       vertical-align: initial;
     }
-    a {
-      padding: 0 10px;
-    }
+    a { padding: 0 10px; }
   }
 }
 // ---------------------------------------------------------------------------//
@@ -3977,12 +3679,8 @@ iframe[id='^twitter']{}
       display: inline-block;
       width: 50%;
       text-align: left;
-      span {
-        display: inline-block;
-      }
-      .name {
-        padding-right: 20px;
-      }
+      span { display: inline-block; }
+      .name { padding-right: 20px; }
       .mail {
         padding-right: 20px;
         i {
@@ -3995,19 +3693,11 @@ iframe[id='^twitter']{}
             margin-right: 7px;
             color: @main_green;
           }
-          &.icon-message_icon {
-            font-size: 20px;
-          }
-          &.icon-testimonials_like_icon {
-            margin: 0 20px 0 40px;
-          }
-          &:hover {
-            color: @main_green;
-          }
+          &.icon-message_icon { font-size: 20px; }
+          &.icon-testimonials_like_icon { margin: 0 20px 0 40px; }
+          &:hover { color: @main_green; }
         }
-        .messages_amount {
-          color: @main_green;
-        }
+        .messages_amount { color: @main_green; }
       }
     }
     .user_balance {
@@ -4042,19 +3732,13 @@ iframe[id='^twitter']{}
       ul {
         padding: 0 15px 30px 0;
         display: block;
-        &:last-of-type {
-          padding-bottom: 0;
-        }
+        &:last-of-type { padding-bottom: 0; }
         li {
           display: block;
           padding: 15px 0;
           color: @gray_darkblue;
-          &.active {
-            color: @main_green;
-          }
-          &:hover {
-            color: @main_green;
-          }
+          &.active { color: @main_green; }
+          &:hover { color: @main_green; }
           i {
             font-size: 18px;
             width: 17px;
@@ -4069,9 +3753,7 @@ iframe[id='^twitter']{}
               line-height: 5px;
             }
             &.icon-testimonials_like_icon,
-            &.icon-coin_out {
-              font-size: 20px;
-            }
+            &.icon-coin_out { font-size: 20px; }
           }
           .amount {
             color: white;
@@ -4094,9 +3776,7 @@ iframe[id='^twitter']{}
       .side_menu_content__wrap {
         display: none;
 
-        &.active {
-          display: block;
-        }
+        &.active { display: block; }
       }
       .change_user_info {
         text-align: center;
@@ -4106,9 +3786,7 @@ iframe[id='^twitter']{}
 
         .nice-select {
           width: 100%;
-          ul.list {
-            width: 100%;
-          }
+          ul.list { width: 100%; }
         }
 
         .form_group {
@@ -4121,9 +3799,7 @@ iframe[id='^twitter']{}
           width: 100%;
           margin: auto;
         }
-        .button_wrap {
-          width: 100%;
-        }
+        .button_wrap { width: 100%; }
         label {
           text-align: left;
           display: block;
@@ -4157,9 +3833,7 @@ iframe[id='^twitter']{}
             top: 3px;
             box-shadow: none;
           }
-          &:hover {
-            background: darken(@main_green, 2%);
-          }
+          &:hover { background: darken(@main_green, 2%); }
         }
       }
     }
@@ -4200,18 +3874,12 @@ iframe[id='^twitter']{}
   ul {
     padding: 0 15px 30px 0;
     display: block;
-    &:last-of-type {
-      padding-bottom: 0;
-    }
+    &:last-of-type { padding-bottom: 0; }
     li {
       display: block;
       padding: 10px 0;
-      &.active {
-        color: @main_green;
-      }
-      &:hover {
-        color: @main_green;
-      }
+      &.active { color: @main_green; }
+      &:hover { color: @main_green; }
       i {
         font-size: 15px;
         width: 17px;
@@ -4227,9 +3895,7 @@ iframe[id='^twitter']{}
           vertical-align: sub;
           line-height: 5px;
         }
-        &.icon-coin_out {
-          font-size: 17px;
-        }
+        &.icon-coin_out { font-size: 17px; }
       }
       .amount {
         color: white;
@@ -4274,9 +3940,7 @@ iframe[id='^twitter']{}
   }
   .form_group {
     margin-bottom: 15px;
-    &:last-of-type {
-      text-align: center;
-    }
+    &:last-of-type { text-align: center; }
   }
   .soc_log {
     span {
@@ -4333,9 +3997,7 @@ iframe[id='^twitter']{}
       top: 3px;
       box-shadow: none;
     }
-    &:hover {
-      background: darken(@main_green, 2%);
-    }
+    &:hover { background: darken(@main_green, 2%); }
   }
 }
 .side_menu_content__wrap.notifications, .side_menu_content__wrap.your_testimonials {
@@ -4349,24 +4011,18 @@ iframe[id='^twitter']{}
       border-bottom: 1px solid @light_grey;
 
       tr {
-        td {
-          padding-bottom: 15px;
-        }
+        td { padding-bottom: 15px; }
       }
     }
   }
   tbody {
-    tr {
-      border-bottom: 1px solid @light_grey;
-    }
+    tr { border-bottom: 1px solid @light_grey; }
     .time {
       display: block;
       font-size: 12px;
       color: lightslategrey;
     }
-    td {
-      padding: 15px 0;
-    }
+    td { padding: 15px 0; }
     .link {
       color: @main_green;
       display: block;
@@ -4375,23 +4031,17 @@ iframe[id='^twitter']{}
   }
 }
 .side_menu_content__wrap.your_testimonials {
-  td.date {
-    width: 100px;
-  }
+  td.date { width: 100px; }
   td.desc {
     text-align: left;
     padding-left: 50px;
   }
   tr {
-    &:hover {
-      background: @light_grey;
-    }
+    &:hover { background: @light_grey; }
   }
   thead {
     tr {
-      &:hover {
-        background: initial;
-      }
+      &:hover { background: initial; }
     }
   }
   .red, .green {
@@ -4420,9 +4070,7 @@ iframe[id='^twitter']{}
   }
   .green {
     .desc {
-      &:after {
-        background: @main_green;
-      }
+      &:after { background: @main_green; }
     }
   }
 
@@ -4436,9 +4084,7 @@ iframe[id='^twitter']{}
       padding: 5px;
       text-align: left;
 
-      span {
-        padding-left: 5px;
-      }
+      span { padding-left: 5px; }
 
       i {
         width: 27px;
@@ -4448,13 +4094,9 @@ iframe[id='^twitter']{}
         box-shadow: 0 3px 0 darken(@light_grey, 10%);
         line-height: 25px;
         text-align: center;
-        &.fa-trash {
-          color: red;
-        }
+        &.fa-trash { color: red; }
         &.fa-comment {
-          &:hover {
-            color: @favorite_blue;
-          }
+          &:hover { color: @favorite_blue; }
         }
         &:hover {
           background: darken(@light_grey, 3%);
@@ -4468,9 +4110,7 @@ iframe[id='^twitter']{}
         
 
       }
-      span {
-        display: inline-block;
-      }
+      span { display: inline-block; }
     }
     .comment {
       display: inline-block;
@@ -4482,12 +4122,8 @@ iframe[id='^twitter']{}
 .side_menu_content__wrap.favorite {
   .bodies {
     display: none;
-    &:nth-of-type(2) {
-      display: block;
-    }
-    .title {
-      font-size: 14px;
-    }
+    &:nth-of-type(2) { display: block; }
+    .title { font-size: 14px; }
   }
   .flex_container {
     justify-content: space-around;
@@ -4559,9 +4195,7 @@ iframe[id='^twitter']{}
           border-radius: 5px;
           font-size: 17px;
           box-shadow: 0 3px 0 darken(@light_grey, 10%);
-          &:hover {
-            background: darken(@light_grey, 3%);
-          }
+          &:hover { background: darken(@light_grey, 3%); }
           &:active {
             position: relative;
             top: 3px;
@@ -4579,9 +4213,7 @@ iframe[id='^twitter']{}
     text-align: left;
     color: @gray_darkblue;
   }
-  .form_group {
-    margin-bottom: 25px;
-  }
+  .form_group { margin-bottom: 25px; }
   .form2 {
     .title {
       font-size: 17px;
@@ -4596,9 +4228,7 @@ iframe[id='^twitter']{}
     font-family: 'Lato Black', sans-serif;
     font-weight: bold;
   }
-  .form1 {
-    padding-right: 15%;
-  }
+  .form1 { padding-right: 15%; }
   input {
     width: 100%;
     padding: 10px 20px;
@@ -4635,21 +4265,15 @@ iframe[id='^twitter']{}
       border-radius: 5px;
       font-size: 18px;
       cursor: pointer;
-      &:first-child {
-        margin-right: 15px;
-      }
-      &:hover {
-        background: darken(@light_grey, 3%);
-      }
+      &:first-child { margin-right: 15px; }
+      &:hover { background: darken(@light_grey, 3%); }
       &:active {
         position: relative;
         top: 3px;
         box-shadow: none;
       }
       i {
-        &.fa-trash {
-          color: red;
-        }
+        &.fa-trash { color: red; }
       }
     }
   }
@@ -4661,9 +4285,7 @@ iframe[id='^twitter']{}
   .nice-select {
     width: 100%;
     float: none;
-    .list {
-      width: 100%;
-    }
+    .list { width: 100%; }
   }
   .form_group {
     margin-bottom: 20px;
@@ -4680,32 +4302,22 @@ iframe[id='^twitter']{}
     width: 100%;
     border-collapse: collapse;
     color: @gray_darkblue;
-    a {
-      color: @main_green;
-    }
+    a { color: @main_green; }
     tr {
       border: solid @light_grey;
       border-width: 1px 0 1px 0;
-      &:hover {
-        background: @light_grey;
-      }
+      &:hover { background: @light_grey; }
     }
     td {
       padding: 15px 0;
       text-align: center;
-      &.green {
-        color: @main_green;
-      }
+      &.green { color: @main_green; }
     }
     thead {
       tr {
         border-top: 1px solid @light_grey;
-        &:hover {
-          background: none;
-        }
-        td {
-          font-size: 13px;
-        }
+        &:hover { background: none; }
+        td { font-size: 13px; }
       }
     }
   }
@@ -4717,9 +4329,7 @@ iframe[id='^twitter']{}
     margin-bottom: 20px;
     color: @gray_darkblue;
   }
-  p {
-    margin-bottom: 20px;
-  }
+  p { margin-bottom: 20px; }
   .overview {
     width: 100%;
     display: flex;
@@ -4734,26 +4344,16 @@ iframe[id='^twitter']{}
       text-align: center;
       padding: 15px 0;
       color: white;
-      &:nth-child(2) {
-        background: #29a0b5;
-      }
-      &:nth-child(3) {
-        background: #333333;
-      }
-      &:nth-child(4) {
-        background: #8caa0b;
-      }
-      span {
-        display: block;
-      }
+      &:nth-child(2) { background: #29a0b5; }
+      &:nth-child(3) { background: #333333; }
+      &:nth-child(4) { background: #8caa0b; }
+      span { display: block; }
     }
   }
 
   .info {
     width: 100%;
-    li {
-      display: block;
-    }
+    li { display: block; }
     .title {
       font-size: 13px;
       font-weight: normal;
@@ -4762,12 +4362,8 @@ iframe[id='^twitter']{}
       display: inline-block;
       text-align: left;
     }
-    .data {
-      font-weight: bold;
-    }
-    .link {
-      color: @main_green;
-    }
+    .data { font-weight: bold; }
+    .link { color: @main_green; }
   }
   input {
     max-width: 60%;
@@ -4783,9 +4379,7 @@ iframe[id='^twitter']{}
     font-size: 22px;
     vertical-align: top;
     box-shadow: 0 3px 0 darken(@main_green, 10%);
-    &:hover {
-      background: darken(@main_green, 3%);
-    }
+    &:hover { background: darken(@main_green, 3%); }
     &:active {
       position: relative;
       top: 3px;
@@ -4810,9 +4404,7 @@ iframe[id='^twitter']{}
 }
 
 .side_menu_content__wrap.materials{
-  p {
-    margin-bottom: 25px;
-  }
+  p { margin-bottom: 25px; }
   .block {
     .input_img_block(80%, 90px);
   }
@@ -4843,9 +4435,7 @@ iframe[id='^twitter']{}
       color: white;
       font-size: 24px;
       vertical-align: top;
-      &:hover {
-        background: darken(@main_green, 3%);
-      }
+      &:hover { background: darken(@main_green, 3%); }
       &:active {
         position: relative;
         top: 3px;
@@ -4871,9 +4461,7 @@ iframe[id='^twitter']{}
     text-align: left;
     .nice-select {
       width: 100%;
-      .list {
-        width: 100%;
-      }
+      .list { width: 100%; }
     }
     button {
       font-size: 11px;
@@ -4883,8 +4471,6 @@ iframe[id='^twitter']{}
       font-weight: bold;
     }
 
-    label {
-    }
     .form_group {
 
       .cur {
@@ -4905,9 +4491,7 @@ iframe[id='^twitter']{}
     }
   }
   .table {
-    .title {
-      margin: 100px 0 15px;
-    }
+    .title { margin: 100px 0 15px; }
   }
 }
 
@@ -4917,16 +4501,12 @@ iframe[id='^twitter']{}
     font-weight: bold;
   }
   tr {
-    &:hover {
-      background: none;
-    }
+    &:hover { background: none; }
   }
 }
 
 .side_menu_content__wrap.add_new_exchanger {
-  .fields_group {
-    width: 45%;
-  }
+  .fields_group { width: 45%; }
   .datapicker1 {
     position: absolute;
     right: 10px;
@@ -4936,24 +4516,16 @@ iframe[id='^twitter']{}
     margin-bottom: 20px;
     float: none;
   }
-  .buttons {
-    text-align: center;
-  }
+  .buttons { text-align: center; }
   button {
     display: inline-block;
     font-weight: bold;
-    &.save {
-      margin-right: 15px;
-    }
+    &.save { margin-right: 15px; }
     &.edit {
       background: @favorite_blue;
       box-shadow: 0 3px 0 darken(@favorite_blue, 10%);
-      &:active {
-        box-shadow: none;
-      }
+      &:active { box-shadow: none; }
     }
-  }
-  input {
   }
   .dots {
     position: absolute;
@@ -4969,9 +4541,7 @@ iframe[id='^twitter']{}
     color: white;
     top: 24px;
     cursor: pointer;
-    &:hover {
-      background: darken(@main_green, 3%);
-    }
+    &:hover { background: darken(@main_green, 3%); }
     &:active {
       top: 27px;
       box-shadow: none;
@@ -4988,42 +4558,28 @@ iframe[id='^twitter']{}
     }
   }
   .exchange_block__ {
-    i {
-      margin: 0 15px;
-    }
+    i { margin: 0 15px; }
   }
   .actions {
     margin-left: 15px;
-    i {
-      margin: 0;
-    }
+    i { margin: 0; }
     span {
       &:first-child {
         color: white;
         background: #888888;
         box-shadow: 0 3px 0 darken(#888888, 10%)
       }
-      &:active {
-        box-shadow: none;
-      }
+      &:active { box-shadow: none; }
     }
   }
   form {
     width: 385px;
     margin: 0 auto;
   }
-  .currencies {
-    display: inline-block;
-  }
-  .enabled._msddli_ {
-    width: 100%;
-  }
-  .ddChild.ddchild_ {
-    width: calc(100% + 2px);
-  }
-  .actions {
-    display: inline-block;
-  }
+  .currencies { display: inline-block; }
+  .enabled._msddli_ { width: 100%; }
+  .ddChild.ddchild_ { width: calc(100% + 2px); }
+  .actions { display: inline-block; }
   .currency_in {
     position: absolute;
     right: -30px;
@@ -5035,20 +4591,12 @@ iframe[id='^twitter']{}
     display: inline-block;
     margin-right: 15px;
   }
-  .flex_container {
-    align-items: baseline;
-  }
+  .flex_container { align-items: baseline; }
   .form_group {
     display: inline-block;
-    &:nth-of-type(1){
-      margin-right: 15px;
-    }
-    input {
-      width: 150px;
-    }
-    &.date_pic_ {
-      width:auto;
-    }
+    &:nth-of-type(1){ margin-right: 15px; }
+    input { width: 150px; }
+    &.date_pic_ { width:auto; }
   }
   button {
     margin-top: 30px;
@@ -5064,21 +4612,11 @@ iframe[id='^twitter']{}
       border-right: 1px solid @main_grey;
       padding: 0 10px;
       line-height: 13px;
-      a:hover {
-        text-decoration: underline;
-      }
-      a.active {
-        text-decoration: underline;
-      }
-      &:last-child {
-        border-right: none;
-      }
-      &.red {
-        color: red;
-      }
-      &.green {
-        color: @main_green;
-      }
+      a:hover { text-decoration: underline; }
+      a.active { text-decoration: underline; }
+      &:last-child { border-right: none; }
+      &.red { color: red; }
+      &.green { color: @main_green; }
     }
   }
   table {
@@ -5086,21 +4624,13 @@ iframe[id='^twitter']{}
       font-weight: bold;
       color: darken(@light_grey, 20%);
     }
-    .date_thead {
-      min-width: 60px;
-    }
-    .date {
-    }
+    .date_thead { min-width: 60px; }
     .desc, .name__ {
       padding: 0 20px;
       text-align: left;
     }
-    .name__ {
-      width: 337px;
-    }
-    .flag {
-      margin: 0 10px;
-    }
+    .name__ { width: 337px; }
+    .flag { margin: 0 10px; }
     .buttons__ {
       text-align: right;
       border-top: 1px solid transparent;
@@ -5112,12 +4642,8 @@ iframe[id='^twitter']{}
         &.gray {
           background: #5b6779;
           box-shadow: 0 3px 0 darken(#5b6779, 10%);
-          &:hover {
-            background: darken(#5b6779, 3%);
-          }
-          &:active {
-            box-shadow: none;
-          }
+          &:hover { background: darken(#5b6779, 3%); }
+          &:active { box-shadow: none; }
         }
       }
     }
@@ -5130,41 +4656,23 @@ iframe[id='^twitter']{}
       padding-right: 10px;
       width: 117px;
     }
-    .text_desc {
-      padding-right: 10%;
-    }
+    .text_desc { padding-right: 10%; }
     .green, .red {
       display: block;
       position: relative;
       top: 30px;
     }
-    .red {
-      color: red;
-    }
-    tr{
-      background: transparent;
-    }
-    tr:hover {
-      background: transparent;
-    }
+    .red { color: red; }
+    tr{ background: transparent; }
+    tr:hover { background: transparent; }
     .first_line {
-      td {
-        border-bottom: 1px solid transparent;
-      }
-      .date {
-        padding: 0 10px;
-      }
+      td { border-bottom: 1px solid transparent; }
+      .date { padding: 0 10px; }
     }
-    .time {
-      color: darken(@light_grey, 20%);
-    }
+    .time { color: darken(@light_grey, 20%); }
     &.each_ {
-      &:hover {
-        background: @light_grey;
-      }
-      .first_line {
-        border-top: none;
-      }
+      &:hover { background: @light_grey; }
+      .first_line { border-top: none; }
     }
   }
 }
@@ -5181,6 +4689,4 @@ iframe[id='^twitter']{}
 //  }
 //}
 
-.mobile {
-  display: none;
-}
+.mobile { display: none; }

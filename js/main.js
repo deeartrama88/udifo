@@ -249,6 +249,9 @@
         // comments select init
         $('.obmenka_wrap .form_2 select').msDropDown();
 
+        // contacts page init
+        $('.contacts_wrapper select').niceSelect();
+
         // cabinet select init
         $('.edit_cabinet_exchanger .exchange_block__ select').niceSelect('destroy');
         $('.edit_cabinet_exchanger .exchange_block__ select').msDropDown();

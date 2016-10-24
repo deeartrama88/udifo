@@ -127,6 +127,10 @@ button.main_green_btn:active {
 button.main_green_btn:hover {
   background: #84a00a;
 }
+.contacts_wrapper .nice-select {
+  width: 100%;
+  margin-bottom: 15px;
+}
 .ui-datepicker-trigger {
   position: absolute;
   width: 18px;

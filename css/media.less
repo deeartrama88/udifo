@@ -524,8 +524,14 @@ ul.mobile_menu_block {
   .side_all_currency_widget { display: none; }
   .obmenka_list_wrap p:first-of-type{ text-align: center; }
   .obmenka_list_wrap .title { text-align: center; }
-  .obmenka_list_wrap .table_title .chosen { top: 29%; }
-  .obmenka_list_wrap .table_title { font-size: 16px; }
+  .obmenka_list_wrap .table_title .chosen {
+    top: -53%;
+    font-size: 11px;
+  }
+  .obmenka_list_wrap .table_title {
+    font-size: 16px;
+    margin-top: 40px;
+  }
   .table_wrap_mobile.obmenka_list_table_mobile table { width: 930px; }
   .obmenka_wrap .back_link { padding: 0 0 20px 65px; }
     .news_detail .big_image_block .title_to_image { font-size: 32px; }
@@ -584,7 +590,7 @@ ul.mobile_menu_block {
 @media only screen and (max-width : 600px) {
   .news_detail .big_image_block .title_to_image { font-size: 23px; }
   .cabinet_wrapper .user_top_line .user_info .name { padding-right: 30px; }
-  .table_wrap_mobile.obmenka_list_table_mobile table { width: 955px; }
+  .table_wrap_mobile.obmenka_list_table_mobile table { width: 1130px; }
   .obmenka_list_wrap .table_title .chosen { font-size: 12px; }
   .obmenka_list_wrap .table_title { font-size: 13px; }
   .obmenka_list_wrap ul li,
@@ -621,6 +627,39 @@ ul.mobile_menu_block {
 
 
 @media only screen and (max-width : 480px) {
+  .table_wrap_mobile.obmenka_list_table_mobile table { width: 884px; }
+  .obmenka_list_wrap .table_title .chosen { font-size: 10px; }
+  .obmenka_list_wrap .table_title .chosen .circle {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  .obmenka_wrap .all_testimonials_block .testimonial_block_each .title_line_testi .date,
+  .obmenka_wrap .all_testimonials_block .testimonial_block_each .title_line_testi .ip { display: block; }
+  .obmenka_wrap .all_testimonials_block .testi_nav ul li.active { border: none; }
+  .obmenka_wrap .title_all_testimonials { text-align: center; }
+  .obmenka_wrap .all_testimonials_block .testi_nav ul {
+    width: 100%;
+    li {
+      width: auto;
+      margin: auto;
+      display: block;
+      text-align: center;
+      &:after { display: none; }
+    }
+  }
+  .obmenka_wrap .testimonial_form button { display: block; }
+  .obmenka_wrap .testimonial_form .form_1,
+  .obmenka_wrap .testimonial_form .form_2 {
+    width: 80%;
+    margin: auto;
+  }
+  .obmenka_wrap .testimonial_form .form_3 {
+    width: 80%;
+    margin: auto;
+  }
+  .obmenka_wrap .title_line .title { font-size: 14px; }
+  .obmenka_wrap .title_line span { font-size: 10px; }
   .obmenka_wrap .desc_right,
   .obmenka_wrap .desc_midle {
     width: 100%;
@@ -774,9 +813,7 @@ ul.mobile_menu_block {
     .title { display: none; }
 
   }
-  .side_menu_content__wrap.favorite .flex_container.top_line {
-    padding: 0;
-  }
+  .side_menu_content__wrap.favorite .flex_container.top_line { padding: 0; }
   .side_menu_content__wrap.your_testimonials td.desc {
     width: 200px;
     .desc { padding-left: 10px; }
@@ -835,9 +872,7 @@ ul.mobile_menu_block {
     .about_and_soc,
     .first_menu,
     .second_menu,
-    .vk_widget {
-      width: 100%;
-    }
+    .vk_widget { width: 100%; }
     .first_menu {
       padding: 0;
       margin-bottom: 30px;
@@ -850,9 +885,7 @@ ul.mobile_menu_block {
       padding: 0;
       margin-bottom: 20px;
       text-align: center;
-      img {
-        width: 100%;
-      }
+      img { width: 100%; }
     }
     .about_and_soc {
       padding: 60px 0 0 0;
@@ -924,6 +957,16 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 414px) {
+  .obmenka_list_wrap #table_obmenka_list { font-size: 11px; }
+  .obmenka_list_wrap .title {
+    font-size: 19px;
+    margin: 30px 0 0;
+  }
+  .table_wrap_mobile.obmenka_list_table_mobile table { width: 758px; }
+  .obmenka_list_wrap ul li, .obmenka_list_wrap p { font-size: 11px; }
+  .obmenka_wrap .testimonial_form label { font-size: 11px; }
+  .obmenka_wrap .title_line span { font-size: 8px; }
+  .obmenka_wrap .title_line .title { font-size: 10px; }
   .news_detail .big_image_block .title_to_image { font-size: 16px; }
   .news_detail .citation_block .left_part, .news_detail .citation_block blockquote {
     max-width: 100%;
@@ -994,6 +1037,11 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 375px) {
+  .table_wrap_mobile.obmenka_list_table_mobile table { width: 690px; }
+  .obmenka_list_wrap #table_obmenka_list .name {
+    text-align: center;
+    padding-left: 0;
+  }
   .comments .comments_list .comments_each .avatar { width: 13%; }
   .comments .comments_list .comments_each .sub_comment .avatar { width: 15%; }
   .comments .comments_list .comments_each .sub_comment .content { width: 84%; }
@@ -1029,6 +1077,16 @@ ul.mobile_menu_block {
 }
 
 @media only screen and (max-width : 320px) {
+  .obmenka_wrap .all_testimonials_block .testimonial_block_each .title_line_testi .your_testi { font-size: 10px; }
+  .obmenka_wrap .all_testimonials_block .testimonial_block_each .title_line_testi .ip { margin: 0;  }
+  .table_wrap_mobile.obmenka_list_table_mobile table { width: 724px; }
+  .obmenka_wrap .title_line span { font-size: 7px; }
+  .obmenka_wrap .back_link { padding: 0 0 20px; }
+  .obmenka_wrap .all_testimonials_block .testimonial_block_each .buttons button {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 11px;
+  }
   .comments .comments_list .comments_each .sub_comment .content { width: 82%; }
   .comments .comments_list .comments_each .sub_comment .avatar { width: 18%; }
   .comments .comments_list .comments_each .content { width: 85%; }

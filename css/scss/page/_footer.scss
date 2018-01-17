@@ -1,0 +1,70 @@
+@import "../variables";
+
+.footer {
+  background: $dark_grey;
+  padding: 20px 0;
+  margin-bottom: 133px;
+
+  &__border_right {
+   &::after {
+     content: '';
+     top: 20px;
+     right: 0;
+     width: 2px;
+     position: absolute;
+     height: calc(100% - 40px);
+     background: $main_grey;
+   }
+  }
+  &__title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__description {
+    color: white;
+    font-size: 14px;
+  }
+
+  .fa {
+    color: white;
+    transition: all 0.1s ease;
+
+    &:hover {
+      transform: scale(1.5);
+      color: $main_green;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    font-size: $icons-size;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    a {
+      color: $main_green;
+      font-size: $main-size;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    li {
+      width: 100%;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    color: white;
+    font-size: $main-size;
+
+    a {
+      color: $main_green;
+    }
+  }
+}

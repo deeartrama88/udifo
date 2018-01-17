@@ -13,7 +13,7 @@
 
 .icr-item {
     width: 23px; height: 23px;
-    background: url('../images/checkradio/icr-green-skin.png') no-repeat;
+    background: url('../../images/checkradio/icr-green-skin.png') no-repeat;
 }
 
 .icr-label.focused .icr-item:after {

@@ -322,14 +322,32 @@ ul.mobile_menu_block {
   text-decoration: underline;
   color: #8caa0b;
 }
+
 @media only screen and (max-width: 1218px) {
   .direction_widget .widget_main_block .main_line .icons_each:last-child {
-    display: none;
+    /*display: none;*/
+  }
+  .modal-dialog {
+    width: 35%;
+    margin: auto;
   }
   .fixed_footer .currency_widget {
     width: 80%;
   }
+  .direction_widget .widget_main_block .main_line .icons_each .icon_img_block:before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 117%;
+    border: 2px solid #a7c138;
+    top: -2px;
+    left: -2px;
+    border-radius: 13px;
+    transition: all 0.1s ease;
+    opacity: 0;
+  }
 }
+
 @media only screen and (max-width: 1200px) {
   .under_header_gray_line ul li:last-child {
     display: none;
@@ -342,6 +360,9 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 1024px) {
+  .modal-dialog {
+    width: 40%;
+  }
   header .main_block .popup_mobile_menu .header_soc_icons {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -557,7 +578,7 @@ ul.mobile_menu_block {
     width: 6%;
   }
   .often_questions.active .title {
-    display: none;
+    /*display: none;*/
   }
   .often_questions.active i.fa.fa-angle-right {
     font-size: 30px;
@@ -689,8 +710,14 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 768px) {
+  .modal-dialog {
+    width: 50%;
+  }
   .side_all_currency_widget {
-    display: none;
+    /*display: none;*/
+  }
+  .side_all_currency_widget_modal {
+    width: 100%;
   }
   .obmenka_list_wrap p:first-of-type {
     text-align: center;
@@ -881,6 +908,12 @@ ul.mobile_menu_block {
   }
 }
 @media only screen and (max-width: 480px) {
+  .often_questions.active .currency_block .text .name {
+    font-size: 12px;
+  }
+  .modal-dialog {
+    width: 75%;
+  }
   .table_wrap_mobile.obmenka_list_table_mobile table {
     width: 884px;
   }
@@ -1274,10 +1307,10 @@ ul.mobile_menu_block {
     text-align: left;
   }
   .often_questions.active .currencies_block {
-    display: none;
+    /*display: none;*/
   }
   .often_questions.active .actions_block i {
-    display: none;
+    /*display: none;*/
   }
   .often_questions.active .actions_block i.active {
     display: inline-block;
@@ -1307,10 +1340,13 @@ ul.mobile_menu_block {
     display: flex;
   }
   .widget_main_block {
-    display: none;
+    /*display: none;*/
   }
   .side_all_currency_widget {
     display: none;
+  }
+  .side_all_currency_widget_modal {
+    display: block;
   }
   ul.header_soc_icons {
     display: none;
@@ -1552,6 +1588,11 @@ ul.mobile_menu_block {
   }
   .contacts_wrapper .form_wrapper {
     padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 360px){
+  .often_questions.active .currency_block .text .name {
+    font-size: 10px;
   }
 }
 @media only screen and (max-width: 320px) {

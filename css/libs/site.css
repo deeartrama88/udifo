@@ -1,0 +1,359 @@
+.currency-widget-image {
+    width: 20px;
+}
+.select2-selection__arrow {
+    display: none;
+}
+.select2-container--krajee .select2-selection--single {
+    width: 100%;
+    height: 29px;
+    line-height: 1.428571429;
+    padding: 6px 24px 6px 12px;
+}
+.select2-results__option {
+    width: 100%;
+}
+.all_currency_widget_body {
+    max-height: 900px;
+    overflow: auto;
+    box-shadow: 1px 3px 6px grey;
+}
+.image-currency {
+    width: 25px;
+}
+.direction_widget .widget_main_block .main_line {
+    justify-content: flex-start;
+}
+.direction_widget .widget_main_block .main_line .icons_each{
+    margin-left: 10px;
+}
+.direction_widget .widget_main_block .main_line .icons_each.add_icon {
+    margin-left: 0;
+}
+/*.pay_system_title{*/
+    /*margin-right: 23px;*/
+    /*margin-bottom: 5px;*/
+/*}*/
+.side_all_currency_widget .all_currency_widget_body .flex_container_wrap .item-non {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 50%;
+    padding: 4px 19px 0px;
+    background: white;
+}
+.direction_widget .widget_main_block .main_line .icons_each .icon_img_block.favorite span.remove-favorite {
+    display: block;
+}
+.direction_widget .widget_main_block .main_line .icons_each .icon_img_block span.remove-favorite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #289fce;
+    display: none;
+}
+.userTable {
+    display: table-caption;
+}
+.side_all_currency_widget .all_currency_widget_body .flex_container_wrap .pay_systems .wrap {
+    display: block;
+}
+.side_all_currency_widget .all_currency_widget_body .flex_container_wrap .find_block .item .input_block {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.slide_section {
+    position: relative;
+    padding-bottom: 75px;
+}
+.favorite_block_delete {
+    display: none;
+}
+.direction_widget .widget_main_block .main_line .icons_each .icon_img_block .favorite_block_delete {
+    position: absolute;
+    width: 100%;
+    height: 107%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 12px;
+    display: none;
+}
+.direction_widget .widget_main_block .main_line .icons_each .icon_img_block .favorite_block_delete i {
+    position: relative;
+    top: 10px;
+    font-size: 22px;
+}
+.direction_tab_widget .currency_block {
+    width: 95%;
+    padding-left: 5px;
+}
+.direction_tab_widget .add_icon {
+    width: 5%;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+[id^='twitter-']{
+    position: relative !important;
+    top: 6px;
+}
+.calculator_wrap_site {
+    text-align: left;
+    /* padding: 10px 0 7px; */
+    /* text-align: center; */
+    /* position: relative; */
+    font-size: 17px;
+    /* border-top: 1px solid #d8d8d8; */
+    border-bottom: 1px solid #d8d8d8;
+    /* margin-top: 20px; */
+    padding: 11px 0;
+    font-family: 'LatoBlack', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.1s ease;
+}
+
+.calculator_wrap_site .calculator_wrap {
+    padding: 10px 0;
+    background: #eef2db;
+    margin-top: 5px;
+    font-family: 'LatoRegular', sans-serif;
+}
+.calculator_wrap_site .calculator_wrap input {
+    background: white;
+    padding: 5px 10px 3px;
+    font-size: 17px;
+    width: 100px;
+    font-weight: 400;
+    font-family: 'LatoRegular', sans-serif;
+    border: none;
+    margin-right: 40px;
+}
+.calculator_wrap_site .calculator_wrap .flex_container {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.side_all_currency_widget .all_currency_widget_body .flex_container_wrap .item-modal {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+    padding: 4px 15px 0px;
+    background: white;
+}
+.side_all_currency_widget_modal {
+     position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 100%;
+}
+.modal-footer {
+     padding: 0px;
+     text-align: center;
+    /* border-top: 1px solid #e5e5e5; */
+}
+.modal_close {
+    position: absolute;
+    left: 360px;
+    z-index: 1;
+}
+
+.side_all_currency_widget_rate {
+    display: flex !important;
+     left: 0px !important;
+}
+.direction_tab_widget .add_icon .text {
+    font-size: 9px;
+    line-height: 9px;
+    font-family: "LatoBold", sans-serif;
+    padding-top: 11px;
+    position: absolute;
+    text-align: center;
+    right: 6px;
+}
+.news_active {
+    color: #179ee0;
+}
+.tofavorite-active {
+    COLOR: #09acfd;
+}
+
+.obmenka_list_wrap ul li { display: inline-block }
+
+.title_to_image {
+    text-shadow: 2px 2px #000;
+}
+
+.exchanger-row:hover{
+    cursor: pointer;
+    border-left: 5px solid #657A08;
+}
+
+.exchanger-row::before{
+    /*content: '';*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*height: 100%;*/
+    /*width: 5px;*/
+    /*background: #657A08;*/
+}
+
+.testimonials:hover {
+    background-color: #FAFEE6;
+}
+
+.all_currency_widget_body {
+    max-height: 1200px;
+}
+
+.modal-favorite-body {
+    max-height: 1000px;
+}
+
+/*side panel itens fix*/
+.side_all_currency_widget .all_currency_widget_body .flex_container_wrap .item .currency_item {
+    display: inline-block;
+}
+/*----------------------------------*/
+
+/*.modal-content {*/
+    /*background: transparent;*/
+    /*-webkit-box-shadow: none;*/
+    /*box-shadow: none;*/
+    /*border:none;*/
+/*}*/
+
+.table-head-row td {
+    padding-top: 15px !important;
+
+}
+
+.pagination_block .pagination {
+    padding-left: 0;
+}
+.pagination_block .pagination li a {
+    padding: 12px 17px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    list-style: none;
+    display: inline-block;
+    color: #555555;
+    border: none;
+}
+
+.pagination_block .pagination li.disabled {
+    display: none;
+}
+
+.pagination_block .pagination li a {
+    font-size: 23px;
+    vertical-align: top;
+}
+.pagination_block .pagination li:hover a {
+    background: #b3da0e;
+    color: white;
+}
+.pagination_block .pagination li.active a {
+    background: #8caa0b;
+    color: white;
+    border: none;
+}
+
+.pagination_block .pagination li.prev {
+    display: none;
+}
+
+footer .vk_widget {
+    text-align: right;
+    width: 28%;
+}
+footer .vk_widget .inner {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.modal_close {
+    position: absolute;
+    left: 3%;
+    z-index: 1;
+    top: 8px;
+    background: #657A08;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+.modal-dialog {
+    width: 25%;
+    margin: auto;
+}
+.modal-content.side_all_currency_widget_modal {
+    padding: 0px;
+    max-width: 100%;
+    margin: auto;
+}
+.side_all_currency_widget_modal.side_all_currency_widget .all_currency_widget_body {
+    max-width: 100%;
+}
+
+.site_link {
+    color: #09acfd;
+}
+
+.sitemap_list li {
+    color: #09acfd;
+    display: block;
+}
+
+footer {
+    margin-bottom: 0px;
+}
+
+.new-button {
+    display: block;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: #8caa0b;
+    padding: 5px 20px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Lato Black", sans-serif;
+    box-shadow: 0 3px 0 #657a08;
+    outline: none;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.new-button:hover {
+    color: white;
+
+}
+
+.dark-button {
+    background: #8caa0b;
+}
+.connect-widget {
+    display: block;
+    margin-top: 20px;
+}
+

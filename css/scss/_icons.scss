@@ -1,0 +1,191 @@
+@import "variables";
+
+.icon {
+
+  &::before {
+    display: inline-block;
+    font-family: 'Glyphter', 'Arial', serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+  }
+
+  &-refresh {
+    &::before {
+      position: relative;
+      content:'\0050';
+      top: 1px;
+      margin-left: 3px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      color: $main_green;
+    }
+  }
+
+}
+//[class*='icon-']:before{
+//  display: inline-block;
+//  font-family: 'Glyphter', 'Arial', serif;
+//  font-style: normal;
+//  font-weight: normal;
+//  line-height: 1;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale
+//}
+.icon-calculator_icon:before{content:'\0041';}
+.icon-close_icon:before{content:'\0042';}
+.icon-delete_icon:before{content:'\0043';}
+.icon-download_icon:before{content:'\0044';}
+.icon-exchange_icon:before{content:'\0045';}
+.icon-face_icon:before{content:'\0046';}
+.icon-favorite_icon:before{content:'\0047';}
+.icon-gear_icon:before{content:'\0048';}
+.icon-message_icon:before{content:'\0049';}
+.icon-news_icon:before{content:'\004a';}
+.icon-plus_icon:before{content:'\004b';}
+.icon-reverse_icon:before{content:'\004c';}
+.icon-search_icon:before{content:'\004d';}
+.icon-standalone_icon:before{content:'\004e';}
+
+// refresh icon from psd
+.refresh_icon {
+  &:before {
+    content: url("../images/icons/refresh_icon.png");
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+// plus icon from psd
+.plus_icon {
+  &:before {
+    content: url("../images/icons/plus_icon.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+  }
+}
+// standalone icon from psd
+.standalone_icon {
+  &:before {
+    content: url("../images/icons/standalone.png");
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+// close thin icon from psd
+.close_thin_icon {
+  &:before {
+    content: url("../images/icons/close_thin.png");
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+// delete icon from psd
+.delete_icon {
+  &:before {
+    content: url("../images/icons/delete_icon.png");
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+// qiwi icon
+.qiwi_icon {
+  &:before {
+    content: url("../images/currency_icons/qiwi.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 2px;
+  }
+}
+// private icon
+.private_icon {
+  &:before {
+    content: url("../images/currency_icons/privat.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 1px;
+  }
+}
+// usa icon
+.usa_icon {
+  &:before {
+    content: url("../images/currency_icons/usa.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+  }
+}
+// open side widget circle white icon
+.open_icon_1 {
+  &:before {
+    content: url("../images/icons/open_icon_1.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+  }
+}
+.open_icon_2 {
+  &:before {
+    content: url("../images/icons/private_icon_white.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+  }
+}
+// blue circle icon
+.blue_circle {
+  &:before {
+    content: url("../images/currency_icons/blue_circle.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+  }
+}
+// wu circle icon
+.wu_icon {
+  &:before {
+    content: url("../images/currency_icons/wu.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: 7px;
+    top: 3px;
+  }
+}
+// reverse icon grey
+.reverse_icon_grey {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+
+  &:before {
+    content: url("../images/icons/reverse_icon.png");
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    right: -2px;
+    top: 3px;
+  }
+}
+.fa-percent {
+  padding: 3px 4px 2px 3px;
+  background: gray;
+  border-radius: 50%;
+  color: white;
+  font-size: 11px;
+}

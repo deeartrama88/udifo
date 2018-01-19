@@ -1,7 +1,7 @@
 @import "../variables";
 
 .footer {
-  background: $dark_grey;
+  background: $c-dark_grey;
   padding: 20px 0;
   margin-bottom: 133px;
 
@@ -13,7 +13,7 @@
      width: 2px;
      position: absolute;
      height: calc(100% - 40px);
-     background: $main_grey;
+     background: $c-main_grey;
    }
   }
   &__title {
@@ -33,7 +33,7 @@
 
     &:hover {
       transform: scale(1.5);
-      color: $main_green;
+      color: $c-main_green;
     }
   }
 
@@ -41,14 +41,14 @@
     display: flex;
     flex-flow: row wrap;
     padding-top: 20px;
-    font-size: $icons-size;
+    font-size: $s-h2;
     justify-content: space-between;
   }
 
   &__menu {
     a {
-      color: $main_green;
-      font-size: $main-size;
+      color: $c-main_green;
+      font-size: $s-main;
       &:hover {
         text-decoration: underline;
       }
@@ -61,10 +61,10 @@
   &__copyright {
     text-align: center;
     color: white;
-    font-size: $main-size;
+    font-size: $s-main;
 
     a {
-      color: $main_green;
+      color: $c-main_green;
     }
   }
 }

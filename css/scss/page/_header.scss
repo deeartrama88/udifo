@@ -1,12 +1,12 @@
 @import "../variables";
 
 .header {
-  border-bottom: 5px solid $light_grey;
+  border-bottom: 5px solid $c-light_grey;
 
   .counters {
-    background: $light_grey;
+    background: $c-light_grey;
     text-align: right;
-    font-size: $small-size;
+    font-size: $s-small;
     padding: 5px 30px 5px 0;
 
     &__item {
@@ -26,7 +26,7 @@
         transition: all 0.1s ease;
         margin-left: 3px;
         &:hover {
-          color: $main_green;
+          color: $c-main_green;
           transform: scale(2);
         }
       }
@@ -38,30 +38,30 @@
     padding: 23px 0 14px;
     text-align: center;
     span {
-      font-size: $small-size;
+      font-size: $s-small;
       display: block;
       padding-top: 10px;
     }
   }
   .navigations {
-    background: linear-gradient(to right, $light_grey 0%, $light_grey 0%, rgba(231,56,39,0) 2%);
+    background: linear-gradient(to right, $c-light_grey 0%, $c-light_grey 0%, rgba(231,56,39,0) 2%);
     &__top {
       padding-bottom: 10px;
-      border-bottom: 1px solid $light_grey;
+      border-bottom: 1px solid $c-light_grey;
     }
     &__simple {
-      font-size: $small-size;
+      font-size: $s-small;
       padding: 5px 0 5px 30px;
 
       li {
-        padding-right: 33px;
+        padding-right: 20px;
 
         a:hover {
-          color: $main_green;
+          color: $c-main_green;
           text-decoration: underline;
         }
         &.active {
-          color: $main_green;
+          color: $c-main_green;
           text-decoration: underline;
         }
       }
@@ -77,7 +77,7 @@
 
           &:hover {
             transform: scale(2);
-            color: $main_green;
+            color: $c-main_green;
           }
         }
       }
@@ -106,7 +106,7 @@
             width: 0;
             height: 3px;
             left: 50%;
-            background: $main_green;
+            background: $c-main_green;
           }
         }
         &.active {
@@ -129,8 +129,8 @@
     }
     &__cabinet {
       padding: 10px 30px 10px 0;
-      color: $main_green;
-      font-size: $small-size;
+      color: $c-main_green;
+      font-size: $s-small;
       font-family: 'LatoBold', sans-serif;
       a {
         display: inline-block;

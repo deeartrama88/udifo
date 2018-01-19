@@ -22,20 +22,16 @@
     }
 
     &:hover {
-      color: $main_green;
+      color: $c-main_green;
     }
   }
 
+  &__refresh {
+    background: url("../images/icons/icon-exchange.svg");
+  }
+
 }
-//[class*='icon-']:before{
-//  display: inline-block;
-//  font-family: 'Glyphter', 'Arial', serif;
-//  font-style: normal;
-//  font-weight: normal;
-//  line-height: 1;
-//  -webkit-font-smoothing: antialiased;
-//  -moz-osx-font-smoothing: grayscale
-//}
+
 .icon-calculator_icon:before{content:'\0041';}
 .icon-close_icon:before{content:'\0042';}
 .icon-delete_icon:before{content:'\0043';}

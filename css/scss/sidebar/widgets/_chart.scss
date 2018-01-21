@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.w-chart {
+  border-radius: 10px;
+  border: 1px solid $c-main_green;
+
+  &__header {
+    background: $c-light_grey;
+    border-bottom: 1px solid darken($c-light_grey, 30%);
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0;
+    text-align: center;
+    font-size: $s-h3;
+  }
+
+  &__body {
+    padding: 0 10px 0 0;
+
+    svg {
+      overflow: visible !important;
+    }
+  }
+
+  &__footer {
+    padding: 5px 15px;
+    background: $c-light_grey;
+    border-top: 1px solid $c-main_green;
+    border-radius: 0 0 10px 10px;
+    font-size: $s-bigger;
+  }
+}

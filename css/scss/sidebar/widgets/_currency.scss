@@ -1,0 +1,302 @@
+.w-currency {
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.7);
+
+  &__header {
+    background: $c-main_grey;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 8px;
+  }
+
+  &__switcher {
+    color: white;
+    position: relative;
+    display: inline-block;
+    font-size: $s-main;
+    text-transform: uppercase;
+    margin: 0 10px;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: $c-main_green;
+      transition: all 0.1s ease;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+    &_active {
+      &:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  &__search {
+    display: flex;
+
+    &-item {
+      width: 50%;
+      padding: 10px 15px 10px 10px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+
+      label {
+        margin-bottom: 10px;
+      }
+
+      &:nth-child(2) {
+        background: $c-light_grey;
+        padding: 10px 10px 10px 15px;
+        z-index: 1;
+      }
+    }
+    &-input {
+      position: relative;
+      width: 100%;
+
+      input {
+        max-width: 100%;
+        padding: 3px 35px 3px 5px;
+        border-radius: 3px;
+        border: 1px solid #ced4da;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+        &:focus {
+          border-color: #80bdff;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 31px;
+        background: none;
+        border: none;
+        outline: none;
+        i {
+          font-size: $s-h3;
+        }
+      }
+    }
+
+    &-exchange {
+      position: absolute;
+      top: 42px;
+      right: -16px;
+      background: none;
+      border: none;
+      outline: none;
+      font-size: $s-h3 - 1;
+
+      &:focus, &:active {
+        outline: none;
+      }
+    }
+
+    &-favorites {
+      position: absolute;
+      top: 6px;
+      background: none;
+      right: 0;
+      border: none;
+      font-size: $s-h3;
+      color: $c-blue;
+      transition: transform .15s ease-in-out;
+
+      &:focus {
+        outline: none;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .flex_container_wrap {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    // all items style in widget block
+    .item {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width: 50%;
+      padding: 25px 5px 15px;
+      background: white;
+
+      &:nth-child(even){
+        background: $c-grey-bg;
+      }
+      .currency_item {
+        padding: 5px 10px;
+        background: darken($c-light_grey, 3%);
+        border-radius: 10px;
+        box-shadow: 0 3px 0 darken($c-light_grey, 10%);
+        font-size: 9px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 10px;
+
+        &:hover {
+          background: darken($c-light_grey, 6%);
+          box-shadow: 0 3px 0 darken($c-light_grey, 20%);
+        }
+        &:active {
+          position: relative;
+          top: 3px;
+          box-shadow: none;
+        }
+        &.active {
+          background: $c-main_green;
+          box-shadow: 0 3px 0 darken($c-main_green, 10%);
+
+          &:active {
+            position: relative;
+            top: 3px;
+            box-shadow: none;
+          }
+        }
+        span {
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+    // tabs title styles
+    .body_toggle {
+      cursor: pointer;
+      background: $c-main_green;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      transition: all 0.1s ease;
+
+      &.open {
+        i {
+          transform: rotate(180deg);
+        }
+      }
+
+      i {
+        position: absolute;
+        right: 10px;
+        top: 33%;
+        transition: all 0.1s ease;
+      }
+    }
+
+    //  cryptocurrency block/tab
+    .ctyptocurrency_tab {
+
+      .title {
+        i {
+
+        }
+      }
+      .item {
+
+      }
+    }
+    // end cryptocurrency block/tab
+
+    //  cash tab/block
+    .cash {
+      border-bottom: 2px solid $c-main_green;
+    }
+    //  cash tab/block
+
+    //  pay system tab/block
+    .pay_systems {
+
+      // pay system is closed by default
+      .wrap {
+        display: none;
+      }
+
+      .pay_system_title {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 5px 0;
+        background: #fbfbfb;
+      }
+    }
+  }
+}
+
+.pay-systems {
+  display: flex;
+
+  &__from, &__to {
+    width: 50%;
+    max-height: 600px;
+    overflow: auto;
+  }
+}
+
+.pay-system {
+  width: 100%;
+  img {
+    width: 15px;
+    height: 15px;
+    vertical-align: text-bottom;
+    margin-right: 3px;
+  }
+  span {
+    background: $c-main_green;
+    color: $c-white;
+    text-transform: uppercase;
+    display: block;
+    padding: 3px 3px;
+    font-size: $s-main;
+    text-align: center;
+    width: 100%;
+  }
+  &__item {
+    span {
+      background: $c-grey-bg;
+      color: $c-main_grey;
+      font-size: $s-small;
+      text-align: left;
+      padding: 5px 10px;
+    }
+  }
+  &__subitem {
+    padding: 0 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      display: inline-block;
+      background: $c-light_grey;
+      border-radius: 10px;
+      margin-right: 5px;
+      margin-top: 10px;
+      font-size: $s-small;
+      padding: 3px 8px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

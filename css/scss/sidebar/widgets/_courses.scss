@@ -1,0 +1,59 @@
+@import "../../variables";
+
+.w-courses {
+  border-radius: 10px;
+  border: 1px solid $c-main_green;
+
+  &__header {
+    background: $c-light_grey;
+    border-bottom: 1px solid darken($c-light_grey, 30%);
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0;
+    text-align: center;
+    font-size: $s-h3;
+  }
+
+  &__designations {
+    background: lighten($c-light_grey, 5%);
+    border-bottom: 1px solid darken($c-light_grey, 30%);
+    padding: 5px 15px;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    padding: 10px 15px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .w-courses__col {
+      flex: 1;
+      padding: 2px 0;
+
+      &_buy, &_sell {
+        .fa {
+          color: $c-main_green;
+          &.negative {
+            color: $c-main_red;
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      img {
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 5px 15px;
+    background: $c-light_grey;
+    border-top: 1px solid $c-main_green;
+    border-radius: 0 0 10px 10px;
+    font-size: $s-bigger;
+  }
+}

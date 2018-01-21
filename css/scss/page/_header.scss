@@ -1,0 +1,141 @@
+@import "../variables";
+
+.header {
+  border-bottom: 5px solid $c-light_grey;
+
+  .counters {
+    background: $c-light_grey;
+    text-align: right;
+    font-size: $s-small;
+    padding: 5px 30px 5px 0;
+
+    &__item {
+      display: inline-block;
+      margin-right: 60px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    &__item {
+      padding-right: 0;
+      .icon-reverse_2_icon {
+        position: relative;
+        top: 1px;
+        cursor: pointer;
+        transition: all 0.1s ease;
+        margin-left: 3px;
+        &:hover {
+          color: $c-main_green;
+          transform: scale(2);
+        }
+      }
+    }
+  }
+  .logo {
+    display: inline-block;
+    width: 100%;
+    padding: 23px 0 14px;
+    text-align: center;
+    span {
+      font-size: $s-small;
+      display: block;
+      padding-top: 10px;
+    }
+  }
+  .navigations {
+    background: linear-gradient(to right, $c-light_grey 0%, $c-light_grey 0%, rgba(231,56,39,0) 2%);
+    &__top {
+      padding-bottom: 10px;
+      border-bottom: 1px solid $c-light_grey;
+    }
+    &__simple {
+      font-size: $s-small;
+      padding: 5px 0 5px 30px;
+
+      li {
+        padding-right: 20px;
+
+        a:hover {
+          color: $c-main_green;
+          text-decoration: underline;
+        }
+        &.active {
+          color: $c-main_green;
+          text-decoration: underline;
+        }
+      }
+    }
+    &__social {
+      padding: 5px 30px 5px 0;
+      li {
+        padding-left: 20px;
+
+        i{
+          transform: translate3d(0, 0, 0);
+          transition: 0.1s ease;
+
+          &:hover {
+            transform: scale(2);
+            color: $c-main_green;
+          }
+        }
+      }
+    }
+    &__submenu {
+      padding: 5px 0 5px 30px;
+      font-family: 'LatoBlack', sans-serif;
+      font-weight: bold;
+      li {
+        padding: 10px 20px;
+
+        &:first-of-type {
+          padding-left: 0;
+        }
+        a {
+          position: relative;
+          padding-bottom: 9px;
+          text-transform: uppercase;
+
+          &:after {
+            transition: all 0.1s ease;
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 3px;
+            left: 50%;
+            background: $c-main_green;
+          }
+        }
+        &.active {
+          a {
+            &:after {
+              width: 100%;
+              left: 0;
+            }
+          }
+        }
+        &:hover {
+          a{
+            &:after {
+              width: 100%;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    &__cabinet {
+      padding: 10px 30px 10px 0;
+      color: $c-main_green;
+      font-size: $s-small;
+      font-family: 'LatoBold', sans-serif;
+      a {
+        display: inline-block;
+        padding: 10px 0 10px;
+      }
+    }
+  }
+}

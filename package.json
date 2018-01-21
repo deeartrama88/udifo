@@ -1,0 +1,23 @@
+{
+  "name": "udifo",
+  "version": "1.0.0",
+  "description": "Markup for udifo project",
+  "main": "index.html",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uabaluua/udifo.git"
+  },
+  "author": "Yehorov Dmytro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uabaluua/udifo/issues"
+  },
+  "homepage": "https://github.com/uabaluua/udifo#readme",
+  "dependencies": {
+    "c3": "^0.4.18",
+    "moment": "^2.20.1"
+  }
+}

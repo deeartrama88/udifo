@@ -1,0 +1,9 @@
+.w-converter {
+  .row {
+    margin-bottom: 5px;
+
+    > div:nth-child(2) {
+      text-align: right;
+    }
+  }
+}

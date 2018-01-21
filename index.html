@@ -4,2136 +4,628 @@
     <meta charset="UTF-8">
     <title>Monitoring Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/ion.checkRadio.css">
-    <link rel="stylesheet" href="css/ion.checkRadio.green.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/msdropdown.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/font-awesome.css">
+    <link rel="stylesheet" href="css/libs/ion.checkRadio.css">
+    <link rel="stylesheet" href="css/libs/ion.checkRadio.green.css">
+    <link rel="stylesheet" href="css/libs/nice-select.css">
+    <link rel="stylesheet" href="node_modules/c3/c3.min.css">
+    <link rel="stylesheet" href="css/bundle.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-
-<!--  HEADER -->
-<header>
-
-    <div class="header_top_line">
-        <div class="courses">Курсов: <span class="courses_amount">5042</span></div>
-        <div class="exchanges">Обменников: <span class="exchanges_amount">143</span></div>
-        <div class="refreshes">Обновление: <span class="refreshes_time">12:43</span><span class="icon-reverse_2_icon"></span></div>
-    </div>
-
-    <div class="container">
-
-        <div class="header_main">
-            <div class="flex_container">
-
-                <div class="logo_block">
-                    <img src="images/icons/logo.png" alt="Udifo">
-                    <span>мониторинг обменных пунктов</span>
-                </div>
-
-                <div class="main_block">
-                    <div class="first_menu flex_container desctop">
-                        <ul class="header_first_menu">
-                            <li class="active"><a href="#">Новости</a></li>
-                            <li><a href=#>Статьи</a></li>
+<!-- Start FB -->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.7&appId=1387744867906977";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End FB -->
+<header class="header container">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="logo">
+                <img src="images/logo.png" alt="Udifo">
+                <span>мониторинг обменных пунктов</span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8 col-no-paddings">
+            <div class="navigations">
+                <div class="row">
+                    <div class="col">
+                        <div class="counters">
+                            <div class="counters__item">Курсов: <span>5042</span></div>
+                            <div class="counters__item">Обменников: <span>143</span></div>
+                            <div class="counters__item">Обновление: <span>12:43</span><span class="icon icon-refresh"></span></div>
+                        </div>
+                        <ul class="navigations__simple">
+                            <li class="active"><a href="#">О нас</a></li>
+                            <li><a href="#">Клиентам</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Статьи</a></li>
                             <li><a href="#">Wiki</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
-                        <ul class="header_soc_icons">
-                            <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                        <ul class="navigations__social float-right">
                             <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                             <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-
-                    <div class="second_menu flex_container desctop">
-                        <ul class="header_second_menu">
-                            <li class="active"><a href="#">О НАС</a></li>
-                            <li><a href="#">ОБМЕННИКИ</a></li>
-                            <li><a href="#">КЛИЕНТАМ</a></li>
-                            <li><a href="#">ПАРТНЕРАМ</a></li>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="navigations__submenu">
+                            <li><a href="#">Мониторинг</a></li>
+                            <li><a href="#">Обменники</a></li>
+                            <li><a href="#">Направления</a></li>
                         </ul>
-                        <!-- header cabinet link -->
-                        <div class="user_cabinet">
+                        <div class="navigations__cabinet float-right">
                             <a href="#">Кабинет</a>
                         </div>
                     </div>
-
-                    <div class="mobile_header_menu mobile">
-                        <div class="flex_container">
-                            <ul class="header_soc_icons">
-                                <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            </ul>
-                            <ul class="mobile_menu_block flex_container">
-                                <li><i class="fa fa-user" aria-hidden="true"></i>Кабинет</li>
-                                <li><i class="icon-search_icon"></i></li>
-                                <li><i class="fa fa-bars" aria-hidden="true"></i></li>
-                            </ul>
-                        </div>
-                        <!-- popup mobile menu -->
-                        <div class="popup_mobile_menu">
-                            <ul>
-                                <li class="active"><a href="#">О НАС</a></li>
-                                <li><a href="#">ОБМЕННИКИ</a></li>
-                                <li><a href="#">КЛИЕНТАМ</a></li>
-                                <li><a href="#">ПАРТНЕРАМ</a></li>
-                                <li><a href="#">НОВОСТИ</a></li>
-                                <li><a href="#">СТАТЬИ</a></li>
-                                <li><a href="#">WIKI</a></li>
-                                <li><a href="#">КОНТАКТЫ</a></li>
-                                <li>
-                                    <ul class="header_soc_icons">
-                                        <li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
-                                        <li><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                        <li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                                        <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-
-            </div><!-- # FLEX CONTAINER -->
-        </div><!-- # MAIN HEADER -->
-
-    </div><!-- # CONTAINER -->
-
+            </div>
+        </div>
+    </div>
 </header>
-<!-- END HEADER -->
 
-<div class="under_header_gray_line">
-    <div class="container">
-        <div class="flex_container">
-            <ul>
-                <li>
-                    <span class="exchanger_name">Perfect Money</span> -
-                    <span class="currency">Bitcoin</span>
-                    <span class="value minus">- 0,5%</span>
-                </li>
-                <li>
-                    <span class="exchanger_name">Qiwi</span> -
-                    <span class="currency">Bitcoin</span>
-                    <span class="value plus">+ 0,5%</span>
-                </li>
-                <li>
-                    <span class="exchanger_name">Perfect Money</span> -
-                    <span class="currency">Bitcoin</span>
-                    <span class="value minus">- 0.5%</span>
-                </li>
-                <li>
-                    <span class="exchanger_name">Qiwi</span> -
-                    <span class="currency">Bitcoin</span>
-                    <span class="value plus">+ 0,5%</span>
-                </li>
-                <li>
-                    <span class="exchanger_name">Perfect Money</span> -
-                    <span class="currency">Bitcoin</span>
-                    <span class="value minus">- 0.5%</span>
-                </li>
-            </ul>
-            <div class="news_grey_line_link_mobile mobile">
-                <i class="icon-news_icon"></i>
-            </div>
-            <div class="search_block desctop">
-                <i class="icon-news_icon"></i>
-                <i class="icon-search_icon"></i>
-            </div>
-        </div>
-        <!-- SEARCH ELEMENT -->
-        <div class="search_element_wrapper">
-            <input type="text" name="search_input" placeholder="Например: Яндекс деньги">
-            <div class="search_body">
-                <div class="example">here will be some results variants</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="slide_section">
-
-    <div class="side_all_currency_widget">
-
-        <!-- open icon/иконка открытия - закрытия меню всех валют -->
-        <div class="open_icon_wrapper">
-            <div class="title">Все <br /> валюты</div>
-            <div class="open_icon">
-                <span class="open_icon_1"></span>
-                <span class="open_icon_2"></span>
-            </div>
-        </div>
-
-        <!-- widget body -->
-        <div class="all_currency_widget_body">
-            <div class="flex_container_wrap">
-                <!-- head -->
-                <div class="head">
-                    <div class="all active"><span>ВСЕ</span></div>
-                    <div class="chosen"><span>ИЗБРАННОЕ</span></div>
-                    <div class="popular"><span>ПОПУЛЯНЫЕ</span></div>
-                </div>
-                <!-- find block/поиск -->
-                <div class="find_block flex_container">
-                    <div class="item">
-                        <div class="title">Отдаете</div>
-                        <div class="input_block">
-                            <input type="text" name="give_input" placeholder="Например: Яндекс...">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="title">Получаете</div>
-                        <div class="input_block">
-                            <input type="text" name="get_input" placeholder="Например: Яндекс...">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <!-- end find block/поиск-->
-
-                <!-- cryptocurrency tab/block/криптовалюты -->
-                <div class="ctyptocurrency_tab">
-                    <div class="title body_toggle">криптовалюты <i class="fa fa-caret-up" aria-hidden="true"></i></div>
-                    <div class="wrap">
-                        <div class="flex_container">
-                            <div class="item">
-                                <span class="currency_item active">
-                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
-                                    <span class="text">BITCOIN</span>
-                                </span>
-                                <span class="currency_item">
-                                    <img src="images/icons/litecoin.png" alt="litecoin">
-                                    <span class="text">LITECOIN</span>
-                                </span>
-                            </div>
-                            <div class="item">
-                                <span class="currency_item">
-                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
-                                    <span class="text">BITCOIN</span>
-                                </span>
-                                <span class="currency_item">
-                                    <img src="images/icons/litecoin.png" alt="litecoin">
-                                    <span class="text">LITECOIN</span>
-                                </span>
-                            </div>
-                        </div><!-- # flex container -->
-                    </div>
-                </div>
-                <!-- end of cryptocurrency tab/block/криптовалюты -->
-                
-                <!-- pay systems tab/block/платежные системы -->
-                <div class="pay_systems">
-                    <!-- tab content row-->
-                    <div class="title body_toggle open">Платежные системы <i class="fa fa-caret-up" aria-hidden="true"></i></div>
-                    <div class="wrap">
-                        <div class="pay_system_title">
-                            <img src="images/currency_icons/blue_circle.png" alt="webmoney">
-                            <span class="text">webmoney</span>
-                        </div>
-                        <div class="flex_container">
-                            <div class="item">
-                                <span class="currency_item">
-                                    <span class="text">wmz</span>
-                                </span>
-                                <span class="currency_item active">
-                                    <span class="text">wme</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmu</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmu</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmz</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wme</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmu</span>
-                                </span>
-                            </div>
-                            <div class="item">
-                                 <span class="currency_item">
-                                    <span class="text">wmz</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wme</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmu</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmu</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmz</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wme</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmu</span>
-                                </span>
-                            </div>
-                        </div><!-- # flex container -->
-
-                        <!-- tab content row-->
-                        <div class="pay_system_title">
-                            <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                            <span class="text">qiwi</span>
-                        </div>
-                        <div class="flex_container">
-                            <div class="item">
-                                <span class="currency_item">
-                                    <span class="text">wmz</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wme</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmu</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmu</span>
-                                </span>
-                            </div>
-                            <div class="item">
-                                 <span class="currency_item">
-                                    <span class="text">wmz</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wme</span>
-                                </span>
-                                <span class="currency_item  active">
-                                    <span class="text">wmu</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">wmu</span>
-                                </span>
-                            </div>
-                        </div><!-- # flex container -->
-
-                        <!-- tab content row-->
-                        <div class="pay_system_title">
-                            <img src="images/currency_icons/wallet.png" alt="yandex money">
-                            <span class="text">Яндекс</span>
-                        </div>
-                        <div class="flex_container">
-                            <div class="item">
-                                <span class="currency_item">
-                                    <span class="text">яндекс - деньги</span>
-                                </span>
-                            </div>
-                            <div class="item">
-                                 <span class="currency_item">
-                                    <span class="text">яндекс - деньги</span>
-                                </span>
-                            </div>
-                        </div><!-- # flex container -->
-
-                        <!-- tab content row-->
-                        <div class="pay_system_title">
-                            <img src="images/icons/perfect_money.png" alt="Perfect Money">
-                            <span class="text">perfect money</span>
-                        </div>
-                        <div class="flex_container">
-                            <div class="item">
-                                <span class="currency_item">
-                                    <span class="text">usd</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">eur</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">руб</span>
-                                </span>
-                            </div>
-                            <div class="item">
-                                 <span class="currency_item">
-                                    <span class="text">usd</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">eur</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">руб</span>
-                                </span>
-                            </div>
-                        </div><!-- # flex container -->
-
-                        <!-- tab content row-->
-                        <div class="pay_system_title">
-                            <img src="images/icons/payeer.png" alt="Payeer">
-                            <span class="text">payeer</span>
-                        </div>
-                        <div class="flex_container">
-                            <div class="item">
-                                <span class="currency_item">
-                                    <span class="text">usd</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">eur</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">руб</span>
-                                </span>
-                            </div>
-                            <div class="item">
-                                 <span class="currency_item">
-                                    <span class="text">usd</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">eur</span>
-                                </span>
-                                <span class="currency_item">
-                                    <span class="text">руб</span>
-                                </span>
-                            </div>
-                        </div><!-- # flex container -->
-
-                        <!-- tab content row-->
-                        <div class="pay_system_title">
-                            <img src="images/icons/okpay.png" alt="Okpay">
-                            <span class="text">okpay</span>
-                        </div>
-                        <div class="flex_container">
-                        <div class="item">
-                            <span class="currency_item">
-                                <span class="text">usd</span>
-                            </span>
-                            <span class="currency_item">
-                                <span class="text">eur</span>
-                            </span>
-                            <span class="currency_item">
-                                <span class="text">руб</span>
-                            </span>
-                        </div>
-                        <div class="item">
-                             <span class="currency_item">
-                                <span class="text">usd</span>
-                            </span>
-                            <span class="currency_item">
-                                <span class="text">eur</span>
-                            </span>
-                            <span class="currency_item">
-                                <span class="text">руб</span>
-                            </span>
-                        </div>
-                    </div><!-- # flex container -->
-                    </div>
-                </div>
-                <!-- pay systems tab/block/платежные системы -->
-
-                <!-- internet bunking/интернет банкинг -->
-                <div class="internet_bunking">
-                    <div class="title body_toggle">Интернет - банкинг <i class="fa fa-caret-up" aria-hidden="true"></i></div>
-                    <div class="wrap">
-                        <div class="flex_container">
-                            <div class="item">
-                                <span class="currency_item active">
-                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
-                                    <span class="text">BITCOIN</span>
-                                </span>
-                                <span class="currency_item">
-                                    <img src="images/icons/litecoin.png" alt="litecoin">
-                                    <span class="text">LITECOIN</span>
-                                </span>
-                            </div>
-                            <div class="item">
-                                <span class="currency_item">
-                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
-                                    <span class="text">BITCOIN</span>
-                                </span>
-                                <span class="currency_item">
-                                    <img src="images/icons/litecoin.png" alt="litecoin">
-                                    <span class="text">LITECOIN</span>
-                                </span>
-                            </div>
-                        </div><!-- # flex container -->
-                    </div>
-                </div>
-                <!-- end of internet bunking/интеренет банкинг -->
-
-                <!-- translating systems/системы переводов -->
-                <div class="translate_systems">
-                    <div class="title body_toggle">Системы переводов <i class="fa fa-caret-up" aria-hidden="true"></i></div>
-                    <div class="wrap">
-                        <div class="flex_container">
-                            <div class="item">
-                                <span class="currency_item active">
-                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
-                                    <span class="text">BITCOIN</span>
-                                </span>
-                                <span class="currency_item">
-                                    <img src="images/icons/litecoin.png" alt="litecoin">
-                                    <span class="text">LITECOIN</span>
-                                </span>
-                            </div>
-                            <div class="item">
-                                <span class="currency_item">
-                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
-                                    <span class="text">BITCOIN</span>
-                                </span>
-                                <span class="currency_item">
-                                    <img src="images/icons/litecoin.png" alt="litecoin">
-                                    <span class="text">LITECOIN</span>
-                                </span>
-                            </div>
-                        </div><!-- # flex container -->
-                    </div>
-                </div>
-                <!-- end of translating systems/системы переводов -->
-
-                <!-- cash/наличные -->
-                <div class="cash">
-                    <div class="title body_toggle">наличные <i class="fa fa-caret-up" aria-hidden="true"></i></div>
-                    <div class="wrap">
-                        <div class="flex_container">
-                            <div class="item">
-                                <span class="currency_item active">
-                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
-                                    <span class="text">BITCOIN</span>
-                                </span>
-                                <span class="currency_item">
-                                    <img src="images/icons/litecoin.png" alt="litecoin">
-                                    <span class="text">LITECOIN</span>
-                                </span>
-                            </div>
-                            <div class="item">
-                                <span class="currency_item">
-                                    <img src="images/icons/bitcoin.png" alt="bitcoin">
-                                    <span class="text">BITCOIN</span>
-                                </span>
-                                <span class="currency_item">
-                                    <img src="images/icons/litecoin.png" alt="litecoin">
-                                    <span class="text">LITECOIN</span>
-                                </span>
-                            </div>
-                        </div><!-- # flex container -->
-                    </div>
-                </div>
-                <!-- cash/наличные -->
-
-
-            </div><!-- # flex_container_wrap -->
-        </div>
-    </div>
-
-    <div class="container">
-
-        <div class="direction_widget">
-            <!-- tab buttons 'ПОПУЛЯРНЫЕ ИЗБРАННОЕ' -->
-            <div class="direction_switch_buttons_1">
-                <div class="main_buttons">
-                    <span class="famous active">ПОПУЛЯРНЫЕ</span>
-                    <span class="chosen">ИЗБРАННОЕ</span>
-                </div>
-                <!-- how it work link -->
-                <div class="how_it_works"><a href="#">Как это работает? </a><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-            </div>
-            <!-- tab links 'Валюты Направения' -->
-            <div class="direction_switch_buttons_2">
-                <span class="currencies active"><a href="#">Валюты</a></span>
-                <span class="directions"><a href="#">Направления</a></span>
-            </div>
-            <!-- main widget block, with icons -->
-            <div class="widget_main_block flex_container">
-                <div class="give_block">
-                    <div class="top_line flex_container">
-                        <span>ОТДАЕТЕ</span>
-                        <div class="add_favorite_text">
-                            нажмите на изоброжение звездочки <br /> поверх валюты
-                        </div>
-                        <div class="icons">
-                            <!-- favorite icon (star) -->
-                            <i class="fa fa-star-o" aria-hidden="true" id="give_favorite"></i>
-                            <!-- delete icon -->
-                            <i class="delete_icon"></i>
-                        </div>
-                    </div>
-                    <div class="main_line" id="give_main_line">
-
-                        <!-- each icon -->
-                        <div class="icons_each add_icon">
-                            <div class="icon_img_block">
-                                <i class="plus_icon"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">добавить валюту</span>
-
-                            <!-- ADD CURRENCY POP UP WIDGET -->
-                            <div class="add_currency_pop_up_block" id="pop_up_currecy">
-
-                                <!-- search -->
-                                <div class="search_block">
-                                    <input type="text" class="search_currency_in_pop_up" placeholder="Например: Яндекс...">
-                                    <i class="icon-search_icon"></i>
-                                </div>
-                                <!-- search -->
-
-                                <!-- last currency's -->
-                                <div class="last_currencies">
-                                    <div class="title"><a href="#">ПОСЛЕДНИЕ</a></div>
-                                    <div class="flex_container">
-                                        <!-- each icon -->
-                                        <div class="icons_each">
-                                            <div class="icon_img_block">
-                                                <i class="qiwi_icon"></i>
-                                                <!-- text under icon -->
-                                                <span class="icon_text">руб</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- each icon -->
-                                        <div class="icons_each">
-                                            <div class="icon_img_block">
-                                                <i class="qiwi_icon"></i>
-                                                <!-- text under icon -->
-                                                <span class="icon_text">руб</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- each icon -->
-                                        <div class="icons_each">
-                                            <div class="icon_img_block">
-                                                <i class="qiwi_icon"></i>
-                                                <!-- text under icon -->
-                                                <span class="icon_text">руб</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- each icon -->
-                                        <div class="icons_each">
-                                            <div class="icon_img_block">
-                                                <i class="qiwi_icon"></i>
-                                                <!-- text under icon -->
-                                                <span class="icon_text">руб</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- each icon -->
-                                        <div class="icons_each">
-                                            <div class="icon_img_block">
-                                                <i class="qiwi_icon"></i>
-                                                <!-- text under icon -->
-                                                <span class="icon_text">руб</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- each icon -->
-                                        <div class="icons_each">
-                                            <div class="icon_img_block">
-                                                <i class="qiwi_icon"></i>
-                                                <!-- text under icon -->
-                                                <span class="icon_text">руб</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- last currency's -->
-
-                                <!-- all currencies -->
-                                <div class="title"><a href="#">ВСЕ</a></div>
-                                <!-- all currencies end -->
-
-                                <!-- tabs -->
-                                <div class="tab">
-                                    <div class="title open">КРИПТОВАЛЮТЫ <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                    <div class="tab_body">
-                                        <div class="flex_container">
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                    <!-- text under icon -->
-                                                    <span class="icon_text">руб</span>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                    <!-- text under icon -->
-                                                    <span class="icon_text">руб</span>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                    <!-- text under icon -->
-                                                    <span class="icon_text">руб</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab pay_systems">
-                                    <div class="title open">ПЛАТЕЖНЫЕ СИСТЕМЫ <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                    <div class="tab_body">
-                                        <div class="flex_container">
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                </div>
-
-                                                <div class="sub_body">
-                                                    <div class="title">YANDEXMONEY</div>
-                                                    <div class="currencies_text">
-                                                        <div class="icon_img_block active">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                    </div>
-                                                    <div class="systems">
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                </div>
-
-                                                <div class="sub_body">
-                                                    <div class="title">WEBMONEY</div>
-                                                    <div class="currencies_text">
-                                                        <div class="icon_img_block active">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                    </div>
-                                                    <div class="systems">
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                </div>
-
-                                                <div class="sub_body">
-                                                    <div class="title">NOTWEBMONEY</div>
-                                                    <div class="currencies_text">
-                                                        <div class="icon_img_block active">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                    </div>
-                                                    <div class="systems">
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each ">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                </div>
-
-                                                <div class="sub_body">
-                                                    <div class="title">YANDEXMONEY</div>
-                                                    <div class="currencies_text">
-                                                        <div class="icon_img_block active">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                    </div>
-                                                    <div class="systems">
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                </div>
-
-                                                <div class="sub_body">
-                                                    <div class="title">WEBMONEY</div>
-                                                    <div class="currencies_text">
-                                                        <div class="icon_img_block active">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                    </div>
-                                                    <div class="systems">
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                </div>
-
-                                                <div class="sub_body">
-                                                    <div class="title">NOTWEBMONEY</div>
-                                                    <div class="currencies_text">
-                                                        <div class="icon_img_block active">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                    </div>
-                                                    <div class="systems">
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each ">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                </div>
-
-                                                <div class="sub_body">
-                                                    <div class="title">YANDEXMONEY</div>
-                                                    <div class="currencies_text">
-                                                        <div class="icon_img_block active">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                    </div>
-                                                    <div class="systems">
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                </div>
-
-                                                <div class="sub_body">
-                                                    <div class="title">WEBMONEY</div>
-                                                    <div class="currencies_text">
-                                                        <div class="icon_img_block active">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                    </div>
-                                                    <div class="systems">
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                </div>
-
-                                                <div class="sub_body">
-                                                    <div class="title">NOTWEBMONEY</div>
-                                                    <div class="currencies_text">
-                                                        <div class="icon_img_block active">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                        <div class="icon_img_block">WMZ</div>
-                                                    </div>
-                                                    <div class="systems">
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                        <div class="icon_img_block">
-                                                            <i class="qiwi_icon"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab">
-                                    <div class="title open">КРИПТОВАЛЮТЫ <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                                    <div class="tab_body">
-                                        <div class="flex_container">
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                    <!-- text under icon -->
-                                                    <span class="icon_text">руб</span>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                    <!-- text under icon -->
-                                                    <span class="icon_text">руб</span>
-                                                </div>
-                                            </div>
-
-                                            <!-- each icon -->
-                                            <div class="icons_each">
-                                                <div class="icon_img_block">
-                                                    <i class="qiwi_icon"></i>
-                                                    <!-- text under icon -->
-                                                    <span class="icon_text">руб</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- tabs end -->
-                            </div>
-                            <!-- ADD CURRENCY POP UP WIDGET END -->
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="qiwi_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">руб</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each active">
-                            <div class="icon_img_block">
-                                <i class="blue_circle"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">wmz</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block favorite">
-                                <i class="usa_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o active"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">usa</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="blue_circle"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">wmz</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="wu_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="get_block">
-                    <div class="top_line flex_container">
-                        <span>ПОЛУЧАЕТЕ</span>
-                        <div class="add_favorite_text">
-                            нажмите на изоброжение звездочки <br /> поверх валюты
-                        </div>
-                        <div class="icons">
-                            <!-- favorite icon (star) -->
-                            <i class="fa fa-star-o get_favorite" aria-hidden="true" id="get_favorite"></i>
-                            <!-- delete icon -->
-                            <i class="delete_icon"></i>
-                        </div>
-                    </div>
-                    <div class="main_line" id="get_main_line">
-                        <!-- each icon -->
-                        <div class="icons_each add_icon">
-                            <div class="icon_img_block">
-                                <i class="plus_icon"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">добавить валюту</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="qiwi_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">руб</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="qiwi_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">руб</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="blue_circle"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">wmz</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="usa_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">usa</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block favorite">
-                                <i class="blue_circle"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o active"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">wmz</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="private_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
-
-                        <!-- each icon -->
-                        <div class="icons_each">
-                            <div class="icon_img_block">
-                                <i class="wu_icon"></i>
-                                <!-- favorite block-->
-                                <span class="favorite_block">
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <!-- blur star (favorite active)-->
-                                <i class="favorite fa fa-star"></i>
-                            </div>
-                            <!-- text under icon -->
-                            <span class="icon_text">грн</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- main widget block, with icons - on phones (starts from 480px;) -->
-            <div class="widget_main_block_mobile_phones_add_ flex_container">
-                <div class="give_block">
-                    <div class="title">ОТДАЕТЕ</div>
-                    <div class="flex_container align_items_center">
-                        <div class="currency_block">
-                            <span class="currency_img_block">
-                               <i class="icon-plus_icon"></i>
-                            </span>
-                            <span class="currency_text">добавить <br /> валюту</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="get_block">
-                    <div class="title">ПОЛУЧАЕТЕ</div>
-                    <div class="flex_container align_items_center">
-                        <div class="currency_block">
-                            <span class="currency_img_block">
-                                <i class="icon-plus_icon"></i>
-                            </span>
-                            <span class="currency_text">добавить <br /> валюту</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="widget_main_block_mobile_phones flex_container">
-                <div class="give_block">
-                    <div class="title">ОТДАЕТЕ</div>
-                    <div class="flex_container align_items_center">
-                        <div class="currency_block">
-                            <span class="currency_img_block">
-                                <img src="images/currency_icons/qiwi.png" alt="Qiwi">
-                            </span>
-                            <span class="currency_text">РУБ</span>
-                            <span class="favorite">
-                                <i class="fa fa-star"></i>
-                            </span>
-                        </div>
-                        <div class="actions_block">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-trash"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="get_block">
-                    <div class="title">ПОЛУЧАЕТЕ</div>
-                    <div class="flex_container align_items_center">
-                        <div class="currency_block">
-                            <span class="currency_img_block">
-                                <img src="images/currency_icons/qiwi.png" alt="Qiwi">
-                            </span>
-                            <span class="currency_text">РУБ</span>
-                            <span class="favorite">
-                                <i class="fa fa-star"></i>
-                            </span>
-                        </div>
-                        <div class="actions_block">
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-trash"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- main widget block, with icons - on phones (starts from 480px;) END -->
-
-        </div><!-- direction widget (hides when side menu opened) -->
-
-        <!-- DIRECTION WIDGET / ВКЛАДКА "НАПРАВЛЕНИЯ" -->
-        <div class="direction_tab_widget">
-            <div class="actions_line flex_container">
-                <div class="text">нажмите на изоброжение звездочки <br> поверх валюты</div>
-                <div class="actions_icons">
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="delete_icon"></i>
-                </div>
-            </div>
-
-            <div class="main_line">
-                <div class="flex_container">
-                    <div class="add_icon">
-                        <i class="icon-plus_icon"></i>
-                        <div class="text">добавить направление</div>
-                    </div>
-                    <div class="currency_block flex_container">
-
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
-
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
-
-                        <div class="item active">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
-
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
-
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
-
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
-
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
-
-                        <div class="item">
-                            <div class="sub_item">
-                                <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                                <span>РУБ</span>
-                            </div>
-                            <div class="sub_item">
-                                <span>ГРН</span>
-                                <img src="images/currency_icons/privat.png" alt="private">
-                            </div>
-                            <!-- favorite block-->
-                            <span class="favorite_block">
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                            <!-- blur star (favorite active)-->
-                            <i class="favorite fa fa-star"></i>
-                            <!-- delete block -->
-                            <span class="delete_block">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                            </span>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- DIRECTION WIDGET END / ВКЛАДКА "НАПРАВЛЕНИЯ" КОНЕЦ -->
-
-        <div class="often_questions">
-            <div class="title">частые операции</div>
-            <i class="fa fa-cog" aria-hidden="true"></i>
-        </div>
-
-        <!-- OFTEN OPERATIONS ACTIVE / ЧАСТЫ ОПЕРАЦИИ В АКТИВНОМ РЕЖИМЕ(КОГДА ВЫБРАНЫ ВАЛЮТЫ) -->
-        <div class="often_questions active">
-            <div class="flex_container">
-                <div class="title desctop">вы меняете:</div>
-                <div class="title_mobile mobile"><span class="dot_toggle active"></span><span class="dot_toggle"></span></div>
-                <div class="currencies_block">
-                    <div class="currency_block">
-                        <div class="currency_icon_block"><i class="qiwi_icon"></i></div>
-                        <div class="text"><span class="name">QIWI</span><span class="currency">(руб.)</span></div>
-                    </div>
-                    <span class="reverse"><i class="icon-reverse_icon"></i></span>
-                    <div class="currency_block">
-                        <div class="currency_icon_block"><i class="private_icon"></i></div>
-                        <div class="text"><span class="name">ПРИВАТ</span><span class="currency">(руб.)</span></div>
-                    </div>
-                </div>
-                <div class="actions_block">
-                    <i class="icon-favorite_icon active"></i>
-                    <i class="icon-download_icon active"></i>
-                    <i class="icon-calculator_icon"></i>
-                    <i class="fa fa-bell-o" aria-hidden="true"></i>
-                    <i class="icon-delete_icon desctop"></i>
-                    <i class="fa fa-cog mobile" aria-hidden="true"></i>
-                </div>
-                <i class="fa fa-cog desctop phone" aria-hidden="true"></i>
-                <i class="fa fa-angle-right mobile" aria-hidden="true"></i>
-            </div>
-            <!-- CALCULATOR -->
-            <div class="calculator_wrap">
-                <div class="flex_container">
-                    <input type="text" name="calc_1" placeholder="00.00">
-                    <input type="text" name="calc_2" placeholder="00.00">
-                    <input type="text" name="calc_result" placeholder="00.00">
-                    <div class="check_box">
-                        <input type="checkbox" id="calc_checkbox" name="calc_checkbox">
-                        <label for="calc_checkbox">С учетом комиссии платежных систем</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- table -->
-        <div class="table_wrap">
-            <div class="table_wrap_mobile mobile__">
-            <table>
-                <thead>
-                <tr>
-                    <td>Обменный пункт</td>
-                    <td>Отдаете</td>
-                    <td>Получаете</td>
-                    <td>Резерв</td>
-                    <td>Мин. сумма</td>
-                    <td class="type">Тип обмена</td>
-                    <td class="testimonials">Отзывы</td>
-                    <td class="actions">Действия</td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="exchanger">
-                        <span class="logo"><img src="images/logos/obmenka.png" alt="obmenka.ua"></span>
-                        <span class="name"><a href="#">Obmenka.ua</a></span>
-                        <span class="percent">
-                            <!-- if you need percent sign - add i-tag (like under this comment)-->
-                            <!-- if no - remove it, but leave empty parent element <span class="percent"> -->
-                            <i class="fa fa-percent" aria-hidden="true"></i>
-                        </span>
-                    </td>
-                    <td class="give">
-                        <span class="amount">80</span>
-                        <span class="icon">
-                            <!-- if image is bitcoin - please add to this image class: bitcoin -->
-                            <!-- if image is wallet  please add to this image class: wallet -->
-                            <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                            <!-- if money are russian or ukrainian 'руб/грн' please add extra class: ru ( <span class="img_sign ru">руб</span>) -->
-                            <span class="img_sign ru">руб</span>
-                        </span>
-                    </td>
-                    <td class="get">
-                        <span class="amount red">1,4<i class="fa fa-caret-down" aria-hidden="true"></i></span>
-                        <span class="icon">
-                            <!-- if image is bitcoin - please add to this image class: bitcoin -->
-                            <img src="images/currency_icons/privat.png" alt="private">
-                            <!-- if money are russian or ukrainian 'руб/грн' please add extra class: ru ( <span class="img_sign ru">руб</span>) -->
-                            <span class="img_sign ru">грн</span>
-                        </span>
-                    </td>
-                    <td class="reserve">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <!-- if image is bitcoin - please add to this image class: bitcoin -->
-                            <img src="images/currency_icons/privat.png" alt="private">
-                            <!-- if money are russian or ukrainian 'руб/грн' please add extra class: ru ( <span class="img_sign ru">руб</span>) -->
-                            <span class="img_sign ru">грн</span>
-                        </span>
-                    </td>
-                    <td class="min_amount">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <!-- if image is bitcoin - please add to this image class: bitcoin -->
-                            <img src="images/currency_icons/qiwi.png" alt="qiwi">
-                            <!-- if money are russian or ukrainian 'руб/грн' please add extra class: ru ( <span class="img_sign ru">руб</span>) -->
-                            <span class="img_sign ru">руб</span>
-                        </span>
-                    </td>
-                    <td class="type">
-                        <!-- if here will be image with wheel - please add to this image class: 'gear'-->
-                        <img src="images/icons/exchange_type_1.png" alt="Smart type">
-                    </td>
-                    <td class="testimonials">
-                        <span class="green">(12)</span> / <span class="red">(2)</span>
-                    </td>
-                    <td class="actions">
-                        <span class="action_">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </span>
-                        <span class="action_">
-                            <i class="icon-message_icon"></i>
-                        </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="exchanger">
-                        <span class="logo"><img src="images/logos/wmcash.png" alt="WMCash"></span>
-                        <span class="name"><a href="#">WMCash</a></span>
-                        <span class="percent"><i class="fa fa-percent" aria-hidden="true"></i></span>
-                    </td>
-                    <td class="give">
-                        <span class="amount">1</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/blue_circle.png" alt="blue_circle">
-                            <span class="img_sign">WMZ</span>
-                        </span>
-                    </td>
-                    <td class="get">
-                        <span class="amount green">1,4<i class="fa fa-caret-up" aria-hidden="true"></i></span>
-                        <span class="icon">
-                            <img src="images/currency_icons/privat.png" alt="private">
-                            <span class="img_sign ru">грн</span>
-                        </span>
-                    </td>
-                    <td class="reserve">
-                        <span class="amount">10000,90</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/privat.png" alt="private">
-                            <span class="img_sign ru">грн</span>
-                        </span>
-                    </td>
-                    <td class="min_amount">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/blue_circle.png" alt="blue_circle">
-                            <span class="img_sign">WMZ</span>
-                        </span>
-                    </td>
-                    <td class="type">
-                        <img class="gear" src="images/icons/exchange_type_2.png" alt="Smart type">
-                    </td>
-                    <td class="testimonials">
-                        <span class="green">(12)</span> / <span class="red">(2)</span>
-                    </td>
-                    <td class="actions">
-                        <span class="action_">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </span>
-                        <span class="action_">
-                            <i class="icon-message_icon"></i>
-                        </span>
-
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="exchanger">
-                        <span class="logo"><img src="images/logos/nix.png" alt="nix"></span>
-                        <span class="name"><a href="#">NIXChange</a></span>
-                        <span class="percent"><i class="fa fa-percent" aria-hidden="true"></i></span>
-                    </td>
-                    <td class="give">
-                        <span class="amount">568</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/blue_circle.png" alt="blue_circle">
-                            <span class="img_sign">WMZ</span>
-                        </span>
-                    </td>
-                    <td class="get">
-                        <span class="amount">33,333876690</span>
-                        <span class="icon">
-                            <img class="bitcoin" src="images/currency_icons/bitcoin.png" alt="bitcoin">
-                        </span>
-                    </td>
-                    <td class="reserve">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <img class="bitcoin" src="images/currency_icons/bitcoin.png" alt="bitcoin">
-                        </span>
-                    </td>
-                    <td class="min_amount">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/blue_circle.png" alt="blue_circle">
-                            <span class="img_sign">WMZ</span>
-                        </span>
-                    </td>
-                    <td class="type">
-                        <img class="gear" src="images/icons/exchange_type_2.png" alt="Smart type">
-                    </td>
-                    <td class="testimonials">
-                        <span class="green">(12)</span> / <span class="red">(2)</span>
-                    </td>
-                    <td class="actions">
-                        <span class="action_">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </span>
-                        <span class="action_">
-                            <i class="icon-message_icon"></i>
-                        </span>
-
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="exchanger">
-                        <span class="logo"><img src="images/logos/24_exchange.png" alt="24_exchange"></span>
-                        <span class="name"><a href="#">24-Exchange</a></span>
-                        <span class="percent"></span>
-                    </td>
-                    <td class="give">
-                        <span class="amount">33,333876690</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/privat.png" alt="privat">
-                            <span class="img_sign ru">грн</span>
-                        </span>
-                    </td>
-                    <td class="get">
-                        <span class="amount">568</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/blue_circle.png" alt="blue_circle">
-                            <span class="img_sign">WMZ</span>
-                        </span>
-                    </td>
-                    <td class="reserve">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <img class="bitcoin" src="images/currency_icons/bitcoin.png" alt="bitcoin">
-                        </span>
-                    </td>
-                    <td class="min_amount">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/blue_circle.png" alt="blue_circle">
-                            <span class="img_sign">WMZ</span>
-                        </span>
-                    </td>
-                    <td class="type">
-                        <img class="gear" src="images/icons/exchange_type_2.png" alt="Smart type">
-                    </td>
-                    <td class="testimonials">
-                        <span class="green">(12)</span> / <span class="red">(2)</span>
-                    </td>
-                    <td class="actions">
-                        <span class="action_">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </span>
-                        <span class="action_">
-                            <i class="icon-message_icon"></i>
-                        </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="exchanger">
-                        <span class="logo"><img src="images/logos/monster_change.png" alt="monster_change"></span>
-                        <span class="name"><a href="#">MonsterChange</a></span>
-                        <span class="percent"></span>
-                    </td>
-                    <td class="give">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <img class="wallet" src="images/currency_icons/wallet.png" alt="wallet">
-                        </span>
-                    </td>
-                    <td class="get">
-                        <span class="amount">0,568</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/privat.png" alt="privat">
-                            <span class="img_sign ru">грн</span>
-                        </span>
-                    </td>
-                    <td class="reserve">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <img src="images/currency_icons/privat.png" alt="privat">
-                            <span class="img_sign ru">грн</span>
-                        </span>
-                    </td>
-                    <td class="min_amount">
-                        <span class="amount">100</span>
-                        <span class="icon">
-                            <img class="wallet" src="images/currency_icons/wallet.png" alt="wallet">
-                        </span>
-                    </td>
-                    <td class="type">
-                        <img src="images/icons/exchange_type_1.png" alt="Smart type">
-                    </td>
-                    <td class="testimonials">
-                        <span class="green">(12)</span> / <span class="red">(2)</span>
-                    </td>
-                    <td class="actions">
-                        <span class="action_">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                        </span>
-                        <span class="action_">
-                            <i class="icon-message_icon"></i>
-                        </span>
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
-            </div>
-            <div class="pagination_block">
-                <div class="pages_list">
-                    <ul>
-                        <li class="active">1</li>
-                        <li>2</li>
-                        <li>...</li>
-                        <li>4</li>
-                        <li class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                    </ul>
-                </div>
-                <div class="pagination_setting">
-                    <div class="number_choose">
-                        <span>5</span>
-                        <div class="arrows">
-                            <div class="arrow_up"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
-                            <div class="arrow_down"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div><!-- # container -->
-</div>
-
-
-<!-- block with video -->
 <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-4 col-no-paddings">
+            <aside class="sidebar">
+                <div class="widget">
+                    <div class="widget__title">
+                        Выбрать направление
+                    </div>
+                    <div class="widget__content">
+                        <div class="w-currency">
+                            <div class="w-currency__header">
+                                <div class="w-currency__switcher w-currency__switcher_active"><span>Все</span></div>
+                                <div class="w-currency__switcher"><span>Избранное</span></div>
+                                <div class="w-currency__switcher"><span>Популярные</span></div>
+                            </div>
+                            <div class="w-currency__search">
+                                <div class="w-currency__search-item">
+                                    <label for="give_input">Отдаете</label>
+                                    <div class="w-currency__search-input">
+                                        <input type="text" name="give_input" id="give_input" placeholder="Яндекс...">
+                                        <button type="button">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button class="w-currency__search-exchange" type="button">
+                                        <i class="fa fa-exchange" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="w-currency__search-item">
+                                    <label for="get_input">Получаете</label>
+                                    <div class="w-currency__search-input">
+                                        <input type="text" name="get_input" id="get_input" placeholder="Яндекс...">
+                                        <button type="button">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <button class="w-currency__search-favorites" type="button">
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
 
-    <!-- separate line-->
-    <div class="separate_line first_separate"><img src="images/divider.png" alt="divider"></div>
+                            <div class="pay-systems">
+                                <div class="pay-systems__from">
+                                    <div class="pay-system">
+                                        <span>Интернет-банкинг <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                                        <div class="pay-system__item">
+                                            <span><img src="./images/currency_icons/privat.png" />Privat24 <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                                            <ul class="pay-system__subitem">
+                                                <li>USD</li>
+                                                <li>KZT</li>
+                                                <li>RUB</li>
+                                                <li>EUR</li>
+                                            </ul>
+                                        </div>
+                                        <div class="pay-system__item">
+                                            <span><img src="./images/currency_icons/privat.png" />Русский стандарт <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                                            <ul class="pay-system__subitem">
+                                                <li>USD</li>
+                                                <li>KZT</li>
+                                                <li>RUB</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pay-systems__to">
+                                    <div class="pay-system">
+                                        <span>Интернет-банкинг <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                                        <div class="pay-system__item">
+                                            <span><img src="./images/currency_icons/privat.png" />Privat24 <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                                            <ul class="pay-system__subitem">
+                                                <li>USD</li>
+                                                <li>KZT</li>
+                                                <li>RUB</li>
+                                            </ul>
+                                        </div>
+                                        <div class="pay-system__item">
+                                            <span><img src="./images/currency_icons/privat.png" />Русский стандарт <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                                            <ul class="pay-system__subitem">
+                                                <li>USD</li>
+                                                <li>KZT</li>
+                                                <li>RUB</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget__title">
+                        Установить виджет курса биткоина
+                    </div>
+                    <div class="widget__content">
+                        <div class="w-courses">
+                            <div class="w-courses__header">
+                                <div class="row">
+                                    <div class="col">
+                                        <!--<img src="images/logo.png" alt="Udifo">-->
+                                        <span>Курс биткоина в обменниках</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-courses__designations">
+                                <div class="w-courses__row">
+                                    <div class="w-courses__col">Валюта</div>
+                                    <div class="w-courses__col">Покупка</div>
+                                    <div class="w-courses__col">Прадажа</div>
+                                </div>
+                            </div>
+                            <div class="w-courses__body">
+                                <div class="w-courses__row">
+                                    <div class="w-courses__col w-courses__col_currency">
+                                        <img src="images/currency_icons/usa.png">
+                                        USD</div>
+                                    <div class="w-courses__col w-courses__col_buy">
+                                        16 307.8930 <i class="fa fa-long-arrow-up"></i>
+                                    </div>
+                                    <div class="w-courses__col w-courses__col_sell">
+                                        16 273.8930 <i class="fa fa-long-arrow-up negative"></i>
+                                    </div>
+                                </div>
+                                <div class="w-courses__row">
+                                    <div class="w-courses__col w-courses__col_currency">
+                                        <img src="images/currency_icons/usa.png">
+                                        USD</div>
+                                    <div class="w-courses__col w-courses__col_buy">
+                                        16 307.8930 <i class="fa fa-long-arrow-up"></i>
+                                    </div>
+                                    <div class="w-courses__col w-courses__col_sell">
+                                        16 273.8930 <i class="fa fa-long-arrow-up negative"></i>
+                                    </div>
+                                </div>
+                                <div class="w-courses__row">
+                                    <div class="w-courses__col w-courses__col_currency">
+                                        <img src="images/currency_icons/usa.png">
+                                        USD</div>
+                                    <div class="w-courses__col w-courses__col_buy">
+                                        16 307.8930 <i class="fa fa-long-arrow-up"></i>
+                                    </div>
+                                    <div class="w-courses__col w-courses__col_sell">
+                                        16 273.8930 <i class="fa fa-long-arrow-up negative"></i>
+                                    </div>
+                                </div>
+                                <div class="w-courses__row">
+                                    <div class="w-courses__col w-courses__col_currency">
+                                        <img src="images/currency_icons/usa.png">
+                                        USD</div>
+                                    <div class="w-courses__col w-courses__col_buy">
+                                        16 307.8930 <i class="fa fa-long-arrow-up"></i>
+                                    </div>
+                                    <div class="w-courses__col w-courses__col_sell">
+                                        16 273.8930 <i class="fa fa-long-arrow-up negative"></i>
+                                    </div>
+                                </div>
+                                <div class="w-courses__row">
+                                    <div class="w-courses__col w-courses__col_currency">
+                                        <img src="images/currency_icons/usa.png">
+                                        USD</div>
+                                    <div class="w-courses__col w-courses__col_buy">
+                                        16 307.8930 <i class="fa fa-long-arrow-up"></i>
+                                    </div>
+                                    <div class="w-courses__col w-courses__col_sell">
+                                        16 273.8930 <i class="fa fa-long-arrow-up negative"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-courses__footer">
+                                <div class="row">
+                                    <div class="col">
+                                        <span>Сегодня, 07.12.2017</span>
+                                        <a href="/" class="link pull-right">udifo.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget__title">
+                        График курса биткоина к доллару за неделю
+                    </div>
+                    <div class="widget__content">
+                        <div class="w-chart">
+                            <div class="w-chart__header">
+                                <div class="row">
+                                    <div class="col">
+                                        <span>График курса биткоина к доллару</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-chart__body">
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-chart__footer">
+                                <div class="row">
+                                    <div class="col">
+                                        <span>4 Дек - 11 Дек</span>
+                                        <a href="/" class="link pull-right">udifo.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget__title">
+                        Сколько биткоина в других валютах
+                    </div>
+                    <div class="widget__content">
+                        <div class="w-converter">
+                            <div class="row">
+                                <div class="col-4">Satoshi</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">100 000 000 Satoshi</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Bitcoin</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">1.0000 BTC</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Доллар США</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">16 422.46 USD</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Satoshi</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">100 000 000 Satoshi</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Bitcoin</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">1.0000 BTC</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Доллар США</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">16 422.46 USD</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Satoshi</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">100 000 000 Satoshi</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Bitcoin</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">1.0000 BTC</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Доллар США</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">16 422.46 USD</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Satoshi</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">100 000 000 Satoshi</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Bitcoin</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">1.0000 BTC</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Доллар США</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">16 422.46 USD</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Satoshi</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">100 000 000 Satoshi</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Bitcoin</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">1.0000 BTC</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">Доллар США</div>
+                                <div class="col-3">1 BTC -</div>
+                                <div class="col">16 422.46 USD</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget__title">
+                        <img src="images/icons/icon-warning.svg" alt="warning" class="widget__title_icon">Черный список обменников
+                    </div>
+                    <div class="widget__content">
+                        <div class="row">
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                            <div class="col-6">001-millioner.ru</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-12 col-md-8">
+            <main class="main">
 
-    <!-- video block-->
-    <div class="about_video_block flex_container">
-
-        <!-- mobile titles-->
-        <div class="title mobile">UDIFO.COM</div>
-        <div class="sub_title mobile">Лучший мониторинг online - обменников</div>
-
-        <!-- video -->
-        <iframe src="https://www.youtube.com/embed/Gi3kUvv5cuE" frameborder="0" allowfullscreen></iframe>
-
-        <!-- about text block-->
-        <div class="video_about_text">
-            <div class="title desctop">UDIFO.COM</div>
-            <div class="sub_title desctop">Лучший мониторинг online - обменников</div>
-            <div class="desc">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper blandit mi. Proin volutpat
-                    urna vitae bibendum. Proin fringilla neque hendrerit lacus congue sollicitudin.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper blandit mi. Proin volutpat
-                    urna vitae bibendum. Proin fringilla neque hendrerit lacus congue sollicitudin.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper blandit mi. Proin volutpat
-                    urna vitae bibendum. Proin fringilla neque hendrerit lacus congue sollicitudin.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </div>
+            </main>
         </div>
     </div>
-
-    <!-- separate line-->
-    <div class="separate_line second_separate"><img src="images/divider.png" alt="divider"></div>
-
-</div><!-- # CONTAINER-->
-
-<div class="start_page">
-    <div class="news container">
-        <div class="flex_container">
-
-            <div class="news_each">
-                <div class="title"><a href="#">Безопасность Online - платежей</a></div>
-                <div class="news_img"><a href="#"><img src="images/news/news1.jpg" alt="news 1"></a></div>
-                <div class="news_desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In ullamcorper blandit mi. Proin volutpat urna vitae purus volutpat bibendum.
-                    hendrerit lacus congue sollicitudin...
-                </div>
-            </div>
-
-            <div class="news_each">
-                <div class="title"><a href="#">Лучшие майнинг - биржи</a></div>
-                <div class="news_img"><a href="#"><img src="images/news/news2.jpg" alt="news 2"></a></div>
-                <div class="news_desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In ullamcorper blandit mi. Proin volutpat urna vitae purus volutpat bibendum.
-                    hendrerit lacus congue sollicitudin...
-                </div>
-            </div>
-
-            <div class="news_each">
-                <div class="title"><a href="#">банковские крты для яндекса</a></div>
-                <div class="news_img"><a href="#"><img src="images/news/news3.jpg" alt="news 3"></a></div>
-                <div class="news_desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In ullamcorper blandit mi. Proin volutpat urna vitae purus volutpat bibendum.
-                    hendrerit lacus congue sollicitudin...
-                </div>
-            </div>
-
-        </div>
-
-        <!-- separate line-->
-        <div class="separate_line third_separate"><img src="images/divider.png" alt="divider"></div>
-
-    </div> <!-- # container -->
 </div>
 
-<div class="start_page_about_text">
-    <div class="container">
-        <div class="title">зачем нужен мониторинг обменников?</div>
-        <div class="desc">
-            <p>
-                С помощью системы можно сравнивать курсы, находить самые выгодные решения и больше не обменивать втридорога. Очевидные преимущества мониторинга перед «слепым» выбором обменного пункта:
-            </p>
-            <p>
-                Вы становитесь богаче! Если раньше вы проводили обмен Х на Х по стандартному курсу, то после поиска самого выгодного направления вы сможете получать больше прибыли. Заметьте, в год набегает существенная сумма (к примеру, добавьте к своему обычному доходу примерно 10%).
-                <br />
-                Вы можете наконец-то проводить обмен эксклюзивной валюты. На сайте есть специальный раздел, где вы сможете быстро находить варианты двойного обмена. Таким образом, можно решить проблему с выводом-вводом самых редких валют.
-                Ваши обменные операции становятся более безопасными. Пользователи охотно оставляют свои отзывы о работе обменников. Читая их, вы сможете выбрать самые надежные и ответственные ресурсы и на 99,9% снизить риск нарваться на мошенников (мы тщательно проверяем обменники перед внесением их в базу данных).
-                Перспектива обмена на ваших условиях. Вы можете настроить систему оповещения, указав желаемый курс. Таким образом, вам на почту придет письмо о том, что в одном из обменников появился выгодный курс обмена или резерв.
-            </p>
-            <p>
-                Топ пунктов обмена: наивысшие строчки – за теми, кто предлагает наиболее выгодный для клиента процент комиссии.
-                Удобный калькулятор, который дает возможность рассчитать вашу итоговую сумму.
-                Максимально простой и понятный интерфейс: клик на пару валют мгновенно переносит вас на страницу с возможными вариантами обмена а возможность добавить их в избранное позволит вам оперативно отслеживать самые востребованные валюты.
-                Отображение резерва – вы видите, сколько реально вы можете обменять в потенциальном обменнике.
-            </p>
-        </div>
-    </div>
-</div>
 
-<footer>
+<!--&lt;!&ndash; block with video &ndash;&gt;-->
+<!--<div class="container">-->
+
+    <!--&lt;!&ndash; separate line&ndash;&gt;-->
+    <!--<div class="separate_line first_separate"><img src="images/divider.png" alt="divider"></div>-->
+
+    <!--&lt;!&ndash; video block&ndash;&gt;-->
+    <!--<div class="about_video_block flex_container">-->
+
+        <!--&lt;!&ndash; mobile titles&ndash;&gt;-->
+        <!--<div class="title mobile">UDIFO.COM</div>-->
+        <!--<div class="sub_title mobile">Лучший мониторинг online - обменников</div>-->
+
+        <!--&lt;!&ndash; video &ndash;&gt;-->
+        <!--<iframe src="https://www.youtube.com/embed/Gi3kUvv5cuE" frameborder="0" allowfullscreen></iframe>-->
+
+        <!--&lt;!&ndash; about text block&ndash;&gt;-->
+        <!--<div class="video_about_text">-->
+            <!--<div class="title desctop">UDIFO.COM</div>-->
+            <!--<div class="sub_title desctop">Лучший мониторинг online - обменников</div>-->
+            <!--<div class="desc">-->
+                <!--<p>-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper blandit mi. Proin volutpat-->
+                    <!--urna vitae bibendum. Proin fringilla neque hendrerit lacus congue sollicitudin.-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper blandit mi. Proin volutpat-->
+                    <!--urna vitae bibendum. Proin fringilla neque hendrerit lacus congue sollicitudin.-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper blandit mi. Proin volutpat-->
+                    <!--urna vitae bibendum. Proin fringilla neque hendrerit lacus congue sollicitudin.-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash; separate line&ndash;&gt;-->
+    <!--<div class="separate_line second_separate"><img src="images/divider.png" alt="divider"></div>-->
+
+<!--</div>&lt;!&ndash; # CONTAINER&ndash;&gt;-->
+
+<!--<div class="start_page">-->
+    <!--<div class="news container">-->
+        <!--<div class="flex_container">-->
+
+            <!--<div class="news_each">-->
+                <!--<div class="title"><a href="#">Безопасность Online - платежей</a></div>-->
+                <!--<div class="news_img"><a href="#"><img src="images/news/news1.jpg" alt="news 1"></a></div>-->
+                <!--<div class="news_desc">-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+                    <!--In ullamcorper blandit mi. Proin volutpat urna vitae purus volutpat bibendum.-->
+                    <!--hendrerit lacus congue sollicitudin...-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="news_each">-->
+                <!--<div class="title"><a href="#">Лучшие майнинг - биржи</a></div>-->
+                <!--<div class="news_img"><a href="#"><img src="images/news/news2.jpg" alt="news 2"></a></div>-->
+                <!--<div class="news_desc">-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+                    <!--In ullamcorper blandit mi. Proin volutpat urna vitae purus volutpat bibendum.-->
+                    <!--hendrerit lacus congue sollicitudin...-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="news_each">-->
+                <!--<div class="title"><a href="#">банковские крты для яндекса</a></div>-->
+                <!--<div class="news_img"><a href="#"><img src="images/news/news3.jpg" alt="news 3"></a></div>-->
+                <!--<div class="news_desc">-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
+                    <!--In ullamcorper blandit mi. Proin volutpat urna vitae purus volutpat bibendum.-->
+                    <!--hendrerit lacus congue sollicitudin...-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+        <!--&lt;!&ndash; separate line&ndash;&gt;-->
+        <!--<div class="separate_line third_separate"><img src="images/divider.png" alt="divider"></div>-->
+
+    <!--</div> &lt;!&ndash; # container &ndash;&gt;-->
+<!--</div>-->
+
+<!--<div class="start_page_about_text">-->
+    <!--<div class="container">-->
+        <!--<div class="title">зачем нужен мониторинг обменников?</div>-->
+        <!--<div class="desc">-->
+            <!--<p>-->
+                <!--С помощью системы можно сравнивать курсы, находить самые выгодные решения и больше не обменивать втридорога. Очевидные преимущества мониторинга перед «слепым» выбором обменного пункта:-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--Вы становитесь богаче! Если раньше вы проводили обмен Х на Х по стандартному курсу, то после поиска самого выгодного направления вы сможете получать больше прибыли. Заметьте, в год набегает существенная сумма (к примеру, добавьте к своему обычному доходу примерно 10%).-->
+                <!--<br />-->
+                <!--Вы можете наконец-то проводить обмен эксклюзивной валюты. На сайте есть специальный раздел, где вы сможете быстро находить варианты двойного обмена. Таким образом, можно решить проблему с выводом-вводом самых редких валют.-->
+                <!--Ваши обменные операции становятся более безопасными. Пользователи охотно оставляют свои отзывы о работе обменников. Читая их, вы сможете выбрать самые надежные и ответственные ресурсы и на 99,9% снизить риск нарваться на мошенников (мы тщательно проверяем обменники перед внесением их в базу данных).-->
+                <!--Перспектива обмена на ваших условиях. Вы можете настроить систему оповещения, указав желаемый курс. Таким образом, вам на почту придет письмо о том, что в одном из обменников появился выгодный курс обмена или резерв.-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--Топ пунктов обмена: наивысшие строчки – за теми, кто предлагает наиболее выгодный для клиента процент комиссии.-->
+                <!--Удобный калькулятор, который дает возможность рассчитать вашу итоговую сумму.-->
+                <!--Максимально простой и понятный интерфейс: клик на пару валют мгновенно переносит вас на страницу с возможными вариантами обмена а возможность добавить их в избранное позволит вам оперативно отслеживать самые востребованные валюты.-->
+                <!--Отображение резерва – вы видите, сколько реально вы можете обменять в потенциальном обменнике.-->
+            <!--</p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<footer class="footer">
     <div class="container">
-        <div class="flex_container">
-            <div class="about_and_soc">
-                <div class="title">О сервисе</div>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper blandit mi. Proin volutpat urna vitae purus volutpat bibendum. Proin fringilla neque hendrerit lacus congue sollicitudin.
-                    <br />
-                    Mauris aliquam molestie libero, non venenatis lectus euismod eu. Mauris malesuada, quam non varius faucibus, magna diam dictum elit, et semper ex dui accumsan turpis.
+        <div class="row">
+            <div class="col-12 col-md-3 footer__border_right">
+                <div class="footer__title">О сервисе</div>
+                <div class="footer__description">
+                    Udifo.com - это ваш надёжный партнёр в поиске лучших условий обмена электронных денег от
+                    webmoney до bitcoin. Наш мониторинг онлайн обменников всегда поможет вам найти наиболее
+                    подходящий обменный сервис для быстрого, безопасного, простого и выгодного обмена.
                 </div>
-                <div class="soc">
-                    <a href="#"><i class="fa fa-git-square" aria-hidden="true"></i></a>
+                <div class="footer__social">
                     <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
                 </div>
             </div>
-
-            <div class="footer_menu desctop">
-                <div class="first_menu">
-                    <div class="title">Клиентам</div>
-                    <ul>
-                        <li><a href="#">О севисе</a></li>
-                        <li><a href="#">Избранные валюты</a></li>
-                        <li><a href="#">Настройки виджета</a></li>
-                        <li><a href="#">Поиск по скайпу</a></li>
-                    </ul>
+            <div class="col-12 col-md-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 footer__border_right">
+                        <div class="footer__title">Клиентам</div>
+                        <ul class="footer__menu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Как разместить обменник</a></li>
+                            <li><a href="#">Как стать партнером</a></li>
+                            <li><a href="#">Настройка виджета</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="#">Черный список</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 footer__border_right">
+                        <div class="footer__title">Интересное</div>
+                        <ul class="footer__menu">
+                            <li><a href="#">Обменники</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Wiki</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Конвертер</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="second_menu">
-                    <div class="title">Партнерам</div>
-                    <ul>
-                        <li><a href="#">Как стать партнером</a></li>
-                        <li><a href="#">Рейтинги обменного пункта</a></li>
-                        <li><a href="#">Тарифы</a></li>
-                        <li><a href="#">Помощь</a></li>
-                    </ul>
+            </div>
+            <div class="col-12 col-md-2 footer__border_right">
+                <div class="footer__fb">
+                    <div class="fb-page" data-href="https://www.facebook.com/udifoexchange/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/udifoexchange/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/udifoexchange/">Udifo.com</a></blockquote></div>
                 </div>
             </div>
-            <div class="first_menu mobile">
-                <div class="title">Клиентам</div>
-                <ul>
-                    <li><a href="#">О севисе</a></li>
-                    <li><a href="#">Избранные валюты</a></li>
-                    <li><a href="#">Настройки виджета</a></li>
-                    <li><a href="#">Поиск по скайпу</a></li>
-                </ul>
+            <div class="col-12 col-md-2">
+                <div class="footer__vk">
+                    <script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
+                    <div id="vk_groups"></div>
+                    <script type="text/javascript">
+                        VK.Widgets.Group("vk_groups", {mode: 3, width: "317"}, 126691422);
+                    </script>
+                </div>
             </div>
-            <div class="second_menu mobile">
-                <div class="title">Партнерам</div>
-                <ul>
-                    <li><a href="#">Как стать партнером</a></li>
-                    <li><a href="#">Рейтинги обменного пункта</a></li>
-                    <li><a href="#">Тарифы</a></li>
-                    <li><a href="#">Помощь</a></li>
-                </ul>
-            </div>
-            <div class="vk_widget">
-                <img src="images/vk_widget.jpg" alt="vk">
-            </div>
-
         </div>
-        <div class="bottom_link">2015 c <a href="/">Udifo.com</a></div>
+        <div class="row">
+            <div class="col">
+                <div class="footer__copyright">2018 &copy; <a href="/">Udifo.com</a></div>
+            </div>
+        </div>
     </div>
 </footer>
 
-<div class="fixed_footer">
-    <div class="container">
-        <div class="currency_widget">
-            <div class="flex_container">
-                <div class="fixed_footer_item">
-                    <div class="icon_in">
-                        <span class="amount">1,0</span>
-                        <div class="amount_icon">
-                            <span class="icon_img_block">
-                                <i class="qiwi_icon"></i>
-                            </span>
-                            <span class="currency_text">грн</span>
-                        </div>
-                    </div>
-                    <i class="reverse_icon_grey"></i>
-                    <div class="icon_in">
-                        <span class="amount">1,4</span>
-                        <div class="amount_icon">
-                            <span class="icon_img_block">
-                                <i class="private_icon"></i>
-                            </span>
-                            <span class="currency_text">грн</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="fixed_footer_item">
-                    <span class="exchanger_name">Обменка.ua</span>
-                </div>
-                <div class="fixed_footer_item">
-                    <div class="give">
-                        <div class="title">Отдаете</div>
-                        <div class="amount">1,0</div>
-                    </div>
-                    <div class="get">
-                        <div class="title">Получаете</div>
-                        <div class="amount">1,4</div>
-                    </div>
-                    <div class="reserve">
-                        <div class="title">Резерв</div>
-                        <div class="amount">12 000 <span class="currency_sign_text">грн</span></div>
-                    </div>
-                </div>
-                <div class="settings">Отслеживать 2 направления <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
-            </div><!-- # flex_container -->
-            <div class="action_icons">
-                <span class="icon-standalone_icon"></span>
-                <span class="resize"><i class="fa fa-expand" aria-hidden="true"></i></span>
-                <span class="icon-close_icon"></span>
-            </div>
-        </div><!-- # currency_widget-->
-    </div><!-- # container -->
-</div>
-
-
-<!-- HOW IT WORKS POP UP / ВСПЛЫВАЮЩЕЕ ОКНО "КАК ЭТО РАБОТАЕТ "-->
-<div class="how_it_works_pop_up_wrapper">
-    <div class="flex_container">
-        <div class="how_it_works_content">
-            <div class="title">как работает "умная" панель udifo</div>
-            <span class="icon-close_icon close__"></span>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur enim in laudantium repudiandae
-                    sequi. Accusamus autem blanditiis consequuntur, cumque illum inventore libero magni nihil nulla omnis
-                    optio quae quo velit!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi at atque eaque exercitationem
-                    facere non possimus, quae quaerat reprehenderit sed soluta tempore temporibus, vero voluptatum. Ea natus
-                    praesentium totam.</p>
-                <p>Commodi consequuntur culpa dolor, dolorem doloremque doloribus fugiat illum impedit, ipsum molestiae
-                    mollitia neque nostrum omnis qui repellat repellendus sapiente similique, sint totam voluptatem. Aliquam
-                    placeat porro tempora veritatis voluptas?</p>
-                <p>Adipisci amet dolore ducimus, eaque exercitationem iure quae vitae! Doloremque eaque eligendi error nihil
-                    quia sequi similique suscipit velit? Eius hic magni, odio pariatur quod voluptate! Doloremque expedita
-                    hic quia?</p>
-            </div>
-            <button class="main_btn close__">все понятно</button>
-        </div>
-    </div>
-</div>
+<!--&lt;!&ndash; HOW IT WORKS POP UP / ВСПЛЫВАЮЩЕЕ ОКНО "КАК ЭТО РАБОТАЕТ "&ndash;&gt;-->
+<!--<div class="how_it_works_pop_up_wrapper">-->
+    <!--<div class="flex_container">-->
+        <!--<div class="how_it_works_content">-->
+            <!--<div class="title">как работает "умная" панель udifo</div>-->
+            <!--<span class="icon-close_icon close__"></span>-->
+            <!--<div class="text">-->
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur enim in laudantium repudiandae-->
+                    <!--sequi. Accusamus autem blanditiis consequuntur, cumque illum inventore libero magni nihil nulla omnis-->
+                    <!--optio quae quo velit!</p>-->
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi at atque eaque exercitationem-->
+                    <!--facere non possimus, quae quaerat reprehenderit sed soluta tempore temporibus, vero voluptatum. Ea natus-->
+                    <!--praesentium totam.</p>-->
+                <!--<p>Commodi consequuntur culpa dolor, dolorem doloremque doloribus fugiat illum impedit, ipsum molestiae-->
+                    <!--mollitia neque nostrum omnis qui repellat repellendus sapiente similique, sint totam voluptatem. Aliquam-->
+                    <!--placeat porro tempora veritatis voluptas?</p>-->
+                <!--<p>Adipisci amet dolore ducimus, eaque exercitationem iure quae vitae! Doloremque eaque eligendi error nihil-->
+                    <!--quia sequi similique suscipit velit? Eius hic magni, odio pariatur quod voluptate! Doloremque expedita-->
+                    <!--hic quia?</p>-->
+            <!--</div>-->
+            <!--<button class="main_btn close__">все понятно</button>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
 
 
@@ -2144,6 +636,55 @@
 <script src="js/jquery.nice-select.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/msDropDown.js"></script>
+<script src="node_modules/d3/d3.min.js"></script>
+<script src="node_modules/c3/c3.min.js"></script>
+<script src="node_modules/moment/moment.js"></script>
+<script>
+  jQuery(document).ready(function() {
+    var chart = c3.generate({
+      bindto: '#chart',
+      data: {
+        x: 'x',
+        columns: [
+          ['x', '2017-11-04',
+            '2017-11-05',
+            '2017-11-06',
+            '2017-11-07',
+            '2017-11-08',
+            '2017-11-09',
+            '2017-11-10',
+            '2017-11-11'
+          ],
+          ['Покупка', 10540, 11040, 13540, 12040, 12540],
+          ['Продажа', 12420, 12920, 15420, 13920, 14420]
+        ],
+        type: 'spline'
+      },
+      legend: {
+        show: false
+      },
+      axis : {
+        x : {
+          type: 'timeseries'
+        },
+        y : {
+          tick: {
+            format: d3.format("$,")
+          }
+        }
+      },
+      tooltip: {
+        format: {
+          title: function (d) { return moment(d).format('DD/MM/YY'); },
+          value: function (value, ratio, id) {
+            var format = d3.format('$,');
+            return format(value);
+          }
+        }
+      }
+    });
+  });
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>
